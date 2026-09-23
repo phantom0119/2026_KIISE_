@@ -68,10 +68,10 @@ docker compose -f 01_infra/docker-compose.pgvector.yml up -d
 ```
 
 ### [02~04단계] 데이터셋 확인 및 스크립트 실행
-- [데이터셋 명세](02_project_md/40_DATASETS_and_provenance.md)를 확인한 후, [`04_scripts/`](04_scripts/) 디렉터리의 벤치마크 및 평가 스크립트를 순차적으로 실행합니다.
+- [데이터셋 명세](02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md#2-비순환-데이터셋-구축-계보-datasets--provenance)를 확인한 후, [`04_scripts/`](04_scripts/) 디렉터리의 벤치마크 및 평가 스크립트를 순차적으로 실행합니다.
 
 ---
 
 ## 🔒 데이터 및 대용량 파일 관리 정책
 - GitHub 100MB 파일 크기 제한 및 저장소 경량화를 위해 대용량 벡터 파일(`*.fvecs`, `*.bin`, `*.npy`) 및 원시 데이터 캐시는 `.gitignore`를 통해 관리됩니다.
-- 실험 재현에 필요한 데이터셋은 [`02_project_md/40_DATASETS_and_provenance.md`](02_project_md/40_DATASETS_and_provenance.md)의 계보 및 가이드를 참조하십시오.
+- 실험 재현에 필요한 데이터셋은 [`02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md`](02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md#2-비순환-데이터셋-구축-계보-datasets--provenance)의 계보 및 가이드를 참조하십시오.
