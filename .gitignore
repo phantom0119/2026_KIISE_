@@ -23,6 +23,7 @@ __pycache__/
 *.pickle
 
 # External data clones & heavy raw data directories
+09_experiments_expansion/**/data/
 experiments_expansion/**/data/
 **/kubernetes-website/
 
