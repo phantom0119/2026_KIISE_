@@ -1,52 +1,64 @@
-# project_md 인덱스 — 연구 기록과 논문화 정본
+# [02] 연구 기록 및 논문화 정본 인덱스 (`02_project_md/`)
 
-> **2026-07-28 주제별 통합 완료.** 최상위에는 주제별 통합 정리본 6개 + 별도 논문 문서 1개만 유지한다.
-> 논문 구조·Methodology·실험별 정본은 여전히 [`canonical/`](canonical/README.md)이 관리한다(EXP01–EXP06).
-> 제출 정본은 `../05_manuscript/paper_final.pdf`(2026-07-23, 접수양식 1쪽 + 본문)이다.
-> 통합 이전의 원본 47개는 `archive/legacy_premerge_20260728/`에 무손실 보존했다(이관 지도: [MIGRATION_MAP_20260728.md](MIGRATION_MAP_20260728.md)).
+본 디렉터리는 KIISE-DBR 2026 연구의 문제 정의, 실험 마스터플랜, 데이터셋 계보, RQ별 실증 결과 및 학회 심사위원 대응 문서를 체계적으로 관리합니다.
 
-## 문서 지도 (2026-07-28 이후)
+---
 
-| 파일 | 주제 | 통합한 구 문서 |
-|---|---|---|
-| [00_MASTER_status_and_decisions.md](00_MASTER_status_and_decisions.md) | 연구 현황·불변 규칙 28·용어 사전·결정 로그·원고 버전 이력 (국문 단일 진입점) | 000_MASTER, 010_OVERVIEW_EN, 020_GLOSSARY, 650 |
-| [10_INTRODUCTION_motivation_and_RQ.md](10_INTRODUCTION_motivation_and_RQ.md) | 서론 정본 — 동기·사회적 문제·Research Gap·확정 RQ 구조(검증→설계→전파) | 000_Introduction, 100, 770, 780, 800 |
-| [20_RELATED_WORK.md](20_RELATED_WORK.md) | 관련 연구 검토 — UCA/VALU, 기여 강화 매트릭스, §2 최종 비교 구도 | 200, 740_RELATED |
-| [30_METHODOLOGY_and_verification.md](30_METHODOLOGY_and_verification.md) | 문제 정의·방법론·사전등록(410/420 규칙 전량)·검증 체계·실험 구조 감사 | 300, 400, 410, 420, 430, 710, 740_AUDIT, 760×2, 810_blueprint |
-| [40_DATASETS_and_provenance.md](40_DATASETS_and_provenance.md) | 데이터셋 정본 — 실사용 8종/제외 2종, 비순환 구축, raw/파생 계보, 코퍼스 정본 수치 | 000_Datasets, 500, 680, 690, 730, 790, DATA_PROVENANCE |
-| [60_REVIEW_response_and_supplements.md](60_REVIEW_response_and_supplements.md) | 심사 대응·보강 실험 (910–914 **원문 verbatim 보존**, 912 FROZEN 무변경) | 910, 911, 912, 913, 914 |
-| [90_ECIR2027_multimodal_paper_intro_management.md](90_ECIR2027_multimodal_paper_intro_management.md) | ⚠ **별도 논문**(ECIR 2027 멀티모달 벤치마크) — 본 KIISE 연구와 다른 문서 | 구 900 (개명만) |
+## 🌟 단일 마스터 정본 진입점 (Single Source of Truth)
 
-## 실험 기록은 어디에 있는가
+> 👉 [**`00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md`**](00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md)
+> 
+> **최종 KIISE-DBR 논문을 완성하고 재현하기 위해 필요한 모든 핵심 지식**을 하나로 집약한 통합 정본 문서입니다.
+> 
+> - **주요 내용**: 확정 논문 정보 및 3대 공헌 / 실사용 8종 데이터셋 계보 / 벡터 DB 5대 설계 축(112개 구성) / RQ1~RQ6 실험 결과(표 1~11 수치 정본) / 심사위원(R1, R2) 피드백 대응 및 보강 실험 분석 / 실행 스크립트 매핑
 
-레거시 결과 문서(600–670, 700, 720, 750×2, 810_CAPTION, 820, 821)는 `canonical/experiments/EXP02–EXP06`의
-**"레거시 결과 문서 흡수 (2026-07-28)"** 섹션에 고유 내용·정정·아카이브 경로가 정리되었다.
+---
 
-| RQ | 정본 문서 | 흡수된 레거시 |
-|---|---|---|
-| RQ1 | EXP01_CIRCULARITY | (해당 없음 — 기존 정본 유지) |
-| RQ3–RQ4 | EXP02_RETRIEVAL_PLAN | 670(KG 붕괴) |
-| RQ5 | EXP03_FILTERED_ANN | 600, 620, 720 |
-| RQ2 | EXP04_EVIDENCE_REPRESENTATION | 750_RAG, 750_UNIFIED, 810_CAPTION, 820, 821 |
-| RQ6 | EXP05_VLM_QA_PROPAGATION | 610, 630, 660 |
-| 외적 타당성 | EXP06_EXTERNAL_VALIDATION | 640, 700 |
+## 📂 하위 디렉터리 구성 및 보관 체계
 
-## SYNC 기준과 확정 용어 (2026-07-28)
+산재되어 있던 연구 문서들은 이력 보존과 탐색 편의를 위해 성격별로 다음과 같이 계층화되어 있습니다:
 
-모든 통합본은 `paper_final.pdf`(2026-07-23)를 수치·구조의 정본으로 삼아 정정되었다
-(다섯 설계 축, 검색 계획 4종, 검색 신호 4종, 112 구성, 코퍼스 3,000/85/6,809/24,872).
-2026-07-28 확정 용어 결정 — **현 제출 PDF에는 미적용, 개정 원고·보고서용**:
+```
+02_project_md/
+├── 00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md  # ★ 연구 종합 마스터 정본 (단일 진입점)
+├── README.md                                    # 본 인덱스 안내 문서
+├── reviews_and_audits/                          # 2026-08 학술대회 심사 대응 및 최종 감사 문서군
+├── canonical/                                   # RQ1~RQ6별 확정 실험 설계 및 정본 명세 (EXP01~EXP06)
+├── legacy_thematic_202607/                      # 2026-07 주제별 통합본 6종 및 이관 지도
+├── external_and_notes/                          # 타 논문(ECIR 2027), 세미나 노트 및 부속 자료
+├── archive/                                     # 2026-07 이전 초기 레거시 원본 47편 (무손실 보존)
+└── notion_dbr_2026/                             # 연구 노션 워크스페이스 마크다운 덤프
+```
 
-1. '데이터베이스 계층' → **벡터 데이터베이스 계층**
-2. '증거' 전면 치환 → 상위 k 검색 결과(DB 반환) / 검색 문맥(VLM 입력) / 관련 클립·검색 정답 집합(정답 판정); RQ6 3관문 = 관련 클립 회수 → 검색 문맥 인식 → 과제 편향
-3. 클립 조작적 정의: 데이터셋 배포 mp4 1파일 = 1클립 (MEVA[20] 계보로 방어)
-4. 러닝 헤드 p.7 이후 구제목 잔존 → 재제출/개정 시 수정
+---
 
-상세는 [00_MASTER_status_and_decisions.md](00_MASTER_status_and_decisions.md)의 결정 로그 참조.
+### 1. [`reviews_and_audits/`](reviews_and_audits/) (심사 대응 및 리비전 감사)
+2026년 8월 KIISE-DBR 심사위원 피드백 대응 및 최종 원고 확정 과정에서 작성된 문서군입니다.
+- **`60_REVIEW_response_and_supplements.md`**: 심사위원 의견별 1차 대응 및 보강 실험 종합
+- **`61_REVIEWER_COMMENTS_CANONICAL.md`**: 심사위원 원문 코멘트 정본
+- **`63_` / `66_REVIEW_RESPONSE_SUBMISSION_READY_20260817.md`**: 최종 제출용 심사의견 답변서 정본
+- **`65_SUPPLEMENT_RQ6_REPRODUCIBILITY_20260817.md`**: RQ6 VLM QA 답변 전파 재현성 보강 명세
+- **`67_` ~ `71_`**: 지면 축소 계획(69), 용어 및 실험 범위 감사(70), 최종 PDF 동기화 체크리스트(67)
 
-## 아카이브
+### 2. [`canonical/`](canonical/) (실험별 정본 명세)
+연구 가설과 실험 절차를 사전등록(Preregistration)한 RQ별 정본 디렉터리입니다.
+- **`EXP01`**: 비순환성 진단 및 워크로드 타당성 (RQ1)
+- **`EXP02`**: 검색 계획 비교 및 모달리티 결합 (RQ3, RQ4)
+- **`EXP03`**: Predicate 필터링 ANN 및 물리 색인 배포 (RQ5)
+- **`EXP04`**: 증거 표현 및 통합 임베딩 최적화 (RQ2)
+- **`EXP05`**: 3관문 VLM QA 답변 전파 진단 (RQ6)
+- **`EXP06`**: 외적 타당성 및 도메인 일반화 검증
 
-- `archive/legacy_premerge_20260728/` — 2026-07-28 통합 전 원본 47개 (무손실, 수정 금지). 사전등록 시간 순서·음성 결과·정정 계보의 근거. 스크립트 참조 경로도 이 위치로 갱신됨(410·420·500·630·912).
-- `archive/` (기존 02–40) — 여정 1–4막 36편. v1 검색 수치(B0–B5)는 순환 결함으로 **인용 금지**.
+### 3. [`legacy_thematic_202607/`](legacy_thematic_202607/) (2026-07 주제별 정리본)
+2026년 7월 28일 1차 제출 시점에 작성되었던 6대 주제별 통합 정리본입니다.
+- `00_MASTER`: 연구 현황, 불변 규칙 28선, 용어 사전, 결정 로그
+- `10_INTRODUCTION`: 동기, Research Gap, RQ 구조
+- `20_RELATED_WORK`: UCA/VALU 등 선행 연구 비교 매트릭스
+- `30_METHODOLOGY`: 방법론, 검증 체계 및 구조 감사
+- `40_DATASETS`: 8종 데이터셋 계보 및 비순환 구축 절차
+- `MIGRATION_MAP_20260728.md`: 초기 47개 레거시 문서 이관 매핑표
 
-레거시 문서와 통합본이 충돌하면 실제 원자산 → 검증 manifest → paper_final.pdf → canonical 순으로 판정한다.
+### 4. [`external_and_notes/`](external_and_notes/) (부속 및 외부 연구 자료)
+- `90_ECIR2027_multimodal_paper_intro_management.md`: ECIR 2027 벤치마크 논문 관련 별도 문서 (본 KIISE 논문과 별개)
+- `KIISE-DBR_2026_Note.pdf` / `KIISE_DBR_2026_Notion_Import.zip`: 초기 연구 세미나 및 노션 연동 자료
+- `paper_final.pdf`: 2026-07-23 초기 제출본 PDF (최종본은 [`05_manuscript/paper_최종.pdf`](../05_manuscript/paper_최종.pdf) 참조)

@@ -25,20 +25,14 @@
 
 ## 📑 주요 문서 상세 가이드
 
-### 1. 연구 기록 및 정본 체계 (`02_project_md/`)
-주제별 통합 정본 및 단계별 리뷰 대응 문서가 체계적으로 번호화되어 관리됩니다. (상세 안내: [02_project_md README](02_project_md/README.md))
-
-| 구분 | 문서 파일 | 주요 내용 |
-|---|---|---|
-| **연구 총괄** | [00_MASTER_status_and_decisions.md](02_project_md/00_MASTER_status_and_decisions.md) | 연구 현황, 불변 규칙 28선, 용어 사전, 의사결정 로그 |
-| **서론/연구질문** | [10_INTRODUCTION_motivation_and_RQ.md](02_project_md/10_INTRODUCTION_motivation_and_RQ.md) | 문제 제기, Research Gap, 확정 RQ 구조 (검증→설계→전파) |
-| **관련 연구** | [20_RELATED_WORK.md](02_project_md/20_RELATED_WORK.md) | UCA/VALU 등 선행 연구 비교 매트릭스 및 차별성 |
-| **방법론/검증** | [30_METHODOLOGY_and_verification.md](02_project_md/30_METHODOLOGY_and_verification.md) | 문제 정의, 사전등록 규칙, 검증 체계 및 실험 구조 감사 |
-| **데이터셋 계보** | [40_DATASETS_and_provenance.md](02_project_md/40_DATASETS_and_provenance.md) | 실사용 8종 데이터셋, 비순환 구축 및 데이터 출처 계보 |
-| **심사 의견 대응** | [60_REVIEW_response_and_supplements.md](02_project_md/60_REVIEW_response_and_supplements.md) | 심사 피드백 대응 종합 및 보강 실험 결과 |
-| **리비전 감사** | [61 ~ 71 시리즈](02_project_md/) | RQ6 재현성 보강, 최종 체크리스트, 예산/지면 감축 계획 |
-| **실험 정본** | [canonical/](02_project_md/canonical/) | RQ1~RQ6별 실험 정본 (EXP01 ~ EXP06) |
-| **아카이브** | [archive/](02_project_md/archive/) | 이전 47개 레거시 원본 무손실 보존 |
+### 1. 연구 기록 및 종합 마스터 정본 (`02_project_md/`)
+- 🌟 [**`00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md`**](02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md): **최종 논문 완성 및 재현을 위한 단일 종합 마스터 정본 (Single Source of Truth)**
+  - 논문 개요 & 3대 공헌 / 8종 실사용 데이터셋 계보 / 벡터 DB 5대 설계 축(112개 구성) / RQ1~RQ6 실험 정본(표 1~11 수치) / 심사위원(R1, R2) 피드백 대응 및 보강 실험 분석 / 실행 스크립트 매핑
+- [**`reviews_and_audits/`**](02_project_md/reviews_and_audits/): 2026-08 학술대회 심사 대응 및 최종 감사 문서군 (`60_REVIEW` ~ `71_`)
+- [**`canonical/`**](02_project_md/canonical/): RQ1~RQ6별 사전등록 실험 정본 명세 (EXP01 ~ EXP06)
+- [**`legacy_thematic_202607/`**](02_project_md/legacy_thematic_202607/): 2026-07 주제별 정리본 (00_MASTER, 10_INTRO, 20_RELATED, 30_METHOD, 40_DATASETS)
+- [**`external_and_notes/`**](02_project_md/external_and_notes/): 타 논문(ECIR 2027), 세미나 노트 및 부속 자료
+- 상세 안내: [02_project_md README](02_project_md/README.md)
 
 ### 2. 논문 및 심사 대응 (`05_manuscript/`)
 - [**`0_main_paper.md`**](05_manuscript/0_main_paper.md): 최종 논문 원고 전문 (Markdown 정본)
