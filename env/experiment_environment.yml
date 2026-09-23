@@ -5,4 +5,4 @@ dependencies:
   - python=3.10
   - pip
   - pip:
-      - -r 2026_KIISE/env/experiment_requirements.txt
+      - -r env/experiment_requirements.txt
