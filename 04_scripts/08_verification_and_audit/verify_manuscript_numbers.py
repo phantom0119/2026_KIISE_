@@ -156,12 +156,16 @@ lever = mp[mp.mediator_hit == 1].correct.mean() - mp[mp.mediator_hit == 0].corre
 chk("T5 lever", lever, -0.020, 3e-3)
 chk("T5 strong hit", mp[mp.config == "strong"].mediator_hit.mean(), 0.0556, 2e-3)
 
-# ---------- manuscript-text guards (B1 recurrence + review fixes) ----------
-MS = (
-    R2
-    / "manuscript"
-    / "kiise_dbr_manuscript_v6_submission_revision.md"
-).read_text()
+MS_CANDIDATES = [
+    R2 / "05_manuscript" / "0_main_paper.md",
+    R2 / "04_scripts" / "09_paper_assets_and_build" / "dbr_manuscript_build_source.md",
+    R2 / "manuscript" / "kiise_dbr_manuscript_v6_submission_revision.md",
+]
+MS = ""
+for cand in MS_CANDIDATES:
+    if cand.exists():
+        MS = cand.read_text(encoding="utf-8")
+        break
 def txt(name, cond):
     (ok if cond else fail).append(f"{name}")
 txt(

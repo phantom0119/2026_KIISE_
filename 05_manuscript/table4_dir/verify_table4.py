@@ -2,8 +2,7 @@
 """Verify Table 4 manuscript numbers against data/ copies in table4_dir."""
 import csv, math
 from pathlib import Path
-
-D = Path("/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/manuscript/table4_dir/data")
+D = Path(__file__).resolve().parent / "data"
 
 # manuscript numbers (0_paper_script.md L206-219, read 2026-07-23)
 MS = {

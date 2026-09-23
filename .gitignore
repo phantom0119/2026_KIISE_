@@ -38,3 +38,15 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Backward compatibility local symlinks (unprefixed shortcuts)
+/env
+/infra
+/project_md
+/src
+/scripts
+/manuscript
+/paper_assets
+/survey
+/presentations
+/experiments_expansion

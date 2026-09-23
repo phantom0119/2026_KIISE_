@@ -11,11 +11,11 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path("/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE")
-MS = ROOT / "manuscript" / "0_main_paper.md"
-FIG = ROOT / "manuscript" / "Figure1.png"
-FIG_VARIANT = ROOT / "manuscript" / "figure1_dir" / "Figure1_pre_terms_20260809.png"
-PATCH = ROOT / "manuscript" / "figure1_dir" / "patch_figure1_terms_20260809.py"
+ROOT = Path(__file__).resolve().parents[2]
+MS = ROOT / "05_manuscript" / "0_main_paper.md"
+FIG = ROOT / "05_manuscript" / "Figure1.png"
+FIG_VARIANT = ROOT / "05_manuscript" / "figure1_dir" / "Figure1_pre_terms_20260809.png"
+PATCH = ROOT / "05_manuscript" / "figure1_dir" / "patch_figure1_terms_20260809.py"
 
 EXPECTED_CAPTION = "&lt;그림 1&gt; 비순환 평가 작업 부하, 벡터 데이터베이스 계층 설계 및 VLM 답변 전파 분석 파이프라인"
 EXPECTED_IMG_REF = "](./Figure1.png)"

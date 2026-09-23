@@ -11,10 +11,11 @@ Figure2.png은 scripts/generate_manuscript_visuals_v6.py::figure_2_circularity()
 """
 import sys
 from pathlib import Path
-
 HERE = Path(__file__).resolve().parent
 KIISE = HERE.parents[1]
-SRC = KIISE / "scripts" / "generate_manuscript_visuals_v6.py"
+SRC = KIISE / "04_scripts" / "09_paper_assets_and_build" / "generate_manuscript_visuals_v6.py"
+if not SRC.exists():
+    SRC = KIISE / "scripts" / "generate_manuscript_visuals_v6.py"
 OUTDIR = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE / "out_terms_20260809"
 
 code = SRC.read_text(encoding="utf-8")
