@@ -10,15 +10,40 @@
 
 ```mermaid
 flowchart TD
-    S0["[00] 환경/리소스 초기화<br>00_setup_and_resources/"] --> S1["[01] 데이터 구축 & 정규화<br>01_dataset_canonicalization/"]
-    S1 --> RQ1["[02] RQ1 순환성 진단 & 통제 주입<br>02_rq1_circularity/"]
-    S1 --> RQ2["[03] RQ2 증거 표현 & 다중 프레임<br>03_rq2_storage_representation/"]
-    S1 --> RQ3["[04] RQ3·4 검색 계획 & 신호 융합<br>04_rq3_rq4_retrieval_fusion/"]
-    S1 --> RQ5["[05] RQ5 Filtered-ANN & 부분 색인<br>05_rq5_filtered_ann_index/"]
-    RQ1 & RQ2 & RQ3 & RQ5 --> RQ6["[06] RQ6 3관문 VLM QA 전파<br>06_rq6_vlm_qa_propagation/"]
-    RQ6 --> Ext["[07] 외적 타당성 (MEVA, UCA)<br>07_external_validity/"]
-    Ext --> Verify["[08] 사전등록 검증 & 통계 감사<br>08_verification_and_audit/"]
-    Verify --> Assets["[09] 논문 에셋 생성 & 최종 조판<br>09_paper_assets_and_build/"]
+    S0["<b>00_setup_and_resources</b><br/>환경 및 리소스 초기화"]
+    S1["<b>01_dataset_canonicalization</b><br/>정본 데이터셋 구축 및 정규화"]
+
+    subgraph EXP ["핵심 가설 검증 파이프라인 (RQ1 ~ RQ5)"]
+        direction TB
+        RQ1["<b>02_rq1_circularity</b><br/>RQ1 메타 순환성 통제"]
+        RQ2["<b>03_rq2_storage_representation</b><br/>RQ2 저장 표현 품질·비용"]
+        RQ3["<b>04_rq3_rq4_retrieval_fusion</b><br/>RQ3·4 검색 계획·신호 융합"]
+        RQ5["<b>05_rq5_filtered_ann_index</b><br/>RQ5 Filtered-ANN 부분 색인"]
+    end
+
+    RQ6["<b>06_rq6_vlm_qa_propagation</b><br/>RQ6 3관문 VLM QA 전파"]
+    Ext["<b>07_external_validity</b><br/>외적 타당성 검증<br/>(MEVA · UCA)"]
+    Verify["<b>08_verification_and_audit</b><br/>사전등록 검증 및 통계 감사"]
+    Assets["<b>09_paper_assets_and_build</b><br/>논문 도표 에셋 및 최종 빌드"]
+
+    S0 --> S1
+    S1 --> RQ1 & RQ2 & RQ3 & RQ5
+    RQ1 & RQ2 & RQ3 & RQ5 --> RQ6
+    RQ6 --> Ext
+    Ext --> Verify
+    Verify --> Assets
+
+    style EXP fill:#f8f9fa,stroke:#718096,stroke-width:1.5px,stroke-dasharray: 4 4,color:#2d3748
+    style S0 fill:#ebf8ff,stroke:#3182ce,stroke-width:1.5px,color:#2b6cb0
+    style S1 fill:#ebf8ff,stroke:#3182ce,stroke-width:1.5px,color:#2b6cb0
+    style RQ1 fill:#f7fafc,stroke:#4a5568,stroke-width:1.5px,color:#2d3748
+    style RQ2 fill:#f7fafc,stroke:#4a5568,stroke-width:1.5px,color:#2d3748
+    style RQ3 fill:#f7fafc,stroke:#4a5568,stroke-width:1.5px,color:#2d3748
+    style RQ5 fill:#f7fafc,stroke:#4a5568,stroke-width:1.5px,color:#2d3748
+    style RQ6 fill:#fffaf0,stroke:#dd6b20,stroke-width:1.5px,color:#c05621
+    style Ext fill:#fffaf0,stroke:#dd6b20,stroke-width:1.5px,color:#c05621
+    style Verify fill:#f0fff4,stroke:#38a169,stroke-width:1.5px,color:#22543d
+    style Assets fill:#f0fff4,stroke:#38a169,stroke-width:1.5px,color:#22543d
 ```
 
 ---

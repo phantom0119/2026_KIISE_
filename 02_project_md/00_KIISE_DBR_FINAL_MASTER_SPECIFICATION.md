@@ -70,34 +70,39 @@
 ```mermaid
 flowchart TD
     subgraph Input ["1. 질의 입력 계층"]
-        Q_NL["자연어 질의 (Natural Language Query)"]
-        Q_MD["메타데이터 술어 (Time, Location, Class)"]
+        Q_NL["<b>자연어 질의</b><br/>(Natural Language Query)"]
+        Q_MD["<b>메타데이터 술어</b><br/>(Time, Location, Class)"]
     end
 
     subgraph VDB ["2. 벡터 데이터베이스 계층 (5대 설계 축)"]
-        D1["① 검색용 데이터: 설명문 / 대표이미지 / 다중이미지 / 결합 / 이중색인"]
-        D2["② 검색 계획: 벡터 단독 / Pre-filter / Post-filter / Hybrid"]
-        D3["③ 신호 융합: 메타 단독 / BM25 / 벡터 / RRF 융합"]
-        D4["④ 물리 색인: Flat / HNSW / IVF-Flat / IVF-PQ"]
-        D5["⑤ 배포 전략: 전역 색인(Global) vs 부분 색인(Partial)"]
+        D1["<b>① 증거 표현</b><br/>설명문 / 대표·다중프레임<br/>결합 / 이중색인"]
+        D2["<b>② 검색 계획</b><br/>벡터단독 / Pre-filter<br/>Post-filter / Hybrid"]
+        D3["<b>③ 신호 융합</b><br/>메타단독 / BM25<br/>벡터 / RRF 융합"]
+        D4["<b>④ 물리 색인</b><br/>Flat / HNSW<br/>IVF-Flat / IVF-PQ"]
+        D5["<b>⑤ 배포 전략</b><br/>전역 색인 (Global)<br/>vs 부분 색인 (Partial)"]
     end
 
     subgraph Retrieve ["3. 검색 결과 도출"]
-        TopK["상위 k 검색 결과 (Top-k Retrieved Candidates)"]
+        TopK["<b>상위 k 검색 결과</b><br/>(Top-k Retrieved Candidates)"]
     end
 
     subgraph VLM_Inference ["4. 답변 전파 계층 (3단계 진단)"]
-        Stage1["Gate 1. 관련 클립 회수 (Relevant Clip Retrieval)"]
-        Stage2["Gate 2. 검색 문맥 인식 (Context Grounding)"]
-        Stage3["Gate 3. 과제 편향 통제 (Task Bias Control)"]
-        VLM_Model["멀티모달 모델 (Llama-3-Vision / Qwen2-VL)"]
-        Answer["최종 질의응답 (Final QA Output)"]
+        Stage1["<b>Gate 1. 관련 클립 회수</b><br/>(Relevant Clip Retrieval)"]
+        Stage2["<b>Gate 2. 검색 문맥 인식</b><br/>(Context Grounding)"]
+        Stage3["<b>Gate 3. 과제 편향 통제</b><br/>(Task Bias Control)"]
+        VLM_Model["<b>멀티모달 모델</b><br/>(Llama-3-Vision / Qwen2-VL)"]
+        Answer["<b>최종 질의응답</b><br/>(Final QA Output)"]
     end
 
     Q_NL --> VDB
     Q_MD --> VDB
     D1 & D2 & D3 & D4 & D5 --> TopK
     TopK --> Stage1 --> Stage2 --> Stage3 --> VLM_Model --> Answer
+
+    style Input fill:#ebf8ff,stroke:#3182ce,stroke-width:1.5px,color:#2b6cb0
+    style VDB fill:#f7fafc,stroke:#4a5568,stroke-width:1.5px,color:#2d3748
+    style Retrieve fill:#fffaf0,stroke:#dd6b20,stroke-width:1.5px,color:#c05621
+    style VLM_Inference fill:#f0fff4,stroke:#38a169,stroke-width:1.5px,color:#22543d
 ```
 
 ### 3.2 벡터 데이터베이스 계층의 5대 설계 축 및 112개 구성 산식 (§4.2)
