@@ -1,8 +1,8 @@
 # [04] 실험 실행 스크립트 카탈로그 및 계층화 가이드 (`04_scripts/`)
 
-본 디렉터리는 KIISE-DBR 2026 논문의 **데이터셋 전처리, 임베딩 생성, RQ1~RQ6 실험 벤치마크, 사전등록 검증 스위트 및 논문 도표 생성**을 총괄하는 실행 스크립트 모음(총 147개 스크립트)을 관리합니다.
+본 디렉터리는 KIISE-DBR 2026 논문의 **데이터셋 전처리, 임베딩 생성, RQ1~RQ6 실험 벤치마크, 사전등록 검증 스위트 및 최종 논문 도표 생성**을 총괄하는 정본 실행 스크립트 모음(총 131개 파일)을 관리합니다.
 
-실험의 목적과 연구 질문(RQ)을 직관적으로 탐색하고 재현할 수 있도록, **10개의 세부 주제별 하위 디렉터리(`00_` ~ `09_`)**로 구조화되어 있습니다.
+과거 마일스톤(v1~v5)의 중복 생성기 및 일회성/제외 데이터셋 스크립트 16개를 정리하고, 최종 논문(v6) 재현에 필수적인 핵심 스크립트들을 **10개의 세부 주제별 하위 디렉터리(`00_` ~ `09_`)**로 구조화하여 관리합니다.
 
 ---
 
@@ -27,16 +27,16 @@ flowchart TD
 
 | 디렉터리명 | 스크립트 수 | 핵심 목적 및 논문 대응 |
 |---|:---:|---|
-| [**`00_setup_and_resources/`**](00_setup_and_resources/) | 3개 | 가상환경 초기화, 모델 가중치 다운로드 및 GPU/스토리지 리소스 진단 |
-| [**`01_dataset_canonicalization/`**](01_dataset_canonicalization/) | 31개 | 원천 비디오 프레임 추출, 키프레임 추출, 패싯 결합 및 5대 Canonical 아티팩트 빌드 |
-| [**`02_rq1_circularity/`**](02_rq1_circularity/) | 9개 | **[RQ1]** 메타데이터 정답 누수 차단, 비순환 수리, C1/C2 통제 주입으로 성능 왜곡($0.181 \rightarrow 1.000$) 실측 |
-| [**`03_rq2_storage_representation/`**](03_rq2_storage_representation/) | 19개 | **[RQ2]** 5개 저장 단위(설명문, 단일 프레임, 다중 프레임, 결합, 이중 색인)의 품질-비용 비교 (**표 4**) |
+| [**`00_setup_and_resources/`**](00_setup_and_resources/) | 3개 | 가상환경 초기화, 모델 가중치 다운로드 및 GPU/리소스 진단 |
+| [**`01_dataset_canonicalization/`**](01_dataset_canonicalization/) | 28개 | 원천 비디오 프레임 추출, 키프레임 추출, 패싯 결합 및 5대 Canonical 아티팩트 빌드 |
+| [**`02_rq1_circularity/`**](02_rq1_circularity/) | 6개 | **[RQ1]** 메타데이터 정답 누수 차단, 비순환 수리, C1/C2 통제 주입으로 성능 왜곡($0.181 \rightarrow 1.000$) 실측 |
+| [**`03_rq2_storage_representation/`**](03_rq2_storage_representation/) | 17개 | **[RQ2]** 5개 저장 단위(설명문, 단일 프레임, 다중 프레임, 결합, 이중 색인)의 품질-비용 비교 (**표 4**) |
 | [**`04_rq3_rq4_retrieval_fusion/`**](04_rq3_rq4_retrieval_fusion/) | 9개 | **[RQ3·4]** B0~B5 검색 전략 비교, 고결합($V \ge 0.3$) 검색 전 필터링, 지식그래프(KG) 융합 실효성 검증 (**표 5, 6**) |
 | [**`05_rq5_filtered_ann_index/`**](05_rq5_filtered_ann_index/) | 23개 | **[RQ5]** PostgreSQL pgvector(:5433), Milvus, Weaviate 실측, 부분 HNSW 색인의 100% 회복 실측 (**표 7~10**) |
 | [**`06_rq6_vlm_qa_propagation/`**](06_rq6_vlm_qa_propagation/) | 11개 | **[RQ6]** [관련 클립 회수 $\rightarrow$ 검색 문맥 인식 $\rightarrow$ 과제 편향 통제] 3관문 VLM QA 답변 전파 진단 (**표 11**) |
 | [**`07_external_validity/`**](07_external_validity/) | 9개 | 해외 공공 CCTV(MEVA) 및 영어권 이상행동(UCA 129질의 3/4 재현) 일반화 검증 |
-| [**`08_verification_and_audit/`**](08_verification_and_audit/) | 16개 | 40/40 검증 스위트, 부트스트랩 95% 신뢰구간 측정, 본문-실험 수치 전수 일치 감사 |
-| [**`09_paper_assets_and_build/`**](09_paper_assets_and_build/) | 17개 | 최종 제출본 Figure 1~3 고해상도 생성 및 2단 편집 Word(.docx)/PDF 조판 빌더 |
+| [**`08_verification_and_audit/`**](08_verification_and_audit/) | 14개 | 40/40 검증 스위트, 부트스트랩 95% 신뢰구간 측정, 본문-실험 수치 전수 일치 감사 |
+| [**`09_paper_assets_and_build/`**](09_paper_assets_and_build/) | 11개 | 최종 제출본 Figure 1~3 고해상도 생성 및 2단 편집 Word(.docx)/PDF 조판 빌더 |
 
 ---
 
@@ -56,7 +56,7 @@ flowchart TD
 - [`verify_circularity_controlled_injection.py`](02_rq1_circularity/verify_circularity_controlled_injection.py): 통제 주입 결과 무결성 검증
 - [`build_vru_noncircular_canonical.py`](02_rq1_circularity/build_vru_noncircular_canonical.py): VRU-Accident 순환 결함 수리판 구축 ($0.9736 \rightarrow 0.3174$ 붕괴 실측)
 - [`build_aihub_cctv_noncircular_canonical.py`](02_rq1_circularity/build_aihub_cctv_noncircular_canonical.py): 지능형 관제 순환 누수 수리판 구축 ($1.0000 \rightarrow 0.8395$)
-- `run_e1_manipulation_pilot.py` / `run_e1a_manipulation_pilot.py`: 사전등록된 조작 점검 파일럿
+- `run_qwen_aligned_circularity_control.py` / `verify_qwen_aligned_circularity.py`: Qwen 정렬 비순환 통제 검증
 
 ### 4. [`03_rq2_storage_representation/`](03_rq2_storage_representation/) (증거 표현 및 저장 단위 벤치마크)
 - [`run_storage_unit_benchmark.py`](03_rq2_storage_representation/run_storage_unit_benchmark.py): **[핵심]** 5개 저장 단위별 nDCG@10, 지연시간, 스토리지 크기 실측 (**논문 표 4**)
@@ -95,12 +95,14 @@ flowchart TD
 - [`run_significance_analysis.py`](08_verification_and_audit/run_significance_analysis.py): **[핵심]** 페어드 부트스트랩 95% 신뢰구간 및 통계적 유의성 검정
 - [`verify_manuscript_numbers.py`](08_verification_and_audit/verify_manuscript_numbers.py): 본문 수치와 실험 산출물 간 전수 대조
 - [`verify_revision_numbers.py`](08_verification_and_audit/verify_revision_numbers.py): 8월 심사 대응 최종 수정본 수치 정합성 감사
+- [`validate_experiment_freeze.py`](08_verification_and_audit/validate_experiment_freeze.py): 실험 데이터셋 동결 해시 무결성 검증
 
 ### 10. [`09_paper_assets_and_build/`](09_paper_assets_and_build/) (논문 에셋 및 조판 빌더)
-- [`generate_manuscript_visuals_v6.py`](09_paper_assets_and_build/generate_manuscript_visuals_v6.py): 최종 논문 제출본(v6) Figure 1~3 인쇄용 고해상도 생성
-- [`generate_retrieval_paper_assets.py`](09_paper_assets_and_build/generate_retrieval_paper_assets.py): 검색 베이스라인 결과 기반 논문용 LaTeX/Markdown 표 추출
+- [`generate_manuscript_visuals_v6.py`](09_paper_assets_and_build/generate_manuscript_visuals_v6.py): **[핵심]** 최종 논문 제출본(v6) Figure 1~3 인쇄용 고해상도 생성
+- [`make_dbr_submission_revision_v6.py`](09_paper_assets_and_build/make_dbr_submission_revision_v6.py): **[핵심]** 최종 심사 통과본 2단 편집 Word(.docx)/PDF 조판 빌더
 - [`build_deck_pptx.py`](09_paper_assets_and_build/build_deck_pptx.py): 학술 발표용 16:9 슬라이드 덱 자동 생성
-- [`make_dbr_submission_revision_v6.py`](09_paper_assets_and_build/make_dbr_submission_revision_v6.py): 최종 심사 통과본 Word(.docx) 문서 생성기
+- [`make_dbr_editable_font_docx.py`](09_paper_assets_and_build/make_dbr_editable_font_docx.py): 제출용 폰트 편집 지원 docx 생성기
+- [`package_manuscript_support_files.py`](09_paper_assets_and_build/package_manuscript_support_files.py): 논문 지원 결과물 패키징
 
 ---
 
@@ -128,6 +130,6 @@ python 04_scripts/06_rq6_vlm_qa_propagation/eval_multiview_answer_vlm.py
 # 7. 40/40 사전등록 검증 스위트 전체 실행
 python 04_scripts/08_verification_and_audit/run_full_verification_suite.py
 
-# 8. 논문 수치 일치 전수 자동 감사
-python 04_scripts/08_verification_and_audit/verify_manuscript_numbers.py
+# 8. 8월 심사 대응 최종 원고 수치 일치 전수 자동 감사
+python 04_scripts/08_verification_and_audit/verify_revision_numbers.py
 ```
