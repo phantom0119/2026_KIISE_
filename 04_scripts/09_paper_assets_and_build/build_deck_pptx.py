@@ -12,9 +12,9 @@ from pptx.dml.color import RGBColor
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 
 ROOT = Path(__file__).resolve().parents[2]
-FIGP = ROOT / "paper_assets" / "20260707_presentation_figures"
-FIGS = ROOT / "paper_assets" / "20260707_submission_figures"
-OUT = ROOT / "presentations" / "kiise_vlmdb_deck_20260714.pptx"
+FIGP = ROOT / "06_paper_assets" / "20260707_presentation_figures"
+FIGS = FIGP
+OUT = ROOT / "08_presentations" / "kiise_vlmdb_deck_20260714.pptx"
 
 NAVY = RGBColor(0x1B, 0x2A, 0x4A)
 BLUE = RGBColor(0x2E, 0x74, 0xB5)
