@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-07-09T19:24:25.961107+00:00",
+  "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260710_noncircular/canonical",
+  "embedding_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260710_noncircular/embeddings/bge-m3",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260710_noncircular/results/vru2_bgem3_b0_b5",
+  "embedding_manifest": {
+    "created_at": "2026-07-09T19:23:48.067619+00:00",
+    "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260710_noncircular/canonical",
+    "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260710_noncircular/embeddings/bge-m3",
+    "model_id": "bge-m3",
+    "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+    "device": "cuda:1",
+    "batch_size": 32,
+    "normalize_embeddings": true,
+    "document_count": 1000,
+    "query_count": 85,
+    "embedding_dim": 1024,
+    "files": {
+      "document_embeddings": "document_embeddings.npy",
+      "query_embeddings": "query_embeddings.npy",
+      "document_index": "document_index.parquet",
+      "query_index": "query_index.parquet"
+    }
+  },
+  "strategies": [
+    "B0_metadata_only",
+    "B1_bm25_only",
+    "B2_vector_only",
+    "B3_vector_postfilter",
+    "B4_prefilter_vector",
+    "B5_hybrid"
+  ],
+  "top_ks": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "max_rank": 100,
+  "postfilter_doc_k": 200,
+  "max_queries": null,
+  "max_queries_per_difficulty": null,
+  "bm25_backend": "rank_bm25.BM25Okapi",
+  "vector_backend": "faiss.IndexFlatIP",
+  "vector_filtering": "external metadata filter for B3/B4/B5",
+  "bm25_build_sec": 0.039452801924198866,
+  "faiss_build_sec": 0.004015522077679634,
+  "counts": {
+    "clips": 1000,
+    "documents": 1000,
+    "queries": 85,
+    "executed_queries": 85,
+    "qrels": 3744,
+    "result_rows": 47718
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "relabel": "2026-07-12 Amendment 5a(2): rows collected as 'w2' (acorn+cutoff0, pre-amendment code) relabeled 'w3'; A lacked filterStrategy switching \u2014 strategy verified acorn via schema read-back; true w2 (sweeping+cutoff0) collected separately in engine_weaviate_A_w2sweep.csv"
+}

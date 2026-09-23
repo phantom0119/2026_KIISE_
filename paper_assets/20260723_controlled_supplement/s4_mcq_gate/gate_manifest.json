@@ -1,0 +1,34 @@
+{
+  "script": "prepare_s4_mcq_gate.py",
+  "created_at": "2026-07-23T09:06:41.506649+00:00",
+  "parameters": {
+    "items_per_class": 60,
+    "seed": 20260723,
+    "categories": [
+      "bus_count",
+      "bike_count"
+    ],
+    "classes": [
+      "0",
+      "1",
+      "2+"
+    ],
+    "conditions": [
+      "closed",
+      "distractor",
+      "oracle"
+    ]
+  },
+  "input_sha256": {
+    "annotation_frame_facets.parquet": "4c9bbefb6be3d989d359ffc510fe9b36403caab270b90e0c468bd888b7b0a663",
+    "frame_index.parquet": "f8aba458c5b0712ea3439dc4905372354afe3da9b832023c5b0baad8920210a4"
+  },
+  "rows": 1080,
+  "unique_source_items": 360,
+  "distractor_match_counts": {
+    "intersection_hour": 359,
+    "intersection": 1
+  },
+  "option_order_rule": "one of six permutations selected by sha256(category,item_id)",
+  "selection_uses_model_outputs": false
+}

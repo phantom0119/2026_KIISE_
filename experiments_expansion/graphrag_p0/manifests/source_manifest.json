@@ -1,0 +1,46 @@
+{
+  "files": [
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/kg.csv",
+      "actual_bytes": 981751236,
+      "sha256": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+      "status": "OK"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/nodes.tab",
+      "actual_bytes": 8893757,
+      "sha256": "18ebcf24887e8529b95c7a7c96c81089cc7c5ba22d53a5c05d56480331961af8",
+      "status": "OK"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/drug_features.tab",
+      "actual_bytes": 10030011,
+      "sha256": "d9db67a3ae9e4e1bea6f50ac55c9e3152c30f9a128b45cec0d5b003fabdc30c6",
+      "status": "OK"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/disease_features.tab",
+      "actual_bytes": 113534270,
+      "sha256": "bdd18b39aae9c80e37c3716c2bfabaf854f6a5a7e44c8d2e5b082f0dd27124cb",
+      "status": "OK"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/stark_amazon/processed.zip",
+      "actual_bytes": 3524776983,
+      "sha256": "c0e07c7d91f1ac2d52819e604ffc0d33e66383082b1a944b123d31e61ddea976",
+      "status": "OK"
+    }
+  ],
+  "licenses": {
+    "primekg": {
+      "data": "CC0 1.0",
+      "source": "Harvard Dataverse doi:10.7910/DVN/IXA7BM v2.1",
+      "code": "MIT (github.com/mims-harvard/PrimeKG)"
+    },
+    "stark_amazon": {
+      "data": "CC-BY-4.0",
+      "source": "HF snap-stanford/stark skb/amazon",
+      "code": "MIT (github.com/snap-stanford/stark)"
+    }
+  }
+}

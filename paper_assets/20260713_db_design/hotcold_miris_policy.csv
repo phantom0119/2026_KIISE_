@@ -1,0 +1,7 @@
+predicate,selectivity,recall_global_relaxed,recall_global_off,recall_partial,L_global_ms,L_partial_ms,build_partial_s,partial_index_mb,latency_gain_ms,breakeven_queries_Nstar,quality_forced_local,policy
+hour = 6,0.0416,1.0,1.0,1.0,7.779,0.343,0.6,6.41,7.436,80.7,False,LOCAL if hot: >81 q
+hour BETWEEN 7 AND 7,0.0417,1.0,1.0,0.9999,7.618,0.318,0.61,6.42,7.3,83.6,False,LOCAL if hot: >84 q
+hour BETWEEN 6 AND 9,0.1666,0.9956,0.6141,0.9992,0.681,0.384,2.82,25.61,0.297,9494.9,False,LOCAL if hot: >9495 q
+hour BETWEEN 6 AND 12,0.2917,0.9939,0.77,0.9981,0.576,0.394,5.52,44.85,0.182,30329.7,False,LOCAL if hot: >30330 q
+hour BETWEEN 6 AND 18,0.5415,0.9959,0.8998,0.9979,0.54,0.442,11.66,83.24,0.098,118979.6,False,LOCAL if hot: >118980 q
+hour BETWEEN 6 AND 21,0.6665,0.9973,0.9375,0.9991,0.496,0.485,15.75,102.45,0.011,1431818.2,False,LOCAL if hot: >1431818 q

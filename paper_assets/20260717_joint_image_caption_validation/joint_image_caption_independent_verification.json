@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "checks_passed": 17,
+  "checks_total": 17,
+  "checks": [
+    {
+      "check": "materialized_shapes",
+      "pass": true,
+      "matched_shape": [
+        3000,
+        2048
+      ],
+      "shuffled_shape": [
+        3000,
+        2048
+      ]
+    },
+    {
+      "check": "materialized_finite",
+      "pass": true
+    },
+    {
+      "check": "materialized_l2_norm",
+      "pass": true,
+      "matched_min": 0.9975043535232544,
+      "matched_max": 1.0024704933166504,
+      "shuffled_min": 0.9973824620246887,
+      "shuffled_max": 1.0024597644805908
+    },
+    {
+      "check": "matched_pairing",
+      "pass": true,
+      "matched": 3000
+    },
+    {
+      "check": "shuffled_derangement",
+      "pass": true,
+      "fixed_points": 0,
+      "unique_caption_sources": 3000
+    },
+    {
+      "check": "materialized_clip_order",
+      "pass": true
+    },
+    {
+      "check": "frozen_encoder_settings",
+      "pass": true
+    },
+    {
+      "check": "control_cell_counts",
+      "pass": true,
+      "metric_rows": 680
+    },
+    {
+      "check": "control_summary_recomputed",
+      "pass": true
+    },
+    {
+      "check": "control_delta_recomputed",
+      "pass": true,
+      "recomputed": 0.03715989486128435,
+      "reported": 0.0371598948612843
+    },
+    {
+      "check": "raw_ranking_ndcg_recomputed",
+      "pass": true,
+      "recomputed": 0.21816450040594734,
+      "reported": 0.2181645004059473
+    },
+    {
+      "check": "grid_configuration_counts",
+      "pass": true,
+      "configs": 112,
+      "joint_configs": 21
+    },
+    {
+      "check": "grid_metric_cell_counts",
+      "pass": true,
+      "metric_rows": 19040
+    },
+    {
+      "check": "grid_summary_recomputed",
+      "pass": true
+    },
+    {
+      "check": "control_grid_joint_anchor_equal",
+      "pass": true,
+      "controls": 0.2181645004059473,
+      "grid": 0.2181645004059473
+    },
+    {
+      "check": "joint_filtered_rankings_obey_predicates",
+      "pass": true,
+      "rankings": 81053,
+      "violations": 0
+    },
+    {
+      "check": "strict_qrel_logic",
+      "pass": true
+    }
+  ]
+}

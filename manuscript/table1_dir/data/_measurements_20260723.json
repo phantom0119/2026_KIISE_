@@ -1,0 +1,14 @@
+{
+  "measured_at": "2026-07-23",
+  "purpose": "표 1 검증 중 data/ 사본으로 담을 수 없는 대용량 원천의 읽기 전용 실측 기록 (npy 헤더만 판독, 본문 미적재)",
+  "npy_header_shapes": {
+    "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/sinnaedoro_traffic/corpus_real/frame_embeddings.npy": [132521, 512],
+    "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/visual_embeddings_clip/frame_embeddings.npy": [143830, 512]
+  },
+  "method": "python3: numpy.lib.format.read_magic + _read_array_header (데이터 본문을 메모리에 올리지 않는 헤더 판독)",
+  "postgres_miris": {
+    "table": "miris_frames2 (port 5433)",
+    "status": "이번 검증에서는 psql 클라이언트 부재로 직접 count(*) 미수행",
+    "recorded_count": "59019 x 512 — data/miris/pgvector_partial_manifest_miris2.json 및 DATA_PROVENANCE_raw_vs_derived_20260715.md 5.4절(2026-07-15 실측 59,019행)에 기록"
+  }
+}

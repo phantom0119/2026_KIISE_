@@ -1,0 +1,1417 @@
+{
+  "system": {
+    "created_at": "2026-07-07T07:17:25.502044+00:00",
+    "hostname": "explorer-DL",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "python_executable": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/envs/kiise-vlmdb/bin/python",
+    "python_version": "3.10.20",
+    "environment_variables": {
+      "CONDA_PREFIX": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/envs/kiise-vlmdb",
+      "CUDA_VISIBLE_DEVICES": null,
+      "HF_HOME": "/hdd2/huggingface_cache",
+      "TRANSFORMERS_CACHE": null,
+      "HF_DATASETS_CACHE": null,
+      "TOKENIZERS_PARALLELISM": null,
+      "OMP_NUM_THREADS": null,
+      "MKL_NUM_THREADS": null
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "torch": "2.12.1+cu130",
+      "transformers": "5.13.0",
+      "sentence-transformers": "5.6.0",
+      "faiss-cpu": "1.14.3",
+      "faiss-gpu": null,
+      "rank-bm25": "unknown",
+      "pgvector": "unknown",
+      "psycopg": "3.3.4",
+      "opencv-python": "5.0.0",
+      "pillow": "12.3.0"
+    },
+    "datasets_root": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets",
+      "resolved": "/hdd2/KIISE_datasociety/Datasets",
+      "total_gib": 3666.45,
+      "used_gib": 1137.85,
+      "free_gib": 2342.29
+    },
+    "project_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety",
+    "gpu": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "0, NVIDIA GeForce RTX 3090, 24576 MiB, 580.126.09\n1, NVIDIA GeForce RTX 3090, 24576 MiB, 580.126.09",
+      "stderr": ""
+    },
+    "cpu": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nByte Order:                           Little Endian\nAddress sizes:                        39 bits physical, 48 bits virtual\nCPU(s):                               8\nOn-line CPU(s) list:                  0-7\nThread(s) per core:                   1\nCore(s) per socket:                   8\nSocket(s):                            1\nNUMA node(s):                         1\nVendor ID:                            GenuineIntel\nCPU family:                           6\nModel:                                158\nModel name:                           Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz\nStepping:                             12\nCPU MHz:                              4450.936\nCPU max MHz:                          4900.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             7200.00\nVirtualization:                       VT-x\nL1d cache:                            256 KiB\nL1i cache:                            256 KiB\nL2 cache:                             2 MiB\nL3 cache:                             12 MiB\nNUMA node0 CPU(s):                    0-7\nVulnerability Gather data sampling:   Mitigation; Microcode\nVulnerability Itlb multihit:          KVM: Mitigation: VMX disabled\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                  Mitigation; Microcode\nVulnerability Tsx async abort:        Mitigation; TSX disabled\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d arch_capabilities",
+      "stderr": ""
+    },
+    "memory": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "total        used        free      shared  buff/cache   available\nMem:           62Gi       4.0Gi       1.1Gi       266Mi        57Gi        57Gi\nSwap:          15Gi       3.6Gi        12Gi",
+      "stderr": ""
+    },
+    "df": {
+      "ok": true,
+      "returncode": 0,
+      "stdout": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p2  916G  518G  352G  60% /\n/dev/sda1       3.6T  1.2T  2.3T  33% /hdd2",
+      "stderr": ""
+    }
+  },
+  "datasets": {
+    "vru_accident": {
+      "role": "main true multimodal 1",
+      "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706",
+      "canonical": {
+        "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/canonical",
+        "counts": {
+          "clips": 1000,
+          "documents": 7000,
+          "metadata_rows": 6000,
+          "queries": 244,
+          "qrels": 5488,
+          "unique_qrel_targets": 994
+        },
+        "schema_columns": {
+          "clips": [
+            "clip_id",
+            "dataset_id",
+            "source_split",
+            "subset",
+            "video_stem",
+            "media_type",
+            "media_path",
+            "duration_sec",
+            "media_exists"
+          ],
+          "documents": [
+            "doc_id",
+            "clip_id",
+            "dataset_id",
+            "doc_type",
+            "text",
+            "lang",
+            "source"
+          ],
+          "metadata": [
+            "clip_id",
+            "dataset_id",
+            "facet_name",
+            "facet_value",
+            "facet_source",
+            "confidence",
+            "raw_category",
+            "raw_answer",
+            "raw_options"
+          ],
+          "qrels": [
+            "query_id",
+            "target_id",
+            "target_type",
+            "relevance"
+          ]
+        },
+        "integrity": {
+          "qrel_targets_not_in_clips": 0,
+          "queries_without_qrels": 0,
+          "positive_count_mismatches": 0,
+          "metadata_filter_queries": 205,
+          "metadata_filter_candidate_stats": {
+            "count": 205,
+            "min": 2,
+            "median": 111.0,
+            "max": 873
+          },
+          "metadata_filter_zero_candidate_queries": 0,
+          "qrels_outside_metadata_candidates": 0
+        }
+      },
+      "frame_manifest": {
+        "created_at": "2026-07-07T02:42:21.226996+00:00",
+        "canonical_root": "Datasets/processed/vru_accident/20260706/canonical",
+        "output_dir": "Datasets/processed/vru_accident/20260706/keyframes/clip4_full",
+        "frames_per_clip": 4,
+        "strategy": "uniform",
+        "image_size": 512,
+        "clips_seen": 1000,
+        "clips_with_frames": 1000,
+        "frames": 4000,
+        "errors": 0
+      },
+      "text_embeddings": {
+        "bge-m3": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/embeddings/bge-m3",
+          "manifest": {
+            "created_at": "2026-07-06T08:06:25.232997+00:00",
+            "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/canonical",
+            "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/embeddings/bge-m3",
+            "model_id": "bge-m3",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 7000,
+            "query_count": 244,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              7000,
+              1024
+            ],
+            "query_embeddings": [
+              244,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        },
+        "e5-large-v2": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/embeddings/e5-large-v2",
+          "manifest": {
+            "created_at": "2026-07-06T08:09:19.301751+00:00",
+            "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/canonical",
+            "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/embeddings/e5-large-v2",
+            "model_id": "e5-large-v2",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/intfloat--e5-large-v2",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 7000,
+            "query_count": 244,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              7000,
+              1024
+            ],
+            "query_embeddings": [
+              244,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        }
+      },
+      "result_manifests": {
+        "results/image_to_video_clip_full/run_manifest.json": {
+          "created_at": "2026-07-07T02:51:41.554704+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 2,
+          "service_contract": null,
+          "counts": {
+            "frames": 4000,
+            "queries": 1000,
+            "result_rows": 100000
+          }
+        },
+        "results/image_to_video_clip_full_qseq0/run_manifest.json": {
+          "created_at": "2026-07-07T06:09:58.295670+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 0,
+          "service_contract": null,
+          "counts": {
+            "frames": 4000,
+            "queries": 1000,
+            "result_rows": 100000
+          }
+        },
+        "results/image_to_video_clip_full_qseq1/run_manifest.json": {
+          "created_at": "2026-07-07T06:10:00.022786+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 1,
+          "service_contract": null,
+          "counts": {
+            "frames": 4000,
+            "queries": 1000,
+            "result_rows": 100000
+          }
+        },
+        "results/image_to_video_clip_full_qseq3/run_manifest.json": {
+          "created_at": "2026-07-07T06:09:59.819308+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 3,
+          "service_contract": null,
+          "counts": {
+            "frames": 4000,
+            "queries": 1000,
+            "result_rows": 100000
+          }
+        },
+        "results/multimodal_fusion_clip_bgem3_m5_m6/run_manifest.json": {
+          "created_at": "2026-07-07T02:49:34.959471+00:00",
+          "strategies": [
+            {
+              "strategy": "M5_text_visual_rrf",
+              "text_strategy": "B2_vector_only",
+              "visual_strategy": "M2_visual_vector_only",
+              "description": "text dense retrieval plus visual text-to-frame retrieval without metadata filtering"
+            },
+            {
+              "strategy": "M6_text_visual_metadata_rrf",
+              "text_strategy": "B5_hybrid",
+              "visual_strategy": "M4_metadata_prefilter_visual",
+              "description": "metadata-aware text hybrid retrieval plus metadata-aware visual text-to-frame retrieval"
+            }
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": 60,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 42770
+          }
+        },
+        "results/visual_clip_full_m2_m4/run_manifest.json": {
+          "created_at": "2026-07-07T02:43:14.970271+00:00",
+          "strategies": [
+            "M2_visual_vector_only",
+            "M4_metadata_prefilter_visual"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "frames": 4000,
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 42770
+          }
+        },
+        "results/visual_clip_pilot_m2_m4/run_manifest.json": {
+          "created_at": "2026-07-07T02:39:53.057202+00:00",
+          "strategies": [
+            "M2_visual_vector_only",
+            "M4_metadata_prefilter_visual"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "frames": 20,
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 1665
+          }
+        },
+        "results/vru_bgem3_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-06T08:08:32.147621+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 1000,
+            "documents": 7000,
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 116609
+          }
+        },
+        "results/vru_bgem3_pgvector_p2_p4/run_manifest.json": {
+          "created_at": "2026-07-06T08:59:27.629624+00:00",
+          "strategies": [
+            "P2_pgvector_vector_only",
+            "P4_pgvector_prefilter_vector"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 1000,
+            "documents": 7000,
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 42770
+          }
+        },
+        "results/vru_e5_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-06T08:11:28.489747+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 1000,
+            "documents": 7000,
+            "queries": 244,
+            "qrels": 5488,
+            "result_rows": 117940
+          }
+        },
+        "results/weighted_fusion_rerank_sweep_bgem3_clip/run_manifest.json": {
+          "created_at": "2026-07-07T05:12:07.743798+00:00",
+          "strategies": "B5_hybrid",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": 60,
+          "weights": [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              2.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              2.0
+            ],
+            [
+              1.0,
+              4.0
+            ],
+            [
+              3.0,
+              1.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "queries": 244,
+            "result_rows": 128590
+          }
+        },
+        "service_testbed/m6_im1_top5/run_manifest.json": {
+          "created_at": "2026-07-07T05:14:14.594003+00:00",
+          "strategies": "M6_text_visual_metadata_rrf",
+          "top_ks": null,
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": {
+            "llm_used": false,
+            "vlm_generation_used": false,
+            "answer_policy": "Evidence-only extractive answer context."
+          },
+          "counts": {
+            "packets": 1244,
+            "evidence_rows": 6203,
+            "text_packets": 244,
+            "image_packets": 1000
+          }
+        },
+        "service_testbed/rw_t4_v1_im1_top5/run_manifest.json": {
+          "created_at": "2026-07-07T05:14:14.624762+00:00",
+          "strategies": "RW_t4_v1",
+          "top_ks": null,
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": {
+            "llm_used": false,
+            "vlm_generation_used": false,
+            "answer_policy": "Evidence-only extractive answer context."
+          },
+          "counts": {
+            "packets": 1244,
+            "evidence_rows": 6203,
+            "text_packets": 244,
+            "image_packets": 1000
+          }
+        }
+      },
+      "image_frame_sensitivity": [
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/image_to_video_clip_full_qseq0",
+          "query_frame_seq": 0,
+          "queries": 1000,
+          "recall_at_1": 0.596,
+          "recall_at_5": 0.863,
+          "recall_at_10": 0.902,
+          "mrr": 0.720314701424499,
+          "ndcg_at_10": 0.7629663345289026
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/image_to_video_clip_full_qseq1",
+          "query_frame_seq": 1,
+          "queries": 1000,
+          "recall_at_1": 0.732,
+          "recall_at_5": 0.964,
+          "recall_at_10": 0.981,
+          "mrr": 0.8404454576839835,
+          "ndcg_at_10": 0.8754875035622102
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/image_to_video_clip_full",
+          "query_frame_seq": 2,
+          "queries": 1000,
+          "recall_at_1": 0.755,
+          "recall_at_5": 0.966,
+          "recall_at_10": 0.98,
+          "mrr": 0.8566700571624492,
+          "ndcg_at_10": 0.8874971932348847
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/image_to_video_clip_full_qseq3",
+          "query_frame_seq": 3,
+          "queries": 1000,
+          "recall_at_1": 0.733,
+          "recall_at_5": 0.954,
+          "recall_at_10": 0.968,
+          "mrr": 0.837002286833879,
+          "ndcg_at_10": 0.8694325840579908
+        }
+      ],
+      "visual_embedding": {
+        "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/visual_embeddings/clip-vit-base-patch32_full",
+        "manifest": {
+          "created_at": "2026-07-07T02:42:47.729948+00:00",
+          "canonical_root": "Datasets/processed/vru_accident/20260706/canonical",
+          "frame_root": "Datasets/processed/vru_accident/20260706/keyframes/clip4_full",
+          "output_dir": "Datasets/processed/vru_accident/20260706/visual_embeddings/clip-vit-base-patch32_full",
+          "model_key": "clip-vit-base-patch32",
+          "model_path_or_id": "openai/clip-vit-base-patch32",
+          "device": "cuda",
+          "batch_size": 64,
+          "frame_count": 4000,
+          "query_count": 244,
+          "embedding_dim": 512,
+          "normalize_embeddings": true,
+          "files": {
+            "frame_embeddings": "frame_embeddings.npy",
+            "query_text_embeddings": "query_text_embeddings.npy",
+            "frame_index": "frame_index.parquet",
+            "query_index": "query_index.jsonl"
+          }
+        },
+        "shapes": {
+          "frame_embeddings": [
+            4000,
+            512
+          ],
+          "query_text_embeddings": [
+            244,
+            512
+          ],
+          "frame_index_rows": 4000
+        },
+        "shape_matches_manifest": true
+      }
+    },
+    "aihub_intelligent_cctv": {
+      "role": "main true multimodal 2",
+      "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706",
+      "canonical": {
+        "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+        "counts": {
+          "clips": 269,
+          "documents": 807,
+          "metadata_rows": 2563,
+          "queries": 133,
+          "qrels": 1358,
+          "unique_qrel_targets": 269
+        },
+        "schema_columns": {
+          "clips": [
+            "clip_id",
+            "dataset_id",
+            "source_split",
+            "event_slug",
+            "event_name",
+            "event_class",
+            "file_stem",
+            "media_type",
+            "media_path",
+            "label_path",
+            "duration_sec",
+            "width",
+            "height",
+            "frame_count",
+            "event_start_frame",
+            "event_end_frame",
+            "event_length_sec",
+            "media_exists",
+            "label_exists"
+          ],
+          "documents": [
+            "doc_id",
+            "clip_id",
+            "dataset_id",
+            "doc_type",
+            "text",
+            "lang",
+            "source"
+          ],
+          "metadata": [
+            "clip_id",
+            "dataset_id",
+            "facet_name",
+            "facet_value",
+            "facet_source",
+            "confidence"
+          ],
+          "qrels": [
+            "query_id",
+            "target_id",
+            "target_type",
+            "relevance"
+          ]
+        },
+        "integrity": {
+          "qrel_targets_not_in_clips": 0,
+          "queries_without_qrels": 0,
+          "positive_count_mismatches": 0,
+          "metadata_filter_queries": 111,
+          "metadata_filter_candidate_stats": {
+            "count": 111,
+            "min": 2,
+            "median": 8.0,
+            "max": 152
+          },
+          "metadata_filter_zero_candidate_queries": 0,
+          "qrels_outside_metadata_candidates": 0
+        }
+      },
+      "frame_manifest": {
+        "created_at": "2026-07-07T02:46:27.429923+00:00",
+        "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+        "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/keyframes/event4_full",
+        "frames_per_clip": 4,
+        "strategy": "event",
+        "image_size": 512,
+        "clips_seen": 269,
+        "clips_with_frames": 269,
+        "frames": 1076,
+        "errors": 0
+      },
+      "text_embeddings": {
+        "bge-m3": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/bge-m3",
+          "manifest": {
+            "created_at": "2026-07-06T08:52:00.406892+00:00",
+            "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+            "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/bge-m3",
+            "model_id": "bge-m3",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 807,
+            "query_count": 133,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              807,
+              1024
+            ],
+            "query_embeddings": [
+              133,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        },
+        "e5-large-v2": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/e5-large-v2",
+          "manifest": {
+            "created_at": "2026-07-06T08:52:56.863319+00:00",
+            "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+            "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/e5-large-v2",
+            "model_id": "e5-large-v2",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/intfloat--e5-large-v2",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 807,
+            "query_count": 133,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              807,
+              1024
+            ],
+            "query_embeddings": [
+              133,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        }
+      },
+      "result_manifests": {
+        "results/aihub_bgem3_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-06T08:52:17.163327+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 269,
+            "documents": 807,
+            "queries": 133,
+            "qrels": 1358,
+            "result_rows": 42256
+          }
+        },
+        "results/aihub_e5_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-06T08:53:12.506177+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 269,
+            "documents": 807,
+            "queries": 133,
+            "qrels": 1358,
+            "result_rows": 42429
+          }
+        },
+        "results/event_grounding_im1_image/run_manifest.json": {
+          "created_at": "2026-07-07T02:58:26.345321+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10
+          ],
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "result_rows": 26900,
+            "queries": 269,
+            "frames_with_event_hit": 26900
+          }
+        },
+        "results/event_grounding_m4_visual/run_manifest.json": {
+          "created_at": "2026-07-07T02:58:26.105545+00:00",
+          "strategies": "M4_metadata_prefilter_visual",
+          "top_ks": [
+            1,
+            5,
+            10
+          ],
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "result_rows": 3971,
+            "queries": 133,
+            "frames_with_event_hit": 3971
+          }
+        },
+        "results/event_grounding_m6_fusion/run_manifest.json": {
+          "created_at": "2026-07-07T02:58:26.505292+00:00",
+          "strategies": "M6_text_visual_metadata_rrf",
+          "top_ks": [
+            1,
+            5,
+            10
+          ],
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "result_rows": 3971,
+            "queries": 133,
+            "frames_with_event_hit": 3337
+          }
+        },
+        "results/image_to_video_clip_full/run_manifest.json": {
+          "created_at": "2026-07-07T02:51:53.869544+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 2,
+          "service_contract": null,
+          "counts": {
+            "frames": 1076,
+            "queries": 269,
+            "result_rows": 26900
+          }
+        },
+        "results/image_to_video_clip_full_qseq0/run_manifest.json": {
+          "created_at": "2026-07-07T06:09:30.027623+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 0,
+          "service_contract": null,
+          "counts": {
+            "frames": 1076,
+            "queries": 269,
+            "result_rows": 26900
+          }
+        },
+        "results/image_to_video_clip_full_qseq1/run_manifest.json": {
+          "created_at": "2026-07-07T06:09:30.808230+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 1,
+          "service_contract": null,
+          "counts": {
+            "frames": 1076,
+            "queries": 269,
+            "result_rows": 26900
+          }
+        },
+        "results/image_to_video_clip_full_qseq3/run_manifest.json": {
+          "created_at": "2026-07-07T06:09:29.931440+00:00",
+          "strategies": "IM1_image_to_video_holdout",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": 3,
+          "service_contract": null,
+          "counts": {
+            "frames": 1076,
+            "queries": 269,
+            "result_rows": 26900
+          }
+        },
+        "results/multimodal_fusion_clip_bgem3_m5_m6/run_manifest.json": {
+          "created_at": "2026-07-07T02:49:43.798809+00:00",
+          "strategies": [
+            {
+              "strategy": "M5_text_visual_rrf",
+              "text_strategy": "B2_vector_only",
+              "visual_strategy": "M2_visual_vector_only",
+              "description": "text dense retrieval plus visual text-to-frame retrieval without metadata filtering"
+            },
+            {
+              "strategy": "M6_text_visual_metadata_rrf",
+              "text_strategy": "B5_hybrid",
+              "visual_strategy": "M4_metadata_prefilter_visual",
+              "description": "metadata-aware text hybrid retrieval plus metadata-aware visual text-to-frame retrieval"
+            }
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": 60,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "queries": 133,
+            "qrels": 1358,
+            "result_rows": 17271
+          }
+        },
+        "results/visual_clip_full_m2_m4/run_manifest.json": {
+          "created_at": "2026-07-07T02:46:59.850387+00:00",
+          "strategies": [
+            "M2_visual_vector_only",
+            "M4_metadata_prefilter_visual"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "frames": 1076,
+            "queries": 133,
+            "qrels": 1358,
+            "result_rows": 17271
+          }
+        },
+        "results/weighted_fusion_rerank_sweep_bgem3_clip/run_manifest.json": {
+          "created_at": "2026-07-07T05:12:21.956449+00:00",
+          "strategies": "B5_hybrid",
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": 60,
+          "weights": [
+            [
+              4.0,
+              1.0
+            ],
+            [
+              2.0,
+              1.0
+            ],
+            [
+              1.0,
+              1.0
+            ],
+            [
+              1.0,
+              2.0
+            ],
+            [
+              1.0,
+              4.0
+            ],
+            [
+              3.0,
+              1.0
+            ],
+            [
+              1.0,
+              3.0
+            ]
+          ],
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "queries": 133,
+            "result_rows": 27797
+          }
+        },
+        "service_testbed/m6_im1_top5/run_manifest.json": {
+          "created_at": "2026-07-07T05:14:13.743687+00:00",
+          "strategies": "M6_text_visual_metadata_rrf",
+          "top_ks": null,
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": {
+            "llm_used": false,
+            "vlm_generation_used": false,
+            "answer_policy": "Evidence-only extractive answer context."
+          },
+          "counts": {
+            "packets": 402,
+            "evidence_rows": 1937,
+            "text_packets": 133,
+            "image_packets": 269
+          }
+        },
+        "service_testbed/rw_t4_v1_im1_top5/run_manifest.json": {
+          "created_at": "2026-07-07T05:14:13.822972+00:00",
+          "strategies": "RW_t4_v1",
+          "top_ks": null,
+          "max_rank": null,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": {
+            "llm_used": false,
+            "vlm_generation_used": false,
+            "answer_policy": "Evidence-only extractive answer context."
+          },
+          "counts": {
+            "packets": 402,
+            "evidence_rows": 1937,
+            "text_packets": 133,
+            "image_packets": 269
+          }
+        }
+      },
+      "image_frame_sensitivity": [
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/results/image_to_video_clip_full_qseq0",
+          "query_frame_seq": 0,
+          "queries": 269,
+          "recall_at_1": 0.8550185873605948,
+          "recall_at_5": 0.9814126394052044,
+          "recall_at_10": 0.9962825278810408,
+          "mrr": 0.9122427139155764,
+          "ndcg_at_10": 0.9329887852138344
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/results/image_to_video_clip_full_qseq1",
+          "query_frame_seq": 1,
+          "queries": 269,
+          "recall_at_1": 0.8475836431226765,
+          "recall_at_5": 0.9888475836431226,
+          "recall_at_10": 0.9962825278810408,
+          "mrr": 0.9072168847261785,
+          "ndcg_at_10": 0.9295467765279738
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/results/image_to_video_clip_full",
+          "query_frame_seq": 2,
+          "queries": 269,
+          "recall_at_1": 0.8810408921933085,
+          "recall_at_5": 0.9851301115241636,
+          "recall_at_10": 1.0,
+          "mrr": 0.9258246297279754,
+          "ndcg_at_10": 0.9441803538857668
+        },
+        {
+          "result_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/results/image_to_video_clip_full_qseq3",
+          "query_frame_seq": 3,
+          "queries": 269,
+          "recall_at_1": 0.6951672862453532,
+          "recall_at_5": 0.8215613382899628,
+          "recall_at_10": 0.8327137546468402,
+          "mrr": 0.7461971195252145,
+          "ndcg_at_10": 0.7673457388385779
+        }
+      ],
+      "visual_embedding": {
+        "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/visual_embeddings/clip-vit-base-patch32_full",
+        "manifest": {
+          "created_at": "2026-07-07T02:46:46.472734+00:00",
+          "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+          "frame_root": "Datasets/processed/aihub_intelligent_cctv/20260706/keyframes/event4_full",
+          "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/visual_embeddings/clip-vit-base-patch32_full",
+          "model_key": "clip-vit-base-patch32",
+          "model_path_or_id": "openai/clip-vit-base-patch32",
+          "device": "cuda",
+          "batch_size": 64,
+          "frame_count": 1076,
+          "query_count": 133,
+          "embedding_dim": 512,
+          "normalize_embeddings": true,
+          "files": {
+            "frame_embeddings": "frame_embeddings.npy",
+            "query_text_embeddings": "query_text_embeddings.npy",
+            "frame_index": "frame_index.parquet",
+            "query_index": "query_index.jsonl"
+          }
+        },
+        "shapes": {
+          "frame_embeddings": [
+            1076,
+            512
+          ],
+          "query_text_embeddings": [
+            133,
+            512
+          ],
+          "frame_index_rows": 1076
+        },
+        "shape_matches_manifest": true
+      }
+    }
+  },
+  "supplementary_datasets": {
+    "aihub_abnormal_cctv": {
+      "role": "supplementary text/metadata baseline",
+      "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_abnormal_cctv/20260707",
+      "canonical": {
+        "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_abnormal_cctv/20260707/canonical",
+        "counts": {
+          "clips": 1968,
+          "documents": 5904,
+          "metadata_rows": 33456,
+          "queries": 424,
+          "qrels": 21639,
+          "unique_qrel_targets": 1968
+        },
+        "schema_columns": {
+          "clips": [
+            "clip_id",
+            "dataset_id",
+            "source_split",
+            "event_name",
+            "event_ko",
+            "event_variant",
+            "file_stem",
+            "file_name",
+            "media_path",
+            "media_zip_path",
+            "media_entry",
+            "media_size_bytes",
+            "label_path",
+            "label_entry",
+            "duration",
+            "fps",
+            "frames",
+            "width",
+            "height",
+            "event_starttime",
+            "event_duration",
+            "media_type",
+            "media_exists",
+            "label_exists"
+          ],
+          "documents": [
+            "doc_id",
+            "clip_id",
+            "dataset_id",
+            "doc_type",
+            "text",
+            "lang",
+            "source"
+          ],
+          "metadata": [
+            "clip_id",
+            "dataset_id",
+            "facet_name",
+            "facet_value",
+            "facet_source",
+            "confidence"
+          ],
+          "qrels": [
+            "query_id",
+            "target_id",
+            "target_type",
+            "relevance"
+          ]
+        },
+        "integrity": {
+          "qrel_targets_not_in_clips": 0,
+          "queries_without_qrels": 0,
+          "positive_count_mismatches": 0,
+          "metadata_filter_queries": 397,
+          "metadata_filter_candidate_stats": {
+            "count": 397,
+            "min": 3,
+            "median": 193.0,
+            "max": 1872
+          },
+          "metadata_filter_zero_candidate_queries": 0,
+          "qrels_outside_metadata_candidates": 0
+        }
+      },
+      "text_embeddings": {
+        "bge-m3": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_abnormal_cctv/20260707/embeddings/bge-m3",
+          "manifest": {
+            "created_at": "2026-07-07T01:22:21.300422+00:00",
+            "canonical_root": "Datasets/processed/aihub_abnormal_cctv/20260707/canonical",
+            "output_dir": "Datasets/processed/aihub_abnormal_cctv/20260707/embeddings/bge-m3",
+            "model_id": "bge-m3",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 5904,
+            "query_count": 424,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              5904,
+              1024
+            ],
+            "query_embeddings": [
+              424,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        },
+        "e5-large-v2": {
+          "root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_abnormal_cctv/20260707/embeddings/e5-large-v2",
+          "manifest": {
+            "created_at": "2026-07-07T01:26:32.965293+00:00",
+            "canonical_root": "Datasets/processed/aihub_abnormal_cctv/20260707/canonical",
+            "output_dir": "Datasets/processed/aihub_abnormal_cctv/20260707/embeddings/e5-large-v2",
+            "model_id": "e5-large-v2",
+            "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/intfloat--e5-large-v2",
+            "device": "cuda",
+            "batch_size": 16,
+            "normalize_embeddings": true,
+            "document_count": 5904,
+            "query_count": 424,
+            "embedding_dim": 1024,
+            "files": {
+              "document_embeddings": "document_embeddings.npy",
+              "query_embeddings": "query_embeddings.npy",
+              "document_index": "document_index.parquet",
+              "query_index": "query_index.parquet"
+            }
+          },
+          "shapes": {
+            "document_embeddings": [
+              5904,
+              1024
+            ],
+            "query_embeddings": [
+              424,
+              1024
+            ]
+          },
+          "shape_matches_manifest": true
+        }
+      },
+      "result_manifests": {
+        "results/abnormal_bgem3_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-07T01:25:26.066353+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 1968,
+            "documents": 5904,
+            "queries": 424,
+            "qrels": 21639,
+            "result_rows": 223405
+          }
+        },
+        "results/abnormal_e5_faiss_b0_b5/run_manifest.json": {
+          "created_at": "2026-07-07T01:29:32.359787+00:00",
+          "strategies": [
+            "B0_metadata_only",
+            "B1_bm25_only",
+            "B2_vector_only",
+            "B3_vector_postfilter",
+            "B4_prefilter_vector",
+            "B5_hybrid"
+          ],
+          "top_ks": [
+            1,
+            5,
+            10,
+            20
+          ],
+          "max_rank": 100,
+          "rrf_k": null,
+          "weights": null,
+          "query_frame_seq": null,
+          "service_contract": null,
+          "counts": {
+            "clips": 1968,
+            "documents": 5904,
+            "queries": 424,
+            "qrels": 21639,
+            "result_rows": 224347
+          }
+        }
+      }
+    }
+  },
+  "model_cache": {
+    "clip_cache_exists": true,
+    "siglip_cache_exists": false,
+    "bge_m3_cache_exists": true,
+    "e5_large_v2_cache_exists": true
+  }
+}

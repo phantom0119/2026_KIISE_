@@ -1,0 +1,246 @@
+{
+  "pass": 40,
+  "fail": 0,
+  "checks": [
+    {
+      "section": "V1",
+      "name": "sensor_facets 32,880",
+      "pass": true,
+      "detail": "32880"
+    },
+    {
+      "section": "V1",
+      "name": "63 intersections",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "visual_videos 52,462",
+      "pass": true,
+      "detail": "52462"
+    },
+    {
+      "section": "V1",
+      "name": "join_120s 47,308",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "annotation 52,210",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "frame emb/index aligned 143,830",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "embeddings L2-normalized",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "sinnaedoro 132,521x512",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V1",
+      "name": "captions 3,000 unique",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6 expanded overall_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.filter_keys_are_sensor_predicates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.relevance_from_annotation_channel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.filter_relevance_disjoint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.metadata_contains_no_relevance",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.document_token_leak_zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A6.headline_relevance_sparse",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A9.VRU overall_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "A9.AIHub overall_pass",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V2",
+      "name": "P1-A natural masks re-derive",
+      "pass": true,
+      "detail": "24/24"
+    },
+    {
+      "section": "V3",
+      "name": "prereg log Amendment 1",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "prereg log Amendment 2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "prereg log Amendment 3",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "prereg log Amendment 4",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "multiview prereg exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "85 queries == mechanical cross-product",
+      "pass": true,
+      "detail": "built=85 rule=85"
+    },
+    {
+      "section": "V3",
+      "name": "B-1 A control pairing complete",
+      "pass": true,
+      "detail": "reals=29 ctrls=29"
+    },
+    {
+      "section": "V3",
+      "name": "B-1 B control pairing complete",
+      "pass": true,
+      "detail": "reals=25 ctrls=25"
+    },
+    {
+      "section": "V3",
+      "name": "E-1 1K ladder all 27 rows",
+      "pass": true,
+      "detail": "27"
+    },
+    {
+      "section": "V3",
+      "name": "E-1a 143K ladder all 19 rows",
+      "pass": true,
+      "detail": "19"
+    },
+    {
+      "section": "V3",
+      "name": "orig/new/combined all reported",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "negative result doc 630 exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "dual qrels on all repaired workloads",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V3",
+      "name": "binning-bug correction disclosed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "section": "V4",
+      "name": "manuscript F5 verifier",
+      "pass": true,
+      "detail": "=== v2 F5 VERIFY: PASS 164 / FAIL 0 ==="
+    },
+    {
+      "section": "V5",
+      "name": "manuscript pins live PyTorch",
+      "pass": true,
+      "detail": "2.12.1+cu130"
+    },
+    {
+      "section": "V5",
+      "name": "manuscript pins live Transformers",
+      "pass": true,
+      "detail": "5.13.0"
+    },
+    {
+      "section": "V5",
+      "name": "manuscript pins live FAISS",
+      "pass": true,
+      "detail": "1.14.3"
+    },
+    {
+      "section": "V5",
+      "name": "manuscript pins pgvector 0.8.4",
+      "pass": true,
+      "detail": "0.8.4"
+    },
+    {
+      "section": "V5",
+      "name": "manuscript pins PG 16",
+      "pass": true,
+      "detail": "16.14 (Debian 16.14-1.pgdg12+1)"
+    },
+    {
+      "section": "V5",
+      "name": "GPU spec captured",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

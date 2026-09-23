@@ -1,0 +1,626 @@
+pair,kind,selectivity,replicate,method,recall_at_10
+time_of_day==morning,natural,0.25724,1,postfilter_hnsw_K1x,0.8895
+time_of_day==morning,natural,0.25724,1,postfilter_hnsw_K2x,0.999
+time_of_day==morning,natural,0.25724,1,postfilter_hnsw_K4x,0.999
+time_of_day==morning,natural,0.25724,1,single_stage_ivf_batch_np8,0.9975
+time_of_day==morning,natural,0.25724,1,single_stage_ivf_batch_np32,1.0
+time_of_day==morning,natural,0.25724,2,postfilter_hnsw_K1x,0.8755
+time_of_day==morning,natural,0.25724,2,postfilter_hnsw_K2x,0.9985
+time_of_day==morning,natural,0.25724,2,postfilter_hnsw_K4x,0.9985
+time_of_day==morning,natural,0.25724,2,single_stage_ivf_batch_np8,0.9965
+time_of_day==morning,natural,0.25724,2,single_stage_ivf_batch_np32,1.0
+time_of_day==morning,natural,0.25724,3,postfilter_hnsw_K1x,0.9005
+time_of_day==morning,natural,0.25724,3,postfilter_hnsw_K2x,0.999
+time_of_day==morning,natural,0.25724,3,postfilter_hnsw_K4x,0.999
+time_of_day==morning,natural,0.25724,3,single_stage_ivf_batch_np8,0.996
+time_of_day==morning,natural,0.25724,3,single_stage_ivf_batch_np32,0.9995
+time_of_day==morning,natural,0.25724,4,postfilter_hnsw_K1x,0.905
+time_of_day==morning,natural,0.25724,4,postfilter_hnsw_K2x,0.999
+time_of_day==morning,natural,0.25724,4,postfilter_hnsw_K4x,0.999
+time_of_day==morning,natural,0.25724,4,single_stage_ivf_batch_np8,0.9955
+time_of_day==morning,natural,0.25724,4,single_stage_ivf_batch_np32,1.0
+time_of_day==morning,natural,0.25724,5,postfilter_hnsw_K1x,0.878
+time_of_day==morning,natural,0.25724,5,postfilter_hnsw_K2x,0.9965
+time_of_day==morning,natural,0.25724,5,postfilter_hnsw_K4x,0.9965
+time_of_day==morning,natural,0.25724,5,single_stage_ivf_batch_np8,0.9955
+time_of_day==morning,natural,0.25724,5,single_stage_ivf_batch_np32,1.0
+time_of_day==afternoon,natural,0.34762,1,postfilter_hnsw_K1x,0.9125
+time_of_day==afternoon,natural,0.34762,1,postfilter_hnsw_K2x,0.9995
+time_of_day==afternoon,natural,0.34762,1,postfilter_hnsw_K4x,0.9995
+time_of_day==afternoon,natural,0.34762,1,single_stage_ivf_batch_np8,0.9955
+time_of_day==afternoon,natural,0.34762,1,single_stage_ivf_batch_np32,1.0
+time_of_day==afternoon,natural,0.34762,2,postfilter_hnsw_K1x,0.909
+time_of_day==afternoon,natural,0.34762,2,postfilter_hnsw_K2x,0.9995
+time_of_day==afternoon,natural,0.34762,2,postfilter_hnsw_K4x,0.9995
+time_of_day==afternoon,natural,0.34762,2,single_stage_ivf_batch_np8,0.997
+time_of_day==afternoon,natural,0.34762,2,single_stage_ivf_batch_np32,1.0
+time_of_day==afternoon,natural,0.34762,3,postfilter_hnsw_K1x,0.9065
+time_of_day==afternoon,natural,0.34762,3,postfilter_hnsw_K2x,0.9995
+time_of_day==afternoon,natural,0.34762,3,postfilter_hnsw_K4x,1.0
+time_of_day==afternoon,natural,0.34762,3,single_stage_ivf_batch_np8,0.998
+time_of_day==afternoon,natural,0.34762,3,single_stage_ivf_batch_np32,1.0
+time_of_day==afternoon,natural,0.34762,4,postfilter_hnsw_K1x,0.9035
+time_of_day==afternoon,natural,0.34762,4,postfilter_hnsw_K2x,0.9995
+time_of_day==afternoon,natural,0.34762,4,postfilter_hnsw_K4x,0.9995
+time_of_day==afternoon,natural,0.34762,4,single_stage_ivf_batch_np8,0.998
+time_of_day==afternoon,natural,0.34762,4,single_stage_ivf_batch_np32,1.0
+time_of_day==afternoon,natural,0.34762,5,postfilter_hnsw_K1x,0.9015
+time_of_day==afternoon,natural,0.34762,5,postfilter_hnsw_K2x,0.9995
+time_of_day==afternoon,natural,0.34762,5,postfilter_hnsw_K4x,1.0
+time_of_day==afternoon,natural,0.34762,5,single_stage_ivf_batch_np8,0.9975
+time_of_day==afternoon,natural,0.34762,5,single_stage_ivf_batch_np32,1.0
+time_of_day==evening,natural,0.29478,1,postfilter_hnsw_K1x,0.903
+time_of_day==evening,natural,0.29478,1,postfilter_hnsw_K2x,1.0
+time_of_day==evening,natural,0.29478,1,postfilter_hnsw_K4x,1.0
+time_of_day==evening,natural,0.29478,1,single_stage_ivf_batch_np8,0.9965
+time_of_day==evening,natural,0.29478,1,single_stage_ivf_batch_np32,1.0
+time_of_day==evening,natural,0.29478,2,postfilter_hnsw_K1x,0.89
+time_of_day==evening,natural,0.29478,2,postfilter_hnsw_K2x,0.9995
+time_of_day==evening,natural,0.29478,2,postfilter_hnsw_K4x,0.9995
+time_of_day==evening,natural,0.29478,2,single_stage_ivf_batch_np8,0.9975
+time_of_day==evening,natural,0.29478,2,single_stage_ivf_batch_np32,1.0
+time_of_day==evening,natural,0.29478,3,postfilter_hnsw_K1x,0.9165
+time_of_day==evening,natural,0.29478,3,postfilter_hnsw_K2x,0.9995
+time_of_day==evening,natural,0.29478,3,postfilter_hnsw_K4x,0.9995
+time_of_day==evening,natural,0.29478,3,single_stage_ivf_batch_np8,0.999
+time_of_day==evening,natural,0.29478,3,single_stage_ivf_batch_np32,1.0
+time_of_day==evening,natural,0.29478,4,postfilter_hnsw_K1x,0.906
+time_of_day==evening,natural,0.29478,4,postfilter_hnsw_K2x,0.9995
+time_of_day==evening,natural,0.29478,4,postfilter_hnsw_K4x,0.9995
+time_of_day==evening,natural,0.29478,4,single_stage_ivf_batch_np8,0.996
+time_of_day==evening,natural,0.29478,4,single_stage_ivf_batch_np32,0.999
+time_of_day==evening,natural,0.29478,5,postfilter_hnsw_K1x,0.889
+time_of_day==evening,natural,0.29478,5,postfilter_hnsw_K2x,0.9995
+time_of_day==evening,natural,0.29478,5,postfilter_hnsw_K4x,0.9995
+time_of_day==evening,natural,0.29478,5,single_stage_ivf_batch_np8,0.995
+time_of_day==evening,natural,0.29478,5,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==True,natural,0.62846,1,postfilter_hnsw_K1x,0.932
+sig_has_yellow==True,natural,0.62846,1,postfilter_hnsw_K2x,1.0
+sig_has_yellow==True,natural,0.62846,1,postfilter_hnsw_K4x,1.0
+sig_has_yellow==True,natural,0.62846,1,single_stage_ivf_batch_np8,0.998
+sig_has_yellow==True,natural,0.62846,1,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==True,natural,0.62846,2,postfilter_hnsw_K1x,0.9355
+sig_has_yellow==True,natural,0.62846,2,postfilter_hnsw_K2x,1.0
+sig_has_yellow==True,natural,0.62846,2,postfilter_hnsw_K4x,1.0
+sig_has_yellow==True,natural,0.62846,2,single_stage_ivf_batch_np8,0.9985
+sig_has_yellow==True,natural,0.62846,2,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==True,natural,0.62846,3,postfilter_hnsw_K1x,0.9345
+sig_has_yellow==True,natural,0.62846,3,postfilter_hnsw_K2x,1.0
+sig_has_yellow==True,natural,0.62846,3,postfilter_hnsw_K4x,1.0
+sig_has_yellow==True,natural,0.62846,3,single_stage_ivf_batch_np8,0.9985
+sig_has_yellow==True,natural,0.62846,3,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==True,natural,0.62846,4,postfilter_hnsw_K1x,0.9215
+sig_has_yellow==True,natural,0.62846,4,postfilter_hnsw_K2x,1.0
+sig_has_yellow==True,natural,0.62846,4,postfilter_hnsw_K4x,1.0
+sig_has_yellow==True,natural,0.62846,4,single_stage_ivf_batch_np8,0.999
+sig_has_yellow==True,natural,0.62846,4,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==True,natural,0.62846,5,postfilter_hnsw_K1x,0.9325
+sig_has_yellow==True,natural,0.62846,5,postfilter_hnsw_K2x,1.0
+sig_has_yellow==True,natural,0.62846,5,postfilter_hnsw_K4x,1.0
+sig_has_yellow==True,natural,0.62846,5,single_stage_ivf_batch_np8,0.9975
+sig_has_yellow==True,natural,0.62846,5,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==True,natural,0.39096,1,postfilter_hnsw_K1x,0.9105
+sig_has_pedestrian==True,natural,0.39096,1,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==True,natural,0.39096,1,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==True,natural,0.39096,1,single_stage_ivf_batch_np8,0.9975
+sig_has_pedestrian==True,natural,0.39096,1,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==True,natural,0.39096,2,postfilter_hnsw_K1x,0.9065
+sig_has_pedestrian==True,natural,0.39096,2,postfilter_hnsw_K2x,0.9995
+sig_has_pedestrian==True,natural,0.39096,2,postfilter_hnsw_K4x,0.9995
+sig_has_pedestrian==True,natural,0.39096,2,single_stage_ivf_batch_np8,0.9975
+sig_has_pedestrian==True,natural,0.39096,2,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==True,natural,0.39096,3,postfilter_hnsw_K1x,0.9115
+sig_has_pedestrian==True,natural,0.39096,3,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==True,natural,0.39096,3,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==True,natural,0.39096,3,single_stage_ivf_batch_np8,0.997
+sig_has_pedestrian==True,natural,0.39096,3,single_stage_ivf_batch_np32,0.9995
+sig_has_pedestrian==True,natural,0.39096,4,postfilter_hnsw_K1x,0.9025
+sig_has_pedestrian==True,natural,0.39096,4,postfilter_hnsw_K2x,0.9995
+sig_has_pedestrian==True,natural,0.39096,4,postfilter_hnsw_K4x,0.9995
+sig_has_pedestrian==True,natural,0.39096,4,single_stage_ivf_batch_np8,0.9985
+sig_has_pedestrian==True,natural,0.39096,4,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==True,natural,0.39096,5,postfilter_hnsw_K1x,0.9295
+sig_has_pedestrian==True,natural,0.39096,5,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==True,natural,0.39096,5,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==True,natural,0.39096,5,single_stage_ivf_batch_np8,0.9975
+sig_has_pedestrian==True,natural,0.39096,5,single_stage_ivf_batch_np32,0.9995
+sig_has_yellow==False,natural,0.27117,1,postfilter_hnsw_K1x,0.899
+sig_has_yellow==False,natural,0.27117,1,postfilter_hnsw_K2x,0.9995
+sig_has_yellow==False,natural,0.27117,1,postfilter_hnsw_K4x,0.9995
+sig_has_yellow==False,natural,0.27117,1,single_stage_ivf_batch_np8,0.996
+sig_has_yellow==False,natural,0.27117,1,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==False,natural,0.27117,2,postfilter_hnsw_K1x,0.8815
+sig_has_yellow==False,natural,0.27117,2,postfilter_hnsw_K2x,0.998
+sig_has_yellow==False,natural,0.27117,2,postfilter_hnsw_K4x,0.998
+sig_has_yellow==False,natural,0.27117,2,single_stage_ivf_batch_np8,0.996
+sig_has_yellow==False,natural,0.27117,2,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==False,natural,0.27117,3,postfilter_hnsw_K1x,0.877
+sig_has_yellow==False,natural,0.27117,3,postfilter_hnsw_K2x,0.998
+sig_has_yellow==False,natural,0.27117,3,postfilter_hnsw_K4x,0.9985
+sig_has_yellow==False,natural,0.27117,3,single_stage_ivf_batch_np8,0.9955
+sig_has_yellow==False,natural,0.27117,3,single_stage_ivf_batch_np32,1.0
+sig_has_yellow==False,natural,0.27117,4,postfilter_hnsw_K1x,0.8695
+sig_has_yellow==False,natural,0.27117,4,postfilter_hnsw_K2x,0.9995
+sig_has_yellow==False,natural,0.27117,4,postfilter_hnsw_K4x,0.9995
+sig_has_yellow==False,natural,0.27117,4,single_stage_ivf_batch_np8,0.995
+sig_has_yellow==False,natural,0.27117,4,single_stage_ivf_batch_np32,0.9995
+sig_has_yellow==False,natural,0.27117,5,postfilter_hnsw_K1x,0.901
+sig_has_yellow==False,natural,0.27117,5,postfilter_hnsw_K2x,0.999
+sig_has_yellow==False,natural,0.27117,5,postfilter_hnsw_K4x,0.999
+sig_has_yellow==False,natural,0.27117,5,single_stage_ivf_batch_np8,0.998
+sig_has_yellow==False,natural,0.27117,5,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==False,natural,0.50868,1,postfilter_hnsw_K1x,0.942
+sig_has_pedestrian==False,natural,0.50868,1,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==False,natural,0.50868,1,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==False,natural,0.50868,1,single_stage_ivf_batch_np8,0.997
+sig_has_pedestrian==False,natural,0.50868,1,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==False,natural,0.50868,2,postfilter_hnsw_K1x,0.9145
+sig_has_pedestrian==False,natural,0.50868,2,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==False,natural,0.50868,2,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==False,natural,0.50868,2,single_stage_ivf_batch_np8,0.9975
+sig_has_pedestrian==False,natural,0.50868,2,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==False,natural,0.50868,3,postfilter_hnsw_K1x,0.9215
+sig_has_pedestrian==False,natural,0.50868,3,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==False,natural,0.50868,3,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==False,natural,0.50868,3,single_stage_ivf_batch_np8,0.998
+sig_has_pedestrian==False,natural,0.50868,3,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==False,natural,0.50868,4,postfilter_hnsw_K1x,0.913
+sig_has_pedestrian==False,natural,0.50868,4,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==False,natural,0.50868,4,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==False,natural,0.50868,4,single_stage_ivf_batch_np8,0.998
+sig_has_pedestrian==False,natural,0.50868,4,single_stage_ivf_batch_np32,1.0
+sig_has_pedestrian==False,natural,0.50868,5,postfilter_hnsw_K1x,0.9135
+sig_has_pedestrian==False,natural,0.50868,5,postfilter_hnsw_K2x,1.0
+sig_has_pedestrian==False,natural,0.50868,5,postfilter_hnsw_K4x,1.0
+sig_has_pedestrian==False,natural,0.50868,5,single_stage_ivf_batch_np8,0.998
+sig_has_pedestrian==False,natural,0.50868,5,single_stage_ivf_batch_np32,1.0
+veh_density_bin==low,natural,0.29764,1,postfilter_hnsw_K1x,0.8895
+veh_density_bin==low,natural,0.29764,1,postfilter_hnsw_K2x,0.9995
+veh_density_bin==low,natural,0.29764,1,postfilter_hnsw_K4x,0.9995
+veh_density_bin==low,natural,0.29764,1,single_stage_ivf_batch_np8,0.9975
+veh_density_bin==low,natural,0.29764,1,single_stage_ivf_batch_np32,1.0
+veh_density_bin==low,natural,0.29764,2,postfilter_hnsw_K1x,0.893
+veh_density_bin==low,natural,0.29764,2,postfilter_hnsw_K2x,0.999
+veh_density_bin==low,natural,0.29764,2,postfilter_hnsw_K4x,0.999
+veh_density_bin==low,natural,0.29764,2,single_stage_ivf_batch_np8,0.9975
+veh_density_bin==low,natural,0.29764,2,single_stage_ivf_batch_np32,1.0
+veh_density_bin==low,natural,0.29764,3,postfilter_hnsw_K1x,0.914
+veh_density_bin==low,natural,0.29764,3,postfilter_hnsw_K2x,1.0
+veh_density_bin==low,natural,0.29764,3,postfilter_hnsw_K4x,1.0
+veh_density_bin==low,natural,0.29764,3,single_stage_ivf_batch_np8,0.9975
+veh_density_bin==low,natural,0.29764,3,single_stage_ivf_batch_np32,1.0
+veh_density_bin==low,natural,0.29764,4,postfilter_hnsw_K1x,0.907
+veh_density_bin==low,natural,0.29764,4,postfilter_hnsw_K2x,0.9975
+veh_density_bin==low,natural,0.29764,4,postfilter_hnsw_K4x,0.9985
+veh_density_bin==low,natural,0.29764,4,single_stage_ivf_batch_np8,0.996
+veh_density_bin==low,natural,0.29764,4,single_stage_ivf_batch_np32,0.9995
+veh_density_bin==low,natural,0.29764,5,postfilter_hnsw_K1x,0.8995
+veh_density_bin==low,natural,0.29764,5,postfilter_hnsw_K2x,0.9995
+veh_density_bin==low,natural,0.29764,5,postfilter_hnsw_K4x,0.9995
+veh_density_bin==low,natural,0.29764,5,single_stage_ivf_batch_np8,0.998
+veh_density_bin==low,natural,0.29764,5,single_stage_ivf_batch_np32,1.0
+veh_density_bin==mid,natural,0.27268,1,postfilter_hnsw_K1x,0.9005
+veh_density_bin==mid,natural,0.27268,1,postfilter_hnsw_K2x,0.9995
+veh_density_bin==mid,natural,0.27268,1,postfilter_hnsw_K4x,0.9995
+veh_density_bin==mid,natural,0.27268,1,single_stage_ivf_batch_np8,0.9965
+veh_density_bin==mid,natural,0.27268,1,single_stage_ivf_batch_np32,1.0
+veh_density_bin==mid,natural,0.27268,2,postfilter_hnsw_K1x,0.909
+veh_density_bin==mid,natural,0.27268,2,postfilter_hnsw_K2x,0.999
+veh_density_bin==mid,natural,0.27268,2,postfilter_hnsw_K4x,0.999
+veh_density_bin==mid,natural,0.27268,2,single_stage_ivf_batch_np8,0.997
+veh_density_bin==mid,natural,0.27268,2,single_stage_ivf_batch_np32,1.0
+veh_density_bin==mid,natural,0.27268,3,postfilter_hnsw_K1x,0.8965
+veh_density_bin==mid,natural,0.27268,3,postfilter_hnsw_K2x,1.0
+veh_density_bin==mid,natural,0.27268,3,postfilter_hnsw_K4x,1.0
+veh_density_bin==mid,natural,0.27268,3,single_stage_ivf_batch_np8,0.9965
+veh_density_bin==mid,natural,0.27268,3,single_stage_ivf_batch_np32,0.9995
+veh_density_bin==mid,natural,0.27268,4,postfilter_hnsw_K1x,0.9055
+veh_density_bin==mid,natural,0.27268,4,postfilter_hnsw_K2x,0.9995
+veh_density_bin==mid,natural,0.27268,4,postfilter_hnsw_K4x,1.0
+veh_density_bin==mid,natural,0.27268,4,single_stage_ivf_batch_np8,0.9985
+veh_density_bin==mid,natural,0.27268,4,single_stage_ivf_batch_np32,0.9995
+veh_density_bin==mid,natural,0.27268,5,postfilter_hnsw_K1x,0.8985
+veh_density_bin==mid,natural,0.27268,5,postfilter_hnsw_K2x,1.0
+veh_density_bin==mid,natural,0.27268,5,postfilter_hnsw_K4x,1.0
+veh_density_bin==mid,natural,0.27268,5,single_stage_ivf_batch_np8,0.996
+veh_density_bin==mid,natural,0.27268,5,single_stage_ivf_batch_np32,0.9995
+veh_density_bin==high,natural,0.32931,1,postfilter_hnsw_K1x,0.894
+veh_density_bin==high,natural,0.32931,1,postfilter_hnsw_K2x,0.9985
+veh_density_bin==high,natural,0.32931,1,postfilter_hnsw_K4x,0.9985
+veh_density_bin==high,natural,0.32931,1,single_stage_ivf_batch_np8,0.9975
+veh_density_bin==high,natural,0.32931,1,single_stage_ivf_batch_np32,1.0
+veh_density_bin==high,natural,0.32931,2,postfilter_hnsw_K1x,0.8965
+veh_density_bin==high,natural,0.32931,2,postfilter_hnsw_K2x,0.999
+veh_density_bin==high,natural,0.32931,2,postfilter_hnsw_K4x,1.0
+veh_density_bin==high,natural,0.32931,2,single_stage_ivf_batch_np8,0.9985
+veh_density_bin==high,natural,0.32931,2,single_stage_ivf_batch_np32,1.0
+veh_density_bin==high,natural,0.32931,3,postfilter_hnsw_K1x,0.912
+veh_density_bin==high,natural,0.32931,3,postfilter_hnsw_K2x,1.0
+veh_density_bin==high,natural,0.32931,3,postfilter_hnsw_K4x,1.0
+veh_density_bin==high,natural,0.32931,3,single_stage_ivf_batch_np8,0.9975
+veh_density_bin==high,natural,0.32931,3,single_stage_ivf_batch_np32,1.0
+veh_density_bin==high,natural,0.32931,4,postfilter_hnsw_K1x,0.905
+veh_density_bin==high,natural,0.32931,4,postfilter_hnsw_K2x,1.0
+veh_density_bin==high,natural,0.32931,4,postfilter_hnsw_K4x,1.0
+veh_density_bin==high,natural,0.32931,4,single_stage_ivf_batch_np8,0.998
+veh_density_bin==high,natural,0.32931,4,single_stage_ivf_batch_np32,1.0
+veh_density_bin==high,natural,0.32931,5,postfilter_hnsw_K1x,0.9065
+veh_density_bin==high,natural,0.32931,5,postfilter_hnsw_K2x,1.0
+veh_density_bin==high,natural,0.32931,5,postfilter_hnsw_K4x,1.0
+veh_density_bin==high,natural,0.32931,5,single_stage_ivf_batch_np8,0.999
+veh_density_bin==high,natural,0.32931,5,single_stage_ivf_batch_np32,1.0
+hour==6,natural,0.06983,1,postfilter_hnsw_K1x,0.86
+hour==6,natural,0.06983,1,postfilter_hnsw_K2x,0.949
+hour==6,natural,0.06983,1,postfilter_hnsw_K4x,0.949
+hour==6,natural,0.06983,1,single_stage_ivf_batch_np8,0.9805
+hour==6,natural,0.06983,1,single_stage_ivf_batch_np32,0.9985
+hour==6,natural,0.06983,2,postfilter_hnsw_K1x,0.88
+hour==6,natural,0.06983,2,postfilter_hnsw_K2x,0.949
+hour==6,natural,0.06983,2,postfilter_hnsw_K4x,0.949
+hour==6,natural,0.06983,2,single_stage_ivf_batch_np8,0.9815
+hour==6,natural,0.06983,2,single_stage_ivf_batch_np32,0.9985
+hour==6,natural,0.06983,3,postfilter_hnsw_K1x,0.87
+hour==6,natural,0.06983,3,postfilter_hnsw_K2x,0.957
+hour==6,natural,0.06983,3,postfilter_hnsw_K4x,0.957
+hour==6,natural,0.06983,3,single_stage_ivf_batch_np8,0.981
+hour==6,natural,0.06983,3,single_stage_ivf_batch_np32,0.9965
+hour==6,natural,0.06983,4,postfilter_hnsw_K1x,0.8835
+hour==6,natural,0.06983,4,postfilter_hnsw_K2x,0.949
+hour==6,natural,0.06983,4,postfilter_hnsw_K4x,0.949
+hour==6,natural,0.06983,4,single_stage_ivf_batch_np8,0.982
+hour==6,natural,0.06983,4,single_stage_ivf_batch_np32,0.9985
+hour==6,natural,0.06983,5,postfilter_hnsw_K1x,0.873
+hour==6,natural,0.06983,5,postfilter_hnsw_K2x,0.95
+hour==6,natural,0.06983,5,postfilter_hnsw_K4x,0.95
+hour==6,natural,0.06983,5,single_stage_ivf_batch_np8,0.9805
+hour==6,natural,0.06983,5,single_stage_ivf_batch_np32,0.9985
+hour==7,natural,0.07033,1,postfilter_hnsw_K1x,0.88
+hour==7,natural,0.07033,1,postfilter_hnsw_K2x,0.956
+hour==7,natural,0.07033,1,postfilter_hnsw_K4x,0.956
+hour==7,natural,0.07033,1,single_stage_ivf_batch_np8,0.9865
+hour==7,natural,0.07033,1,single_stage_ivf_batch_np32,0.9985
+hour==7,natural,0.07033,2,postfilter_hnsw_K1x,0.869
+hour==7,natural,0.07033,2,postfilter_hnsw_K2x,0.952
+hour==7,natural,0.07033,2,postfilter_hnsw_K4x,0.952
+hour==7,natural,0.07033,2,single_stage_ivf_batch_np8,0.985
+hour==7,natural,0.07033,2,single_stage_ivf_batch_np32,0.9985
+hour==7,natural,0.07033,3,postfilter_hnsw_K1x,0.873
+hour==7,natural,0.07033,3,postfilter_hnsw_K2x,0.948
+hour==7,natural,0.07033,3,postfilter_hnsw_K4x,0.948
+hour==7,natural,0.07033,3,single_stage_ivf_batch_np8,0.985
+hour==7,natural,0.07033,3,single_stage_ivf_batch_np32,0.9975
+hour==7,natural,0.07033,4,postfilter_hnsw_K1x,0.873
+hour==7,natural,0.07033,4,postfilter_hnsw_K2x,0.9575
+hour==7,natural,0.07033,4,postfilter_hnsw_K4x,0.9575
+hour==7,natural,0.07033,4,single_stage_ivf_batch_np8,0.9885
+hour==7,natural,0.07033,4,single_stage_ivf_batch_np32,0.997
+hour==7,natural,0.07033,5,postfilter_hnsw_K1x,0.885
+hour==7,natural,0.07033,5,postfilter_hnsw_K2x,0.96
+hour==7,natural,0.07033,5,postfilter_hnsw_K4x,0.96
+hour==7,natural,0.07033,5,single_stage_ivf_batch_np8,0.9865
+hour==7,natural,0.07033,5,single_stage_ivf_batch_np32,0.999
+hour==8,natural,0.07039,1,postfilter_hnsw_K1x,0.865
+hour==8,natural,0.07039,1,postfilter_hnsw_K2x,0.9465
+hour==8,natural,0.07039,1,postfilter_hnsw_K4x,0.9465
+hour==8,natural,0.07039,1,single_stage_ivf_batch_np8,0.986
+hour==8,natural,0.07039,1,single_stage_ivf_batch_np32,1.0
+hour==8,natural,0.07039,2,postfilter_hnsw_K1x,0.8935
+hour==8,natural,0.07039,2,postfilter_hnsw_K2x,0.956
+hour==8,natural,0.07039,2,postfilter_hnsw_K4x,0.956
+hour==8,natural,0.07039,2,single_stage_ivf_batch_np8,0.986
+hour==8,natural,0.07039,2,single_stage_ivf_batch_np32,0.9985
+hour==8,natural,0.07039,3,postfilter_hnsw_K1x,0.88
+hour==8,natural,0.07039,3,postfilter_hnsw_K2x,0.9525
+hour==8,natural,0.07039,3,postfilter_hnsw_K4x,0.9525
+hour==8,natural,0.07039,3,single_stage_ivf_batch_np8,0.982
+hour==8,natural,0.07039,3,single_stage_ivf_batch_np32,0.9975
+hour==8,natural,0.07039,4,postfilter_hnsw_K1x,0.8795
+hour==8,natural,0.07039,4,postfilter_hnsw_K2x,0.9565
+hour==8,natural,0.07039,4,postfilter_hnsw_K4x,0.9565
+hour==8,natural,0.07039,4,single_stage_ivf_batch_np8,0.9835
+hour==8,natural,0.07039,4,single_stage_ivf_batch_np32,0.9985
+hour==8,natural,0.07039,5,postfilter_hnsw_K1x,0.8495
+hour==8,natural,0.07039,5,postfilter_hnsw_K2x,0.9515
+hour==8,natural,0.07039,5,postfilter_hnsw_K4x,0.9515
+hour==8,natural,0.07039,5,single_stage_ivf_batch_np8,0.981
+hour==8,natural,0.07039,5,single_stage_ivf_batch_np32,0.9965
+hour==9,natural,0.0467,1,postfilter_hnsw_K1x,0.8565
+hour==9,natural,0.0467,1,postfilter_hnsw_K2x,0.877
+hour==9,natural,0.0467,1,postfilter_hnsw_K4x,0.877
+hour==9,natural,0.0467,1,single_stage_ivf_batch_np8,0.977
+hour==9,natural,0.0467,1,single_stage_ivf_batch_np32,0.997
+hour==9,natural,0.0467,2,postfilter_hnsw_K1x,0.85
+hour==9,natural,0.0467,2,postfilter_hnsw_K2x,0.889
+hour==9,natural,0.0467,2,postfilter_hnsw_K4x,0.889
+hour==9,natural,0.0467,2,single_stage_ivf_batch_np8,0.9695
+hour==9,natural,0.0467,2,single_stage_ivf_batch_np32,0.9965
+hour==9,natural,0.0467,3,postfilter_hnsw_K1x,0.839
+hour==9,natural,0.0467,3,postfilter_hnsw_K2x,0.8795
+hour==9,natural,0.0467,3,postfilter_hnsw_K4x,0.8795
+hour==9,natural,0.0467,3,single_stage_ivf_batch_np8,0.969
+hour==9,natural,0.0467,3,single_stage_ivf_batch_np32,0.9935
+hour==9,natural,0.0467,4,postfilter_hnsw_K1x,0.844
+hour==9,natural,0.0467,4,postfilter_hnsw_K2x,0.8745
+hour==9,natural,0.0467,4,postfilter_hnsw_K4x,0.8745
+hour==9,natural,0.0467,4,single_stage_ivf_batch_np8,0.9725
+hour==9,natural,0.0467,4,single_stage_ivf_batch_np32,0.9975
+hour==9,natural,0.0467,5,postfilter_hnsw_K1x,0.83
+hour==9,natural,0.0467,5,postfilter_hnsw_K2x,0.8695
+hour==9,natural,0.0467,5,postfilter_hnsw_K4x,0.8695
+hour==9,natural,0.0467,5,single_stage_ivf_batch_np8,0.977
+hour==9,natural,0.0467,5,single_stage_ivf_batch_np32,0.998
+hour==13,natural,0.02319,1,postfilter_hnsw_K1x,0.634
+hour==13,natural,0.02319,1,postfilter_hnsw_K2x,0.6345
+hour==13,natural,0.02319,1,postfilter_hnsw_K4x,0.6345
+hour==13,natural,0.02319,1,single_stage_ivf_batch_np8,0.915
+hour==13,natural,0.02319,1,single_stage_ivf_batch_np32,0.9905
+hour==13,natural,0.02319,2,postfilter_hnsw_K1x,0.6765
+hour==13,natural,0.02319,2,postfilter_hnsw_K2x,0.6765
+hour==13,natural,0.02319,2,postfilter_hnsw_K4x,0.6765
+hour==13,natural,0.02319,2,single_stage_ivf_batch_np8,0.9275
+hour==13,natural,0.02319,2,single_stage_ivf_batch_np32,0.993
+hour==13,natural,0.02319,3,postfilter_hnsw_K1x,0.6365
+hour==13,natural,0.02319,3,postfilter_hnsw_K2x,0.6385
+hour==13,natural,0.02319,3,postfilter_hnsw_K4x,0.6385
+hour==13,natural,0.02319,3,single_stage_ivf_batch_np8,0.904
+hour==13,natural,0.02319,3,single_stage_ivf_batch_np32,0.9885
+hour==13,natural,0.02319,4,postfilter_hnsw_K1x,0.6605
+hour==13,natural,0.02319,4,postfilter_hnsw_K2x,0.6615
+hour==13,natural,0.02319,4,postfilter_hnsw_K4x,0.6615
+hour==13,natural,0.02319,4,single_stage_ivf_batch_np8,0.931
+hour==13,natural,0.02319,4,single_stage_ivf_batch_np32,0.9915
+hour==13,natural,0.02319,5,postfilter_hnsw_K1x,0.666
+hour==13,natural,0.02319,5,postfilter_hnsw_K2x,0.666
+hour==13,natural,0.02319,5,postfilter_hnsw_K4x,0.666
+hour==13,natural,0.02319,5,single_stage_ivf_batch_np8,0.9185
+hour==13,natural,0.02319,5,single_stage_ivf_batch_np32,0.991
+hour==14,natural,0.11434,1,postfilter_hnsw_K1x,0.8815
+hour==14,natural,0.11434,1,postfilter_hnsw_K2x,0.989
+hour==14,natural,0.11434,1,postfilter_hnsw_K4x,0.989
+hour==14,natural,0.11434,1,single_stage_ivf_batch_np8,0.987
+hour==14,natural,0.11434,1,single_stage_ivf_batch_np32,0.998
+hour==14,natural,0.11434,2,postfilter_hnsw_K1x,0.8735
+hour==14,natural,0.11434,2,postfilter_hnsw_K2x,0.984
+hour==14,natural,0.11434,2,postfilter_hnsw_K4x,0.984
+hour==14,natural,0.11434,2,single_stage_ivf_batch_np8,0.9915
+hour==14,natural,0.11434,2,single_stage_ivf_batch_np32,0.9995
+hour==14,natural,0.11434,3,postfilter_hnsw_K1x,0.875
+hour==14,natural,0.11434,3,postfilter_hnsw_K2x,0.992
+hour==14,natural,0.11434,3,postfilter_hnsw_K4x,0.992
+hour==14,natural,0.11434,3,single_stage_ivf_batch_np8,0.992
+hour==14,natural,0.11434,3,single_stage_ivf_batch_np32,1.0
+hour==14,natural,0.11434,4,postfilter_hnsw_K1x,0.893
+hour==14,natural,0.11434,4,postfilter_hnsw_K2x,0.992
+hour==14,natural,0.11434,4,postfilter_hnsw_K4x,0.992
+hour==14,natural,0.11434,4,single_stage_ivf_batch_np8,0.99
+hour==14,natural,0.11434,4,single_stage_ivf_batch_np32,0.999
+hour==14,natural,0.11434,5,postfilter_hnsw_K1x,0.898
+hour==14,natural,0.11434,5,postfilter_hnsw_K2x,0.9915
+hour==14,natural,0.11434,5,postfilter_hnsw_K4x,0.9915
+hour==14,natural,0.11434,5,single_stage_ivf_batch_np8,0.987
+hour==14,natural,0.11434,5,single_stage_ivf_batch_np32,0.9995
+hour==15,natural,0.11256,1,postfilter_hnsw_K1x,0.8915
+hour==15,natural,0.11256,1,postfilter_hnsw_K2x,0.9905
+hour==15,natural,0.11256,1,postfilter_hnsw_K4x,0.9905
+hour==15,natural,0.11256,1,single_stage_ivf_batch_np8,0.989
+hour==15,natural,0.11256,1,single_stage_ivf_batch_np32,0.999
+hour==15,natural,0.11256,2,postfilter_hnsw_K1x,0.881
+hour==15,natural,0.11256,2,postfilter_hnsw_K2x,0.9895
+hour==15,natural,0.11256,2,postfilter_hnsw_K4x,0.9895
+hour==15,natural,0.11256,2,single_stage_ivf_batch_np8,0.991
+hour==15,natural,0.11256,2,single_stage_ivf_batch_np32,0.999
+hour==15,natural,0.11256,3,postfilter_hnsw_K1x,0.8715
+hour==15,natural,0.11256,3,postfilter_hnsw_K2x,0.9875
+hour==15,natural,0.11256,3,postfilter_hnsw_K4x,0.9875
+hour==15,natural,0.11256,3,single_stage_ivf_batch_np8,0.9925
+hour==15,natural,0.11256,3,single_stage_ivf_batch_np32,0.9985
+hour==15,natural,0.11256,4,postfilter_hnsw_K1x,0.8995
+hour==15,natural,0.11256,4,postfilter_hnsw_K2x,0.994
+hour==15,natural,0.11256,4,postfilter_hnsw_K4x,0.994
+hour==15,natural,0.11256,4,single_stage_ivf_batch_np8,0.99
+hour==15,natural,0.11256,4,single_stage_ivf_batch_np32,1.0
+hour==15,natural,0.11256,5,postfilter_hnsw_K1x,0.8845
+hour==15,natural,0.11256,5,postfilter_hnsw_K2x,0.992
+hour==15,natural,0.11256,5,postfilter_hnsw_K4x,0.992
+hour==15,natural,0.11256,5,single_stage_ivf_batch_np8,0.994
+hour==15,natural,0.11256,5,single_stage_ivf_batch_np32,1.0
+hour==16,natural,0.01943,1,postfilter_hnsw_K1x,0.5875
+hour==16,natural,0.01943,1,postfilter_hnsw_K2x,0.5875
+hour==16,natural,0.01943,1,postfilter_hnsw_K4x,0.5875
+hour==16,natural,0.01943,1,single_stage_ivf_batch_np8,0.879
+hour==16,natural,0.01943,1,single_stage_ivf_batch_np32,0.981
+hour==16,natural,0.01943,2,postfilter_hnsw_K1x,0.5955
+hour==16,natural,0.01943,2,postfilter_hnsw_K2x,0.5955
+hour==16,natural,0.01943,2,postfilter_hnsw_K4x,0.5955
+hour==16,natural,0.01943,2,single_stage_ivf_batch_np8,0.884
+hour==16,natural,0.01943,2,single_stage_ivf_batch_np32,0.985
+hour==16,natural,0.01943,3,postfilter_hnsw_K1x,0.601
+hour==16,natural,0.01943,3,postfilter_hnsw_K2x,0.601
+hour==16,natural,0.01943,3,postfilter_hnsw_K4x,0.601
+hour==16,natural,0.01943,3,single_stage_ivf_batch_np8,0.8895
+hour==16,natural,0.01943,3,single_stage_ivf_batch_np32,0.988
+hour==16,natural,0.01943,4,postfilter_hnsw_K1x,0.5915
+hour==16,natural,0.01943,4,postfilter_hnsw_K2x,0.5915
+hour==16,natural,0.01943,4,postfilter_hnsw_K4x,0.5915
+hour==16,natural,0.01943,4,single_stage_ivf_batch_np8,0.898
+hour==16,natural,0.01943,4,single_stage_ivf_batch_np32,0.983
+hour==16,natural,0.01943,5,postfilter_hnsw_K1x,0.5935
+hour==16,natural,0.01943,5,postfilter_hnsw_K2x,0.5935
+hour==16,natural,0.01943,5,postfilter_hnsw_K4x,0.5935
+hour==16,natural,0.01943,5,single_stage_ivf_batch_np8,0.878
+hour==16,natural,0.01943,5,single_stage_ivf_batch_np32,0.9845
+hour==17,natural,0.07809,1,postfilter_hnsw_K1x,0.8725
+hour==17,natural,0.07809,1,postfilter_hnsw_K2x,0.962
+hour==17,natural,0.07809,1,postfilter_hnsw_K4x,0.962
+hour==17,natural,0.07809,1,single_stage_ivf_batch_np8,0.988
+hour==17,natural,0.07809,1,single_stage_ivf_batch_np32,0.9985
+hour==17,natural,0.07809,2,postfilter_hnsw_K1x,0.89
+hour==17,natural,0.07809,2,postfilter_hnsw_K2x,0.9635
+hour==17,natural,0.07809,2,postfilter_hnsw_K4x,0.9635
+hour==17,natural,0.07809,2,single_stage_ivf_batch_np8,0.988
+hour==17,natural,0.07809,2,single_stage_ivf_batch_np32,0.999
+hour==17,natural,0.07809,3,postfilter_hnsw_K1x,0.8755
+hour==17,natural,0.07809,3,postfilter_hnsw_K2x,0.9625
+hour==17,natural,0.07809,3,postfilter_hnsw_K4x,0.9625
+hour==17,natural,0.07809,3,single_stage_ivf_batch_np8,0.9845
+hour==17,natural,0.07809,3,single_stage_ivf_batch_np32,0.9965
+hour==17,natural,0.07809,4,postfilter_hnsw_K1x,0.854
+hour==17,natural,0.07809,4,postfilter_hnsw_K2x,0.96
+hour==17,natural,0.07809,4,postfilter_hnsw_K4x,0.96
+hour==17,natural,0.07809,4,single_stage_ivf_batch_np8,0.9875
+hour==17,natural,0.07809,4,single_stage_ivf_batch_np32,0.9975
+hour==17,natural,0.07809,5,postfilter_hnsw_K1x,0.89
+hour==17,natural,0.07809,5,postfilter_hnsw_K2x,0.9655
+hour==17,natural,0.07809,5,postfilter_hnsw_K4x,0.9655
+hour==17,natural,0.07809,5,single_stage_ivf_batch_np8,0.986
+hour==17,natural,0.07809,5,single_stage_ivf_batch_np32,0.999
+hour==18,natural,0.10885,1,postfilter_hnsw_K1x,0.8785
+hour==18,natural,0.10885,1,postfilter_hnsw_K2x,0.984
+hour==18,natural,0.10885,1,postfilter_hnsw_K4x,0.984
+hour==18,natural,0.10885,1,single_stage_ivf_batch_np8,0.989
+hour==18,natural,0.10885,1,single_stage_ivf_batch_np32,0.999
+hour==18,natural,0.10885,2,postfilter_hnsw_K1x,0.8885
+hour==18,natural,0.10885,2,postfilter_hnsw_K2x,0.989
+hour==18,natural,0.10885,2,postfilter_hnsw_K4x,0.989
+hour==18,natural,0.10885,2,single_stage_ivf_batch_np8,0.99
+hour==18,natural,0.10885,2,single_stage_ivf_batch_np32,1.0
+hour==18,natural,0.10885,3,postfilter_hnsw_K1x,0.893
+hour==18,natural,0.10885,3,postfilter_hnsw_K2x,0.986
+hour==18,natural,0.10885,3,postfilter_hnsw_K4x,0.986
+hour==18,natural,0.10885,3,single_stage_ivf_batch_np8,0.99
+hour==18,natural,0.10885,3,single_stage_ivf_batch_np32,0.9995
+hour==18,natural,0.10885,4,postfilter_hnsw_K1x,0.8665
+hour==18,natural,0.10885,4,postfilter_hnsw_K2x,0.987
+hour==18,natural,0.10885,4,postfilter_hnsw_K4x,0.987
+hour==18,natural,0.10885,4,single_stage_ivf_batch_np8,0.991
+hour==18,natural,0.10885,4,single_stage_ivf_batch_np32,0.9985
+hour==18,natural,0.10885,5,postfilter_hnsw_K1x,0.8995
+hour==18,natural,0.10885,5,postfilter_hnsw_K2x,0.991
+hour==18,natural,0.10885,5,postfilter_hnsw_K4x,0.991
+hour==18,natural,0.10885,5,single_stage_ivf_batch_np8,0.991
+hour==18,natural,0.10885,5,single_stage_ivf_batch_np32,1.0
+hour==19,natural,0.11023,1,postfilter_hnsw_K1x,0.8885
+hour==19,natural,0.11023,1,postfilter_hnsw_K2x,0.991
+hour==19,natural,0.11023,1,postfilter_hnsw_K4x,0.991
+hour==19,natural,0.11023,1,single_stage_ivf_batch_np8,0.9905
+hour==19,natural,0.11023,1,single_stage_ivf_batch_np32,0.9985
+hour==19,natural,0.11023,2,postfilter_hnsw_K1x,0.8575
+hour==19,natural,0.11023,2,postfilter_hnsw_K2x,0.987
+hour==19,natural,0.11023,2,postfilter_hnsw_K4x,0.987
+hour==19,natural,0.11023,2,single_stage_ivf_batch_np8,0.989
+hour==19,natural,0.11023,2,single_stage_ivf_batch_np32,0.9995
+hour==19,natural,0.11023,3,postfilter_hnsw_K1x,0.8875
+hour==19,natural,0.11023,3,postfilter_hnsw_K2x,0.9905
+hour==19,natural,0.11023,3,postfilter_hnsw_K4x,0.9905
+hour==19,natural,0.11023,3,single_stage_ivf_batch_np8,0.9895
+hour==19,natural,0.11023,3,single_stage_ivf_batch_np32,0.999
+hour==19,natural,0.11023,4,postfilter_hnsw_K1x,0.8775
+hour==19,natural,0.11023,4,postfilter_hnsw_K2x,0.987
+hour==19,natural,0.11023,4,postfilter_hnsw_K4x,0.987
+hour==19,natural,0.11023,4,single_stage_ivf_batch_np8,0.99
+hour==19,natural,0.11023,4,single_stage_ivf_batch_np32,0.999
+hour==19,natural,0.11023,5,postfilter_hnsw_K1x,0.8745
+hour==19,natural,0.11023,5,postfilter_hnsw_K2x,0.987
+hour==19,natural,0.11023,5,postfilter_hnsw_K4x,0.9875
+hour==19,natural,0.11023,5,single_stage_ivf_batch_np8,0.9895
+hour==19,natural,0.11023,5,single_stage_ivf_batch_np32,0.998
+hour==20,natural,0.0757,1,postfilter_hnsw_K1x,0.878
+hour==20,natural,0.0757,1,postfilter_hnsw_K2x,0.9635
+hour==20,natural,0.0757,1,postfilter_hnsw_K4x,0.9635
+hour==20,natural,0.0757,1,single_stage_ivf_batch_np8,0.984
+hour==20,natural,0.0757,1,single_stage_ivf_batch_np32,0.9975
+hour==20,natural,0.0757,2,postfilter_hnsw_K1x,0.876
+hour==20,natural,0.0757,2,postfilter_hnsw_K2x,0.957
+hour==20,natural,0.0757,2,postfilter_hnsw_K4x,0.957
+hour==20,natural,0.0757,2,single_stage_ivf_batch_np8,0.987
+hour==20,natural,0.0757,2,single_stage_ivf_batch_np32,0.9985
+hour==20,natural,0.0757,3,postfilter_hnsw_K1x,0.884
+hour==20,natural,0.0757,3,postfilter_hnsw_K2x,0.965
+hour==20,natural,0.0757,3,postfilter_hnsw_K4x,0.965
+hour==20,natural,0.0757,3,single_stage_ivf_batch_np8,0.985
+hour==20,natural,0.0757,3,single_stage_ivf_batch_np32,0.998
+hour==20,natural,0.0757,4,postfilter_hnsw_K1x,0.869
+hour==20,natural,0.0757,4,postfilter_hnsw_K2x,0.961
+hour==20,natural,0.0757,4,postfilter_hnsw_K4x,0.961
+hour==20,natural,0.0757,4,single_stage_ivf_batch_np8,0.983
+hour==20,natural,0.0757,4,single_stage_ivf_batch_np32,0.999
+hour==20,natural,0.0757,5,postfilter_hnsw_K1x,0.869
+hour==20,natural,0.0757,5,postfilter_hnsw_K2x,0.9605
+hour==20,natural,0.0757,5,postfilter_hnsw_K4x,0.9605
+hour==20,natural,0.0757,5,single_stage_ivf_batch_np8,0.984
+hour==20,natural,0.0757,5,single_stage_ivf_batch_np32,0.998
+"hour in [11,14] (midday)",composite,0.13754,1,postfilter_hnsw_K1x,0.8865
+"hour in [11,14] (midday)",composite,0.13754,1,postfilter_hnsw_K2x,0.9965
+"hour in [11,14] (midday)",composite,0.13754,1,postfilter_hnsw_K4x,0.997
+"hour in [11,14] (midday)",composite,0.13754,1,single_stage_ivf_batch_np8,0.9925
+"hour in [11,14] (midday)",composite,0.13754,1,single_stage_ivf_batch_np32,0.9995
+"hour in [11,14] (midday)",composite,0.13754,2,postfilter_hnsw_K1x,0.8835
+"hour in [11,14] (midday)",composite,0.13754,2,postfilter_hnsw_K2x,0.995
+"hour in [11,14] (midday)",composite,0.13754,2,postfilter_hnsw_K4x,0.995
+"hour in [11,14] (midday)",composite,0.13754,2,single_stage_ivf_batch_np8,0.9885
+"hour in [11,14] (midday)",composite,0.13754,2,single_stage_ivf_batch_np32,0.999
+"hour in [11,14] (midday)",composite,0.13754,3,postfilter_hnsw_K1x,0.896
+"hour in [11,14] (midday)",composite,0.13754,3,postfilter_hnsw_K2x,0.994
+"hour in [11,14] (midday)",composite,0.13754,3,postfilter_hnsw_K4x,0.994
+"hour in [11,14] (midday)",composite,0.13754,3,single_stage_ivf_batch_np8,0.9905
+"hour in [11,14] (midday)",composite,0.13754,3,single_stage_ivf_batch_np32,0.998
+"hour in [11,14] (midday)",composite,0.13754,4,postfilter_hnsw_K1x,0.8855
+"hour in [11,14] (midday)",composite,0.13754,4,postfilter_hnsw_K2x,0.9935
+"hour in [11,14] (midday)",composite,0.13754,4,postfilter_hnsw_K4x,0.9935
+"hour in [11,14] (midday)",composite,0.13754,4,single_stage_ivf_batch_np8,0.9915
+"hour in [11,14] (midday)",composite,0.13754,4,single_stage_ivf_batch_np32,0.999
+"hour in [11,14] (midday)",composite,0.13754,5,postfilter_hnsw_K1x,0.8945
+"hour in [11,14] (midday)",composite,0.13754,5,postfilter_hnsw_K2x,0.995
+"hour in [11,14] (midday)",composite,0.13754,5,postfilter_hnsw_K4x,0.995
+"hour in [11,14] (midday)",composite,0.13754,5,single_stage_ivf_batch_np8,0.99
+"hour in [11,14] (midday)",composite,0.13754,5,single_stage_ivf_batch_np32,0.9995
+"hour in [8,18] (working)",composite,0.57356,1,postfilter_hnsw_K1x,0.9505
+"hour in [8,18] (working)",composite,0.57356,1,postfilter_hnsw_K2x,1.0
+"hour in [8,18] (working)",composite,0.57356,1,postfilter_hnsw_K4x,1.0
+"hour in [8,18] (working)",composite,0.57356,1,single_stage_ivf_batch_np8,0.999
+"hour in [8,18] (working)",composite,0.57356,1,single_stage_ivf_batch_np32,1.0
+"hour in [8,18] (working)",composite,0.57356,2,postfilter_hnsw_K1x,0.945
+"hour in [8,18] (working)",composite,0.57356,2,postfilter_hnsw_K2x,1.0
+"hour in [8,18] (working)",composite,0.57356,2,postfilter_hnsw_K4x,1.0
+"hour in [8,18] (working)",composite,0.57356,2,single_stage_ivf_batch_np8,0.998
+"hour in [8,18] (working)",composite,0.57356,2,single_stage_ivf_batch_np32,1.0
+"hour in [8,18] (working)",composite,0.57356,3,postfilter_hnsw_K1x,0.9295
+"hour in [8,18] (working)",composite,0.57356,3,postfilter_hnsw_K2x,1.0
+"hour in [8,18] (working)",composite,0.57356,3,postfilter_hnsw_K4x,1.0
+"hour in [8,18] (working)",composite,0.57356,3,single_stage_ivf_batch_np8,0.998
+"hour in [8,18] (working)",composite,0.57356,3,single_stage_ivf_batch_np32,1.0
+"hour in [8,18] (working)",composite,0.57356,4,postfilter_hnsw_K1x,0.925
+"hour in [8,18] (working)",composite,0.57356,4,postfilter_hnsw_K2x,1.0
+"hour in [8,18] (working)",composite,0.57356,4,postfilter_hnsw_K4x,1.0
+"hour in [8,18] (working)",composite,0.57356,4,single_stage_ivf_batch_np8,0.9985
+"hour in [8,18] (working)",composite,0.57356,4,single_stage_ivf_batch_np32,1.0
+"hour in [8,18] (working)",composite,0.57356,5,postfilter_hnsw_K1x,0.931
+"hour in [8,18] (working)",composite,0.57356,5,postfilter_hnsw_K2x,1.0
+"hour in [8,18] (working)",composite,0.57356,5,postfilter_hnsw_K4x,1.0
+"hour in [8,18] (working)",composite,0.57356,5,single_stage_ivf_batch_np8,0.9975
+"hour in [8,18] (working)",composite,0.57356,5,single_stage_ivf_batch_np32,1.0
+"time_of_day in {morning,evening}",composite,0.55202,1,postfilter_hnsw_K1x,0.92
+"time_of_day in {morning,evening}",composite,0.55202,1,postfilter_hnsw_K2x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,1,postfilter_hnsw_K4x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,1,single_stage_ivf_batch_np8,0.9985
+"time_of_day in {morning,evening}",composite,0.55202,1,single_stage_ivf_batch_np32,1.0
+"time_of_day in {morning,evening}",composite,0.55202,2,postfilter_hnsw_K1x,0.946
+"time_of_day in {morning,evening}",composite,0.55202,2,postfilter_hnsw_K2x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,2,postfilter_hnsw_K4x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,2,single_stage_ivf_batch_np8,0.9985
+"time_of_day in {morning,evening}",composite,0.55202,2,single_stage_ivf_batch_np32,1.0
+"time_of_day in {morning,evening}",composite,0.55202,3,postfilter_hnsw_K1x,0.929
+"time_of_day in {morning,evening}",composite,0.55202,3,postfilter_hnsw_K2x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,3,postfilter_hnsw_K4x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,3,single_stage_ivf_batch_np8,0.998
+"time_of_day in {morning,evening}",composite,0.55202,3,single_stage_ivf_batch_np32,1.0
+"time_of_day in {morning,evening}",composite,0.55202,4,postfilter_hnsw_K1x,0.95
+"time_of_day in {morning,evening}",composite,0.55202,4,postfilter_hnsw_K2x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,4,postfilter_hnsw_K4x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,4,single_stage_ivf_batch_np8,0.999
+"time_of_day in {morning,evening}",composite,0.55202,4,single_stage_ivf_batch_np32,1.0
+"time_of_day in {morning,evening}",composite,0.55202,5,postfilter_hnsw_K1x,0.93
+"time_of_day in {morning,evening}",composite,0.55202,5,postfilter_hnsw_K2x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,5,postfilter_hnsw_K4x,1.0
+"time_of_day in {morning,evening}",composite,0.55202,5,single_stage_ivf_batch_np8,0.998
+"time_of_day in {morning,evening}",composite,0.55202,5,single_stage_ivf_batch_np32,1.0

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-07-07T11:21:45.799544+00:00",
+  "output_dir": "2026_KIISE/paper_assets/20260707_pipeline_audit",
+  "datasets": [
+    "vru_accident",
+    "aihub_intelligent_cctv"
+  ],
+  "required_files": 56,
+  "missing_files": 0,
+  "advanced_ablation_summary_exists": true
+}

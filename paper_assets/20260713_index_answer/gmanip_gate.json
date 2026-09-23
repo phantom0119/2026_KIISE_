@@ -1,0 +1,8 @@
+{
+  "corpus": "B_522_143K",
+  "structure_recall_spread": 0.48,
+  "hi": 1.0,
+  "lo": 0.52,
+  "gate_manip_pass_ge_0.30": true,
+  "note": "positive-clip recall under real filtered-ANN structures spans 0.52-1.00; with oracle/distractor bounds the evidence-quality manipulation covers ~full 0-1 range -> mediator manipulation is LARGE (avoids mediator wall)"
+}

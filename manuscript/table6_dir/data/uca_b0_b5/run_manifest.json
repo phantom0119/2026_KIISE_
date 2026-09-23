@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-07-12T03:38:31.425344+00:00",
+  "canonical_root": "/hdd2/KIISE_datasociety/Datasets/processed/uca_anchor/20260712/canonical",
+  "embedding_root": "/hdd2/KIISE_datasociety/Datasets/processed/uca_anchor/20260712/embeddings/bge-m3",
+  "output_dir": "/hdd2/KIISE_datasociety/Datasets/processed/uca_anchor/20260712/results/uca_b0_b5",
+  "embedding_manifest": {
+    "created_at": "2026-07-12T03:37:30.318901+00:00",
+    "canonical_root": "/hdd2/KIISE_datasociety/Datasets/processed/uca_anchor/20260712/canonical",
+    "output_dir": "/hdd2/KIISE_datasociety/Datasets/processed/uca_anchor/20260712/embeddings/bge-m3",
+    "model_id": "bge-m3",
+    "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+    "device": "cuda:0",
+    "batch_size": 32,
+    "normalize_embeddings": true,
+    "document_count": 6432,
+    "query_count": 135,
+    "embedding_dim": 1024,
+    "files": {
+      "document_embeddings": "document_embeddings.npy",
+      "query_embeddings": "query_embeddings.npy",
+      "document_index": "document_index.parquet",
+      "query_index": "query_index.parquet"
+    }
+  },
+  "strategies": [
+    "B0_metadata_only",
+    "B1_bm25_only",
+    "B2_vector_only",
+    "B3_vector_postfilter",
+    "B4_prefilter_vector",
+    "B5_hybrid"
+  ],
+  "top_ks": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "max_rank": 100,
+  "postfilter_doc_k": 200,
+  "max_queries": null,
+  "max_queries_per_difficulty": null,
+  "bm25_backend": "rank_bm25.BM25Okapi",
+  "vector_backend": "faiss.IndexFlatIP",
+  "vector_filtering": "external metadata filter for B3/B4/B5",
+  "bm25_build_sec": 0.1252571907825768,
+  "faiss_build_sec": 0.024938660208135843,
+  "counts": {
+    "clips": 6432,
+    "documents": 6432,
+    "queries": 135,
+    "executed_queries": 135,
+    "qrels": 7709,
+    "result_rows": 72895
+  }
+}

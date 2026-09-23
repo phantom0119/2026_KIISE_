@@ -1,0 +1,91 @@
+{
+  "protocol_id": "controlled-supplement-20260723-v1",
+  "frozen_at": "2026-07-23T17:48:31+09:00",
+  "status": "versioned; each experiment was frozen before its first decision output",
+  "revision_log": [
+    {
+      "version": "v1",
+      "time": "2026-07-23T17:48:31+09:00",
+      "scope": "initial E0/S2 and draft S3/S4 freeze"
+    },
+    {
+      "version": "v1.1",
+      "time_relation": "before full S3 outputs",
+      "scope": "S3 exact-GT fallback and numeric negative/positive gates"
+    },
+    {
+      "version": "v1.2",
+      "time_relation": "before S4 retrieval/VLM outputs",
+      "scope": "top-1 scope, fixed gate sample, TL_3 label domain, retrieval manipulation gate"
+    }
+  ],
+  "scope": ["E0_prompt_target_ablation", "S2_blocked_coupling", "S3_cluster_mechanism", "S4_answer_propagation"],
+  "disclosure": "Post-main-result supplemental protocol; not a preregistration of the submitted study.",
+  "global_seed": 20260723,
+  "bootstrap_repetitions": 10000,
+  "input_sha256": {
+    "canonical_queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "bge_document_embeddings": "bf0614273dccff59333c96ebb91b87eb821d9fe85668f153e2d6d6abd9d77708",
+    "visual_clip_embeddings": "6add5013ba9c4033a014da0bab51a434f4fa6e2ee33b364f1a6689331ccc5716",
+    "sinnaedoro_embeddings": "40e80ea12fd4f95f95a0a4cb656f98d6162071fddf4160bf2c7997181ff4278b",
+    "e1a_locked_configs": "81d5fde76a6f986c8bd51226597e83cb7cba4abcd24e086b7127c3d6c656c4ff",
+    "internvl_condb_pilot": "2d1c1a7f5d16ca59531176b05e51141a469cfd69648a50e7403bad85150f125c"
+  },
+  "e0": {
+    "prompt": "Describe this urban CCTV frame in 2-4 factual sentences using only directly visible evidence. Mention the scene, objects, actions, and spatial relations that are visually salient. Do not use external metadata or infer causes, intentions, or events beyond the image.",
+    "snapshot": "/hdd2/huggingface_cache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+    "n_videos": 3000,
+    "seed": 20260710,
+    "max_new_tokens": 110,
+    "max_pixels": 200704,
+    "decoding": "greedy",
+    "adverse_sensitivity_rule": "relative drop > 10% or paired CI upper < -0.03",
+    "two_sided_material_effect_diagnostic": "paired CI lower > +0.03 or upper < -0.03"
+  },
+  "s2": {
+    "folds": 5,
+    "fold_unit": "intersection_id",
+    "k": 10,
+    "minimum_semantic_positives": 5,
+    "minimum_b4_candidates": 10,
+    "v_bands": [0.15, 0.3],
+    "sensitivity_thresholds": [0.15, 0.2, 0.25, 0.3, 0.35]
+  },
+  "s3": {
+    "k": 10,
+    "shuffle_repetitions": 100,
+    "selectivities": [0.05, 0.1, 0.2, 0.4],
+    "concentrations": [0.0, 0.25, 0.5, 0.75, 1.0],
+    "anchors": 10,
+    "exact_top_l_start": 5000,
+    "exact_top_l_max_before_subset_flat": 40000,
+    "coverage_failure_fraction": 0.005,
+    "negative_gate": "predicate-bootstrap CI lower bound > 0 and >=50% predicate differences positive, in each corpus",
+    "positive_gate": "anchor-bootstrap CI lower bound of within-selectivity slope > 0, in each corpus",
+    "hnsw": {"M": 32, "efConstruction": 200, "efSearch": 64, "postfilter_multiplier": 4},
+    "ivfflat": {"nlist": 1024, "nprobe": 8, "faiss_training_seed": 1234}
+  },
+  "s4": {
+    "categories": ["bus_count", "bike_count"],
+    "classes": ["0", "1", "2+"],
+    "scope": "top-1 nearest-neighbor evidence classification; not free-form multi-document RAG",
+    "gate_items_per_class": 60,
+    "retrieval_k": 1,
+    "self_exclusion": true,
+    "retrieval_corpus": "frames with TL_3 frame annotations only",
+    "source_sample": "E1A video sample seed 20260711 and middle-frame rule reconstructed",
+    "retrieval_gate": {
+      "minimum_exact_minus_strong_class_match_pp": 5,
+      "minimum_exact_hit_strong_miss": 200
+    },
+    "distractor_matching": ["intersection_id+hour", "intersection_id", "hour", "global"],
+    "oracle_min_advantage_pp": 10,
+    "max_single_prediction_share": 0.7,
+    "minimum_effect_population_pp": 5,
+    "minimum_effect_discordant_pp": 10,
+    "alpha_two_sided": 0.05,
+    "power": 0.8,
+    "pilot_fraction": 0.1,
+    "max_item_pairs": 4000
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-07-12",
+  "n_captions": 3000,
+  "mention_parked": 2596,
+  "negated_mention": 1242,
+  "positives": 69,
+  "positives_with_mention": 59,
+  "negatives_with_mention": 2537,
+  "affirmative_rate_positives": 0.5217,
+  "affirmative_rate_negatives": 0.4497,
+  "reading": "captions OVER-mention parking (87%), half negated; affirmative mention discriminates positives barely above negatives (0.52 vs 0.45) -> dense failure is negation/over-mention confusion, NOT absent description"
+}

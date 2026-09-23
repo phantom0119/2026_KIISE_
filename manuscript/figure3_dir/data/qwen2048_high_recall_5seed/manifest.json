@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-07-17T02:37:52.777020+00:00",
+  "corpus": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_qwen3vl2b_unified_qwen35captions/frame_embeddings.npy",
+  "queries": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_qwen3vl2b_unified_qwen35captions/query_embeddings.npy",
+  "n_vectors": 143830,
+  "dimension": 2048,
+  "query_count": 85,
+  "seeds": [
+    20260717,
+    20260718,
+    20260719,
+    20260720,
+    20260721
+  ],
+  "settings": {
+    "hnsw_M32_efSearch": [
+      256,
+      512,
+      1024
+    ],
+    "ivfflat_nlist1024_nprobe": [
+      128,
+      256,
+      512
+    ]
+  },
+  "metric": "ANN recall@10 versus exact Flat top-10",
+  "latency": {
+    "threads": 1,
+    "repeats": 10,
+    "warmup": 3
+  }
+}

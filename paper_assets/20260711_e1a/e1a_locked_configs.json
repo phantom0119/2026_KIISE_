@@ -1,0 +1,9 @@
+{
+  "exact": "flat_exact",
+  "exact_mr3": 0.1203,
+  "mid": "hnsw_M8_ef1",
+  "strong": "ivfpq_nlist1024_m32_nprobe8",
+  "gate_pass": true,
+  "n_items_pilot": 2967,
+  "gate": "mid rel in [0.55,0.85]; strong in [0.30,0.55) vs exact"
+}

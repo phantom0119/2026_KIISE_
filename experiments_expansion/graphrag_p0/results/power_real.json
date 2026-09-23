@@ -1,0 +1,33 @@
+{
+  "measured": {
+    "ICC": 0.2753,
+    "obs_per_cluster": 12.0,
+    "discordance": {
+      "H1a_format": 0.1464,
+      "H1b_structure": 0.1402,
+      "H1_total_repr": 0.1598
+    }
+  },
+  "clusters_needed_power80": {
+    "H1a_format@delta0.02": 1287,
+    "H1a_format@delta0.03": 572,
+    "H1a_format@delta0.05": 206,
+    "H1a_format@delta0.08": 81,
+    "H1b_structure@delta0.02": 1232,
+    "H1b_structure@delta0.03": 548,
+    "H1b_structure@delta0.05": 198,
+    "H1b_structure@delta0.08": 77,
+    "H1_total_repr@delta0.02": 1405,
+    "H1_total_repr@delta0.03": 625,
+    "H1_total_repr@delta0.05": 225,
+    "H1_total_repr@delta0.08": 88
+  },
+  "available_now": 400,
+  "primekg_ceiling_drugs": 6282,
+  "feasible_at_delta_0.03": {
+    "H1a_format": true,
+    "H1b_structure": true,
+    "H1_total_repr": true
+  },
+  "note": "delta = absolute difference in the paired binary outcome"
+}

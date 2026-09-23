@@ -1,0 +1,8 @@
+{
+  "exact": "flat_exact",
+  "mid": null,
+  "strong": null,
+  "gate": "mid rel in [0.55,0.85]; strong rel in [0.30,0.55] (vs exact)",
+  "exact_er3": 0.5162,
+  "gate_pass": false
+}

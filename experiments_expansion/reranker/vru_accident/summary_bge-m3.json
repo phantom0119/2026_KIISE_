@@ -1,0 +1,11 @@
+{
+  "base_hit_at_1": 0.3689,
+  "rerank_hit_at_1": 0.3443,
+  "delta_hit_at_1": -0.0246,
+  "base_recall_at_10": 0.372,
+  "rerank_recall_at_10": 0.3702,
+  "delta_recall_at_10": -0.0018,
+  "base_ndcg_at_10": 0.5318,
+  "rerank_ndcg_at_10": 0.5253,
+  "delta_ndcg_at_10": -0.0065
+}

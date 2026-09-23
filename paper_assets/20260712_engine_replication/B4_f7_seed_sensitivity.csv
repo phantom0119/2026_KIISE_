@@ -1,0 +1,17 @@
+corpus,method,n_pairs,n_draws,mean_ctrl_recall,mean_sd_across_draws,max_sd,mean_range,max_range
+A,postfilter_hnsw_K1x,29,7,0.8598,0.005,0.0095,0.0145,0.0281
+A,postfilter_hnsw_K2x,29,7,0.9183,0.0028,0.007,0.0079,0.0209
+A,postfilter_hnsw_K4x,29,7,0.9183,0.0028,0.007,0.0079,0.0209
+A,prefilter_flat,29,1,1.0,,,0.0,0.0
+A,prefilter_hnsw_ef64,29,1,0.9998,,,0.0,0.0
+A,single_stage_ivf_batch_np32,29,7,0.9983,0.0004,0.0008,0.0011,0.0026
+A,single_stage_ivf_batch_np8,29,7,0.9696,0.0017,0.0031,0.0047,0.008
+A,single_stage_ivf_bitmap_np32,5,1,0.9995,,,0.0,0.0
+B,postfilter_hnsw_K1x,25,7,0.8732,0.0102,0.0199,0.0281,0.0465
+B,postfilter_hnsw_K2x,25,7,0.9544,0.003,0.0194,0.0083,0.046
+B,postfilter_hnsw_K4x,25,7,0.9544,0.0029,0.0194,0.0082,0.046
+B,prefilter_flat,25,1,1.0,,,0.0,0.0
+B,prefilter_hnsw_ef64,25,1,1.0,,,0.0,0.0
+B,single_stage_ivf_batch_np32,25,7,0.9983,0.0006,0.0021,0.0016,0.007
+B,single_stage_ivf_batch_np8,25,7,0.9848,0.0019,0.0094,0.0051,0.027
+B,single_stage_ivf_bitmap_np32,12,1,0.9999,,,0.0,0.0

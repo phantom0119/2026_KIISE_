@@ -1,0 +1,42 @@
+{
+  "dataset_id": "vru_accident",
+  "dataset_version": "20260706",
+  "created_at": "2026-07-06T08:05:44.798076+00:00",
+  "source_hf_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/external/VRU-Accident_hf",
+  "source_video_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/VRU-Accident",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/canonical",
+  "counts": {
+    "clips": 1000,
+    "documents": 7000,
+    "metadata_rows": 6000,
+    "queries": 244,
+    "qrels": 5488,
+    "missing_media": 0
+  },
+  "raw_validation": {
+    "dataset_id": "vru_accident",
+    "hf_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/external/VRU-Accident_hf",
+    "video_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/VRU-Accident",
+    "caption_parquet_files": 4,
+    "vqa_parquet_files": 4,
+    "media_files": 1000,
+    "valid": true
+  },
+  "schema_files": [
+    "clips.parquet",
+    "documents.parquet",
+    "metadata.parquet",
+    "queries.jsonl",
+    "qrels.tsv"
+  ],
+  "query_generation": {
+    "single_facet_min_support": 2,
+    "pair_min_support": 2,
+    "triple_min_support": 2,
+    "max_queries_per_group": {
+      "weak": 120,
+      "medium": 220,
+      "strong": 220
+    }
+  }
+}

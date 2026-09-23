@@ -1,0 +1,7 @@
+predicate,selectivity,recall_global_relaxed,recall_global_off,recall_partial,L_global_ms,L_partial_ms,build_partial_s,partial_index_mb,latency_gain_ms,breakeven_queries_Nstar,quality_forced_local,policy
+tseg BETWEEN 7 AND 7,0.0414,1.0,1.0,1.0,8.136,0.32,0.59,6.38,7.816,75.5,False,LOCAL if hot: >75 q
+video = 'warsaw_0',0.0862,0.4939,0.1686,0.9898,0.574,0.425,1.37,13.25,0.149,9194.6,True,LOCAL (quality-forced)
+nobj >= 20,0.1789,0.9961,0.3834,0.9997,1.193,0.455,3.25,27.51,0.738,4403.8,False,LOCAL if hot: >4404 q
+"video IN ('warsaw_0','warsaw_1','warsaw_2')",0.2583,0.5296,0.3225,0.9506,0.451,0.454,4.84,39.72,-0.003,,True,LOCAL (quality-forced)
+nobj >= 15,0.4188,0.9964,0.678,0.9998,0.544,0.464,9.0,64.38,0.08,112500.0,False,LOCAL if hot: >112500 q
+scene = 'warsaw',0.5,0.5582,0.4957,0.9521,0.461,0.439,10.47,76.86,0.022,475909.1,True,LOCAL (quality-forced)

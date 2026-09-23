@@ -1,0 +1,53 @@
+{
+  "created_at": "2026-07-06T08:52:17.163327+00:00",
+  "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+  "embedding_root": "Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/bge-m3",
+  "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/results/aihub_bgem3_faiss_b0_b5",
+  "embedding_manifest": {
+    "created_at": "2026-07-06T08:52:00.406892+00:00",
+    "canonical_root": "Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+    "output_dir": "Datasets/processed/aihub_intelligent_cctv/20260706/embeddings/bge-m3",
+    "model_id": "bge-m3",
+    "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+    "device": "cuda",
+    "batch_size": 16,
+    "normalize_embeddings": true,
+    "document_count": 807,
+    "query_count": 133,
+    "embedding_dim": 1024,
+    "files": {
+      "document_embeddings": "document_embeddings.npy",
+      "query_embeddings": "query_embeddings.npy",
+      "document_index": "document_index.parquet",
+      "query_index": "query_index.parquet"
+    }
+  },
+  "strategies": [
+    "B0_metadata_only",
+    "B1_bm25_only",
+    "B2_vector_only",
+    "B3_vector_postfilter",
+    "B4_prefilter_vector",
+    "B5_hybrid"
+  ],
+  "top_ks": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "max_rank": 100,
+  "postfilter_doc_k": 200,
+  "bm25_backend": "rank_bm25.BM25Okapi",
+  "vector_backend": "faiss.IndexFlatIP",
+  "vector_filtering": "external metadata filter for B3/B4/B5",
+  "bm25_build_sec": 0.0018665827810764313,
+  "faiss_build_sec": 0.001398697029799223,
+  "counts": {
+    "clips": 269,
+    "documents": 807,
+    "queries": 133,
+    "qrels": 1358,
+    "result_rows": 42256
+  }
+}

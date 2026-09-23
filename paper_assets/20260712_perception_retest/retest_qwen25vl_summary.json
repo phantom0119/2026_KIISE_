@@ -1,0 +1,10 @@
+{
+  "model": "qwen25vl",
+  "max_pixels": 200704,
+  "n": 180,
+  "acc_bus": 0.717,
+  "acc_stopped": 0.45,
+  "acc_bikes": 0.583,
+  "acc_mean": 0.583,
+  "wall_lifts (mean>=0.70 & bikes>=0.65)": false
+}

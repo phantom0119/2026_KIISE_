@@ -1,0 +1,98 @@
+{
+  "analysis": "E0 task-aware versus task-neutral caption prompt",
+  "created_at": "2026-07-23T11:06:18.990717+00:00",
+  "primary": {
+    "metric": "B2 exact semantic nDCG@10",
+    "queries": 85,
+    "families": 25,
+    "task_aware": 0.17003348904727908,
+    "task_neutral": 0.08550832450219988,
+    "neutral_minus_aware": -0.08452516454507923,
+    "family_cluster_bootstrap_ci": [
+      -0.1672356891913707,
+      -0.004363106530454676
+    ],
+    "family_cluster_signflip_p_two_sided": 0.034596540345965404,
+    "win_tie_loss": {
+      "neutral_win": 20,
+      "tie": 18,
+      "neutral_loss": 47
+    },
+    "relative_drop": 0.49710892259333894
+  },
+  "caption_diagnostics": {
+    "task_aware": {
+      "documents": 3000,
+      "empty": 0,
+      "characters": {
+        "mean": 370.8806666666667,
+        "median": 370.0,
+        "p95": 479.0
+      },
+      "whitespace_tokens": {
+        "mean": 61.656,
+        "median": 62.0
+      },
+      "qwen_generation_token_count": {
+        "mean": 73.94933333333333,
+        "median": 74.0,
+        "p95": 96.0,
+        "at_or_above_110": 11
+      },
+      "bge_embedding_token_count": {
+        "mean": 90.14466666666667,
+        "median": 90.0,
+        "p95": 116.0
+      },
+      "target_category_term_documents": 3000,
+      "target_category_term_rate": 1.0,
+      "target_term_group_document_rate": {
+        "traffic": 0.971,
+        "car": 0.99,
+        "bus": 0.9743333333333334,
+        "truck": 0.8703333333333333,
+        "two_wheeler": 0.97,
+        "stopped_or_parked": 0.992,
+        "pedestrian": 0.98
+      }
+    },
+    "task_neutral": {
+      "documents": 3000,
+      "empty": 0,
+      "characters": {
+        "mean": 490.69,
+        "median": 492.0,
+        "p95": 583.0
+      },
+      "whitespace_tokens": {
+        "mean": 79.07166666666667,
+        "median": 79.0
+      },
+      "qwen_generation_token_count": {
+        "mean": 93.87866666666666,
+        "median": 94.0,
+        "p95": 110.0,
+        "at_or_above_110": 507
+      },
+      "bge_embedding_token_count": {
+        "mean": 112.855,
+        "median": 113.0,
+        "p95": 133.0
+      },
+      "target_category_term_documents": 2986,
+      "target_category_term_rate": 0.9953333333333333,
+      "target_term_group_document_rate": {
+        "traffic": 0.9566666666666667,
+        "car": 0.8263333333333334,
+        "bus": 0.3383333333333333,
+        "truck": 0.154,
+        "two_wheeler": 0.053,
+        "stopped_or_parked": 0.6183333333333333,
+        "pedestrian": 0.726
+      }
+    }
+  },
+  "adverse_prompt_sensitivity_large_by_frozen_rule": true,
+  "material_prompt_effect_either_direction": false,
+  "interpretation": "Large adverse sensitivity: disclose task-aware prompt dependence and avoid prompt-independent claims."
+}

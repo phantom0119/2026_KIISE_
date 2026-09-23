@@ -1,0 +1,40 @@
+{
+  "judge_model": "qwen25",
+  "n_judged": 444,
+  "confusion": {
+    "TP": 102,
+    "FN": 138,
+    "TN": 172,
+    "FP": 32
+  },
+  "sensitivity": 0.425,
+  "specificity": 0.8431,
+  "accuracy": 0.6171,
+  "per_arm": {
+    "A1F_flat": {
+      "sensitivity": 0.4875,
+      "specificity": 0.8676,
+      "n": 148
+    },
+    "A1_text": {
+      "sensitivity": 0.425,
+      "specificity": 0.7424,
+      "n": 146
+    },
+    "A2_path": {
+      "sensitivity": 0.3625,
+      "specificity": 0.9143,
+      "n": 150
+    }
+  },
+  "differential_misclassification": {
+    "sens_spread_across_arms": 0.125,
+    "spec_spread_across_arms": 0.1719
+  },
+  "prereg_thresholds": {
+    "sens_spec_min": 0.85,
+    "arm_spread_max": 0.05
+  },
+  "meets_prereg": false,
+  "note": "Deterministic reference only; human double annotation still PENDING."
+}

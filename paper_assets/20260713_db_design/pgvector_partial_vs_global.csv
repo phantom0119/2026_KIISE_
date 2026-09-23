@@ -1,0 +1,19 @@
+predicate,selectivity,strategy,recall_at_10,p50_ms,p95_ms,build_s,index_mb,build_amortized,frac_short
+location = '역곡남부역사거리',0.0109,global_where_off,0.01,0.374,0.498,50.4,333.5,True,0.98
+location = '역곡남부역사거리',0.0109,global_where_relaxed_order,0.167,31.807,37.936,50.4,333.5,True,0.76
+hour BETWEEN 7 AND 7,0.0474,global_where_off,0.175,0.42,0.549,50.4,333.5,True,0.885
+hour BETWEEN 7 AND 7,0.0474,global_where_relaxed_order,0.8951,6.891,35.363,50.4,333.5,True,0.045
+hour = 6,0.1829,global_where_off,0.3132,0.383,0.501,50.4,333.5,True,0.78
+hour = 6,0.1829,global_where_relaxed_order,0.986,1.086,5.646,50.4,333.5,True,0.0
+hour BETWEEN 6 AND 9,0.2601,global_where_off,0.3946,0.428,0.563,50.4,333.5,True,0.67
+hour BETWEEN 6 AND 9,0.2601,global_where_relaxed_order,0.9859,0.913,5.219,50.4,333.5,True,0.0
+hour BETWEEN 6 AND 12,0.4734,global_where_off,0.6668,0.389,0.497,50.4,333.5,True,0.345
+hour BETWEEN 6 AND 12,0.4734,global_where_relaxed_order,0.993,0.43,4.348,50.4,333.5,True,0.0
+hour BETWEEN 6 AND 18,0.7737,global_where_off,0.8787,0.389,0.495,50.4,333.5,True,0.125
+hour BETWEEN 6 AND 18,0.7737,global_where_relaxed_order,0.9965,0.449,0.92,50.4,333.5,True,0.0
+location = '역곡남부역사거리',0.0109,partial_local,0.9863,0.407,0.478,0.38,3.77,False,0.0
+hour BETWEEN 7 AND 7,0.0474,partial_local,0.9881,0.454,0.552,1.87,15.67,False,0.0
+hour = 6,0.1829,partial_local,0.9897,0.412,0.514,7.14,61.25,False,0.0
+hour BETWEEN 6 AND 9,0.2601,partial_local,0.9812,0.416,0.542,10.69,86.79,False,0.0
+hour BETWEEN 6 AND 12,0.4734,partial_local,0.9831,0.42,0.569,21.12,158.16,False,0.0
+hour BETWEEN 6 AND 18,0.7737,partial_local,0.9952,0.416,0.567,39.15,257.61,False,0.0

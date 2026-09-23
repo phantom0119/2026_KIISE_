@@ -1,0 +1,413 @@
+dataset,query_id,difficulty,event_type,event_family,contract_family,cluster,positive_count,candidate_count,representation,vector_bytes_per_clip,ndcg_at_10,hit_at_10,recall_at_10
+VRU,vru2:nofilter:0001,nofilter,car hits pedestrian,dynamic_event,open_event,VRU|car hits pedestrian,419,1000,caption,4096,0.6874708847784539,1.0,0.016706443914081145
+VRU,vru2:nofilter:0001,nofilter,car hits pedestrian,dynamic_event,open_event,VRU|car hits pedestrian,419,1000,center_frame,2048,0.49152618230759804,1.0,0.011933174224343675
+VRU,vru2:nofilter:0001,nofilter,car hits pedestrian,dynamic_event,open_event,VRU|car hits pedestrian,419,1000,visual_4frame,8192,0.43042149375026467,1.0,0.011933174224343675
+VRU,vru2:nofilter:0001,nofilter,car hits pedestrian,dynamic_event,open_event,VRU|car hits pedestrian,419,1000,fusion,12288,0.647053841756604,1.0,0.014319809069212411
+VRU,vru2:weather_light:0002,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,268,695,caption,4096,0.36865805394823997,1.0,0.014925373134328358
+VRU,vru2:weather_light:0002,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,268,695,center_frame,2048,0.618519700841442,1.0,0.022388059701492536
+VRU,vru2:weather_light:0002,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,268,695,visual_4frame,8192,0.5730379245414765,1.0,0.018656716417910446
+VRU,vru2:weather_light:0002,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,268,695,fusion,12288,0.5548010254700118,1.0,0.018656716417910446
+VRU,vru2:weather_light:0003,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,67,102,caption,4096,1.0,1.0,0.14925373134328357
+VRU,vru2:weather_light:0003,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,67,102,center_frame,2048,0.92663607790064,1.0,0.13432835820895522
+VRU,vru2:weather_light:0003,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,67,102,visual_4frame,8192,0.9337457765456111,1.0,0.13432835820895522
+VRU,vru2:weather_light:0003,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,67,102,fusion,12288,0.7885497208855957,1.0,0.1044776119402985
+VRU,vru2:weather_light:0004,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,35,110,caption,4096,0.542364015420035,1.0,0.11428571428571428
+VRU,vru2:weather_light:0004,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,35,110,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0004,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,35,110,visual_4frame,8192,0.2200917662980802,1.0,0.02857142857142857
+VRU,vru2:weather_light:0004,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,35,110,fusion,12288,0.33405144466421566,1.0,0.08571428571428572
+VRU,vru2:weather_light:0005,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,32,54,caption,4096,0.8669479898642711,1.0,0.25
+VRU,vru2:weather_light:0005,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,32,54,center_frame,2048,0.9216017310213247,1.0,0.28125
+VRU,vru2:weather_light:0005,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,32,54,visual_4frame,8192,0.8512360941594275,1.0,0.25
+VRU,vru2:weather_light:0005,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,32,54,fusion,12288,0.9363792118010483,1.0,0.28125
+VRU,vru2:weather_light:0006,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,6,18,caption,4096,0.7257275327064653,1.0,1.0
+VRU,vru2:weather_light:0006,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,6,18,center_frame,2048,0.21793006430423467,1.0,0.3333333333333333
+VRU,vru2:weather_light:0006,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,6,18,visual_4frame,8192,0.22485174766247445,1.0,0.3333333333333333
+VRU,vru2:weather_light:0006,weather_light,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,6,18,fusion,12288,0.45604298473911625,1.0,0.6666666666666666
+VRU,vru2:road_type:0007,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,269,584,caption,4096,0.6403089930936582,1.0,0.022304832713754646
+VRU,vru2:road_type:0007,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,269,584,center_frame,2048,0.5193185983095429,1.0,0.01858736059479554
+VRU,vru2:road_type:0007,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,269,584,visual_4frame,8192,0.727329844310522,1.0,0.022304832713754646
+VRU,vru2:road_type:0007,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,269,584,fusion,12288,0.769526190239283,1.0,0.026022304832713755
+VRU,vru2:road_type:0008,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,101,241,caption,4096,0.823699893396571,1.0,0.07920792079207921
+VRU,vru2:road_type:0008,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,101,241,center_frame,2048,0.09478836436955079,1.0,0.009900990099009901
+VRU,vru2:road_type:0008,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,101,241,visual_4frame,8192,0.06943122193677728,1.0,0.009900990099009901
+VRU,vru2:road_type:0008,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,101,241,fusion,12288,0.5384109300791363,1.0,0.04950495049504951
+VRU,vru2:road_type:0009,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,44,133,caption,4096,0.2726701556894781,1.0,0.09090909090909091
+VRU,vru2:road_type:0009,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,44,133,center_frame,2048,0.24261785528500343,1.0,0.06818181818181818
+VRU,vru2:road_type:0009,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,44,133,visual_4frame,8192,0.43042149375026467,1.0,0.11363636363636363
+VRU,vru2:road_type:0009,road_type,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,44,133,fusion,12288,0.5958595188912911,1.0,0.11363636363636363
+VRU,vru2:location:0010,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,390,873,caption,4096,0.41628452663299526,1.0,0.01282051282051282
+VRU,vru2:location:0010,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,390,873,center_frame,2048,0.4516672227755298,1.0,0.01282051282051282
+VRU,vru2:location:0010,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,390,873,visual_4frame,8192,0.4074153667635757,1.0,0.010256410256410256
+VRU,vru2:location:0010,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,390,873,fusion,12288,0.5734923014668308,1.0,0.015384615384615385
+VRU,vru2:location:0011,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,28,111,caption,4096,0.3824147140836781,1.0,0.14285714285714285
+VRU,vru2:location:0011,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,28,111,center_frame,2048,0.20323893375270083,1.0,0.10714285714285714
+VRU,vru2:location:0011,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,28,111,visual_4frame,8192,0.14465249243306438,1.0,0.07142857142857142
+VRU,vru2:location:0011,location,car hits pedestrian,dynamic_event,context_filtered,VRU|car hits pedestrian,28,111,fusion,12288,0.3621108234757073,1.0,0.10714285714285714
+VRU,vru2:nofilter:0012,nofilter,ego-car hits a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits a crossing pedestrian,197,1000,caption,4096,0.15840915256850252,1.0,0.01015228426395939
+VRU,vru2:nofilter:0012,nofilter,ego-car hits a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits a crossing pedestrian,197,1000,center_frame,2048,0.3301376494471203,1.0,0.01015228426395939
+VRU,vru2:nofilter:0012,nofilter,ego-car hits a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits a crossing pedestrian,197,1000,visual_4frame,8192,0.2172607128522299,1.0,0.01015228426395939
+VRU,vru2:nofilter:0012,nofilter,ego-car hits a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits a crossing pedestrian,197,1000,fusion,12288,0.15457433957839828,1.0,0.01015228426395939
+VRU,vru2:weather_light:0013,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,125,695,caption,4096,0.4189179618884326,1.0,0.04
+VRU,vru2:weather_light:0013,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,125,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0013,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,125,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0013,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,125,695,fusion,12288,0.2394408568026152,1.0,0.024
+VRU,vru2:weather_light:0014,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,34,110,caption,4096,0.2941924851321474,1.0,0.11764705882352941
+VRU,vru2:weather_light:0014,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,34,110,center_frame,2048,0.16421958630632805,1.0,0.058823529411764705
+VRU,vru2:weather_light:0014,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,34,110,visual_4frame,8192,0.20483424751859092,1.0,0.058823529411764705
+VRU,vru2:weather_light:0014,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,34,110,fusion,12288,0.3621108234757073,1.0,0.08823529411764706
+VRU,vru2:weather_light:0015,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,24,102,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0015,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,24,102,center_frame,2048,0.06943122193677728,1.0,0.041666666666666664
+VRU,vru2:weather_light:0015,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,24,102,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0015,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,24,102,fusion,12288,0.0,0.0,0.0
+VRU,vru2:weather_light:0016,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,5,54,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0016,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,5,54,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0016,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,5,54,visual_4frame,8192,0.11305340175787204,1.0,0.2
+VRU,vru2:weather_light:0016,weather_light,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,5,54,fusion,12288,0.10699313236726378,1.0,0.2
+VRU,vru2:road_type:0017,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,148,584,caption,4096,0.17366667134799182,1.0,0.013513513513513514
+VRU,vru2:road_type:0017,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,148,584,center_frame,2048,0.14782949091545264,1.0,0.013513513513513514
+VRU,vru2:road_type:0017,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,148,584,visual_4frame,8192,0.15139734109601005,1.0,0.013513513513513514
+VRU,vru2:road_type:0017,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,148,584,fusion,12288,0.3647442587311446,1.0,0.02027027027027027
+VRU,vru2:road_type:0018,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,18,133,caption,4096,0.4115325995630327,1.0,0.2777777777777778
+VRU,vru2:road_type:0018,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,18,133,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0018,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,18,133,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0018,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,18,133,fusion,12288,0.12987501165334078,1.0,0.1111111111111111
+VRU,vru2:road_type:0019,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,15,241,caption,4096,0.09478836436955079,1.0,0.06666666666666667
+VRU,vru2:road_type:0019,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,15,241,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0019,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,15,241,visual_4frame,8192,0.07336392209936006,1.0,0.06666666666666667
+VRU,vru2:road_type:0019,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,15,241,fusion,12288,0.15139734109601005,1.0,0.13333333333333333
+VRU,vru2:road_type:0020,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,24,caption,4096,0.5202575115704144,1.0,0.7142857142857143
+VRU,vru2:road_type:0020,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,24,center_frame,2048,0.6920788373899056,1.0,0.5714285714285714
+VRU,vru2:road_type:0020,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,24,visual_4frame,8192,0.6645997082078611,1.0,0.5714285714285714
+VRU,vru2:road_type:0020,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,24,fusion,12288,0.606740874130346,1.0,0.7142857142857143
+VRU,vru2:road_type:0021,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,13,caption,4096,0.8498259896365307,1.0,0.8571428571428571
+VRU,vru2:road_type:0021,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,13,center_frame,2048,0.4779805399941162,1.0,0.7142857142857143
+VRU,vru2:road_type:0021,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,13,visual_4frame,8192,0.523193734561916,1.0,0.7142857142857143
+VRU,vru2:road_type:0021,road_type,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,7,13,fusion,12288,0.7205883808625818,1.0,0.7142857142857143
+VRU,vru2:location:0022,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,156,873,caption,4096,0.24261785528500343,1.0,0.019230769230769232
+VRU,vru2:location:0022,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,156,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0022,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,156,873,visual_4frame,8192,0.07839826897867534,1.0,0.00641025641025641
+VRU,vru2:location:0022,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,156,873,fusion,12288,0.32730659600127,1.0,0.019230769230769232
+VRU,vru2:location:0023,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,32,111,caption,4096,0.5215784827120727,1.0,0.1875
+VRU,vru2:location:0023,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,32,111,center_frame,2048,0.2863459897524693,1.0,0.0625
+VRU,vru2:location:0023,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,32,111,visual_4frame,8192,0.2895229882348575,1.0,0.0625
+VRU,vru2:location:0023,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,32,111,fusion,12288,0.45953262310069537,1.0,0.125
+VRU,vru2:location:0024,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,6,6,caption,4096,1.0,1.0,1.0
+VRU,vru2:location:0024,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,6,6,center_frame,2048,1.0,1.0,1.0
+VRU,vru2:location:0024,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,6,6,visual_4frame,8192,1.0,1.0,1.0
+VRU,vru2:location:0024,location,ego-car hits a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a crossing pedestrian,6,6,fusion,12288,1.0,1.0,1.0
+VRU,vru2:nofilter:0025,nofilter,car hits cyclist,dynamic_event,open_event,VRU|car hits cyclist,118,1000,caption,4096,0.6785038377365556,1.0,0.05084745762711865
+VRU,vru2:nofilter:0025,nofilter,car hits cyclist,dynamic_event,open_event,VRU|car hits cyclist,118,1000,center_frame,2048,0.4480300279758385,1.0,0.03389830508474576
+VRU,vru2:nofilter:0025,nofilter,car hits cyclist,dynamic_event,open_event,VRU|car hits cyclist,118,1000,visual_4frame,8192,0.6177639991612476,1.0,0.0423728813559322
+VRU,vru2:nofilter:0025,nofilter,car hits cyclist,dynamic_event,open_event,VRU|car hits cyclist,118,1000,fusion,12288,0.6594803070902427,1.0,0.05084745762711865
+VRU,vru2:weather_light:0026,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,100,695,caption,4096,0.5887498202463202,1.0,0.05
+VRU,vru2:weather_light:0026,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,100,695,center_frame,2048,0.23440650992329992,1.0,0.03
+VRU,vru2:weather_light:0026,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,100,695,visual_4frame,8192,0.3024038304938509,1.0,0.03
+VRU,vru2:weather_light:0026,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,100,695,fusion,12288,0.6987957033953602,1.0,0.06
+VRU,vru2:weather_light:0027,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,10,54,caption,4096,0.8357804136936722,1.0,0.8
+VRU,vru2:weather_light:0027,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,10,54,center_frame,2048,0.14465249243306438,1.0,0.2
+VRU,vru2:weather_light:0027,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,10,54,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0027,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,10,54,fusion,12288,0.39401519638101345,1.0,0.5
+VRU,vru2:weather_light:0028,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,6,110,caption,4096,0.5058520011127917,1.0,0.5
+VRU,vru2:weather_light:0028,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,6,110,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0028,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,6,110,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0028,weather_light,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,6,110,fusion,12288,0.0874717141014082,1.0,0.16666666666666666
+VRU,vru2:road_type:0029,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,61,241,caption,4096,0.7026305163854646,1.0,0.11475409836065574
+VRU,vru2:road_type:0029,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,61,241,center_frame,2048,0.6601585067762745,1.0,0.09836065573770492
+VRU,vru2:road_type:0029,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,61,241,visual_4frame,8192,0.5396413938630011,1.0,0.08196721311475409
+VRU,vru2:road_type:0029,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,61,241,fusion,12288,0.8630152897016883,1.0,0.13114754098360656
+VRU,vru2:road_type:0030,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,35,584,caption,4096,0.67175898907361,1.0,0.17142857142857143
+VRU,vru2:road_type:0030,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,35,584,center_frame,2048,0.21819512777735,1.0,0.08571428571428572
+VRU,vru2:road_type:0030,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,35,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0030,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,35,584,fusion,12288,0.5428183923453894,1.0,0.14285714285714285
+VRU,vru2:road_type:0031,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,21,133,caption,4096,0.3476293915547283,1.0,0.19047619047619047
+VRU,vru2:road_type:0031,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,21,133,center_frame,2048,0.3476293915547283,1.0,0.19047619047619047
+VRU,vru2:road_type:0031,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,21,133,visual_4frame,8192,0.314880130667631,1.0,0.09523809523809523
+VRU,vru2:road_type:0031,road_type,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,21,133,fusion,12288,0.4847119890255186,1.0,0.19047619047619047
+VRU,vru2:location:0032,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,107,873,caption,4096,0.6036081270984909,1.0,0.06542056074766354
+VRU,vru2:location:0032,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,107,873,center_frame,2048,0.3241295975188818,1.0,0.037383177570093455
+VRU,vru2:location:0032,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,107,873,visual_4frame,8192,0.22212782793993277,1.0,0.028037383177570093
+VRU,vru2:location:0032,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,107,873,fusion,12288,0.7280855459907166,1.0,0.06542056074766354
+VRU,vru2:location:0033,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,11,111,caption,4096,0.5263304097820354,1.0,0.45454545454545453
+VRU,vru2:location:0033,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,11,111,center_frame,2048,0.15840915256850252,1.0,0.18181818181818182
+VRU,vru2:location:0033,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,11,111,visual_4frame,8192,0.36792125721353286,1.0,0.2727272727272727
+VRU,vru2:location:0033,location,car hits cyclist,dynamic_event,context_filtered,VRU|car hits cyclist,11,111,fusion,12288,0.6122496142821666,1.0,0.45454545454545453
+VRU,vru2:nofilter:0034,nofilter,ego-car hits a crossing cyclist,dynamic_event,open_event,VRU|ego-car hits a crossing cyclist,78,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0034,nofilter,ego-car hits a crossing cyclist,dynamic_event,open_event,VRU|ego-car hits a crossing cyclist,78,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0034,nofilter,ego-car hits a crossing cyclist,dynamic_event,open_event,VRU|ego-car hits a crossing cyclist,78,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0034,nofilter,ego-car hits a crossing cyclist,dynamic_event,open_event,VRU|ego-car hits a crossing cyclist,78,1000,fusion,12288,0.08514311764162101,1.0,0.01282051282051282
+VRU,vru2:weather_light:0035,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,695,caption,4096,0.15457433957839828,1.0,0.03076923076923077
+VRU,vru2:weather_light:0035,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0035,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0035,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,695,fusion,12288,0.0,0.0,0.0
+VRU,vru2:weather_light:0036,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,6,110,caption,4096,0.10086747116627115,1.0,0.16666666666666666
+VRU,vru2:weather_light:0036,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,6,110,center_frame,2048,0.2521686779156779,1.0,0.3333333333333333
+VRU,vru2:weather_light:0036,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,6,110,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0036,weather_light,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,6,110,fusion,12288,0.20453430723937174,1.0,0.3333333333333333
+VRU,vru2:road_type:0037,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,28,241,caption,4096,0.07839826897867534,1.0,0.03571428571428571
+VRU,vru2:road_type:0037,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,28,241,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0037,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,28,241,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0037,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,28,241,fusion,12288,0.0,0.0,0.0
+VRU,vru2:road_type:0038,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,24,584,caption,4096,0.06362078819895173,1.0,0.041666666666666664
+VRU,vru2:road_type:0038,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,24,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0038,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,24,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0038,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,24,584,fusion,12288,0.06943122193677728,1.0,0.041666666666666664
+VRU,vru2:road_type:0039,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,21,133,caption,4096,0.5193185983095429,1.0,0.23809523809523808
+VRU,vru2:road_type:0039,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,21,133,center_frame,2048,0.23365080824310536,1.0,0.09523809523809523
+VRU,vru2:road_type:0039,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,21,133,visual_4frame,8192,0.22082856303278733,1.0,0.14285714285714285
+VRU,vru2:road_type:0039,road_type,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,21,133,fusion,12288,0.27426546945536817,1.0,0.14285714285714285
+VRU,vru2:location:0040,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,873,caption,4096,0.07336392209936006,1.0,0.015384615384615385
+VRU,vru2:location:0040,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,873,center_frame,2048,0.1396181455537491,1.0,0.03076923076923077
+VRU,vru2:location:0040,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,873,visual_4frame,8192,0.07839826897867534,1.0,0.015384615384615385
+VRU,vru2:location:0040,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,65,873,fusion,12288,0.06625422345438904,1.0,0.015384615384615385
+VRU,vru2:location:0041,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,12,111,caption,4096,0.12987501165334078,1.0,0.16666666666666666
+VRU,vru2:location:0041,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,12,111,center_frame,2048,0.06625422345438904,1.0,0.08333333333333333
+VRU,vru2:location:0041,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,12,111,visual_4frame,8192,0.2200917662980802,1.0,0.08333333333333333
+VRU,vru2:location:0041,location,ego-car hits a crossing cyclist,dynamic_event,context_filtered,VRU|ego-car hits a crossing cyclist,12,111,fusion,12288,0.3241295975188818,1.0,0.3333333333333333
+VRU,vru2:nofilter:0042,nofilter,ego-car hits a pedestrian,dynamic_event,open_event,VRU|ego-car hits a pedestrian,44,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0042,nofilter,ego-car hits a pedestrian,dynamic_event,open_event,VRU|ego-car hits a pedestrian,44,1000,center_frame,2048,0.06362078819895173,1.0,0.022727272727272728
+VRU,vru2:nofilter:0042,nofilter,ego-car hits a pedestrian,dynamic_event,open_event,VRU|ego-car hits a pedestrian,44,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0042,nofilter,ego-car hits a pedestrian,dynamic_event,open_event,VRU|ego-car hits a pedestrian,44,1000,fusion,12288,0.06625422345438904,1.0,0.022727272727272728
+VRU,vru2:weather_light:0043,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,19,110,caption,4096,0.09478836436955079,1.0,0.05263157894736842
+VRU,vru2:weather_light:0043,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,19,110,center_frame,2048,0.5868924718493931,1.0,0.2631578947368421
+VRU,vru2:weather_light:0043,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,19,110,visual_4frame,8192,0.3308744461818275,1.0,0.21052631578947367
+VRU,vru2:weather_light:0043,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,19,110,fusion,12288,0.21538297927698713,1.0,0.15789473684210525
+VRU,vru2:weather_light:0044,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,18,695,caption,4096,0.06943122193677728,1.0,0.05555555555555555
+VRU,vru2:weather_light:0044,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,18,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0044,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,18,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0044,weather_light,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,18,695,fusion,12288,0.07839826897867534,1.0,0.05555555555555555
+VRU,vru2:road_type:0045,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,31,584,caption,4096,0.0,0.0,0.0
+VRU,vru2:road_type:0045,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,31,584,center_frame,2048,0.1100458831490401,1.0,0.03225806451612903
+VRU,vru2:road_type:0045,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,31,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0045,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,31,584,fusion,12288,0.06362078819895173,1.0,0.03225806451612903
+VRU,vru2:road_type:0046,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,6,133,caption,4096,0.30260241349881345,1.0,0.16666666666666666
+VRU,vru2:road_type:0046,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,6,133,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0046,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,6,133,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0046,road_type,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,6,133,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0047,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,33,873,caption,4096,0.0,0.0,0.0
+VRU,vru2:location:0047,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,33,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0047,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,33,873,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:location:0047,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,33,873,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0048,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,8,111,caption,4096,0.1089364926177559,1.0,0.125
+VRU,vru2:location:0048,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,8,111,center_frame,2048,0.0901000086523677,1.0,0.125
+VRU,vru2:location:0048,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,8,111,visual_4frame,8192,0.2529427027676571,1.0,0.125
+VRU,vru2:location:0048,location,ego-car hits a pedestrian,dynamic_event,context_filtered,VRU|ego-car hits a pedestrian,8,111,fusion,12288,0.26939406759102513,1.0,0.375
+VRU,vru2:nofilter:0049,nofilter,cyclist falls down,dynamic_event,open_event,VRU|cyclist falls down,32,1000,caption,4096,0.4373524791503101,1.0,0.09375
+VRU,vru2:nofilter:0049,nofilter,cyclist falls down,dynamic_event,open_event,VRU|cyclist falls down,32,1000,center_frame,2048,0.07839826897867534,1.0,0.03125
+VRU,vru2:nofilter:0049,nofilter,cyclist falls down,dynamic_event,open_event,VRU|cyclist falls down,32,1000,visual_4frame,8192,0.08514311764162101,1.0,0.03125
+VRU,vru2:nofilter:0049,nofilter,cyclist falls down,dynamic_event,open_event,VRU|cyclist falls down,32,1000,fusion,12288,0.2895229882348575,1.0,0.0625
+VRU,vru2:weather_light:0050,weather_light,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,31,695,caption,4096,0.37148910739409025,1.0,0.0967741935483871
+VRU,vru2:weather_light:0050,weather_light,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,31,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0050,weather_light,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,31,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0050,weather_light,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,31,695,fusion,12288,0.12987501165334078,1.0,0.06451612903225806
+VRU,vru2:road_type:0051,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,14,584,caption,4096,0.22400556151517556,1.0,0.14285714285714285
+VRU,vru2:road_type:0051,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,14,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0051,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,14,584,visual_4frame,8192,0.07336392209936006,1.0,0.07142857142857142
+VRU,vru2:road_type:0051,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,14,584,fusion,12288,0.13886244387355456,1.0,0.07142857142857142
+VRU,vru2:road_type:0052,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,133,caption,4096,0.17856411732486627,1.0,0.3333333333333333
+VRU,vru2:road_type:0052,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,133,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0052,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,133,visual_4frame,8192,0.0874717141014082,1.0,0.16666666666666666
+VRU,vru2:road_type:0052,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,133,fusion,12288,0.0,0.0,0.0
+VRU,vru2:road_type:0053,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,241,caption,4096,0.10086747116627115,1.0,0.16666666666666666
+VRU,vru2:road_type:0053,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,241,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0053,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,241,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0053,road_type,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,6,241,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0054,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,24,873,caption,4096,0.26180807422707547,1.0,0.125
+VRU,vru2:location:0054,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,24,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0054,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,24,873,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:location:0054,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,24,873,fusion,12288,0.1100458831490401,1.0,0.041666666666666664
+VRU,vru2:location:0055,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,7,111,caption,4096,0.3592214174512367,1.0,0.42857142857142855
+VRU,vru2:location:0055,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,7,111,center_frame,2048,0.08671382849411972,1.0,0.14285714285714285
+VRU,vru2:location:0055,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,7,111,visual_4frame,8192,0.17342765698823945,1.0,0.14285714285714285
+VRU,vru2:location:0055,location,cyclist falls down,dynamic_event,context_filtered,VRU|cyclist falls down,7,111,fusion,12288,0.21689524588991285,1.0,0.2857142857142857
+VRU,vru2:nofilter:0056,nofilter,motorbike hits pedestrian,dynamic_event,open_event,VRU|motorbike hits pedestrian,19,1000,caption,4096,0.6936634693435664,1.0,0.3157894736842105
+VRU,vru2:nofilter:0056,nofilter,motorbike hits pedestrian,dynamic_event,open_event,VRU|motorbike hits pedestrian,19,1000,center_frame,2048,0.07336392209936006,1.0,0.05263157894736842
+VRU,vru2:nofilter:0056,nofilter,motorbike hits pedestrian,dynamic_event,open_event,VRU|motorbike hits pedestrian,19,1000,visual_4frame,8192,0.08514311764162101,1.0,0.05263157894736842
+VRU,vru2:nofilter:0056,nofilter,motorbike hits pedestrian,dynamic_event,open_event,VRU|motorbike hits pedestrian,19,1000,fusion,12288,0.5321408435198609,1.0,0.21052631578947367
+VRU,vru2:weather_light:0057,weather_light,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,15,695,caption,4096,0.5009732673492617,1.0,0.26666666666666666
+VRU,vru2:weather_light:0057,weather_light,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,15,695,center_frame,2048,0.29345568839744024,1.0,0.13333333333333333
+VRU,vru2:weather_light:0057,weather_light,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,15,695,visual_4frame,8192,0.2863459897524693,1.0,0.13333333333333333
+VRU,vru2:weather_light:0057,weather_light,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,15,695,fusion,12288,0.5637884576902257,1.0,0.26666666666666666
+VRU,vru2:road_type:0058,road_type,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,13,584,caption,4096,0.42333070005078105,1.0,0.3076923076923077
+VRU,vru2:road_type:0058,road_type,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,13,584,center_frame,2048,0.2200917662980802,1.0,0.07692307692307693
+VRU,vru2:road_type:0058,road_type,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,13,584,visual_4frame,8192,0.08514311764162101,1.0,0.07692307692307693
+VRU,vru2:road_type:0058,road_type,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,13,584,fusion,12288,0.20323893375270083,1.0,0.23076923076923078
+VRU,vru2:location:0059,location,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,19,873,caption,4096,0.6745711375739729,1.0,0.3157894736842105
+VRU,vru2:location:0059,location,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,19,873,center_frame,2048,0.2200917662980802,1.0,0.05263157894736842
+VRU,vru2:location:0059,location,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,19,873,visual_4frame,8192,0.35895421017163476,1.0,0.10526315789473684
+VRU,vru2:location:0059,location,motorbike hits pedestrian,dynamic_event,context_filtered,VRU|motorbike hits pedestrian,19,873,fusion,12288,0.4249260138166711,1.0,0.15789473684210525
+VRU,vru2:nofilter:0060,nofilter,pedestrian falls down,dynamic_event,open_event,VRU|pedestrian falls down,13,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0060,nofilter,pedestrian falls down,dynamic_event,open_event,VRU|pedestrian falls down,13,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0060,nofilter,pedestrian falls down,dynamic_event,open_event,VRU|pedestrian falls down,13,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0060,nofilter,pedestrian falls down,dynamic_event,open_event,VRU|pedestrian falls down,13,1000,fusion,12288,0.0,0.0,0.0
+VRU,vru2:weather_light:0061,weather_light,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,695,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0061,weather_light,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0061,weather_light,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0061,weather_light,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,695,fusion,12288,0.0,0.0,0.0
+VRU,vru2:road_type:0062,road_type,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,584,caption,4096,0.0,0.0,0.0
+VRU,vru2:road_type:0062,road_type,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0062,road_type,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0062,road_type,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,8,584,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0063,location,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,11,873,caption,4096,0.0,0.0,0.0
+VRU,vru2:location:0063,location,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,11,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0063,location,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,11,873,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:location:0063,location,pedestrian falls down,dynamic_event,context_filtered,VRU|pedestrian falls down,11,873,fusion,12288,0.0,0.0,0.0
+VRU,vru2:nofilter:0064,nofilter,motorbike hits cyclist,dynamic_event,open_event,VRU|motorbike hits cyclist,12,1000,caption,4096,0.20511666732794362,1.0,0.16666666666666666
+VRU,vru2:nofilter:0064,nofilter,motorbike hits cyclist,dynamic_event,open_event,VRU|motorbike hits cyclist,12,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0064,nofilter,motorbike hits cyclist,dynamic_event,open_event,VRU|motorbike hits cyclist,12,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0064,nofilter,motorbike hits cyclist,dynamic_event,open_event,VRU|motorbike hits cyclist,12,1000,fusion,12288,0.06943122193677728,1.0,0.08333333333333333
+VRU,vru2:weather_light:0065,weather_light,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,11,695,caption,4096,0.2808815010511816,1.0,0.2727272727272727
+VRU,vru2:weather_light:0065,weather_light,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,11,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0065,weather_light,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,11,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0065,weather_light,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,11,695,fusion,12288,0.13886244387355456,1.0,0.09090909090909091
+VRU,vru2:road_type:0066,road_type,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,6,241,caption,4096,0.4945622878885427,1.0,0.5
+VRU,vru2:road_type:0066,road_type,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,6,241,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0066,road_type,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,6,241,visual_4frame,8192,0.11706259313796354,1.0,0.16666666666666666
+VRU,vru2:road_type:0066,road_type,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,6,241,fusion,12288,0.28201326940239274,1.0,0.3333333333333333
+VRU,vru2:location:0067,location,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,12,873,caption,4096,0.2837125544970319,1.0,0.16666666666666666
+VRU,vru2:location:0067,location,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,12,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0067,location,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,12,873,visual_4frame,8192,0.09478836436955079,1.0,0.08333333333333333
+VRU,vru2:location:0067,location,motorbike hits cyclist,dynamic_event,context_filtered,VRU|motorbike hits cyclist,12,873,fusion,12288,0.17947710508581738,1.0,0.16666666666666666
+VRU,vru2:nofilter:0068,nofilter,truck hits pedestrian,dynamic_event,open_event,VRU|truck hits pedestrian,11,1000,caption,4096,0.06625422345438904,1.0,0.09090909090909091
+VRU,vru2:nofilter:0068,nofilter,truck hits pedestrian,dynamic_event,open_event,VRU|truck hits pedestrian,11,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0068,nofilter,truck hits pedestrian,dynamic_event,open_event,VRU|truck hits pedestrian,11,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0068,nofilter,truck hits pedestrian,dynamic_event,open_event,VRU|truck hits pedestrian,11,1000,fusion,12288,0.1100458831490401,1.0,0.09090909090909091
+VRU,vru2:weather_light:0069,weather_light,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,695,caption,4096,0.3507942974028176,1.0,0.25
+VRU,vru2:weather_light:0069,weather_light,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0069,weather_light,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0069,weather_light,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,695,fusion,12288,0.09785159463516042,1.0,0.125
+VRU,vru2:road_type:0070,road_type,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,5,584,caption,4096,0.0,0.0,0.0
+VRU,vru2:road_type:0070,road_type,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,5,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0070,road_type,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,5,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0070,road_type,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,5,584,fusion,12288,0.13120507751234178,1.0,0.2
+VRU,vru2:location:0071,location,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,873,caption,4096,0.0901000086523677,1.0,0.125
+VRU,vru2:location:0071,location,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,873,center_frame,2048,0.07979453856244818,1.0,0.125
+VRU,vru2:location:0071,location,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,873,visual_4frame,8192,0.07979453856244818,1.0,0.125
+VRU,vru2:location:0071,location,truck hits pedestrian,dynamic_event,context_filtered,VRU|truck hits pedestrian,8,873,fusion,12288,0.15958907712489637,1.0,0.125
+VRU,vru2:nofilter:0072,nofilter,truck hits cyclist,dynamic_event,open_event,VRU|truck hits cyclist,8,1000,caption,4096,0.5784505554216093,1.0,0.5
+VRU,vru2:nofilter:0072,nofilter,truck hits cyclist,dynamic_event,open_event,VRU|truck hits cyclist,8,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0072,nofilter,truck hits cyclist,dynamic_event,open_event,VRU|truck hits cyclist,8,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0072,nofilter,truck hits cyclist,dynamic_event,open_event,VRU|truck hits cyclist,8,1000,fusion,12288,0.4125317798925535,1.0,0.25
+VRU,vru2:weather_light:0073,weather_light,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,7,695,caption,4096,0.6370339733570289,1.0,0.5714285714285714
+VRU,vru2:weather_light:0073,weather_light,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,7,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0073,weather_light,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,7,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0073,weather_light,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,7,695,fusion,12288,0.4483039899025303,1.0,0.2857142857142857
+VRU,vru2:road_type:0074,road_type,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,584,caption,4096,0.6843515475204855,1.0,0.6
+VRU,vru2:road_type:0074,road_type,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0074,road_type,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0074,road_type,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,584,fusion,12288,0.3391602052736161,1.0,0.2
+VRU,vru2:location:0075,location,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,873,caption,4096,0.5087403079104241,1.0,0.4
+VRU,vru2:location:0075,location,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0075,location,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,873,visual_4frame,8192,0.10699313236726378,1.0,0.2
+VRU,vru2:location:0075,location,truck hits cyclist,dynamic_event,context_filtered,VRU|truck hits cyclist,5,873,fusion,12288,0.5087403079104241,1.0,0.4
+VRU,vru2:nofilter:0076,nofilter,cyclist hits cyclist,dynamic_event,open_event,VRU|cyclist hits cyclist,8,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0076,nofilter,cyclist hits cyclist,dynamic_event,open_event,VRU|cyclist hits cyclist,8,1000,center_frame,2048,0.07979453856244818,1.0,0.125
+VRU,vru2:nofilter:0076,nofilter,cyclist hits cyclist,dynamic_event,open_event,VRU|cyclist hits cyclist,8,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0076,nofilter,cyclist hits cyclist,dynamic_event,open_event,VRU|cyclist hits cyclist,8,1000,fusion,12288,0.07614334071738352,1.0,0.125
+VRU,vru2:weather_light:0077,weather_light,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,6,695,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0077,weather_light,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,6,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0077,weather_light,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,6,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0077,weather_light,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,6,695,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0078,location,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,7,873,caption,4096,0.0,0.0,0.0
+VRU,vru2:location:0078,location,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,7,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0078,location,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,7,873,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:location:0078,location,cyclist hits cyclist,dynamic_event,context_filtered,VRU|cyclist hits cyclist,7,873,fusion,12288,0.13743816645714543,1.0,0.14285714285714285
+VRU,vru2:nofilter:0079,nofilter,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits or nearmiss a crossing pedestrian,6,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0079,nofilter,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits or nearmiss a crossing pedestrian,6,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0079,nofilter,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits or nearmiss a crossing pedestrian,6,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0079,nofilter,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,open_event,VRU|ego-car hits or nearmiss a crossing pedestrian,6,1000,fusion,12288,0.0,0.0,0.0
+VRU,vru2:weather_light:0080,weather_light,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,695,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0080,weather_light,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0080,weather_light,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,695,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:weather_light:0080,weather_light,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,695,fusion,12288,0.0,0.0,0.0
+VRU,vru2:road_type:0081,road_type,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,584,caption,4096,0.0,0.0,0.0
+VRU,vru2:road_type:0081,road_type,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,584,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:road_type:0081,road_type,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,584,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:road_type:0081,road_type,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,584,fusion,12288,0.0,0.0,0.0
+VRU,vru2:location:0082,location,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,873,caption,4096,0.0,0.0,0.0
+VRU,vru2:location:0082,location,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,873,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:location:0082,location,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,873,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:location:0082,location,ego-car hits or nearmiss a crossing pedestrian,dynamic_event,context_filtered,VRU|ego-car hits or nearmiss a crossing pedestrian,6,873,fusion,12288,0.0,0.0,0.0
+VRU,vru2:nofilter:0083,nofilter,ego-car hits a motorcycle or cyclist,dynamic_event,open_event,VRU|ego-car hits a motorcycle or cyclist,5,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0083,nofilter,ego-car hits a motorcycle or cyclist,dynamic_event,open_event,VRU|ego-car hits a motorcycle or cyclist,5,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0083,nofilter,ego-car hits a motorcycle or cyclist,dynamic_event,open_event,VRU|ego-car hits a motorcycle or cyclist,5,1000,visual_4frame,8192,0.0,0.0,0.0
+VRU,vru2:nofilter:0083,nofilter,ego-car hits a motorcycle or cyclist,dynamic_event,open_event,VRU|ego-car hits a motorcycle or cyclist,5,1000,fusion,12288,0.0,0.0,0.0
+VRU,vru2:nofilter:0084,nofilter,car hits or nearmiss pedestrian,dynamic_event,open_event,VRU|car hits or nearmiss pedestrian,5,1000,caption,4096,0.0,0.0,0.0
+VRU,vru2:nofilter:0084,nofilter,car hits or nearmiss pedestrian,dynamic_event,open_event,VRU|car hits or nearmiss pedestrian,5,1000,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:nofilter:0084,nofilter,car hits or nearmiss pedestrian,dynamic_event,open_event,VRU|car hits or nearmiss pedestrian,5,1000,visual_4frame,8192,0.16958010263680806,1.0,0.2
+VRU,vru2:nofilter:0084,nofilter,car hits or nearmiss pedestrian,dynamic_event,open_event,VRU|car hits or nearmiss pedestrian,5,1000,fusion,12288,0.0,0.0,0.0
+VRU,vru2:weather_light:0085,weather_light,car hits or nearmiss pedestrian,dynamic_event,context_filtered,VRU|car hits or nearmiss pedestrian,5,695,caption,4096,0.0,0.0,0.0
+VRU,vru2:weather_light:0085,weather_light,car hits or nearmiss pedestrian,dynamic_event,context_filtered,VRU|car hits or nearmiss pedestrian,5,695,center_frame,2048,0.0,0.0,0.0
+VRU,vru2:weather_light:0085,weather_light,car hits or nearmiss pedestrian,dynamic_event,context_filtered,VRU|car hits or nearmiss pedestrian,5,695,visual_4frame,8192,0.16958010263680806,1.0,0.2
+VRU,vru2:weather_light:0085,weather_light,car hits or nearmiss pedestrian,dynamic_event,context_filtered,VRU|car hits or nearmiss pedestrian,5,695,fusion,12288,0.0,0.0,0.0
+AIHUB,acctv2:nofilter:0001,nofilter,Gathering,scene_state,open_event,AIHUB|Gathering,63,269,caption,4096,0.7951657524814092,1.0,0.12698412698412698
+AIHUB,acctv2:nofilter:0001,nofilter,Gathering,scene_state,open_event,AIHUB|Gathering,63,269,center_frame,2048,0.3836331529183765,1.0,0.047619047619047616
+AIHUB,acctv2:nofilter:0001,nofilter,Gathering,scene_state,open_event,AIHUB|Gathering,63,269,visual_4frame,8192,0.20511666732794362,1.0,0.031746031746031744
+AIHUB,acctv2:nofilter:0001,nofilter,Gathering,scene_state,open_event,AIHUB|Gathering,63,269,fusion,12288,0.4760705018418427,1.0,0.07936507936507936
+AIHUB,acctv2:night:0002,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,40,152,caption,4096,0.3088720787393925,1.0,0.1
+AIHUB,acctv2:night:0002,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,40,152,center_frame,2048,0.36885567213865295,1.0,0.075
+AIHUB,acctv2:night:0002,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,40,152,visual_4frame,8192,0.4225749983705865,1.0,0.075
+AIHUB,acctv2:night:0002,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,40,152,fusion,12288,0.36288691033421755,1.0,0.075
+AIHUB,acctv2:night:0003,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,23,117,caption,4096,1.0,1.0,0.43478260869565216
+AIHUB,acctv2:night:0003,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,23,117,center_frame,2048,0.49118023727106014,1.0,0.17391304347826086
+AIHUB,acctv2:night:0003,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,23,117,visual_4frame,8192,0.42883980903376645,1.0,0.17391304347826086
+AIHUB,acctv2:night:0003,night,Gathering,scene_state,context_filtered,AIHUB|Gathering,23,117,fusion,12288,0.9148568823583791,1.0,0.391304347826087
+AIHUB,acctv2:nofilter:0004,nofilter,Flood,scene_state,open_event,AIHUB|Flood,53,269,caption,4096,1.0,1.0,0.18867924528301888
+AIHUB,acctv2:nofilter:0004,nofilter,Flood,scene_state,open_event,AIHUB|Flood,53,269,center_frame,2048,0.9305687780632229,1.0,0.16981132075471697
+AIHUB,acctv2:nofilter:0004,nofilter,Flood,scene_state,open_event,AIHUB|Flood,53,269,visual_4frame,8192,0.9305687780632229,1.0,0.16981132075471697
+AIHUB,acctv2:nofilter:0004,nofilter,Flood,scene_state,open_event,AIHUB|Flood,53,269,fusion,12288,1.0,1.0,0.18867924528301888
+AIHUB,acctv2:night:0005,night,Flood,scene_state,context_filtered,AIHUB|Flood,34,152,caption,4096,1.0,1.0,0.29411764705882354
+AIHUB,acctv2:night:0005,night,Flood,scene_state,context_filtered,AIHUB|Flood,34,152,center_frame,2048,0.8611375561264456,1.0,0.2647058823529412
+AIHUB,acctv2:night:0005,night,Flood,scene_state,context_filtered,AIHUB|Flood,34,152,visual_4frame,8192,0.7877736340270853,1.0,0.23529411764705882
+AIHUB,acctv2:night:0005,night,Flood,scene_state,context_filtered,AIHUB|Flood,34,152,fusion,12288,1.0,1.0,0.29411764705882354
+AIHUB,acctv2:night:0006,night,Flood,scene_state,context_filtered,AIHUB|Flood,19,117,caption,4096,1.0,1.0,0.5263157894736842
+AIHUB,acctv2:night:0006,night,Flood,scene_state,context_filtered,AIHUB|Flood,19,117,center_frame,2048,0.7264127302306637,1.0,0.3684210526315789
+AIHUB,acctv2:night:0006,night,Flood,scene_state,context_filtered,AIHUB|Flood,19,117,visual_4frame,8192,0.7670273914429266,1.0,0.3684210526315789
+AIHUB,acctv2:night:0006,night,Flood,scene_state,context_filtered,AIHUB|Flood,19,117,fusion,12288,1.0,1.0,0.5263157894736842
+AIHUB,acctv2:place_type:0007,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,36,36,caption,4096,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:place_type:0007,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,36,36,center_frame,2048,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:place_type:0007,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,36,36,visual_4frame,8192,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:place_type:0007,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,36,36,fusion,12288,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:place_type:0008,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,10,10,caption,4096,1.0,1.0,1.0
+AIHUB,acctv2:place_type:0008,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,10,10,center_frame,2048,1.0,1.0,1.0
+AIHUB,acctv2:place_type:0008,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,10,10,visual_4frame,8192,1.0,1.0,1.0
+AIHUB,acctv2:place_type:0008,place_type,Flood,scene_state,context_filtered,AIHUB|Flood,10,10,fusion,12288,1.0,1.0,1.0
+AIHUB,acctv2:nofilter:0009,nofilter,Invasion,dynamic_event,open_event,AIHUB|Invasion,50,269,caption,4096,1.0,1.0,0.2
+AIHUB,acctv2:nofilter:0009,nofilter,Invasion,dynamic_event,open_event,AIHUB|Invasion,50,269,center_frame,2048,0.2200917662980802,1.0,0.02
+AIHUB,acctv2:nofilter:0009,nofilter,Invasion,dynamic_event,open_event,AIHUB|Invasion,50,269,visual_4frame,8192,0.13886244387355456,1.0,0.02
+AIHUB,acctv2:nofilter:0009,nofilter,Invasion,dynamic_event,open_event,AIHUB|Invasion,50,269,fusion,12288,0.611019150498302,1.0,0.1
+AIHUB,acctv2:night:0010,night,Invasion,dynamic_event,context_filtered,AIHUB|Invasion,50,117,caption,4096,1.0,1.0,0.2
+AIHUB,acctv2:night:0010,night,Invasion,dynamic_event,context_filtered,AIHUB|Invasion,50,117,center_frame,2048,0.2863459897524693,1.0,0.04
+AIHUB,acctv2:night:0010,night,Invasion,dynamic_event,context_filtered,AIHUB|Invasion,50,117,visual_4frame,8192,0.36288691033421755,1.0,0.06
+AIHUB,acctv2:night:0010,night,Invasion,dynamic_event,context_filtered,AIHUB|Invasion,50,117,fusion,12288,0.857980942822373,1.0,0.16
+AIHUB,acctv2:nofilter:0011,nofilter,Falldown,dynamic_event,open_event,AIHUB|Falldown,40,269,caption,4096,0.7605591431973849,1.0,0.175
+AIHUB,acctv2:nofilter:0011,nofilter,Falldown,dynamic_event,open_event,AIHUB|Falldown,40,269,center_frame,2048,0.0,0.0,0.0
+AIHUB,acctv2:nofilter:0011,nofilter,Falldown,dynamic_event,open_event,AIHUB|Falldown,40,269,visual_4frame,8192,0.07839826897867534,1.0,0.025
+AIHUB,acctv2:nofilter:0011,nofilter,Falldown,dynamic_event,open_event,AIHUB|Falldown,40,269,fusion,12288,0.6969383549984333,1.0,0.15
+AIHUB,acctv2:night:0012,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,25,152,caption,4096,0.35969100690634187,1.0,0.16
+AIHUB,acctv2:night:0012,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,25,152,center_frame,2048,0.0,0.0,0.0
+AIHUB,acctv2:night:0012,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,25,152,visual_4frame,8192,0.09478836436955079,1.0,0.04
+AIHUB,acctv2:night:0012,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,25,152,fusion,12288,0.5206178632166883,1.0,0.2
+AIHUB,acctv2:night:0013,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,15,117,caption,4096,0.314880130667631,1.0,0.13333333333333333
+AIHUB,acctv2:night:0013,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,15,117,center_frame,2048,0.1100458831490401,1.0,0.06666666666666667
+AIHUB,acctv2:night:0013,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,15,117,visual_4frame,8192,0.1100458831490401,1.0,0.06666666666666667
+AIHUB,acctv2:night:0013,night,Falldown,dynamic_event,context_filtered,AIHUB|Falldown,15,117,fusion,12288,0.4085359184257956,1.0,0.2
+AIHUB,acctv2:nofilter:0014,nofilter,Crowd,scene_state,open_event,AIHUB|Crowd,36,269,caption,4096,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:nofilter:0014,nofilter,Crowd,scene_state,open_event,AIHUB|Crowd,36,269,center_frame,2048,0.9363792118010483,1.0,0.25
+AIHUB,acctv2:nofilter:0014,nofilter,Crowd,scene_state,open_event,AIHUB|Crowd,36,269,visual_4frame,8192,0.9305687780632229,1.0,0.25
+AIHUB,acctv2:nofilter:0014,nofilter,Crowd,scene_state,open_event,AIHUB|Crowd,36,269,fusion,12288,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:night:0015,night,Crowd,scene_state,context_filtered,AIHUB|Crowd,36,152,caption,4096,0.88995411685096,1.0,0.25
+AIHUB,acctv2:night:0015,night,Crowd,scene_state,context_filtered,AIHUB|Crowd,36,152,center_frame,2048,0.8263333286520084,1.0,0.2222222222222222
+AIHUB,acctv2:night:0015,night,Crowd,scene_state,context_filtered,AIHUB|Crowd,36,152,visual_4frame,8192,0.617585285916322,1.0,0.16666666666666666
+AIHUB,acctv2:night:0015,night,Crowd,scene_state,context_filtered,AIHUB|Crowd,36,152,fusion,12288,1.0,1.0,0.2777777777777778
+AIHUB,acctv2:nofilter:0016,nofilter,Fight,dynamic_event,open_event,AIHUB|Fight,27,269,caption,4096,1.0,1.0,0.37037037037037035
+AIHUB,acctv2:nofilter:0016,nofilter,Fight,dynamic_event,open_event,AIHUB|Fight,27,269,center_frame,2048,0.0,0.0,0.0
+AIHUB,acctv2:nofilter:0016,nofilter,Fight,dynamic_event,open_event,AIHUB|Fight,27,269,visual_4frame,8192,0.0,0.0,0.0
+AIHUB,acctv2:nofilter:0016,nofilter,Fight,dynamic_event,open_event,AIHUB|Fight,27,269,fusion,12288,0.2719144540092836,1.0,0.1111111111111111
+AIHUB,acctv2:night:0017,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,17,152,caption,4096,0.6816808362189439,1.0,0.35294117647058826
+AIHUB,acctv2:night:0017,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,17,152,center_frame,2048,0.0,0.0,0.0
+AIHUB,acctv2:night:0017,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,17,152,visual_4frame,8192,0.0,0.0,0.0
+AIHUB,acctv2:night:0017,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,17,152,fusion,12288,0.20829366581033185,1.0,0.11764705882352941
+AIHUB,acctv2:night:0018,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,10,117,caption,4096,1.0,1.0,1.0
+AIHUB,acctv2:night:0018,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,10,117,center_frame,2048,0.0,0.0,0.0
+AIHUB,acctv2:night:0018,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,10,117,visual_4frame,8192,0.0,0.0,0.0
+AIHUB,acctv2:night:0018,night,Fight,dynamic_event,context_filtered,AIHUB|Fight,10,117,fusion,12288,0.6122496142821666,1.0,0.5

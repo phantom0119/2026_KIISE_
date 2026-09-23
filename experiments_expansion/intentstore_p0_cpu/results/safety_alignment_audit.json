@@ -1,0 +1,42 @@
+{
+  "status": "ALIGNMENT_PASS",
+  "failures": [],
+  "datasets": [
+    {
+      "dataset": "VRU",
+      "queries": 85,
+      "clips": 1000,
+      "qrel_targets_outside_corpus": 0,
+      "clips_without_frames": 0,
+      "frame_count": 4000,
+      "frames_per_clip_min": 4,
+      "frames_per_clip_max": 4,
+      "frame_norm_min": 0.9999998211860657,
+      "frame_norm_max": 1.0000001192092896,
+      "query_norm_min": 0.9999998807907104,
+      "query_norm_max": 1.0000001192092896,
+      "missing_required_text_rankings": 0,
+      "exact_old_query_text_matches": 15,
+      "exact_match_cosine_min": 0.9999998807907104,
+      "exact_match_cosine_max": 1.0000001192092896
+    },
+    {
+      "dataset": "AIHUB",
+      "queries": 18,
+      "clips": 269,
+      "qrel_targets_outside_corpus": 0,
+      "clips_without_frames": 0,
+      "frame_count": 1076,
+      "frames_per_clip_min": 4,
+      "frames_per_clip_max": 4,
+      "frame_norm_min": 0.9999998807907104,
+      "frame_norm_max": 1.0000001192092896,
+      "query_norm_min": 0.9999998807907104,
+      "query_norm_max": 1.0000001192092896,
+      "missing_required_text_rankings": 0,
+      "exact_old_query_text_matches": 0,
+      "exact_match_cosine_min": null,
+      "exact_match_cosine_max": null
+    }
+  ]
+}

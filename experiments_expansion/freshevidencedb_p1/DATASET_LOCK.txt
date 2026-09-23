@@ -1,0 +1,15 @@
+FreshEvidenceDB P1-A dataset lock, 2026-08-07
+
+flask
+origin=https://github.com/pallets/flask.git
+head=6a2f545bfd8ed31e19066a299296917e034aca58
+path=docs/**
+license_file=LICENSE.txt
+license_sha256=489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea
+
+kubernetes
+origin=https://github.com/kubernetes/website.git
+head=7ddeae4e0e52ce7dcb0e868106a9c15d8e3b8b02
+path=content/en/docs/**
+license_file=LICENSE
+license_sha256=9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411

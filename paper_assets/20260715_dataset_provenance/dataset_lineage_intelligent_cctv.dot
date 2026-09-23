@@ -1,0 +1,36 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.28", nodesep="0.32",
+         ranksep="0.68", splines=polyline, outputorder=edgesfirst,
+         fontname="NanumBarunGothic", fontsize=20, label="AI Hub 지능형 관제 CCTV: MP4/JSON staging에서 수리판 검색까지
+선별 staging 13G -&gt; 현재 수리판 1.5M | media-label pair 누락 0",
+         labelloc=t, labeljust=l];
+  node [fontname="NanumBarunGothic", color="#526476"];
+  edge [fontname="NanumBarunGothic", fontsize=9, color="#526476",
+        penwidth=1.15, arrowsize=0.72];
+
+  raw [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#E8F3FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>1. 외부 원본 파일</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>외부 -&gt; staging</B><BR ALIGN="LEFT"/>외부 원천 ZIP 31 + 라벨 ZIP 31<BR ALIGN="LEFT"/>선별 videos/{train,val}/event/*.mp4: 269<BR ALIGN="LEFT"/>labels/{train,val}/event/*.json: 269<BR ALIGN="LEFT"/>clip_pairs.csv로 1:1 pair 고정</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>JSON 내용</B><BR ALIGN="LEFT"/>event_caption, event_class<BR ALIGN="LEFT"/>night, place_type 등 사건·환경 label<BR ALIGN="LEFT"/>event_caption은 외부 제공 문서</FONT></TD></TR></TABLE>>];
+  transform [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#EAF6EC" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>2. 연구 처리</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>v1 순환판</B><BR ALIGN="LEFT"/>event_caption + event class template<BR ALIGN="LEFT"/>documents 807 / queries 133<BR ALIGN="LEFT"/>라벨 어휘의 직접 재진술 포함</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>① 20260710_noncircular 수리</B><BR ALIGN="LEFT"/>template 문서 제거<BR ALIGN="LEFT"/>document=외부 event_caption<BR ALIGN="LEFT"/>relevance=event_class<BR ALIGN="LEFT"/>filter=night/place_type</FONT></TD></TR></TABLE>>];
+  stored [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="360" BGCOLOR="#F5F7FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>3. 현재 디스크/DB 산출물</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>canonical/</B><BR ALIGN="LEFT"/>clips/documents.parquet 269<BR ALIGN="LEFT"/>queries.jsonl 18<BR ALIGN="LEFT"/>qrels.tsv 584 / semantic 827</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>실제 문서 예</B><BR ALIGN="LEFT"/>&#x27;가방을 가진 3명과 ... 모텔 앞 도로변에서 ...&#x27;<BR ALIGN="LEFT"/>lang=ko, source=원 JSON 경로</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>embeddings/bge-m3/</B><BR ALIGN="LEFT"/>document 269 x 1,024<BR ALIGN="LEFT"/>query 18 x 1,024 (NPY + index parquet)</FONT></TD></TR></TABLE>>];
+  use [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#FFF3D6" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>4. 논문에서 실제 사용</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>검색 대조</B><BR ALIGN="LEFT"/>순환 붕괴와 수리 효과<BR ALIGN="LEFT"/>국내 고정형 CCTV 소형 이식성 대조</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>범위</B><BR ALIGN="LEFT"/>헤드라인 tri-source가 아닌 보조 control</FONT></TD></TR></TABLE>>];
+  raw -> transform [xlabel="입력"];
+  transform -> stored [xlabel="materialize"];
+  stored -> use [xlabel="평가 입력"];
+  { rank=same; raw; transform; }
+  { rank=same; stored; use; }
+  raw -> stored [style=invis, weight=40];
+  transform -> use [style=invis, weight=40];
+  warning [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#C63C36" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="520" BGCOLOR="#FFF1F0" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>해석 시 주의</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>논문 표기 원칙</B><BR ALIGN="LEFT"/>event_caption은 본 연구가 VLM으로 생성한 캡션이 아니다.<BR ALIGN="LEFT"/>모든 채널이 같은 외부 JSON 생산자에 의존하므로 생산자 독립성은 없다.</FONT></TD></TR></TABLE>>];
+  stored -> warning [style=dashed, arrowhead=none, color="#C63C36", constraint=false];
+  legend [shape=plain, label=<<TABLE BORDER="0" CELLBORDER="1" COLOR="#A7B3C0" CELLSPACING="0" CELLPADDING="6">
+      <TR>
+        <TD BGCOLOR="#E8F3FA">외부 원본/원 배포</TD>
+        <TD BGCOLOR="#EAF6EC">① 추출·파싱·임베딩</TD>
+        <TD BGCOLOR="#FFF1C7">② 본 연구 AI 생성</TD>
+        <TD BGCOLOR="#FFE5D6">③ 합성·proxy</TD>
+        <TD BGCOLOR="#F5F7FA">현재 저장 파일/DB</TD>
+        <TD BGCOLOR="#FFF3D6">논문 실험 입력</TD>
+      </TR>
+    </TABLE>>];
+  use -> warning [style=invis, weight=30];
+  warning -> legend [style=invis, weight=30];
+  }

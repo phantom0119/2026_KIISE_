@@ -1,0 +1,27 @@
+corpus,predicate,kind,rule,count,selectivity
+B_522visual,(joined frames),meta,sensor join ok within ±120s,129395,0.89964
+B_522visual,time_of_day==morning,natural,,36999,0.25724
+B_522visual,time_of_day==afternoon,natural,,49998,0.34762
+B_522visual,time_of_day==evening,natural,,42398,0.29478
+B_522visual,sig_has_yellow==True,natural,,90392,0.62846
+B_522visual,sig_has_pedestrian==True,natural,,56232,0.39096
+B_522visual,sig_has_yellow==False,natural,,39003,0.27117
+B_522visual,sig_has_pedestrian==False,natural,,73163,0.50868
+B_522visual,veh_density_bin==low,natural,derived tertile of sensor n_vehicles [AMD-M5],42810,0.29764
+B_522visual,veh_density_bin==mid,natural,derived tertile of sensor n_vehicles [AMD-M5],39220,0.27268
+B_522visual,veh_density_bin==high,natural,derived tertile of sensor n_vehicles [AMD-M5],47365,0.32931
+B_522visual,hour==6,natural,,10043,0.06983
+B_522visual,hour==7,natural,,10115,0.07033
+B_522visual,hour==8,natural,,10124,0.07039
+B_522visual,hour==9,natural,,6717,0.0467
+B_522visual,hour==13,natural,,3336,0.02319
+B_522visual,hour==14,natural,,16446,0.11434
+B_522visual,hour==15,natural,,16190,0.11256
+B_522visual,hour==16,natural,,2794,0.01943
+B_522visual,hour==17,natural,,11232,0.07809
+B_522visual,hour==18,natural,,15656,0.10885
+B_522visual,hour==19,natural,,15854,0.11023
+B_522visual,hour==20,natural,,10888,0.0757
+B_522visual,"hour in [11,14] (midday)",composite,range on joined sensor hour,19782,0.13754
+B_522visual,"hour in [8,18] (working)",composite,range on joined sensor hour,82495,0.57356
+B_522visual,"time_of_day in {morning,evening}",composite,IN-set,79397,0.55202

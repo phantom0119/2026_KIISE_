@@ -1,0 +1,32 @@
+{
+  "status": "SAFETY_G1_STOP_SIGNAL",
+  "cluster_confirmed_tests": [
+    "H2"
+  ],
+  "query_contract_confirmed_tests": [
+    "H2"
+  ],
+  "best_single_by_service": {
+    "context_filtered": "caption",
+    "dynamic_event": "caption",
+    "open_event": "caption",
+    "scene_state": "caption"
+  },
+  "best_single_margin_by_service": {
+    "context_filtered": 0.18621366722738228,
+    "dynamic_event": 0.19933013755148787,
+    "open_event": 0.23930485137187643,
+    "scene_state": 0.1469491280870282
+  },
+  "distinct_material_single_winners": false,
+  "fusion_gain_over_best_single": {
+    "context_filtered": -0.04359063922379053,
+    "dynamic_event": -0.056311146021011116,
+    "open_event": -0.09060389605431118,
+    "scene_state": -0.024017765353732123
+  },
+  "decision_precedence": "PROVISIONAL_PASS > STOP_SIGNAL > CONTINUE > INCONCLUSIVE",
+  "post_result_logic_correction": true,
+  "topic_confirmation": "NOT_FINAL",
+  "required_next_gate": "multi-service replay with raw TTL, risk/SLA constraints, and best-static comparison"
+}

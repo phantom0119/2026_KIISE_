@@ -1,0 +1,11 @@
+experiment,condition,scoring,ndcg_at_10
+C1,oracle_qrel_filter,semantic,1.0
+C1,qwen_clean,semantic,0.18100460554466297
+C1,random_same_selectivity_mean,semantic,0.12004121223266205
+C1,oracle_qrel_filter,strict,1.0
+C1,qwen_clean,strict,0.06264082602820618
+C1,random_same_selectivity_mean,strict,0.0336287987980503
+C2,qwen_clean,semantic,0.18100460554466297
+C2,qwen_full_contamination,semantic,0.8536866437436361
+C2,qwen_clean,strict,0.06264082602820618
+C2,qwen_full_contamination,strict,0.26594032852640337

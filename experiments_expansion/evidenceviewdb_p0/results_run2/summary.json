@@ -1,0 +1,686 @@
+{
+  "category_view_summary_all_queries": {
+    "contractnli": {
+      "naive1024": {
+        "coverage": {
+          "category_macro_mean": 0.8647096710285141,
+          "micro_mean": 0.8647096710285141
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.16161995380711966,
+          "micro_mean": 0.16161995380711966
+        },
+        "hit": {
+          "category_macro_mean": 0.9432989690721649,
+          "micro_mean": 0.9432989690721649
+        },
+        "precision": {
+          "category_macro_mean": 0.09212097210995461,
+          "micro_mean": 0.09212097210995461
+        },
+        "sufficient": {
+          "category_macro_mean": 0.7577319587628866,
+          "micro_mean": 0.7577319587628866
+        }
+      },
+      "naive256": {
+        "coverage": {
+          "category_macro_mean": 0.853202068152795,
+          "micro_mean": 0.853202068152795
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.15277183953381454,
+          "micro_mean": 0.15277183953381454
+        },
+        "hit": {
+          "category_macro_mean": 0.9948453608247423,
+          "micro_mean": 0.9948453608247423
+        },
+        "precision": {
+          "category_macro_mean": 0.0866670717413807,
+          "micro_mean": 0.0866670717413807
+        },
+        "sufficient": {
+          "category_macro_mean": 0.634020618556701,
+          "micro_mean": 0.634020618556701
+        }
+      },
+      "naive512": {
+        "coverage": {
+          "category_macro_mean": 0.8723063060886176,
+          "micro_mean": 0.8723063060886176
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.1599428552734762,
+          "micro_mean": 0.1599428552734762
+        },
+        "hit": {
+          "category_macro_mean": 0.9896907216494846,
+          "micro_mean": 0.9896907216494846
+        },
+        "precision": {
+          "category_macro_mean": 0.09099581647923491,
+          "micro_mean": 0.09099581647923491
+        },
+        "sufficient": {
+          "category_macro_mean": 0.7061855670103093,
+          "micro_mean": 0.7061855670103093
+        }
+      },
+      "rcts512": {
+        "coverage": {
+          "category_macro_mean": 0.887542099007837,
+          "micro_mean": 0.887542099007837
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.16268741944204146,
+          "micro_mean": 0.16268741944204146
+        },
+        "hit": {
+          "category_macro_mean": 0.979381443298969,
+          "micro_mean": 0.979381443298969
+        },
+        "precision": {
+          "category_macro_mean": 0.09246243429646783,
+          "micro_mean": 0.09246243429646783
+        },
+        "sufficient": {
+          "category_macro_mean": 0.7783505154639175,
+          "micro_mean": 0.7783505154639175
+        }
+      }
+    },
+    "cuad": {
+      "naive1024": {
+        "coverage": {
+          "category_macro_mean": 0.5515712726777903,
+          "micro_mean": 0.5515712726777903
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.11331348838917117,
+          "micro_mean": 0.11331348838917117
+        },
+        "hit": {
+          "category_macro_mean": 0.6855670103092784,
+          "micro_mean": 0.6855670103092784
+        },
+        "precision": {
+          "category_macro_mean": 0.0695561089492122,
+          "micro_mean": 0.0695561089492122
+        },
+        "sufficient": {
+          "category_macro_mean": 0.42783505154639173,
+          "micro_mean": 0.42783505154639173
+        }
+      },
+      "naive256": {
+        "coverage": {
+          "category_macro_mean": 0.5463053792832966,
+          "micro_mean": 0.5463053792832966
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.09840225825295075,
+          "micro_mean": 0.09840225825295075
+        },
+        "hit": {
+          "category_macro_mean": 0.845360824742268,
+          "micro_mean": 0.845360824742268
+        },
+        "precision": {
+          "category_macro_mean": 0.05944570127324382,
+          "micro_mean": 0.05944570127324382
+        },
+        "sufficient": {
+          "category_macro_mean": 0.26288659793814434,
+          "micro_mean": 0.26288659793814434
+        }
+      },
+      "naive512": {
+        "coverage": {
+          "category_macro_mean": 0.5539815903847488,
+          "micro_mean": 0.5539815903847488
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.10725972271775508,
+          "micro_mean": 0.10725972271775508
+        },
+        "hit": {
+          "category_macro_mean": 0.7628865979381443,
+          "micro_mean": 0.7628865979381443
+        },
+        "precision": {
+          "category_macro_mean": 0.0652672940684818,
+          "micro_mean": 0.0652672940684818
+        },
+        "sufficient": {
+          "category_macro_mean": 0.36597938144329895,
+          "micro_mean": 0.36597938144329895
+        }
+      },
+      "rcts512": {
+        "coverage": {
+          "category_macro_mean": 0.6622570947913423,
+          "micro_mean": 0.6622570947913423
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.1217556666026477,
+          "micro_mean": 0.1217556666026477
+        },
+        "hit": {
+          "category_macro_mean": 0.8195876288659794,
+          "micro_mean": 0.8195876288659794
+        },
+        "precision": {
+          "category_macro_mean": 0.07286781291314287,
+          "micro_mean": 0.07286781291314287
+        },
+        "sufficient": {
+          "category_macro_mean": 0.5309278350515464,
+          "micro_mean": 0.5309278350515464
+        }
+      }
+    },
+    "maud": {
+      "naive1024": {
+        "coverage": {
+          "category_macro_mean": 0.22746645352676068,
+          "micro_mean": 0.22746645352676068
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.0743461915660265,
+          "micro_mean": 0.0743461915660265
+        },
+        "hit": {
+          "category_macro_mean": 0.39690721649484534,
+          "micro_mean": 0.39690721649484534
+        },
+        "precision": {
+          "category_macro_mean": 0.051711519398699106,
+          "micro_mean": 0.051711519398699106
+        },
+        "sufficient": {
+          "category_macro_mean": 0.10824742268041238,
+          "micro_mean": 0.10824742268041238
+        }
+      },
+      "naive256": {
+        "coverage": {
+          "category_macro_mean": 0.26604553145902976,
+          "micro_mean": 0.26604553145902976
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.07413432170911348,
+          "micro_mean": 0.07413432170911348
+        },
+        "hit": {
+          "category_macro_mean": 0.7422680412371134,
+          "micro_mean": 0.7422680412371134
+        },
+        "precision": {
+          "category_macro_mean": 0.048866862582741054,
+          "micro_mean": 0.048866862582741054
+        },
+        "sufficient": {
+          "category_macro_mean": 0.07216494845360824,
+          "micro_mean": 0.07216494845360824
+        }
+      },
+      "naive512": {
+        "coverage": {
+          "category_macro_mean": 0.2813957921446671,
+          "micro_mean": 0.2813957921446671
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.08285645571002737,
+          "micro_mean": 0.08285645571002737
+        },
+        "hit": {
+          "category_macro_mean": 0.6185567010309279,
+          "micro_mean": 0.6185567010309279
+        },
+        "precision": {
+          "category_macro_mean": 0.05512423225498073,
+          "micro_mean": 0.05512423225498073
+        },
+        "sufficient": {
+          "category_macro_mean": 0.09278350515463918,
+          "micro_mean": 0.09278350515463918
+        }
+      },
+      "rcts512": {
+        "coverage": {
+          "category_macro_mean": 0.34340363049570527,
+          "micro_mean": 0.34340363049570527
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.09558002759238239,
+          "micro_mean": 0.09558002759238239
+        },
+        "hit": {
+          "category_macro_mean": 0.654639175257732,
+          "micro_mean": 0.654639175257732
+        },
+        "precision": {
+          "category_macro_mean": 0.06211577883966335,
+          "micro_mean": 0.06211577883966335
+        },
+        "sufficient": {
+          "category_macro_mean": 0.15979381443298968,
+          "micro_mean": 0.15979381443298968
+        }
+      }
+    },
+    "privacy_qa": {
+      "naive1024": {
+        "coverage": {
+          "category_macro_mean": 0.61635222627801,
+          "micro_mean": 0.61635222627801
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.20324659181559984,
+          "micro_mean": 0.20324659181559984
+        },
+        "hit": {
+          "category_macro_mean": 0.8917525773195877,
+          "micro_mean": 0.8917525773195877
+        },
+        "precision": {
+          "category_macro_mean": 0.14363807571367607,
+          "micro_mean": 0.14363807571367607
+        },
+        "sufficient": {
+          "category_macro_mean": 0.30927835051546393,
+          "micro_mean": 0.30927835051546393
+        }
+      },
+      "naive256": {
+        "coverage": {
+          "category_macro_mean": 0.45707602153744387,
+          "micro_mean": 0.45707602153744387
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.13644261490448478,
+          "micro_mean": 0.13644261490448478
+        },
+        "hit": {
+          "category_macro_mean": 0.865979381443299,
+          "micro_mean": 0.865979381443299
+        },
+        "precision": {
+          "category_macro_mean": 0.09423154383189535,
+          "micro_mean": 0.09423154383189535
+        },
+        "sufficient": {
+          "category_macro_mean": 0.17525773195876287,
+          "micro_mean": 0.17525773195876287
+        }
+      },
+      "naive512": {
+        "coverage": {
+          "category_macro_mean": 0.5066127936911735,
+          "micro_mean": 0.5066127936911735
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.16532116183404752,
+          "micro_mean": 0.16532116183404752
+        },
+        "hit": {
+          "category_macro_mean": 0.865979381443299,
+          "micro_mean": 0.865979381443299
+        },
+        "precision": {
+          "category_macro_mean": 0.11575570764419149,
+          "micro_mean": 0.11575570764419149
+        },
+        "sufficient": {
+          "category_macro_mean": 0.20618556701030927,
+          "micro_mean": 0.20618556701030927
+        }
+      },
+      "rcts512": {
+        "coverage": {
+          "category_macro_mean": 0.534907458527948,
+          "micro_mean": 0.534907458527948
+        },
+        "evidence_f1": {
+          "category_macro_mean": 0.17897319651791851,
+          "micro_mean": 0.17897319651791851
+        },
+        "hit": {
+          "category_macro_mean": 0.865979381443299,
+          "micro_mean": 0.865979381443299
+        },
+        "precision": {
+          "category_macro_mean": 0.12588354566236631,
+          "micro_mean": 0.12588354566236631
+        },
+        "sufficient": {
+          "category_macro_mean": 0.25257731958762886,
+          "micro_mean": 0.25257731958762886
+        }
+      }
+    }
+  },
+  "decision": "STOP_NO_PHYSICAL_GAIN",
+  "g1": {
+    "any_winner_counts": {
+      "naive1024": 266,
+      "naive256": 182,
+      "naive512": 186,
+      "rcts512": 326
+    },
+    "modal_best_share": 0.42010309278350516,
+    "unique_winner_counts": {
+      "naive1024": 193,
+      "naive256": 124,
+      "naive512": 114,
+      "rcts512": 268
+    },
+    "unique_winner_share": {
+      "naive1024": 0.24871134020618557,
+      "naive256": 0.15979381443298968,
+      "naive512": 0.14690721649484537,
+      "rcts512": 0.34536082474226804
+    }
+  },
+  "gates": {
+    "G0": true,
+    "G1": true,
+    "G2": true,
+    "G3": false,
+    "G4": true
+  },
+  "holdout": {
+    "baseline_naive512": {
+      "coverage": {
+        "category_macro_mean": 0.5229580297039867,
+        "micro_mean": 0.5339221978815538
+      },
+      "evidence_f1": {
+        "category_macro_mean": 0.1173142521854075,
+        "micro_mean": 0.11785929484609327
+      },
+      "hit": {
+        "category_macro_mean": 0.7924159557879288,
+        "micro_mean": 0.7948717948717948
+      },
+      "precision": {
+        "category_macro_mean": 0.07452813828117935,
+        "micro_mean": 0.07433766483777111
+      },
+      "sufficient": {
+        "category_macro_mean": 0.32530204156511255,
+        "micro_mean": 0.33974358974358976
+      }
+    },
+    "dev_best_single": {
+      "coverage": {
+        "category_macro_mean": 0.5678890106357696,
+        "micro_mean": 0.5792181935021598
+      },
+      "evidence_f1": {
+        "category_macro_mean": 0.12258405787719562,
+        "micro_mean": 0.12305674215685268
+      },
+      "hit": {
+        "category_macro_mean": 0.7898063428728674,
+        "micro_mean": 0.7948717948717948
+      },
+      "precision": {
+        "category_macro_mean": 0.0772276098302815,
+        "micro_mean": 0.07699682766403844
+      },
+      "sufficient": {
+        "category_macro_mean": 0.3815492570170611,
+        "micro_mean": 0.3974358974358974
+      }
+    },
+    "g2_oracle_minus_single_f1": {
+      "cluster_bootstrap_95ci": [
+        0.03328746939016378,
+        0.06399262299790488
+      ],
+      "mean": 0.04787732060826195
+    },
+    "g3_selected_minus_naive512": {
+      "coverage_mean": 0.045295995620606086,
+      "f1_cluster_bootstrap_95ci": [
+        -0.005831784856354447,
+        0.01494439252475364
+      ],
+      "f1_mean": 0.005197447310759415,
+      "precision_cluster_bootstrap_95ci": [
+        -0.0034399918973310527,
+        0.008931335254517662
+      ],
+      "precision_mean": 0.002659162826267318
+    },
+    "query_oracle": {
+      "coverage": {
+        "category_macro_mean": 0.7349248076598934,
+        "micro_mean": 0.7399694916275344
+      },
+      "evidence_f1": {
+        "category_macro_mean": 0.17229466087071416,
+        "micro_mean": 0.1709340627651146
+      },
+      "hit": {
+        "category_macro_mean": 0.9093761465786095,
+        "micro_mean": 0.9102564102564102
+      },
+      "precision": {
+        "category_macro_mean": 0.11084074175227862,
+        "micro_mean": 0.10927633992527462
+      },
+      "sufficient": {
+        "category_macro_mean": 0.5414980377126084,
+        "micro_mean": 0.5544871794871795
+      }
+    },
+    "selected_design": {
+      "coverage": {
+        "category_macro_mean": 0.5678890106357696,
+        "micro_mean": 0.5792181935021598
+      },
+      "evidence_f1": {
+        "category_macro_mean": 0.12258405787719562,
+        "micro_mean": 0.12305674215685268
+      },
+      "hit": {
+        "category_macro_mean": 0.7898063428728674,
+        "micro_mean": 0.7948717948717948
+      },
+      "precision": {
+        "category_macro_mean": 0.0772276098302815,
+        "micro_mean": 0.07699682766403844
+      },
+      "sufficient": {
+        "category_macro_mean": 0.3815492570170611,
+        "micro_mean": 0.3974358974358974
+      }
+    }
+  },
+  "physical_design": {
+    "candidate_subsets": [
+      {
+        "dev_macro_f1": 0.12298080145645843,
+        "routing": {
+          "contractnli": "naive256",
+          "cuad": "naive256",
+          "maud": "naive256",
+          "privacy_qa": "naive256"
+        },
+        "storage_bytes": 5106647168,
+        "views": [
+          "naive256"
+        ]
+      },
+      {
+        "dev_macro_f1": 0.1352585051122318,
+        "routing": {
+          "contractnli": "naive512",
+          "cuad": "naive512",
+          "maud": "naive512",
+          "privacy_qa": "naive512"
+        },
+        "storage_bytes": 2556477568,
+        "views": [
+          "naive512"
+        ]
+      },
+      {
+        "dev_macro_f1": 0.13791714610060005,
+        "routing": {
+          "contractnli": "naive1024",
+          "cuad": "naive1024",
+          "maud": "naive1024",
+          "privacy_qa": "naive1024"
+        },
+        "storage_bytes": 1281048704,
+        "views": [
+          "naive1024"
+        ]
+      },
+      {
+        "dev_macro_f1": 0.14983362719771046,
+        "routing": {
+          "contractnli": "rcts512",
+          "cuad": "rcts512",
+          "maud": "rcts512",
+          "privacy_qa": "rcts512"
+        },
+        "storage_bytes": 4971905152,
+        "views": [
+          "rcts512"
+        ]
+      },
+      {
+        "dev_macro_f1": 0.14256637399306218,
+        "routing": {
+          "contractnli": "naive1024",
+          "cuad": "naive1024",
+          "maud": "naive512",
+          "privacy_qa": "naive1024"
+        },
+        "storage_bytes": 3837526272,
+        "views": [
+          "naive512",
+          "naive1024"
+        ]
+      }
+    ],
+    "dev_best_single": "rcts512",
+    "selected": {
+      "dev_macro_f1": 0.14983362719771046,
+      "routing": {
+        "contractnli": "rcts512",
+        "cuad": "rcts512",
+        "maud": "rcts512",
+        "privacy_qa": "rcts512"
+      },
+      "storage_bytes": 4971905152,
+      "views": [
+        "rcts512"
+      ]
+    },
+    "storage_budget": 5106647168
+  },
+  "protocol": {
+    "bootstraps": 2000,
+    "budgets": [
+      2048,
+      4096,
+      8192
+    ],
+    "dev_queries": 464,
+    "holdout_queries": 312,
+    "primary_budget": 4096,
+    "queries": 776,
+    "seed": 20260807,
+    "target_documents": 359
+  },
+  "split_documents": {
+    "contractnli": {
+      "dev": 49,
+      "holdout": 33
+    },
+    "cuad": {
+      "dev": 97,
+      "holdout": 64
+    },
+    "maud": {
+      "dev": 65,
+      "holdout": 44
+    },
+    "privacy_qa": {
+      "dev": 4,
+      "holdout": 3
+    }
+  },
+  "update_simulation": [
+    {
+      "affected_row_recall": 1.0,
+      "all_views_full_rebuild_rows": 849370,
+      "change_rate": 0.01,
+      "changed_documents": 7,
+      "ratio": 0.0030116439243203785,
+      "selected_local_rows": 2558,
+      "total_documents": 714,
+      "unaffected_false_invalidation_rate": 0.0
+    },
+    {
+      "affected_row_recall": 1.0,
+      "all_views_full_rebuild_rows": 849370,
+      "change_rate": 0.05,
+      "changed_documents": 36,
+      "ratio": 0.016965515617457644,
+      "selected_local_rows": 14410,
+      "total_documents": 714,
+      "unaffected_false_invalidation_rate": 0.0
+    },
+    {
+      "affected_row_recall": 1.0,
+      "all_views_full_rebuild_rows": 849370,
+      "change_rate": 0.1,
+      "changed_documents": 71,
+      "ratio": 0.034741043361550324,
+      "selected_local_rows": 29508,
+      "total_documents": 714,
+      "unaffected_false_invalidation_rate": 0.0
+    }
+  ],
+  "view_stats": {
+    "naive1024": {
+      "dimensions": 4096,
+      "documents": 714,
+      "dtype": "float32",
+      "embedding_bytes": 1281048704,
+      "rows": 78189,
+      "target_rows": 48039
+    },
+    "naive256": {
+      "dimensions": 4096,
+      "documents": 714,
+      "dtype": "float32",
+      "embedding_bytes": 5106647168,
+      "rows": 311685,
+      "target_rows": 191618
+    },
+    "naive512": {
+      "dimensions": 4096,
+      "documents": 714,
+      "dtype": "float32",
+      "embedding_bytes": 2556477568,
+      "rows": 156035,
+      "target_rows": 95915
+    },
+    "rcts512": {
+      "dimensions": 4096,
+      "documents": 714,
+      "dtype": "float32",
+      "embedding_bytes": 4971905152,
+      "rows": 303461,
+      "target_rows": 187693
+    }
+  }
+}

@@ -1,0 +1,17 @@
+index,predicate,selectivity,iterative_scan,recall_at_10,p50_ms,p95_ms,mean_rows_returned,frac_short,plan_node
+b3_hnsw_m16,location = 'BC2000801',0.086,off,0.1213,0.369,0.467,1.21,0.879,IndexScan
+b3_hnsw_m16,location = 'BC2000801',0.086,relaxed_order,0.6584,18.964,33.612,9.77,0.058,IndexScan
+b3_hnsw_m16,location = '중동사거리',0.049,off,0.0337,0.37,0.474,0.34,0.966,IndexScan
+b3_hnsw_m16,location = '중동사거리',0.049,relaxed_order,0.3021,29.512,35.316,6.17,0.508,IndexScan
+b3_hnsw_m16,hour = 6,0.183,off,0.3103,0.399,0.525,3.12,0.75,IndexScan
+b3_hnsw_m16,hour = 6,0.183,relaxed_order,0.9839,1.006,5.462,10.0,0.0,IndexScan
+b3_hnsw_m16,hour BETWEEN 6 AND 18,0.774,off,0.8761,0.41,0.548,8.8,0.142,IndexScan
+b3_hnsw_m16,hour BETWEEN 6 AND 18,0.774,relaxed_order,0.9944,0.439,0.925,10.0,0.0,IndexScan
+b3_ivf_l1024,location = 'BC2000801',0.086,off,0.1311,1.105,2.106,1.38,0.863,IndexScan
+b3_ivf_l1024,location = 'BC2000801',0.086,relaxed_order,0.556,10.577,26.747,10.0,0.0,IndexScan
+b3_ivf_l1024,location = '중동사거리',0.049,off,0.0358,1.167,1.887,0.36,0.964,IndexScan
+b3_ivf_l1024,location = '중동사거리',0.049,relaxed_order,0.4813,23.765,51.962,10.0,0.0,IndexScan
+b3_ivf_l1024,hour = 6,0.183,off,0.7165,1.039,1.895,8.55,0.184,IndexScan
+b3_ivf_l1024,hour = 6,0.183,relaxed_order,0.8055,1.204,3.214,10.0,0.0,IndexScan
+b3_ivf_l1024,hour BETWEEN 6 AND 18,0.774,off,0.9731,0.93,1.626,9.99,0.001,IndexScan
+b3_ivf_l1024,hour BETWEEN 6 AND 18,0.774,relaxed_order,0.9737,1.042,1.747,10.0,0.0,IndexScan

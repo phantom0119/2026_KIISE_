@@ -1,0 +1,36 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.28", nodesep="0.32",
+         ranksep="0.68", splines=polyline, outputorder=edgesfirst,
+         fontname="NanumBarunGothic", fontsize=20, label="MEVA: 원격 AVI·사람 활동 주석·픽셀-only 캡션의 구축 계보
+로컬 원본 7.6G(주석 중심) -&gt; processed 638M | 최종 materialized 985 clips",
+         labelloc=t, labeljust=l];
+  node [fontname="NanumBarunGothic", color="#526476"];
+  edge [fontname="NanumBarunGothic", fontsize=9, color="#526476",
+        penwidth=1.15, arrowsize=0.72];
+
+  raw [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#E8F3FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>1. 외부 원본 파일</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>로컬 외부 파일</B><BR ALIGN="LEFT"/>KPF/DIVA *.activities.yml / *.geom.yml / *.types.yml<BR ALIGN="LEFT"/>contrib *.activities.json / *.file-index.json<BR ALIGN="LEFT"/>capture metadata와 사람 활동 주석</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>원격 영상</B><BR ALIGN="LEFT"/>공개 S3 drops-123-r13의 약 5분 AVI<BR ALIGN="LEFT"/>필요할 때만 다운로드: 현재 로컬 AVI 0개</FONT></TD></TR></TABLE>>];
+  transform [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#EAF6EC" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>2. 연구 처리</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>① 프레임·facet</B><BR ALIGN="LEFT"/>AVI 중간 프레임 1장 -&gt; JPG<BR ALIGN="LEFT"/>추출 직후 임시 AVI 삭제<BR ALIGN="LEFT"/>location/hour/time_of_day predicate<BR ALIGN="LEFT"/>activity presence relevance</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>② AI 문서</B><BR ALIGN="LEFT"/>Qwen2.5-VL-7B-Instruct (2026-07-15 정본)<BR ALIGN="LEFT"/>입력: 중간 JPG 픽셀만<BR ALIGN="LEFT"/>출력: 영어 장면 캡션 985개</FONT></TD></TR></TABLE>>];
+  stored [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="360" BGCOLOR="#F5F7FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>3. 현재 디스크/DB 산출물</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>frames/ + captions/</B><BR ALIGN="LEFT"/>frames/*.jpg: 985<BR ALIGN="LEFT"/>captions_shard*.jsonl<BR ALIGN="LEFT"/>documents.parquet: doc_id/clip_id/text/source_frame</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>canonical_trisource/</B><BR ALIGN="LEFT"/>clips/documents 985<BR ALIGN="LEFT"/>metadata.parquet 3,940 rows<BR ALIGN="LEFT"/>queries.jsonl 193<BR ALIGN="LEFT"/>strict qrels 4,405 / semantic 17,205</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>embeddings/</B><BR ALIGN="LEFT"/>BGE-M3 document 985 x 1,024<BR ALIGN="LEFT"/>CLIP frame 985 x 512 (NPY + index parquet)</FONT></TD></TR></TABLE>>];
+  use [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#FFF3D6" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>4. 논문에서 실제 사용</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>검색</B><BR ALIGN="LEFT"/>활동 검색의 외적 타당성<BR ALIGN="LEFT"/>A6 계보 감사 PASS</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>저장</B><BR ALIGN="LEFT"/>영상/프레임/벡터 저장 단위 비교<BR ALIGN="LEFT"/>최종 985만 정본; 276 clip 파일럿은 폐기</FONT></TD></TR></TABLE>>];
+  raw -> transform [xlabel="입력"];
+  transform -> stored [xlabel="materialize"];
+  stored -> use [xlabel="평가 입력"];
+  { rank=same; raw; transform; }
+  { rank=same; stored; use; }
+  raw -> stored [style=invis, weight=40];
+  transform -> use [style=invis, weight=40];
+  warning [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#C63C36" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="520" BGCOLOR="#FFF1F0" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>해석 시 주의</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>논문 표기 원칙</B><BR ALIGN="LEFT"/>7.6G는 전체 영상 크기가 아니라 로컬 주석 repository 크기다.<BR ALIGN="LEFT"/>재구축에는 S3 접근이 필요하며 522와 같은 독립 센서 tri-source는 아니다.</FONT></TD></TR></TABLE>>];
+  stored -> warning [style=dashed, arrowhead=none, color="#C63C36", constraint=false];
+  legend [shape=plain, label=<<TABLE BORDER="0" CELLBORDER="1" COLOR="#A7B3C0" CELLSPACING="0" CELLPADDING="6">
+      <TR>
+        <TD BGCOLOR="#E8F3FA">외부 원본/원 배포</TD>
+        <TD BGCOLOR="#EAF6EC">① 추출·파싱·임베딩</TD>
+        <TD BGCOLOR="#FFF1C7">② 본 연구 AI 생성</TD>
+        <TD BGCOLOR="#FFE5D6">③ 합성·proxy</TD>
+        <TD BGCOLOR="#F5F7FA">현재 저장 파일/DB</TD>
+        <TD BGCOLOR="#FFF3D6">논문 실험 입력</TD>
+      </TR>
+    </TABLE>>];
+  use -> warning [style=invis, weight=30];
+  warning -> legend [style=invis, weight=30];
+  }

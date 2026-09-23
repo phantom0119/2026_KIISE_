@@ -1,0 +1,36 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="white", pad="0.28", nodesep="0.32",
+         ranksep="0.68", splines=polyline, outputorder=edgesfirst,
+         fontname="NanumBarunGothic", fontsize=20, label="UCA/UCF-Crime: 사건 구간 MP4에서 6,432개 AI 검색 문서까지
+외부 194G | UCF-Crime 1,854 videos + UCA 문장/구간 23,542 (110.7시간)",
+         labelloc=t, labeljust=l];
+  node [fontname="NanumBarunGothic", color="#526476"];
+  edge [fontname="NanumBarunGothic", fontsize=9, color="#526476",
+        penwidth=1.15, arrowsize=0.72];
+
+  raw [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#E8F3FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>1. 외부 원본 파일</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>영상</B><BR ALIGN="LEFT"/>UCF_Crimes/**/*.mp4: raw 1,950개<BR ALIGN="LEFT"/>UCA 주석과 연결되는 감시 영상 1,854개</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>사람 문장 주석</B><BR ALIGN="LEFT"/>사건 설명 text + start/end seconds<BR ALIGN="LEFT"/>총 23,542 sentences / 110.7시간<BR ALIGN="LEFT"/>relevance lexicon의 원천</FONT></TD></TR></TABLE>>];
+  transform [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#EAF6EC" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>2. 연구 처리</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>① 구간 materialize</B><BR ALIGN="LEFT"/>video당 최대 4 event spans 등간 표집<BR ALIGN="LEFT"/>각 구간 midpoint -&gt; JPG<BR ALIGN="LEFT"/>중복 (video, midpoint) 58건 병합<BR ALIGN="LEFT"/>최종 6,432 segments, frame drop 0</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>② AI 문서</B><BR ALIGN="LEFT"/>Qwen2.5-VL-7B-Instruct (2026-07-15 정본)<BR ALIGN="LEFT"/>입력: midpoint JPG 픽셀만<BR ALIGN="LEFT"/>정답 lexicon을 prompt에 넣지 않음<BR ALIGN="LEFT"/>영어 장면 캡션 6,432개</FONT></TD></TR></TABLE>>];
+  stored [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="360" BGCOLOR="#F5F7FA" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>3. 현재 디스크/DB 산출물</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>frames/ + captions/</B><BR ALIGN="LEFT"/>frames/*.jpg 6,432<BR ALIGN="LEFT"/>captions_shard*.jsonl<BR ALIGN="LEFT"/>documents.parquet: doc_id/video_id/split/caption</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>canonical/</B><BR ALIGN="LEFT"/>clips/documents 6,432<BR ALIGN="LEFT"/>metadata.parquet 19,296 rows<BR ALIGN="LEFT"/>queries.jsonl 135<BR ALIGN="LEFT"/>strict qrels 7,709 / semantic 41,435</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>embeddings/bge-m3/</B><BR ALIGN="LEFT"/>document 6,432 x 1,024<BR ALIGN="LEFT"/>query 135 x 1,024 float32 NPY</FONT></TD></TR></TABLE>>];
+  use [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#526476" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="330" BGCOLOR="#FFF3D6" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>4. 논문에서 실제 사용</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>검색 외적 타당성</B><BR ALIGN="LEFT"/>사건 구간 기반 B0-B5 검색<BR ALIGN="LEFT"/>A6 계보 감사 + strict/semantic qrels</FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>채널 수준</B><BR ALIGN="LEFT"/>document=VLM, relevance=사람 문장<BR ALIGN="LEFT"/>predicate=video class/duration/일부 timing</FONT></TD></TR></TABLE>>];
+  raw -> transform [xlabel="입력"];
+  transform -> stored [xlabel="materialize"];
+  stored -> use [xlabel="평가 입력"];
+  { rank=same; raw; transform; }
+  { rank=same; stored; use; }
+  raw -> stored [style=invis, weight=40];
+  transform -> use [style=invis, weight=40];
+  warning [shape=plain, margin=0, label=<<TABLE BORDER="1" COLOR="#C63C36" CELLBORDER="0" CELLSPACING="0" CELLPADDING="0"><TR><TD WIDTH="520" BGCOLOR="#FFF1F0" ALIGN="LEFT" CELLPADDING="9"><FONT POINT-SIZE="16"><B>해석 시 주의</B></FONT></TD></TR><TR><TD ALIGN="LEFT" BGCOLOR="#FFFFFF" CELLPADDING="8"><FONT POINT-SIZE="11"><B>논문 표기 원칙</B><BR ALIGN="LEFT"/>독립 센서가 없고 코퍼스 포함 자체가 annotation span에 의존한다.<BR ALIGN="LEFT"/>따라서 물리 3채널이 아니라 &#x27;2.5채널&#x27; 외적 타당성으로만 해석한다.</FONT></TD></TR></TABLE>>];
+  stored -> warning [style=dashed, arrowhead=none, color="#C63C36", constraint=false];
+  legend [shape=plain, label=<<TABLE BORDER="0" CELLBORDER="1" COLOR="#A7B3C0" CELLSPACING="0" CELLPADDING="6">
+      <TR>
+        <TD BGCOLOR="#E8F3FA">외부 원본/원 배포</TD>
+        <TD BGCOLOR="#EAF6EC">① 추출·파싱·임베딩</TD>
+        <TD BGCOLOR="#FFF1C7">② 본 연구 AI 생성</TD>
+        <TD BGCOLOR="#FFE5D6">③ 합성·proxy</TD>
+        <TD BGCOLOR="#F5F7FA">현재 저장 파일/DB</TD>
+        <TD BGCOLOR="#FFF3D6">논문 실험 입력</TD>
+      </TR>
+    </TABLE>>];
+  use -> warning [style=invis, weight=30];
+  warning -> legend [style=invis, weight=30];
+  }

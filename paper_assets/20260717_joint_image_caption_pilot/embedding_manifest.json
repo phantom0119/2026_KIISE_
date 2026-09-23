@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-07-17T14:08:31.960642+00:00",
+  "started_at": "2026-07-17T14:08:25.790362+00:00",
+  "purpose": "single-vector early-fusion image-caption storage treatment",
+  "caption_pair": "matched",
+  "seed": 20260717,
+  "model": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/models/Qwen3-VL-Embedding-2B",
+  "model_family": "Qwen3-VL-Embedding-2B",
+  "dimension": 2048,
+  "persisted_dtype": "float32",
+  "normalization": "L2 by model.process",
+  "instruction": "Represent the user's input.",
+  "image_settings": {
+    "dtype": "bfloat16 inference",
+    "max_pixels": 534600,
+    "attention": "flash_attention_2"
+  },
+  "canonical_root": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/522/canonical",
+  "data_root": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710",
+  "counts": {
+    "vectors": 12,
+    "matched_pairs": 12,
+    "mismatched_pairs": 0
+  },
+  "runtime": {
+    "elapsed_seconds_this_run": 6.170096647925675,
+    "completed_before_run": 0,
+    "processed_this_run": 12,
+    "items_per_second_this_run": 1.944864186857475,
+    "batch_size_requested": 2,
+    "batch_size_final": 2,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "cuda_visible_devices": "0",
+    "host": "explorer-DL"
+  },
+  "audits": {
+    "unique_clip_ids": true,
+    "all_media_exist": true,
+    "all_finite": true,
+    "norm_min": 0.9978210926055908,
+    "norm_max": 1.0021990537643433,
+    "pairing_matches_treatment": true
+  },
+  "input_hashes": {
+    "clips": "73509ed8304c4a02fca5b4a8de2325f3f4201ec7a6f6ad11fb6cf7221d763991",
+    "documents": "7bb7259310a2637c36a9297d98e54d5d0d3d8175ffbfab2819c0d100ca03b93d",
+    "queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "qrels": "74da4f10b8566705b9176809f1b435e0811374b630475a9067ac08a7515d7a93",
+    "qrels_semantic": "f59cf0f8939685b16908e330c338437b54488a921cbec907bc5501206961f3e0"
+  },
+  "output_hashes": {
+    "joint_embeddings": "7a62b0cb3fec38314c207405353dcb33eb4b21ddf6c1399d58a90253eaf1876c",
+    "joint_index": "0dafbd5613540a25aea433b77001fa3382d0ad5760364cd980210cee75031e35"
+  },
+  "vector_payload_mb": 0.098304
+}

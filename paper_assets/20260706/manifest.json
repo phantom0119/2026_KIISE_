@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-07-06T08:45:19.339976+00:00",
+  "output_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706",
+  "inputs": [
+    {
+      "model_id": "bge-m3",
+      "result_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/vru_bgem3_faiss_b0_b5"
+    },
+    {
+      "model_id": "e5-large-v2",
+      "result_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/vru_accident/20260706/results/vru_e5_faiss_b0_b5"
+    }
+  ],
+  "tables": {
+    "overall_csv": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_overall_retrieval_metrics.csv",
+    "overall_md": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_overall_retrieval_metrics.md",
+    "overall_tex": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_overall_retrieval_metrics.tex",
+    "difficulty_csv": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_difficulty_retrieval_metrics.csv",
+    "difficulty_md": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_difficulty_retrieval_metrics.md",
+    "difficulty_tex": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_difficulty_retrieval_metrics.tex",
+    "latency_csv": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_latency_summary.csv",
+    "latency_md": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_latency_summary.md",
+    "latency_tex": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/tables/table_latency_summary.tex"
+  },
+  "figures": {
+    "overall_quality": {
+      "png": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_overall_quality_by_strategy.png",
+      "pdf": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_overall_quality_by_strategy.pdf"
+    },
+    "latency": {
+      "png": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_latency_by_strategy.png",
+      "pdf": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_latency_by_strategy.pdf"
+    },
+    "difficulty_ndcg": {
+      "png": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_difficulty_ndcg_heatmap.png",
+      "pdf": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_difficulty_ndcg_heatmap.pdf"
+    },
+    "recall_latency_tradeoff": {
+      "png": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_recall_latency_tradeoff.png",
+      "pdf": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260706/figures/fig_recall_latency_tradeoff.pdf"
+    }
+  }
+}

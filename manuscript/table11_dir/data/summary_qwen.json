@@ -1,0 +1,13 @@
+{
+  "model": "qwen",
+  "n_per_config": 600,
+  "topk": 3,
+  "accuracy": {
+    "closed": 0.3083,
+    "distractor": 0.5383,
+    "vector_only": 0.665,
+    "prefilter": 0.68,
+    "oracle": 0.7467
+  },
+  "median_prefilter_candidates": 29
+}

@@ -1,0 +1,14 @@
+{
+  "domain": "stark_amazon",
+  "seed": 20260806,
+  "n_facts": 200,
+  "n_candidate_paths": 1200,
+  "cf_pool_size": 600,
+  "token_means": {
+    "A1": 34.3,
+    "A1F": 36.3,
+    "A2": 37.3
+  },
+  "peak_note": "node_info.pkl load ~21.7GB RSS, released after subset extraction",
+  "wall_s": 133.4
+}

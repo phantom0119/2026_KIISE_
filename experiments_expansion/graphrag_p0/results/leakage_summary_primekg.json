@@ -1,0 +1,23 @@
+{
+  "domain": "primekg",
+  "n_facts": 200,
+  "leakage_counts": {
+    "L1_surface": 0,
+    "L2_alias": 0,
+    "L3_inverse": 0,
+    "L4_alt_path": 0,
+    "L5_prompt": 0
+  },
+  "leakage_total": 0,
+  "sync_failures": {
+    "S1_fact_parity_fail": 0,
+    "S2_world_parity_fail": 0
+  },
+  "token_ratio": {
+    "median": 1.167,
+    "max": 1.188,
+    "n_within_10pct": 0
+  },
+  "F1_pass": true,
+  "wall_s": 0.9
+}

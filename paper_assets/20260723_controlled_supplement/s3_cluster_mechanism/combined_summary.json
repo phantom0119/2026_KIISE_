@@ -1,0 +1,38 @@
+{
+  "analysis": "S3 cross-corpus and cross-index gate consolidation",
+  "primary_scope": "filtered ANN recall loss under fixed selectivity",
+  "software": {"faiss": "1.14.3", "ivf_training_seed": 1234},
+  "cells": {
+    "A_hnsw": {
+      "natural_minus_shuffle_loss": 0.6388690694669882,
+      "negative_ci": [0.5923796368750434, 0.6860488360207527],
+      "dose_response_slope": 0.5207439857721329,
+      "slope_ci": [0.5012766436189413, 0.5408610573410988],
+      "pass": true
+    },
+    "A_ivf": {
+      "natural_minus_shuffle_loss": 0.6768370195726554,
+      "negative_ci": [0.6086725495159626, 0.7405333399455994],
+      "dose_response_slope": 0.424045991897583,
+      "slope_ci": [0.4051255572289228, 0.44580162367224696],
+      "pass": true
+    },
+    "B_hnsw": {
+      "natural_minus_shuffle_loss": 0.30454796281727875,
+      "negative_ci": [0.23099783790653397, 0.3810105175558816],
+      "dose_response_slope": 0.4651200008392335,
+      "slope_ci": [0.4420490076243878, 0.49001037886738785],
+      "pass": true
+    },
+    "B_ivf": {
+      "natural_minus_shuffle_loss": 0.234415914199569,
+      "negative_ci": [0.15779678253626284, 0.31648615650426254],
+      "dose_response_slope": 0.3490550035238266,
+      "slope_ci": [0.32168412227928644, 0.377730630427599],
+      "pass": true
+    }
+  },
+  "all_four_cells_pass": true,
+  "allowed_claim": "Within the two frozen CLIP corpora and the tested postfilter HNSW and IVF-Flat configurations, embedding-space concentration causally increased recall loss while selectivity was held fixed.",
+  "forbidden_generalization": "Do not generalize to every ANN implementation, encoder, corpus, predicate, or production workload."
+}

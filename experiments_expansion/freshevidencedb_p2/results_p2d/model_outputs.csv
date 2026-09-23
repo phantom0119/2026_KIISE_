@@ -1,0 +1,202 @@
+domain,fact_id,arm,expected_letter,current_letter,predicted_letter,task_correct,latest_answer_correct,option_a,option_b,raw_output
+flask,0,current_only,B,B,B,1,1,https://github.com/pallets/quart,https://quart.palletsprojects.com,The answer is B
+flask,0,missing,U,B,B,0,1,https://github.com/pallets/quart,https://quart.palletsprojects.com,B
+flask,0,mixed_old_last,A,A,A,1,1,https://quart.palletsprojects.com,https://github.com/pallets/quart,The answer is A
+flask,0,mixed_new_last,A,A,A,1,1,https://quart.palletsprojects.com,https://github.com/pallets/quart,The answer is A
+flask,1,current_only,A,A,INVALID,0,0,to be set.,object in some way.,The evidence supports the
+flask,1,missing,U,A,A,0,1,to be set.,object in some way.,The answer is A
+flask,1,mixed_old_last,A,A,B,0,0,to be set.,object in some way.,B
+flask,1,mixed_new_last,B,B,B,1,1,object in some way.,to be set.,B
+flask,2,current_only,B,B,B,1,1,flask.Flask.template_filter,. Flask.template_filter,B
+flask,2,missing,U,B,B,0,1,flask.Flask.template_filter,. Flask.template_filter,B
+flask,2,mixed_old_last,B,B,INVALID,0,0,flask.Flask.template_filter,. Flask.template_filter,The correct answer is
+flask,2,mixed_new_last,A,A,B,0,0,. Flask.template_filter,flask.Flask.template_filter,B
+flask,3,current_only,A,A,A,1,1,Jinja.,Jinja2.,The answer is A
+flask,3,missing,U,A,INVALID,0,0,Jinja.,Jinja2.,Since there is no
+flask,3,mixed_old_last,B,B,INVALID,0,0,Jinja2.,Jinja.,Based on the retrieved
+flask,3,mixed_new_last,A,A,INVALID,0,0,Jinja.,Jinja2.,Based on the retrieved
+flask,4,current_only,A,A,B,0,0,https://github.com/wntrblm/flask-talisman,https://github.com/GoogleCloudPlatform/flask-talisman,B
+flask,4,missing,U,A,B,0,0,https://github.com/wntrblm/flask-talisman,https://github.com/GoogleCloudPlatform/flask-talisman,B
+flask,4,mixed_old_last,A,A,B,0,0,https://github.com/wntrblm/flask-talisman,https://github.com/GoogleCloudPlatform/flask-talisman,B
+flask,4,mixed_new_last,B,B,B,1,1,https://github.com/GoogleCloudPlatform/flask-talisman,https://github.com/wntrblm/flask-talisman,B
+flask,5,current_only,B,B,INVALID,0,0,_static/flask-horizontal.svg,_static/flask-name.svg,Based on the retrieved
+flask,5,missing,U,A,INVALID,0,0,_static/flask-name.svg,_static/flask-horizontal.svg,Since there is no
+flask,5,mixed_old_last,A,A,INVALID,0,0,_static/flask-name.svg,_static/flask-horizontal.svg,Based on the retrieved
+flask,5,mixed_new_last,B,B,INVALID,0,0,_static/flask-horizontal.svg,_static/flask-name.svg,Based on the retrieved
+flask,6,current_only,B,B,INVALID,0,0,_static/flask-horizontal.png,_static/flask-horizontal.svg,Based on the retrieved
+flask,6,missing,U,B,INVALID,0,0,_static/flask-horizontal.png,_static/flask-horizontal.svg,Since there is no
+flask,6,mixed_old_last,B,B,INVALID,0,0,_static/flask-horizontal.png,_static/flask-horizontal.svg,Based on the retrieved
+flask,6,mixed_new_last,A,A,A,1,1,_static/flask-horizontal.svg,_static/flask-horizontal.png,The answer is A
+flask,7,current_only,A,A,INVALID,0,0,Settings,Preferences,The correct answer is
+flask,7,missing,U,A,INVALID,0,0,Settings,Preferences,The correct answer is
+flask,7,mixed_old_last,A,A,B,0,0,Settings,Preferences,B
+flask,7,mixed_new_last,B,B,B,1,1,Preferences,Settings,B
+flask,8,current_only,A,A,INVALID,0,0,many types,all kinds,Based on the retrieved
+flask,8,missing,U,B,INVALID,0,0,all kinds,many types,Since there is no
+flask,8,mixed_old_last,B,B,INVALID,0,0,all kinds,many types,Based on the retrieved
+flask,8,mixed_new_last,B,B,INVALID,0,0,all kinds,many types,Based on the retrieved
+flask,9,current_only,B,B,B,1,1,https://gitlab.com/pgjones/hypercorn,https://github.com/pgjones/hypercorn,The answer is B
+flask,9,missing,U,A,A,0,1,https://github.com/pgjones/hypercorn,https://gitlab.com/pgjones/hypercorn,A: A
+flask,9,mixed_old_last,B,B,B,1,1,https://gitlab.com/pgjones/hypercorn,https://github.com/pgjones/hypercorn,B
+flask,9,mixed_new_last,A,A,A,1,1,https://github.com/pgjones/hypercorn,https://gitlab.com/pgjones/hypercorn,A: https://
+flask,10,current_only,B,B,INVALID,0,0,"pop_path_info , peek_path_info",shift_path_info,The correct answer is
+flask,10,missing,U,A,INVALID,0,0,shift_path_info,"pop_path_info , peek_path_info",The correct answer is
+flask,10,mixed_old_last,A,A,INVALID,0,0,shift_path_info,"pop_path_info , peek_path_info",The correct answer is
+flask,10,mixed_new_last,A,A,INVALID,0,0,shift_path_info,"pop_path_info , peek_path_info",The correct answer is
+flask,11,current_only,A,A,B,0,0,flit_core < 4,setuptools,B
+flask,11,missing,U,B,INVALID,0,0,setuptools,flit_core < 4,Since there is no
+flask,11,mixed_old_last,B,B,INVALID,0,0,setuptools,flit_core < 4,Based on the retrieved
+flask,11,mixed_new_last,A,A,U,0,0,flit_core < 4,setuptools,U
+flask,12,current_only,A,A,B,0,0,_Click: https://click.palletsprojects.com,_Werkzeug: https://www.palletsprojects.com/p/werkzeug/,B
+flask,12,missing,U,A,B,0,0,_Click: https://click.palletsprojects.com,_Werkzeug: https://www.palletsprojects.com/p/werkzeug/,B
+flask,12,mixed_old_last,A,A,B,0,0,_Click: https://click.palletsprojects.com,_Werkzeug: https://www.palletsprojects.com/p/werkzeug/,B
+flask,12,mixed_new_last,B,B,A,0,0,_Werkzeug: https://www.palletsprojects.com/p/werkzeug/,_Click: https://click.palletsprojects.com,A
+flask,13,current_only,A,A,INVALID,0,0,3.8,3.7,The version of Python
+flask,13,missing,U,B,INVALID,0,0,3.7,3.8,Since there is no
+flask,13,mixed_old_last,B,B,INVALID,0,0,3.7,3.8,The version of Python
+flask,13,mixed_new_last,B,B,INVALID,0,0,3.7,3.8,The version of Python
+flask,14,current_only,A,A,INVALID,0,0,https://blinker.readthedocs.io/en/stable/,https://pythonhosted.org/blinker/,The answer is:
+flask,14,missing,U,B,B,0,1,https://pythonhosted.org/blinker/,https://blinker.readthedocs.io/en/stable/,B
+flask,14,mixed_old_last,A,A,INVALID,0,0,https://blinker.readthedocs.io/en/stable/,https://pythonhosted.org/blinker/,The answer is:
+flask,14,mixed_new_last,B,B,B,1,1,https://pythonhosted.org/blinker/,https://blinker.readthedocs.io/en/stable/,B
+flask,15,current_only,B,B,B,1,1,flask.Markup,markupsafe.Markup,The answer is B
+flask,15,missing,U,B,INVALID,0,0,flask.Markup,markupsafe.Markup,The correct answer is
+flask,15,mixed_old_last,A,A,A,1,1,markupsafe.Markup,flask.Markup,The answer is A
+flask,15,mixed_new_last,B,B,B,1,1,flask.Markup,markupsafe.Markup,The answer is B
+flask,16,current_only,A,A,B,0,0,celery_app,celery.Task,B
+flask,16,missing,U,A,B,0,0,celery_app,celery.Task,B
+flask,16,mixed_old_last,A,A,B,0,0,celery_app,celery.Task,B
+flask,16,mixed_new_last,A,A,B,0,0,celery_app,celery.Task,B
+flask,17,current_only,B,B,B,1,1,setup.py,pyproject.toml,B
+flask,17,missing,U,A,B,0,0,pyproject.toml,setup.py,B
+flask,17,mixed_old_last,A,A,U,0,0,pyproject.toml,setup.py,U
+flask,17,mixed_new_last,B,B,B,1,1,setup.py,pyproject.toml,B
+flask,18,current_only,B,B,B,1,1,_static/pycharm-runconfig.png,_static/pycharm-run-config.png,B
+flask,18,missing,U,B,B,0,1,_static/pycharm-runconfig.png,_static/pycharm-run-config.png,B
+flask,18,mixed_old_last,A,A,INVALID,0,0,_static/pycharm-run-config.png,_static/pycharm-runconfig.png,The correct answer is
+flask,18,mixed_new_last,B,B,A,0,0,_static/pycharm-runconfig.png,_static/pycharm-run-config.png,The answer is A
+flask,19,current_only,A,A,A,1,1,https://github.com/pallets/quart,https://gitlab.com/pgjones/quart,The answer is A
+flask,19,missing,U,A,A,0,1,https://github.com/pallets/quart,https://gitlab.com/pgjones/quart,A: https://
+flask,19,mixed_old_last,A,A,INVALID,0,0,https://github.com/pallets/quart,https://gitlab.com/pgjones/quart,Based on the retrieved
+flask,19,mixed_new_last,A,A,INVALID,0,0,https://github.com/pallets/quart,https://gitlab.com/pgjones/quart,Based on the retrieved
+flask,20,current_only,B,B,INVALID,0,0,MIT licensed.,MIT.,Based on the retrieved
+flask,20,missing,U,B,INVALID,0,0,MIT licensed.,MIT.,Since there is no
+flask,20,mixed_old_last,A,A,B,0,0,MIT.,MIT licensed.,B
+flask,20,mixed_new_last,B,B,B,1,1,MIT licensed.,MIT.,B
+flask,21,current_only,B,B,B,1,1,function you would get,if,B
+flask,21,missing,U,B,INVALID,0,0,function you would get,if,The correct answer is
+flask,21,mixed_old_last,B,B,A,0,0,function you would get,if,A: A
+flask,21,mixed_new_last,B,B,INVALID,0,0,function you would get,if,The correct answer is
+flask,22,current_only,A,A,B,0,0,doc:,ref:,The answer is B
+flask,22,missing,U,B,B,0,1,ref:,doc:,The answer is B
+flask,22,mixed_old_last,B,B,B,1,1,ref:,doc:,The answer is B
+flask,22,mixed_new_last,B,B,B,1,1,ref:,doc:,The answer is B
+flask,23,current_only,B,B,B,1,1,jquery,javascript,B
+flask,23,missing,U,B,B,0,1,jquery,javascript,B
+flask,23,mixed_old_last,A,A,B,0,0,javascript,jquery,B
+flask,23,mixed_new_last,A,A,B,0,0,javascript,jquery,B
+flask,24,current_only,B,B,INVALID,0,0,UserAPI,ItemAPI,Based on the evidence
+flask,24,missing,U,A,INVALID,0,0,ItemAPI,UserAPI,Based on the provided
+flask,24,mixed_old_last,A,A,INVALID,0,0,ItemAPI,UserAPI,Based on the retrieved
+flask,24,mixed_new_last,A,A,INVALID,0,0,ItemAPI,UserAPI,Based on the retrieved
+kubernetes,0,current_only,A,A,B,0,0,", is the",` genref `,B
+kubernetes,0,missing,U,A,B,0,0,", is the",` genref `,B
+kubernetes,0,mixed_old_last,B,B,B,1,1,` genref `,", is the",B
+kubernetes,0,mixed_new_last,A,A,B,0,0,", is the",` genref `,B
+kubernetes,1,current_only,A,A,A,1,1,Aggregation API request flow,Welcome to swimlanes.io,The answer is A
+kubernetes,1,missing,U,B,INVALID,0,0,Welcome to swimlanes.io,Aggregation API request flow,Based on the retrieved
+kubernetes,1,mixed_old_last,B,B,A,0,0,Welcome to swimlanes.io,Aggregation API request flow,The answer is A
+kubernetes,1,mixed_new_last,B,B,A,0,0,Welcome to swimlanes.io,Aggregation API request flow,The answer is A
+kubernetes,2,current_only,B,B,A,0,0,command reference,generator,A: A
+kubernetes,2,missing,U,A,B,0,0,generator,command reference,B
+kubernetes,2,mixed_old_last,B,B,B,1,1,command reference,generator,B
+kubernetes,2,mixed_new_last,A,A,B,0,0,generator,command reference,B
+kubernetes,3,current_only,A,A,B,0,0,adapt,accomodate,B
+kubernetes,3,missing,U,A,INVALID,0,0,adapt,accomodate,Based on the retrieved
+kubernetes,3,mixed_old_last,B,B,B,1,1,accomodate,adapt,B
+kubernetes,3,mixed_new_last,B,B,B,1,1,accomodate,adapt,B
+kubernetes,4,current_only,B,B,INVALID,0,0,reconcile it ' s,reconciles its,The correct answer is
+kubernetes,4,missing,U,A,INVALID,0,0,reconciles its,reconcile it ' s,The correct answer is
+kubernetes,4,mixed_old_last,B,B,INVALID,0,0,reconcile it ' s,reconciles its,The correct answer is
+kubernetes,4,mixed_new_last,B,B,INVALID,0,0,reconcile it ' s,reconciles its,The correct answer is
+kubernetes,5,current_only,B,B,B,1,1,kB.,KiB.,B
+kubernetes,5,missing,U,A,B,0,0,KiB.,kB.,B
+kubernetes,5,mixed_old_last,B,B,B,1,1,kB.,KiB.,B
+kubernetes,5,mixed_new_last,B,B,B,1,1,kB.,KiB.,B
+kubernetes,6,current_only,B,B,B,1,1,https://tools.ietf.org/html/rfc6901,https://datatracker.ietf.org/doc/html/rfc6901,B
+kubernetes,6,missing,U,B,B,0,1,https://tools.ietf.org/html/rfc6901,https://datatracker.ietf.org/doc/html/rfc6901,B
+kubernetes,6,mixed_old_last,B,B,B,1,1,https://tools.ietf.org/html/rfc6901,https://datatracker.ietf.org/doc/html/rfc6901,B
+kubernetes,6,mixed_new_last,B,B,B,1,1,https://tools.ietf.org/html/rfc6901,https://datatracker.ietf.org/doc/html/rfc6901,B
+kubernetes,7,current_only,A,A,B,0,0,homogeneous,homogenous,B
+kubernetes,7,missing,U,B,INVALID,0,0,homogenous,homogeneous,Based on the retrieved
+kubernetes,7,mixed_old_last,B,B,INVALID,0,0,homogenous,homogeneous,The evidence supports the
+kubernetes,7,mixed_new_last,A,A,B,0,0,homogeneous,homogenous,B
+kubernetes,8,current_only,B,B,INVALID,0,0,on disk,in RAM,Based on the retrieved
+kubernetes,8,missing,U,A,B,0,0,in RAM,on disk,The answer is B
+kubernetes,8,mixed_old_last,B,B,INVALID,0,0,on disk,in RAM,Based on the retrieved
+kubernetes,8,mixed_new_last,A,A,INVALID,0,0,in RAM,on disk,Based on the evidence
+kubernetes,9,current_only,A,A,B,0,0,envfile-test-pod,dapi-test-pod,B
+kubernetes,9,missing,U,B,B,0,1,dapi-test-pod,envfile-test-pod,B
+kubernetes,9,mixed_old_last,A,A,B,0,0,envfile-test-pod,dapi-test-pod,B
+kubernetes,9,mixed_new_last,B,B,B,1,1,dapi-test-pod,envfile-test-pod,B
+kubernetes,10,current_only,A,A,B,0,0,docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/,docs/tutorials/hello-minikube/,B
+kubernetes,10,missing,U,B,INVALID,0,0,docs/tutorials/hello-minikube/,docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/,Since there is no
+kubernetes,10,mixed_old_last,B,B,INVALID,0,0,docs/tutorials/hello-minikube/,docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/,Based on the retrieved
+kubernetes,10,mixed_new_last,A,A,A,1,1,docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/,docs/tutorials/hello-minikube/,"A
+The answer"
+kubernetes,11,current_only,A,A,B,0,0,1.38,1.37,B
+kubernetes,11,missing,U,B,B,0,1,1.37,1.38,B
+kubernetes,11,mixed_old_last,B,B,B,1,1,1.37,1.38,B
+kubernetes,11,mixed_new_last,A,A,B,0,0,1.38,1.37,B
+kubernetes,12,current_only,A,A,B,0,0,registry.k8s.io/busybox:1.27.2,gcr.io/google-containers/busybox,B
+kubernetes,12,missing,U,A,U,1,0,registry.k8s.io/busybox:1.27.2,gcr.io/google-containers/busybox,U
+kubernetes,12,mixed_old_last,A,A,B,0,0,registry.k8s.io/busybox:1.27.2,gcr.io/google-containers/busybox,B
+kubernetes,12,mixed_new_last,A,A,B,0,0,registry.k8s.io/busybox:1.27.2,gcr.io/google-containers/busybox,B
+kubernetes,13,current_only,A,A,INVALID,0,0,nodes. This helps prepare,and leaving others free,Based on the retrieved
+kubernetes,13,missing,U,A,INVALID,0,0,nodes. This helps prepare,and leaving others free,Based on the retrieved
+kubernetes,13,mixed_old_last,A,A,INVALID,0,0,nodes. This helps prepare,and leaving others free,The evidence supports that
+kubernetes,13,mixed_new_last,B,B,INVALID,0,0,and leaving others free,nodes. This helps prepare,The evidence supports the
+kubernetes,14,current_only,B,B,INVALID,0,0,"Finally , add",1 . Add,The answer is:
+kubernetes,14,missing,U,A,B,0,0,1 . Add,"Finally , add",B
+kubernetes,14,mixed_old_last,B,B,B,1,1,"Finally , add",1 . Add,B
+kubernetes,14,mixed_new_last,B,B,INVALID,0,0,"Finally , add",1 . Add,The answer is:
+kubernetes,15,current_only,B,B,B,1,1,1 .,A.,B
+kubernetes,15,missing,U,A,INVALID,0,0,A.,1 .,Since there is no
+kubernetes,15,mixed_old_last,B,B,B,1,1,1 .,A.,B
+kubernetes,15,mixed_new_last,B,B,B,1,1,1 .,A.,B
+kubernetes,16,current_only,A,A,A,1,1,node/runtime-class-v1,cluster-resources/runtime-class-v1,A: A
+kubernetes,16,missing,U,B,U,1,0,cluster-resources/runtime-class-v1,node/runtime-class-v1,U
+kubernetes,16,mixed_old_last,A,A,A,1,1,node/runtime-class-v1,cluster-resources/runtime-class-v1,A: A
+kubernetes,16,mixed_new_last,B,B,A,0,0,cluster-resources/runtime-class-v1,node/runtime-class-v1,A: cluster-resources
+kubernetes,17,current_only,A,A,B,0,0,. The default is,( default:,The answer is B
+kubernetes,17,missing,U,B,INVALID,0,0,( default:,. The default is,The correct answer is
+kubernetes,17,mixed_old_last,B,B,B,1,1,( default:,. The default is,The answer is B
+kubernetes,17,mixed_new_last,B,B,A,0,0,( default:,. The default is,A: B
+kubernetes,18,current_only,B,B,B,1,1,above are,cases is,The answer is B
+kubernetes,18,missing,U,A,B,0,0,cases is,above are,The answer is B
+kubernetes,18,mixed_old_last,A,A,INVALID,0,0,cases is,above are,The correct answer is
+kubernetes,18,mixed_new_last,A,A,INVALID,0,0,cases is,above are,The correct answer is
+kubernetes,19,current_only,A,A,B,0,0,_PLEG,* * PLEG,B
+kubernetes,19,missing,U,A,INVALID,0,0,_PLEG,* * PLEG,Based on the retrieved
+kubernetes,19,mixed_old_last,A,A,B,0,0,_PLEG,* * PLEG,B
+kubernetes,19,mixed_new_last,A,A,INVALID,0,0,_PLEG,* * PLEG,The correct answer is
+kubernetes,20,current_only,B,B,INVALID,0,0,CSIServiceAccountTokenSecrets,CRIListStreaming,Based on the retrieved
+kubernetes,20,missing,U,A,INVALID,0,0,CRIListStreaming,CSIServiceAccountTokenSecrets,Based on the retrieved
+kubernetes,20,mixed_old_last,A,A,INVALID,0,0,CRIListStreaming,CSIServiceAccountTokenSecrets,Based on the retrieved
+kubernetes,20,mixed_new_last,B,B,B,1,1,CSIServiceAccountTokenSecrets,CRIListStreaming,B
+kubernetes,21,current_only,A,A,B,0,0,common layouts,options,B
+kubernetes,21,missing,U,A,INVALID,0,0,common layouts,options,Based on the retrieved
+kubernetes,21,mixed_old_last,B,B,B,1,1,options,common layouts,The answer is B
+kubernetes,21,mixed_new_last,B,B,B,1,1,options,common layouts,The answer is B
+kubernetes,22,current_only,B,B,INVALID,0,0,can do many things.,manage workloads.,The correct answer is
+kubernetes,22,missing,U,B,INVALID,0,0,can do many things.,manage workloads.,Since there is no
+kubernetes,22,mixed_old_last,A,A,INVALID,0,0,manage workloads.,can do many things.,The correct answer is
+kubernetes,22,mixed_new_last,A,A,INVALID,0,0,manage workloads.,can do many things.,The correct answer is
+kubernetes,23,current_only,A,A,INVALID,0,0,scheduling.k8s.io/v1alpha2,scheduling.k8s.io/v1alpha1,The correct answer is
+kubernetes,23,missing,U,B,B,0,1,scheduling.k8s.io/v1alpha1,scheduling.k8s.io/v1alpha2,B
+kubernetes,23,mixed_old_last,A,A,B,0,0,scheduling.k8s.io/v1alpha2,scheduling.k8s.io/v1alpha1,B
+kubernetes,23,mixed_new_last,A,A,B,0,0,scheduling.k8s.io/v1alpha2,scheduling.k8s.io/v1alpha1,B
+kubernetes,24,current_only,A,A,B,0,0,docs/concepts/workloads/podgroup-api/,docs/concepts/workloads/workload-api/,B
+kubernetes,24,missing,U,B,A,0,0,docs/concepts/workloads/workload-api/,docs/concepts/workloads/podgroup-api/,A: docs/con
+kubernetes,24,mixed_old_last,A,A,INVALID,0,0,docs/concepts/workloads/podgroup-api/,docs/concepts/workloads/workload-api/,The correct answer is
+kubernetes,24,mixed_new_last,A,A,B,0,0,docs/concepts/workloads/podgroup-api/,docs/concepts/workloads/workload-api/,B

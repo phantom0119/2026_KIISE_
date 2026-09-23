@@ -1,0 +1,9 @@
+entity,rel_def,mention_rate_naive,affirmative_rate,negated_share_of_mentions,node_degree_frac_naive,node_degree_frac_affirmative,base_rate_gold,P_gold_given_present_naive,P_gold_given_present_affirmative,lift_naive,lift_affirmative,recall_present_over_gold_aff
+bus,multiple_buses,0.974,0.648,0.335,0.974,0.648,0.082,0.085,0.114,0.002,0.032,0.899
+car,,1.0,0.969,0.031,1.0,0.969,,,,,,
+truck,,0.87,0.389,0.553,0.87,0.389,,,,,,
+two_wheeler,two_plus_bikes,0.85,0.197,0.768,0.85,0.197,0.115,0.113,0.198,-0.002,0.083,0.339
+pedestrian,,0.981,0.272,0.723,0.981,0.272,,,,,,
+parked,parked_vehicle,0.865,0.099,0.886,0.865,0.099,0.023,0.023,0.024,-0.0,0.001,0.101
+dense,dense_frame,0.112,0.111,0.012,0.112,0.111,0.023,0.113,0.114,0.089,0.091,0.543
+stopped,stopped_vehicles,0.374,0.17,0.546,0.374,0.17,0.212,0.262,0.306,0.05,0.094,0.245

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-08-06T06:53:07.724375+00:00",
+  "status": "REPLICATION_INCONCLUSIVE",
+  "reason": "Fewer than two distinct supported winners remain after excluding uninformative cells.",
+  "min_queries": 10,
+  "min_winner_mean": 0.05,
+  "supported_winners": [
+    "frame"
+  ],
+  "supported_families": [
+    "body_social"
+  ],
+  "scope": "post-result informative-cell audit; not preregistered primary analysis"
+}

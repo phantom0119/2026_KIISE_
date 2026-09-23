@@ -1,0 +1,59 @@
+mask_id,predicate,kind,pair,subset,selectivity,gt_cluster_med_rank
+0,location==BC2000801,natural,location==BC2000801,11455,0.08644,1000.0
+1,CTRL(s=0.0864)|location==BC2000801,control,location==BC2000801,11455,0.08644,61.0
+2,location==중동사거리,natural,location==중동사거리,6429,0.04851,1000.0
+3,CTRL(s=0.0485)|location==중동사거리,control,location==중동사거리,6429,0.04851,109.0
+4,location==원골네거리,natural,location==원골네거리,6199,0.04678,1000.0
+5,CTRL(s=0.0468)|location==원골네거리,control,location==원골네거리,6199,0.04678,111.9
+6,location==연구단지네거리,natural,location==연구단지네거리,5853,0.04417,1000.0
+7,CTRL(s=0.0442)|location==연구단지네거리,control,location==연구단지네거리,5853,0.04417,117.2
+8,location==삼정고가교,natural,location==삼정고가교,5548,0.04187,1000.0
+9,CTRL(s=0.0419)|location==삼정고가교,control,location==삼정고가교,5548,0.04187,123.8
+10,location==계룡대교네거리,natural,location==계룡대교네거리,5166,0.03898,1000.0
+11,CTRL(s=0.0390)|location==계룡대교네거리,control,location==계룡대교네거리,5166,0.03898,130.5
+12,date==20200907,natural,date==20200907,10191,0.0769,1000.0
+13,CTRL(s=0.0769)|date==20200907,control,date==20200907,10191,0.0769,68.5
+14,date==20200908,natural,date==20200908,8583,0.06477,1000.0
+15,CTRL(s=0.0648)|date==20200908,control,date==20200908,8583,0.06477,81.7
+16,date==20200909,natural,date==20200909,8090,0.06105,1000.0
+17,CTRL(s=0.0610)|date==20200909,control,date==20200909,8090,0.06105,85.4
+18,date==20200915,natural,date==20200915,6538,0.04934,1000.0
+19,CTRL(s=0.0493)|date==20200915,control,date==20200915,6538,0.04934,109.7
+20,hour==01,natural,hour==01,3494,0.02637,1000.0
+21,CTRL(s=0.0264)|hour==01,control,hour==01,3494,0.02637,197.6
+22,hour==02,natural,hour==02,8711,0.06573,1000.0
+23,CTRL(s=0.0657)|hour==02,control,hour==02,8711,0.06573,75.0
+24,hour==05,natural,hour==05,7038,0.05311,1000.0
+25,CTRL(s=0.0531)|hour==05,control,hour==05,7038,0.05311,95.5
+26,hour==06,natural,hour==06,24239,0.18291,233.0
+27,CTRL(s=0.1829)|hour==06,control,hour==06,24239,0.18291,28.2
+28,hour==07,natural,hour==07,6281,0.0474,1000.0
+29,CTRL(s=0.0474)|hour==07,control,hour==07,6281,0.0474,110.8
+30,hour==08,natural,hour==08,3947,0.02978,1000.0
+31,CTRL(s=0.0298)|hour==08,control,hour==08,3947,0.02978,170.1
+32,hour==11,natural,hour==11,7241,0.05464,1000.0
+33,CTRL(s=0.0546)|hour==11,control,hour==11,7241,0.05464,96.1
+34,hour==12,natural,hour==12,20958,0.15815,175.4
+35,CTRL(s=0.1581)|hour==12,control,hour==12,20958,0.15815,32.0
+36,hour==13,natural,hour==13,6522,0.04921,1000.0
+37,CTRL(s=0.0492)|hour==13,control,hour==13,6522,0.04921,105.9
+38,hour==14,natural,hour==14,5950,0.0449,1000.0
+39,CTRL(s=0.0449)|hour==14,control,hour==14,5950,0.0449,116.5
+40,hour==16,natural,hour==16,4565,0.03445,1000.0
+41,CTRL(s=0.0344)|hour==16,control,hour==16,4565,0.03445,148.7
+42,hour==17,natural,hour==17,16702,0.12603,218.4
+43,CTRL(s=0.1260)|hour==17,control,hour==17,16702,0.12603,40.2
+44,hour==18,natural,hour==18,5996,0.04525,768.0
+45,CTRL(s=0.0452)|hour==18,control,hour==18,5996,0.04525,117.1
+46,hour==19,natural,hour==19,10631,0.08022,1000.0
+47,CTRL(s=0.0802)|hour==19,control,hour==19,10631,0.08022,65.5
+48,"hour in [06,18] (daytime)",composite,"hour in [06,18] (daytime)",102532,0.7737,4.5
+49,"CTRL(s=0.7737)|hour in [06,18] (daytime)",control,"hour in [06,18] (daytime)",102532,0.7737,5.9
+50,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",40671,0.3069,80.8
+51,"CTRL(s=0.3069)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",40671,0.3069,16.4
+52,"hour in [17,19] (evening peak)",composite,"hour in [17,19] (evening peak)",33329,0.2515,123.5
+53,"CTRL(s=0.2515)|hour in [17,19] (evening peak)",control,"hour in [17,19] (evening peak)",33329,0.2515,20.2
+54,location in top-5,composite,location in top-5,35484,0.26776,830.5
+55,CTRL(s=0.2678)|location in top-5,control,location in top-5,35484,0.26776,18.6
+56,date in 2020-09,composite,date in 2020-09,42555,0.32112,1000.0
+57,CTRL(s=0.3211)|date in 2020-09,control,date in 2020-09,42555,0.32112,15.5

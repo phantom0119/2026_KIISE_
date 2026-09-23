@@ -1,0 +1,51 @@
+engine,condition,predicate,kind,pair,selectivity,subset,gt_cluster_med_rank,recall_at_10,r_lo,r_hi,p50_ms_clientRT,flat_cutoff,flat_path
+milvus,m1,time_of_day==morning,natural,time_of_day==morning,0.25724,36999,42.5,0.9995,0.9985,1.0,1.996,,False
+milvus,m1,CTRL(s=0.2572)|time_of_day==morning,control,time_of_day==morning,0.25724,36999,20.4,0.9975,0.995,0.9995,2.985,,False
+milvus,m1,time_of_day==afternoon,natural,time_of_day==afternoon,0.34762,49998,42.0,0.999,0.9975,1.0,2.011,,False
+milvus,m1,CTRL(s=0.3476)|time_of_day==afternoon,control,time_of_day==afternoon,0.34762,49998,15.1,0.999,0.9975,1.0,1.932,,False
+milvus,m1,time_of_day==evening,natural,time_of_day==evening,0.29478,42398,621.8,0.994,0.9905,0.997,2.734,,False
+milvus,m1,CTRL(s=0.2948)|time_of_day==evening,control,time_of_day==evening,0.29478,42398,17.6,0.9985,0.9965,1.0,2.335,,False
+milvus,m1,sig_has_yellow==True,natural,sig_has_yellow==True,0.62846,90392,8.1,0.998,0.996,0.9995,1.836,,False
+milvus,m1,CTRL(s=0.6285)|sig_has_yellow==True,control,sig_has_yellow==True,0.62846,90392,8.5,0.9975,0.995,0.9995,1.973,,False
+milvus,m1,sig_has_pedestrian==True,natural,sig_has_pedestrian==True,0.39096,56232,15.3,0.999,0.9975,1.0,2.756,,False
+milvus,m1,CTRL(s=0.3910)|sig_has_pedestrian==True,control,sig_has_pedestrian==True,0.39096,56232,13.0,0.9985,0.9965,1.0,2.111,,False
+milvus,m1,sig_has_yellow==False,natural,sig_has_yellow==False,0.27117,39003,23.6,0.997,0.9945,0.999,2.252,,False
+milvus,m1,CTRL(s=0.2712)|sig_has_yellow==False,control,sig_has_yellow==False,0.27117,39003,19.9,0.9995,0.9985,1.0,2.659,,False
+milvus,m1,sig_has_pedestrian==False,natural,sig_has_pedestrian==False,0.50868,73163,9.3,0.999,0.9975,1.0,1.82,,False
+milvus,m1,CTRL(s=0.5087)|sig_has_pedestrian==False,control,sig_has_pedestrian==False,0.50868,73163,10.2,0.9985,0.9965,1.0,1.811,,False
+milvus,m1,veh_density_bin==low,natural,veh_density_bin==low,0.29764,42810,34.2,0.996,0.993,0.9985,2.971,,False
+milvus,m1,CTRL(s=0.2976)|veh_density_bin==low,control,veh_density_bin==low,0.29764,42810,18.5,0.9985,0.9965,1.0,2.01,,False
+milvus,m1,veh_density_bin==mid,natural,veh_density_bin==mid,0.27268,39220,30.9,0.9955,0.9915,0.9985,2.099,,False
+milvus,m1,CTRL(s=0.2727)|veh_density_bin==mid,control,veh_density_bin==mid,0.27268,39220,19.6,0.998,0.996,0.9995,1.994,,False
+milvus,m1,veh_density_bin==high,natural,veh_density_bin==high,0.32931,47365,58.1,0.998,0.996,0.9995,3.964,,False
+milvus,m1,CTRL(s=0.3293)|veh_density_bin==high,control,veh_density_bin==high,0.32931,47365,16.4,0.998,0.996,0.9995,2.244,,False
+milvus,m1,hour==6,natural,hour==6,0.06983,10043,188.9,1.0,1.0,1.0,3.37,,False
+milvus,m1,CTRL(s=0.0698)|hour==6,control,hour==6,0.06983,10043,77.1,1.0,1.0,1.0,3.727,,False
+milvus,m1,hour==7,natural,hour==7,0.07033,10115,107.6,1.0,1.0,1.0,5.95,,False
+milvus,m1,CTRL(s=0.0703)|hour==7,control,hour==7,0.07033,10115,74.7,1.0,1.0,1.0,3.571,,False
+milvus,m1,hour==8,natural,hour==8,0.07039,10124,104.8,0.998,0.996,0.9995,3.471,,False
+milvus,m1,CTRL(s=0.0704)|hour==8,control,hour==8,0.07039,10124,75.2,0.999,0.9975,1.0,5.752,,False
+milvus,m1,hour==9,natural,hour==9,0.0467,6717,162.6,1.0,1.0,1.0,6.311,,False
+milvus,m1,CTRL(s=0.0467)|hour==9,control,hour==9,0.0467,6717,120.6,1.0,1.0,1.0,7.765,,False
+milvus,m1,hour==13,natural,hour==13,0.02319,3336,278.2,1.0,1.0,1.0,5.289,,False
+milvus,m1,CTRL(s=0.0232)|hour==13,control,hour==13,0.02319,3336,230.3,1.0,1.0,1.0,6.049,,False
+milvus,m1,hour==14,natural,hour==14,0.11434,16446,104.7,0.9965,0.9935,0.999,5.998,,False
+milvus,m1,CTRL(s=0.1143)|hour==14,control,hour==14,0.11434,16446,46.0,1.0,1.0,1.0,3.816,,False
+milvus,m1,hour==15,natural,hour==15,0.11256,16190,117.7,0.9965,0.9925,0.9995,3.66,,False
+milvus,m1,CTRL(s=0.1126)|hour==15,control,hour==15,0.11256,16190,47.2,0.9975,0.995,0.9995,3.263,,False
+milvus,m1,hour==16,natural,hour==16,0.01943,2794,311.7,1.0,1.0,1.0,2.634,,False
+milvus,m1,CTRL(s=0.0194)|hour==16,control,hour==16,0.01943,2794,263.7,1.0,1.0,1.0,3.479,,False
+milvus,m1,hour==17,natural,hour==17,0.07809,11232,121.6,0.9985,0.9965,1.0,3.166,,False
+milvus,m1,CTRL(s=0.0781)|hour==17,control,hour==17,0.07809,11232,67.9,0.9995,0.9985,1.0,3.073,,False
+milvus,m1,hour==18,natural,hour==18,0.10885,15656,715.0,0.988,0.98,0.994,3.987,,False
+milvus,m1,CTRL(s=0.1089)|hour==18,control,hour==18,0.10885,15656,47.6,1.0,1.0,1.0,2.684,,False
+milvus,m1,hour==19,natural,hour==19,0.11023,15854,689.5,0.986,0.9795,0.9915,4.29,,False
+milvus,m1,CTRL(s=0.1102)|hour==19,control,hour==19,0.11023,15854,48.7,0.997,0.9945,0.999,2.705,,False
+milvus,m1,hour==20,natural,hour==20,0.0757,10888,748.3,0.987,0.982,0.992,4.074,,False
+milvus,m1,CTRL(s=0.0757)|hour==20,control,hour==20,0.0757,10888,69.1,0.999,0.9975,1.0,2.263,,False
+milvus,m1,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",0.13754,19782,95.5,0.995,0.9915,0.998,3.069,,False
+milvus,m1,"CTRL(s=0.1375)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",0.13754,19782,39.4,0.997,0.9945,0.999,2.041,,False
+milvus,m1,"hour in [8,18] (working)",composite,"hour in [8,18] (working)",0.57356,82495,8.6,1.0,1.0,1.0,1.872,,False
+milvus,m1,"CTRL(s=0.5736)|hour in [8,18] (working)",control,"hour in [8,18] (working)",0.57356,82495,9.1,0.997,0.994,0.9995,1.844,,False
+milvus,m1,"time_of_day in {morning,evening}",composite,"time_of_day in {morning,evening}",0.55202,79397,8.2,1.0,1.0,1.0,2.088,,False
+milvus,m1,"CTRL(s=0.5520)|time_of_day in {morning,evening}",control,"time_of_day in {morning,evening}",0.55202,79397,9.6,0.999,0.9975,1.0,2.591,,False

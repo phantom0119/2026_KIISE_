@@ -1,0 +1,81 @@
+{
+  "c1_strict_pooled_positive": {
+    "holds": true,
+    "detail": {
+      "n": 129,
+      "mean": 0.1501,
+      "pair_boot_median": 0.1498,
+      "pair_ci": [
+        0.1235,
+        0.179
+      ],
+      "lex_boot_median": 0.1481,
+      "lex_ci": [
+        0.1113,
+        0.1967
+      ],
+      "mean_dedup": 0.1424,
+      "signs_agree": true
+    }
+  },
+  "c2_semantic_container_negative": {
+    "holds": true,
+    "detail": {
+      "n": 30,
+      "mean": -0.0485,
+      "pair_boot_median": -0.046,
+      "pair_ci": [
+        -0.13,
+        0.021
+      ],
+      "lex_boot_median": -0.0467,
+      "lex_ci": [
+        -0.129,
+        0.0224
+      ],
+      "mean_dedup": -0.0513,
+      "signs_agree": true
+    }
+  },
+  "c3_negative_semantic_signs_exist": {
+    "holds": true,
+    "n_negative": 68,
+    "n_semantic": 129
+  },
+  "c4_label_gt_container_semantic": {
+    "holds": false,
+    "label": {
+      "n": 69,
+      "mean": -0.0558,
+      "pair_boot_median": -0.055,
+      "pair_ci": [
+        -0.1538,
+        0.042
+      ],
+      "lex_boot_median": -0.0539,
+      "lex_ci": [
+        -0.1518,
+        0.0439
+      ],
+      "mean_dedup": -0.0624,
+      "signs_agree": true
+    }
+  },
+  "tally": 3,
+  "verdict_direction_consistent": true,
+  "rule": "frozen Amendment 6a(6): consistent iff >=3/4",
+  "separated_strata": {
+    "degenerate": {
+      "n": 2,
+      "mean_delta": 0.0
+    },
+    "normal_stratum": {
+      "n": 10,
+      "mean_delta": 0.076
+    },
+    "annotation_timing_semantic": {
+      "n": 30,
+      "mean_delta": -0.026
+    }
+  }
+}

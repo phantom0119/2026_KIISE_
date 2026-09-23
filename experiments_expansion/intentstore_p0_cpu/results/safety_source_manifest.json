@@ -1,0 +1,62 @@
+{
+  "protocol": "P0_CPU_SAFETY_PROTOCOL.md",
+  "seed": 20260806,
+  "randomization_draws": 200000,
+  "bootstrap_draws": 20000,
+  "max_rank": 100,
+  "rrf_k": 60,
+  "minimum_effect": 0.05,
+  "quality_floor": 0.05,
+  "costs": {
+    "caption": 4096,
+    "center_frame": 2048,
+    "visual_4frame": 8192,
+    "fusion": 12288
+  },
+  "clip_query_encoding": {
+    "model_id": "openai/clip-vit-base-patch32",
+    "device": "cpu",
+    "local_files_only": true,
+    "query_count": 103,
+    "embedding_dim": 512,
+    "seconds": 24.735076013952494,
+    "torch_threads": 8,
+    "cuda_visible_devices": ""
+  },
+  "datasets": [
+    {
+      "dataset": "VRU",
+      "query_count": 85,
+      "clip_count": 1000,
+      "frame_count": 4000,
+      "visual_flat_scan_seconds": 2.7575597502291203,
+      "input_hashes": {
+        "queries": "12b131feff4b7b2017f7593b93ba2f32c74c776cfe371730b280fbc968a380d1",
+        "qrels": "4a3100effaa90a4cf6951ac1b3d68692f6f4e0e5265ad2cac7731afa081cdf6c",
+        "metadata": "ceb01cc46d460f28572abddd6329eb0e87801b07d783ac80c90befbbee2137ff",
+        "frame_embeddings": "940d93835a3f1dfa5885b2a53b46775ef0d229fe7995a572ceddba58d334aa34",
+        "frame_index": "e764f236790daaaf70e7a0cb57b050c2f56851a6a49583b279e45d0b80589597",
+        "text_retrieval_results": "704f4396862fd852efc9d532daa7fdc93142a1657bf5d32fda6034c602976ee3"
+      }
+    },
+    {
+      "dataset": "AIHUB",
+      "query_count": 18,
+      "clip_count": 269,
+      "frame_count": 1076,
+      "visual_flat_scan_seconds": 0.8059746846556664,
+      "input_hashes": {
+        "queries": "33e8ba1a522b1509834dea1c08f25c63608d505cf77013193cac48b85c73d3b4",
+        "qrels": "19ad53659d1b12193f431f0f2964b68429fe702656d2acf636d4fd362c315a3b",
+        "metadata": "426b33feed6bbd8d806a7a3aabeb84e29e5619e5dc3c4de38e5e7a35fc8d5e4d",
+        "frame_embeddings": "ab84ad43f4c76a08a5a964525417b3ae20defefccee12edf6cc4b9c4f3e5b499",
+        "frame_index": "39c1c6521e7cc560cee275e4da3b037d54b13fcf498779406a1b0c3066c87f94",
+        "text_retrieval_results": "589e788fe157c58d6268cf82ad2f5e762ddcf76f1416d4947e7a969b33ac635f"
+      }
+    }
+  ],
+  "counts": {
+    "queries": 103,
+    "metric_rows": 412
+  }
+}

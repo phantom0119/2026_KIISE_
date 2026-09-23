@@ -1,0 +1,36 @@
+{
+  "arms": {
+    "current_only": {
+      "invalid_rate": 0.34,
+      "latest_answer_accuracy": 0.32,
+      "n": 50,
+      "task_accuracy": 0.32
+    },
+    "missing": {
+      "invalid_rate": 0.48,
+      "latest_answer_accuracy": 0.26,
+      "n": 50,
+      "task_accuracy": 0.04
+    },
+    "mixed_new_last": {
+      "invalid_rate": 0.3,
+      "latest_answer_accuracy": 0.38,
+      "n": 50,
+      "task_accuracy": 0.38
+    },
+    "mixed_old_last": {
+      "invalid_rate": 0.42,
+      "latest_answer_accuracy": 0.3,
+      "n": 50,
+      "task_accuracy": 0.3
+    }
+  },
+  "gates": {
+    "T4": "MODEL_GATE_INCONCLUSIVE",
+    "competence_pass": false,
+    "current_vs_missing_gap": 0.06,
+    "mixed_position_gap": 0.08000000000000002,
+    "position_sensitive": false
+  },
+  "model": "/hdd2/huggingface_cache/hub/models--meta-llama--Llama-3.2-1B-Instruct/snapshots/9213176726f574b556790deb65791e0c5aa438b6"
+}

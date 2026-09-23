@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": {
+    "zip_test": true,
+    "embedded_regular": true,
+    "embedded_bold": true,
+    "font_table_relationships": true,
+    "font_property_count": 1747,
+    "invalid_font_properties": [],
+    "stale_answer_absent": true,
+    "corrected_answer_present": true,
+    "doc_grid_removed": true,
+    "grid_snap_disabled": true,
+    "section_break_property_order_valid": true,
+    "section_property_order_valid": true,
+    "explicit_two_column_widths_valid": true,
+    "two_column_section_count": 12,
+    "paragraph_count_preserved": true,
+    "table_count_preserved": true,
+    "inline_shape_count_preserved": true,
+    "section_count_preserved": true,
+    "answer_replacements": 1,
+    "source_sha256": "9f5ebe8d8610f1b3cf3f3acc47760d33b88b1b5c5a1a2962b4aac19b78190cdb",
+    "output_sha256": "8807822a7bf6b2732d6e7ed8c19d7d2d3ad1b62b4a269de08b7beca97f99a53f",
+    "source_bytes": 1087837,
+    "output_bytes": 3996034,
+    "korean_font": "NanumMyeongjo",
+    "latin_font": "Times New Roman",
+    "korean_regular_fsType": 8,
+    "korean_bold_fsType": 8
+  },
+  "rule_7": {
+    "page_limit": 20,
+    "korean_title_pt": 18,
+    "english_title_pt": 12,
+    "author_pt": 8,
+    "abstract_heading_pt": 12,
+    "abstract_body_pt": 9,
+    "body_heading_pt": 12,
+    "body_pt": 9,
+    "font_family_rule": "not specified by DBR; unified by user request"
+  }
+}

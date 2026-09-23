@@ -1,0 +1,5 @@
+case,n,delta,ci,boot_p,wilcoxon_p,sign
+522 strict,32,0.1445,"[0.082,0.216]",0.0002,0.00013,neg 0/zero 13/pos 19
+522 semantic,32,-0.0745,"[-0.133,-0.012]",0.0168,0.03449,neg 16/zero 8/pos 8
+522 semantic/low-coupling,23,-0.1308,"[-0.191,-0.075]",0.0002,0.00135,neg 13/zero 7/pos 3
+522 semantic/contrast,9,0.0693,"[-0.033,0.171]",0.184,0.20758,neg 3/zero 1/pos 5

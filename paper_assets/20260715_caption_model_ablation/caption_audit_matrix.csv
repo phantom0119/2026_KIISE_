@@ -1,0 +1,10 @@
+model,dataset,integrity_pass,quality_advisory_pass
+qwen25vl_7b,522,True,True
+qwen3vl_8b,522,True,False
+qwen35_9b,522,True,False
+qwen25vl_7b,meva,True,True
+qwen3vl_8b,meva,True,False
+qwen35_9b,meva,True,False
+qwen25vl_7b,uca,True,True
+qwen3vl_8b,uca,True,False
+qwen35_9b,uca,True,False

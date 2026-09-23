@@ -1,0 +1,10 @@
+{
+  "server": "PostgreSQL 16.14, pgvector 0.8.4 (docker kiise-vlmdb-pgvector :5433)",
+  "corpus": "sinnaedoro corpus_real 132521x512 L2-normalized",
+  "operator": "<#> (negative inner product; == cosine on normalized vectors, faiss-IP equivalent)",
+  "schema": "single-row denormalized (id, location, date, hour, embedding) [M3a]",
+  "timing": "single warm connection, jit=off, W=2 R=5, per-query median -> p50/p95 over 300 queries",
+  "boundary": "client-side round-trip; NO cross-system latency ratios vs faiss [M3e]",
+  "recall_gt": "seq-scan exact (enable_indexscan=off), same operator",
+  "load_s": 25.1
+}

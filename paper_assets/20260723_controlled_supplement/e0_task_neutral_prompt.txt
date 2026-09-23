@@ -1,0 +1,1 @@
+Describe this urban CCTV frame in 2-4 factual sentences using only directly visible evidence. Mention the scene, objects, actions, and spatial relations that are visually salient. Do not use external metadata or infer causes, intentions, or events beyond the image.

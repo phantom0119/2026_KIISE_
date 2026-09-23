@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-07-16T19:49:42.067199+00:00",
+  "experiment": "compatible storage x search x index joint validation",
+  "canonical_root": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/522/canonical",
+  "embedding_root": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_qwen3vl2b_unified_qwen35captions",
+  "seed": 20260717,
+  "queries": 85,
+  "clips": 3000,
+  "qrels_strict": 6809,
+  "qrels_semantic": 24872,
+  "representations": [
+    "caption",
+    "representative_frame",
+    "multi_frame",
+    "dual"
+  ],
+  "compatible_search_plans": {
+    "caption": [
+      "B2_vector",
+      "B3_postfilter",
+      "B4_prefilter",
+      "B5_lexical_vector_hybrid"
+    ],
+    "representative_frame": [
+      "B2_vector",
+      "B3_postfilter",
+      "B4_prefilter"
+    ],
+    "multi_frame": [
+      "B2_vector",
+      "B3_postfilter",
+      "B4_prefilter"
+    ],
+    "dual": [
+      "B2_vector",
+      "B3_postfilter",
+      "B4_prefilter"
+    ]
+  },
+  "indexes": [
+    "flat",
+    "hnsw_ef64",
+    "hnsw_ef256",
+    "ivfflat_np8",
+    "ivfflat_np32",
+    "ivfpq6_np8",
+    "ivfpq6_np32"
+  ],
+  "index_training": {
+    "nlist": 64,
+    "pq_m": 32,
+    "pq_nbits": 6,
+    "hnsw_M": 32,
+    "hnsw_efConstruction": 200
+  },
+  "max_rank": 100,
+  "postfilter_vector_k": 200,
+  "latency": {
+    "threads": 1,
+    "repeats": 10,
+    "warmup_rounds": 2,
+    "randomized_query_order": true,
+    "scope": "search, filter/collapse, and fusion; excludes embedding and build",
+    "host_loadavg": [
+      8.22,
+      8.55,
+      8.62
+    ]
+  },
+  "counts": {
+    "caption": {
+      "vectors": 3000,
+      "max_vectors_per_clip": 1
+    },
+    "representative_frame": {
+      "vectors": 3000,
+      "max_vectors_per_clip": 1
+    },
+    "multi_frame": {
+      "vectors": 8349,
+      "max_vectors_per_clip": 3
+    }
+  },
+  "hashes": {
+    "embedding_manifest": "74d6d1b8757d5727e0c5978ba6096e49171e0cd0bae49102447f4657d0d943e6",
+    "queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "qrels": "74da4f10b8566705b9176809f1b435e0811374b630475a9067ac08a7515d7a93",
+    "qrels_semantic": "f59cf0f8939685b16908e330c338437b54488a921cbec907bc5501206961f3e0"
+  },
+  "caveats": [
+    "The joint task-quality grid is evaluated at the frozen 3,000-clip scale.",
+    "Postfilter uses a fixed top-200 vector candidate budget.",
+    "Index size is serialized FAISS size and includes indexed vector payload.",
+    "Latency was measured under the recorded shared-host load and must not be generalized to other hardware."
+  ]
+}

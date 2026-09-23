@@ -1,0 +1,22 @@
+{
+  "seed": 20260806,
+  "rescue_decision": "RESCUE_INCONCLUSIVE",
+  "view_decision": "VIEW_SELECTION_NARROW_PASS",
+  "recommendation": "DO_NOT_CONFIRM_TOPIC; RESCUE_GATE_INCONCLUSIVE",
+  "non_dominance_models": [],
+  "structured_support_by_service": {
+    "attribute_count": 4,
+    "path_mode": 3,
+    "temporal_relation": 0
+  },
+  "visual_support_by_service": {
+    "attribute_count": 0,
+    "path_mode": 0,
+    "temporal_relation": 0
+  },
+  "structured_support_total": 7,
+  "visual_support_total": 0,
+  "view_noninferior_and_cost_count": 3,
+  "view_effect_supported_count": 3,
+  "important_limitation": "COT is a label-derived oracle, not an automated trajectory extractor."
+}

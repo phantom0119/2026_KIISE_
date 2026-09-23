@@ -1,0 +1,8 @@
+name: kiise-vlmdb
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r 2026_KIISE/env/experiment_requirements.txt

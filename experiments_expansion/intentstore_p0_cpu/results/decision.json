@@ -1,0 +1,65 @@
+{
+  "status": "CONTINUE_STRONG",
+  "reason": "At least one material cross-service ranking reversal was observed.",
+  "primary_scoring": "strict",
+  "metric": "ndcg_at_10",
+  "unique_winners": [
+    "caption",
+    "dual",
+    "joint_image_caption",
+    "multi_frame"
+  ],
+  "unique_supported_winners": [],
+  "supported_service_count": 0,
+  "strong_reversal_count": 5,
+  "strong_reversals": [
+    {
+      "representation_a": "caption",
+      "representation_b": "dual",
+      "a_wins_intent": "crowded_scene",
+      "a_wins_delta": 0.08871325354146335,
+      "b_wins_intent": "stopped_vehicle",
+      "b_wins_delta": -0.11692176591721966
+    },
+    {
+      "representation_a": "caption",
+      "representation_b": "dual",
+      "a_wins_intent": "crowded_scene",
+      "a_wins_delta": 0.08871325354146335,
+      "b_wins_intent": "two_wheeler",
+      "b_wins_delta": -0.05850382169395432
+    },
+    {
+      "representation_a": "caption",
+      "representation_b": "representative_frame",
+      "a_wins_intent": "crowded_scene",
+      "a_wins_delta": 0.11699710750491632,
+      "b_wins_intent": "stopped_vehicle",
+      "b_wins_delta": -0.055125240828782014
+    },
+    {
+      "representation_a": "joint_image_caption",
+      "representation_b": "multi_frame",
+      "a_wins_intent": "crowded_scene",
+      "a_wins_delta": 0.10071245389952994,
+      "b_wins_intent": "stopped_vehicle",
+      "b_wins_delta": -0.11471932295816013
+    },
+    {
+      "representation_a": "joint_image_caption",
+      "representation_b": "multi_frame",
+      "a_wins_intent": "crowded_scene",
+      "a_wins_delta": 0.10071245389952994,
+      "b_wins_intent": "two_wheeler",
+      "b_wins_delta": -0.06238884945666384
+    }
+  ],
+  "scope": "CPU screening evidence only; not the final IntentStore G1 decision",
+  "thresholds": {
+    "quality_margin": 0.05,
+    "noninferior_margin": 0.02,
+    "cost_ratio": 0.5,
+    "bootstrap_reps": 10000,
+    "seed": 20260806
+  }
+}

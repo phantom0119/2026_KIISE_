@@ -1,0 +1,5 @@
+world_arm,recall@1,recall@3,recall@5,recall@10
+original|text_A1,1.0,1.0,1.0,1.0
+original|graph_A2,1.0,1.0,1.0,1.0
+counterfactual|text_A1,1.0,1.0,1.0,1.0
+counterfactual|graph_A2,1.0,1.0,1.0,1.0

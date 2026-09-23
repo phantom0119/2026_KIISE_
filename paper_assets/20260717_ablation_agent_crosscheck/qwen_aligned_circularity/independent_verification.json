@@ -1,0 +1,90 @@
+{
+  "overall_pass": true,
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "gate": "input_hash_alignment",
+      "pass": true
+    },
+    {
+      "gate": "embedding_shape_finite_norm",
+      "pass": true,
+      "shapes": [
+        [
+          3000,
+          2048
+        ],
+        [
+          3000,
+          2048
+        ],
+        [
+          85,
+          2048
+        ]
+      ]
+    },
+    {
+      "gate": "no_token_truncation",
+      "pass": true,
+      "token_lengths": {
+        "model_max_length": 8192,
+        "clean_documents": {
+          "min": 66,
+          "median": 99.0,
+          "max": 129,
+          "over_model_max": 0
+        },
+        "full_documents": {
+          "min": 66,
+          "median": 104.0,
+          "max": 155,
+          "over_model_max": 0
+        },
+        "queries": {
+          "min": 32,
+          "median": 37.0,
+          "max": 41,
+          "over_model_max": 0
+        }
+      }
+    },
+    {
+      "gate": "full_documents_exact_single_treatment",
+      "pass": true,
+      "injected_edges": 1367
+    },
+    {
+      "gate": "dense_rankings_and_metrics_independent_recompute",
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "gate": "oracle_structural_upper_bound",
+      "pass": true,
+      "rows": 170
+    },
+    {
+      "gate": "oracle_rankings_contain_only_qrels",
+      "pass": true,
+      "violations": 0
+    },
+    {
+      "gate": "summary_matches_per_query",
+      "pass": true,
+      "max_abs_error": 8.326672684688674e-17
+    },
+    {
+      "gate": "contrast_bootstrap_independent_recompute",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "gate": "clean_qwen_matches_joint_grid_anchor",
+      "pass": true,
+      "max_abs_error": 0.0
+    }
+  ],
+  "scope": "Independent arithmetic, treatment-text, rank, bootstrap, and anchor verification."
+}

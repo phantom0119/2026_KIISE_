@@ -1,0 +1,69 @@
+{
+  "analysis": "S4 frozen top-1 retrieval manipulation check",
+  "created_at": "2026-07-23T09:29:21.461271+00:00",
+  "retrieval_corpus_frames": 133977,
+  "reconstruction": {
+    "sampled_videos": 3000,
+    "reconstructed_source_rows": 2967,
+    "insufficient_video_frames": 33,
+    "missing_moment_group": 0,
+    "empty_moment_evidence": 0,
+    "missing_source_annotation": 228,
+    "eligible_source_rows": 2739
+  },
+  "categories": {
+    "bus_count": {
+      "source_items": 2739,
+      "source_class_counts": {
+        "0": 2169,
+        "1": 473,
+        "2+": 97
+      },
+      "exact_class_match": 0.7604965315808689,
+      "strong_class_match": 0.7524644030668127,
+      "exact_minus_strong": 0.008032128514056214,
+      "intersection_cluster_bootstrap_ci": [
+        -0.010246967940616003,
+        0.02711578743356366
+      ],
+      "strata": {
+        "exact_hit__strong_hit": 1795,
+        "exact_miss__strong_miss": 390,
+        "exact_hit__strong_miss": 288,
+        "exact_miss__strong_hit": 266
+      },
+      "retrieval_gate": {
+        "exact_minus_strong_at_least_5pp": false,
+        "exact_hit_strong_miss_at_least_200": true,
+        "all_pass": false
+      }
+    },
+    "bike_count": {
+      "source_items": 2739,
+      "source_class_counts": {
+        "0": 2221,
+        "1": 444,
+        "2+": 74
+      },
+      "exact_class_match": 0.7101131799926981,
+      "strong_class_match": 0.7210660825118657,
+      "exact_minus_strong": -0.010952902519167584,
+      "intersection_cluster_bootstrap_ci": [
+        -0.030824688550992373,
+        0.008313582129798039
+      ],
+      "strata": {
+        "exact_hit__strong_hit": 1638,
+        "exact_miss__strong_miss": 457,
+        "exact_miss__strong_hit": 337,
+        "exact_hit__strong_miss": 307
+      },
+      "retrieval_gate": {
+        "exact_minus_strong_at_least_5pp": false,
+        "exact_hit_strong_miss_at_least_200": true,
+        "all_pass": false
+      }
+    }
+  },
+  "rule": "Only categories passing both retrieval gates may enter VLM answer propagation."
+}

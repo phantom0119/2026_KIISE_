@@ -1,0 +1,200 @@
+{
+  "T2": "FOUR_ARTIFACT_SAFETY_PASS",
+  "T3": "INTEGRATED_DB_PREFERRED",
+  "aggregate": {
+    "flask": {
+      "eager": {
+        "cache_errors": 375,
+        "error_rate": 0.7142857142857143,
+        "error_wilson_95ci": [
+          0.6741953545381179,
+          0.7512629680785423
+        ],
+        "errors": 375,
+        "graph_errors": 375,
+        "observations": 525,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1152.7537433430552,
+        "update_p95_ms": 1189.667332265526
+      },
+      "pg_atomic_all": {
+        "cache_errors": 0,
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          1.734723475976807e-18,
+          0.0249702443680766
+        ],
+        "errors": 0,
+        "graph_errors": 0,
+        "observations": 150,
+        "readiness_all_ok": true,
+        "update_p50_ms": 7.985666394233704,
+        "update_p95_ms": 11.551583651453257
+      },
+      "read_filter": {
+        "cache_errors": 300,
+        "error_rate": 0.5714285714285714,
+        "error_wilson_95ci": [
+          0.5287293115382394,
+          0.6130901293339805
+        ],
+        "errors": 300,
+        "graph_errors": 225,
+        "observations": 525,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1142.6971862092614,
+        "update_p95_ms": 1175.5036333575845
+      },
+      "staged_all": {
+        "cache_errors": 0,
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          4.336808689942018e-19,
+          0.00636170101370071
+        ],
+        "errors": 0,
+        "graph_errors": 0,
+        "observations": 600,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1415.0333404541016,
+        "update_p95_ms": 1461.1617472954094
+      }
+    },
+    "kubernetes": {
+      "eager": {
+        "cache_errors": 375,
+        "error_rate": 0.7142857142857143,
+        "error_wilson_95ci": [
+          0.6741953545381179,
+          0.7512629680785423
+        ],
+        "errors": 375,
+        "graph_errors": 375,
+        "observations": 525,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1122.0452217385173,
+        "update_p95_ms": 1183.3547824062407
+      },
+      "pg_atomic_all": {
+        "cache_errors": 0,
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          1.734723475976807e-18,
+          0.0249702443680766
+        ],
+        "errors": 0,
+        "graph_errors": 0,
+        "observations": 150,
+        "readiness_all_ok": true,
+        "update_p50_ms": 10.28493233025074,
+        "update_p95_ms": 14.051692560315132
+      },
+      "read_filter": {
+        "cache_errors": 300,
+        "error_rate": 0.5714285714285714,
+        "error_wilson_95ci": [
+          0.5287293115382394,
+          0.6130901293339805
+        ],
+        "errors": 300,
+        "graph_errors": 225,
+        "observations": 525,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1120.7792358472943,
+        "update_p95_ms": 1163.264634553343
+      },
+      "staged_all": {
+        "cache_errors": 0,
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          4.336808689942018e-19,
+          0.00636170101370071
+        ],
+        "errors": 0,
+        "graph_errors": 0,
+        "observations": 600,
+        "readiness_all_ok": true,
+        "update_p50_ms": 1343.117301352322,
+        "update_p95_ms": 1392.7609124220908
+      }
+    }
+  },
+  "cost_ratios_staged_vs_pg": {
+    "flask": 126.49016718253924,
+    "kubernetes": 99.11695024950474
+  },
+  "policy": [
+    {
+      "added_publish_lag_seconds_year": 67.12706105550751,
+      "break_even_error_cost_per_publish_second": 2052.3121951164635,
+      "expected_errors_year": 0.032708016458333336,
+      "page": "Kubernetes"
+    },
+    {
+      "added_publish_lag_seconds_year": 13.699400215409696,
+      "break_even_error_cost_per_publish_second": 9131.300622835368,
+      "expected_errors_year": 0.0015002682291666665,
+      "page": "Flask_(web_framework)"
+    },
+    {
+      "added_publish_lag_seconds_year": 71.23688112013042,
+      "break_even_error_cost_per_publish_second": 1941.1457280846707,
+      "expected_errors_year": 0.03669836843749999,
+      "page": "PostgreSQL"
+    },
+    {
+      "added_publish_lag_seconds_year": 23.288980366196483,
+      "break_even_error_cost_per_publish_second": 2212.878740522929,
+      "expected_errors_year": 0.01052429125,
+      "page": "Elasticsearch"
+    },
+    {
+      "added_publish_lag_seconds_year": 34.24850053852424,
+      "break_even_error_cost_per_publish_second": 4831.5607895714475,
+      "expected_errors_year": 0.0070884962499999996,
+      "page": "Redis"
+    },
+    {
+      "added_publish_lag_seconds_year": 90.416041421704,
+      "break_even_error_cost_per_publish_second": 9116.655393287916,
+      "expected_errors_year": 0.009917676770833333,
+      "page": "Neo4j"
+    },
+    {
+      "added_publish_lag_seconds_year": 53.427660840097815,
+      "break_even_error_cost_per_publish_second": 1946.6044174361903,
+      "expected_errors_year": 0.027446593854166663,
+      "page": "Docker_(software)"
+    },
+    {
+      "added_publish_lag_seconds_year": 112.33508176635951,
+      "break_even_error_cost_per_publish_second": 1283.0346430285624,
+      "expected_errors_year": 0.08755420781249999,
+      "page": "Retrieval-augmented_generation"
+    },
+    {
+      "added_publish_lag_seconds_year": 719.218511309009,
+      "break_even_error_cost_per_publish_second": 554.4973422351711,
+      "expected_errors_year": 1.297063946979167,
+      "page": "Large_language_model"
+    },
+    {
+      "added_publish_lag_seconds_year": 73.97676116321236,
+      "break_even_error_cost_per_publish_second": 6607.867700779532,
+      "expected_errors_year": 0.011195254583333335,
+      "page": "Vector_database"
+    },
+    {
+      "added_publish_lag_seconds_year": 1124.720757685136,
+      "break_even_error_cost_per_publish_second": 18.501182468640323,
+      "expected_errors_year": 60.791830986562516,
+      "page": "ChatGPT"
+    },
+    {
+      "added_publish_lag_seconds_year": 0.0,
+      "break_even_error_cost_per_publish_second": null,
+      "expected_errors_year": 0.0,
+      "page": "Qdrant"
+    }
+  ]
+}

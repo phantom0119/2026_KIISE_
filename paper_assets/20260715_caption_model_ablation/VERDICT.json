@@ -1,0 +1,9 @@
+{
+  "overall_pass": true,
+  "caption_integrity_audits_pass": true,
+  "caption_quality_advisories_pass": false,
+  "token_limit_hit_count": 9666,
+  "invariant_gates_pass": true,
+  "primary_estimand": "paired per-query delta nDCG@10 versus Qwen2.5-VL",
+  "selection_rule": "Report each dataset and scoring regime separately; do not declare a universal winner unless the same model improves B2 semantic nDCG@10 in all three datasets."
+}

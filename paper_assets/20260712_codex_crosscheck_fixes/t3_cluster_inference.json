@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-12",
+  "method": "cluster bootstrap over (predicate-field x relevance) pairs, B=5000, seed=20260712",
+  "n_queries": 85,
+  "n_pairs": 25,
+  "rho_query_level": 0.2858,
+  "rho_pair_agg": 0.2723,
+  "rho_cluster_ci": [
+    -0.0306,
+    0.4847
+  ],
+  "band V<0.05": {
+    "n_q": 27,
+    "n_pairs": 8,
+    "mean": -0.0988,
+    "cluster_ci": [
+      -0.1787,
+      0.0134
+    ]
+  },
+  "band V<0.3": {
+    "n_q": 75,
+    "n_pairs": 23,
+    "mean": -0.0357,
+    "cluster_ci": [
+      -0.0941,
+      0.0098
+    ]
+  },
+  "band V>=0.3": {
+    "n_q": 10,
+    "n_pairs": 2,
+    "mean": 0.1335,
+    "cluster_ci": [
+      0.078,
+      0.3559
+    ]
+  }
+}

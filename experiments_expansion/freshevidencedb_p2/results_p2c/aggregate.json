@@ -1,0 +1,15 @@
+{
+  "T3": "SERVER_FAULT_GATE_PASS",
+  "after_gc_errors": 0,
+  "crash_recovery_observations": 1000,
+  "duplicates": 0,
+  "incomplete_manifest_references": 0,
+  "orphans_after_gc": 0,
+  "recovery_p95_ms": 33.29854924231768,
+  "scenario_runs": 20,
+  "snapshot_error_wilson_95ci": [
+    2.168404344971009e-19,
+    0.0038267584855551234
+  ],
+  "snapshot_errors": 0
+}

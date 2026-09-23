@@ -1,0 +1,17 @@
+{
+  "corpus": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/visual_embeddings_clip/frame_embeddings.npy",
+  "n_vectors": 143830,
+  "dim": 512,
+  "n_queries": 1000,
+  "scales": [
+    10000,
+    50000,
+    100000,
+    142000
+  ],
+  "repeats": 20,
+  "metric": "inner_product(cosine, normalized)",
+  "k": 10,
+  "faiss_threads_latency": 1,
+  "created": "20260709"
+}

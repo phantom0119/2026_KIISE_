@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-07-09T19:32:37.917341+00:00",
+  "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260710_noncircular/canonical",
+  "embedding_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260710_noncircular/embeddings/bge-m3",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260710_noncircular/results/acctv2_bgem3_b0_b5",
+  "embedding_manifest": {
+    "created_at": "2026-07-09T19:32:30.109900+00:00",
+    "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260710_noncircular/canonical",
+    "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260710_noncircular/embeddings/bge-m3",
+    "model_id": "bge-m3",
+    "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+    "device": "cuda:1",
+    "batch_size": 32,
+    "normalize_embeddings": true,
+    "document_count": 269,
+    "query_count": 18,
+    "embedding_dim": 1024,
+    "files": {
+      "document_embeddings": "document_embeddings.npy",
+      "query_embeddings": "query_embeddings.npy",
+      "document_index": "document_index.parquet",
+      "query_index": "query_index.parquet"
+    }
+  },
+  "strategies": [
+    "B0_metadata_only",
+    "B1_bm25_only",
+    "B2_vector_only",
+    "B3_vector_postfilter",
+    "B4_prefilter_vector",
+    "B5_hybrid"
+  ],
+  "top_ks": [
+    1,
+    5,
+    10,
+    20
+  ],
+  "max_rank": 100,
+  "postfilter_doc_k": 200,
+  "max_queries": null,
+  "max_queries_per_difficulty": null,
+  "bm25_backend": "rank_bm25.BM25Okapi",
+  "vector_backend": "faiss.IndexFlatIP",
+  "vector_filtering": "external metadata filter for B3/B4/B5",
+  "bm25_build_sec": 0.0002612532116472721,
+  "faiss_build_sec": 0.002790557686239481,
+  "counts": {
+    "clips": 269,
+    "documents": 269,
+    "queries": 18,
+    "executed_queries": 18,
+    "qrels": 584,
+    "result_rows": 10108
+  }
+}

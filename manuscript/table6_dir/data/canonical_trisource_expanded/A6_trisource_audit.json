@@ -1,0 +1,59 @@
+{
+  "n_corpus": 3000,
+  "n_queries": 85,
+  "assertions": {
+    "filter_keys_are_sensor_predicates": {
+      "pass": true,
+      "keys": [
+        "hour",
+        "sig_has_pedestrian",
+        "sig_has_yellow",
+        "time_of_day",
+        "veh_density_bin"
+      ]
+    },
+    "relevance_from_annotation_channel": {
+      "pass": true,
+      "keys": [
+        "dense_frame",
+        "multiple_buses",
+        "parked_vehicle",
+        "stopped_vehicles",
+        "two_plus_bikes"
+      ]
+    },
+    "filter_relevance_disjoint": {
+      "pass": true
+    },
+    "metadata_contains_no_relevance": {
+      "pass": true
+    },
+    "document_token_leak_zero": {
+      "pass": true,
+      "leaked_docs": 0
+    },
+    "headline_relevance_sparse": {
+      "pass": true,
+      "densities": {
+        "parked_vehicle": 0.023,
+        "dense_frame": 0.0233,
+        "multiple_buses": 0.0823,
+        "stopped_vehicles": 0.212,
+        "two_plus_bikes": 0.115
+      }
+    }
+  },
+  "relevance_density": {
+    "parked_vehicle": 0.023,
+    "dense_frame": 0.0233,
+    "multiple_buses": 0.0823,
+    "stopped_vehicles": 0.212,
+    "two_plus_bikes": 0.115
+  },
+  "dual_qrels": {
+    "strict_rows": 6809,
+    "semantic_rows": 24872,
+    "note": "strict: prefilter can only help (real filtered-search); semantic-only: B4>=B2 NOT guaranteed (non-circular headline)"
+  },
+  "overall_pass": true
+}

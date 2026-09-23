@@ -1,0 +1,59 @@
+engine,condition,predicate,kind,pair,selectivity,subset,gt_cluster_med_rank,recall_at_10,r_lo,r_hi,p50_ms_clientRT,flat_cutoff,flat_path,filter_strategy
+weaviate,w2,location==BC2000801,natural,location==BC2000801,0.08644,11455,1000.0,0.9729,0.9691,0.9766,16.975,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0864)|location==BC2000801,control,location==BC2000801,0.08644,11455,61.0,0.9999,0.9997,1.0,4.728,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location==중동사거리,natural,location==중동사거리,0.04851,6429,1000.0,0.9468,0.9386,0.9547,29.897,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0485)|location==중동사거리,control,location==중동사거리,0.04851,6429,109.0,0.9997,0.9993,1.0,10.123,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location==원골네거리,natural,location==원골네거리,0.04678,6199,1000.0,0.991,0.9891,0.9928,17.079,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0468)|location==원골네거리,control,location==원골네거리,0.04678,6199,111.9,1.0,1.0,1.0,9.416,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location==연구단지네거리,natural,location==연구단지네거리,0.04417,5853,1000.0,0.9914,0.9896,0.9931,17.174,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0442)|location==연구단지네거리,control,location==연구단지네거리,0.04417,5853,117.2,1.0,1.0,1.0,10.261,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location==삼정고가교,natural,location==삼정고가교,0.04187,5548,1000.0,0.9478,0.939,0.9558,67.15,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0419)|location==삼정고가교,control,location==삼정고가교,0.04187,5548,123.8,0.9996,0.9992,0.9999,11.724,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location==계룡대교네거리,natural,location==계룡대교네거리,0.03898,5166,1000.0,0.99,0.988,0.9919,16.039,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0390)|location==계룡대교네거리,control,location==계룡대교네거리,0.03898,5166,130.5,0.9999,0.9997,1.0,11.259,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,date==20200907,natural,date==20200907,0.0769,10191,1000.0,0.9909,0.9891,0.9927,14.975,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0769)|date==20200907,control,date==20200907,0.0769,10191,68.5,0.9997,0.9993,1.0,8.762,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,date==20200908,natural,date==20200908,0.06477,8583,1000.0,0.9966,0.9954,0.9976,13.393,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0648)|date==20200908,control,date==20200908,0.06477,8583,81.7,1.0,1.0,1.0,9.765,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,date==20200909,natural,date==20200909,0.06105,8090,1000.0,0.9941,0.9926,0.9955,15.612,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0610)|date==20200909,control,date==20200909,0.06105,8090,85.4,0.9998,0.9995,1.0,9.375,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,date==20200915,natural,date==20200915,0.04934,6538,1000.0,0.9945,0.993,0.9959,14.4,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0493)|date==20200915,control,date==20200915,0.04934,6538,109.7,0.9998,0.9995,1.0,10.098,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==01,natural,hour==01,0.02637,3494,1000.0,0.9967,0.9955,0.9978,16.362,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0264)|hour==01,control,hour==01,0.02637,3494,197.6,0.9999,0.9997,1.0,12.736,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==02,natural,hour==02,0.06573,8711,1000.0,0.9938,0.9911,0.996,15.082,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0657)|hour==02,control,hour==02,0.06573,8711,75.0,0.9998,0.9995,1.0,10.593,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==05,natural,hour==05,0.05311,7038,1000.0,0.9957,0.9943,0.997,12.053,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0531)|hour==05,control,hour==05,0.05311,7038,95.5,0.9999,0.9997,1.0,9.264,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==06,natural,hour==06,0.18291,24239,233.0,0.9971,0.996,0.9981,10.127,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1829)|hour==06,control,hour==06,0.18291,24239,28.2,0.9995,0.999,0.9999,6.172,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==07,natural,hour==07,0.0474,6281,1000.0,0.9966,0.9954,0.9977,12.648,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0474)|hour==07,control,hour==07,0.0474,6281,110.8,0.9998,0.9995,1.0,10.284,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==08,natural,hour==08,0.02978,3947,1000.0,0.998,0.9971,0.9988,14.482,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0298)|hour==08,control,hour==08,0.02978,3947,170.1,1.0,1.0,1.0,12.506,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==11,natural,hour==11,0.05464,7241,1000.0,0.9951,0.9934,0.9966,14.504,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0546)|hour==11,control,hour==11,0.05464,7241,96.1,0.9999,0.9997,1.0,9.965,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==12,natural,hour==12,0.15815,20958,175.4,0.9947,0.9929,0.9963,8.738,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1581)|hour==12,control,hour==12,0.15815,20958,32.0,0.9999,0.9997,1.0,6.867,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==13,natural,hour==13,0.04921,6522,1000.0,0.9976,0.9964,0.9986,10.969,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0492)|hour==13,control,hour==13,0.04921,6522,105.9,0.9998,0.9995,1.0,9.439,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==14,natural,hour==14,0.0449,5950,1000.0,0.9956,0.9942,0.9969,10.449,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0449)|hour==14,control,hour==14,0.0449,5950,116.5,0.9996,0.9992,0.9999,10.023,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==16,natural,hour==16,0.03445,4565,1000.0,0.9953,0.9938,0.9968,14.426,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0344)|hour==16,control,hour==16,0.03445,4565,148.7,0.9997,0.9993,1.0,10.946,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==17,natural,hour==17,0.12603,16702,218.4,0.9968,0.9957,0.9979,10.492,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1260)|hour==17,control,hour==17,0.12603,16702,40.2,0.9997,0.9993,1.0,8.096,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==18,natural,hour==18,0.04525,5996,768.0,0.9957,0.9944,0.9969,13.339,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0452)|hour==18,control,hour==18,0.04525,5996,117.1,0.9996,0.9992,0.9999,11.038,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==19,natural,hour==19,0.08022,10631,1000.0,0.996,0.9947,0.9973,14.222,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0802)|hour==19,control,hour==19,0.08022,10631,65.5,0.9997,0.9993,1.0,7.958,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"hour in [06,18] (daytime)",composite,"hour in [06,18] (daytime)",0.7737,102532,4.5,0.9984,0.9976,0.9991,7.261,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.7737)|hour in [06,18] (daytime)",control,"hour in [06,18] (daytime)",0.7737,102532,5.9,0.9986,0.9978,0.9993,5.626,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",0.3069,40671,80.8,0.9963,0.9949,0.9976,8.671,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.3069)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",0.3069,40671,16.4,0.9997,0.9993,1.0,6.171,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"hour in [17,19] (evening peak)",composite,"hour in [17,19] (evening peak)",0.2515,33329,123.5,0.9965,0.9952,0.9977,9.457,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.2515)|hour in [17,19] (evening peak)",control,"hour in [17,19] (evening peak)",0.2515,33329,20.2,0.9996,0.9992,0.9999,7.72,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,location in top-5,composite,location in top-5,0.26776,35484,830.5,0.9767,0.9714,0.9813,8.878,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2678)|location in top-5,control,location in top-5,0.26776,35484,18.6,0.9998,0.9995,1.0,4.44,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,date in 2020-09,composite,date in 2020-09,0.32112,42555,1000.0,0.9843,0.9808,0.9874,10.61,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.3211)|date in 2020-09,control,date in 2020-09,0.32112,42555,15.5,0.9996,0.9992,0.9999,6.449,0,False,VectorFilterStrategy.SWEEPING

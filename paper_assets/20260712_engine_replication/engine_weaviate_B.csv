@@ -1,0 +1,151 @@
+engine,condition,predicate,kind,pair,selectivity,subset,gt_cluster_med_rank,recall_at_10,r_lo,r_hi,p50_ms_clientRT,flat_cutoff,flat_path,filter_strategy
+weaviate,w1,time_of_day==morning,natural,time_of_day==morning,0.25724,36999,42.5,1.0,1.0,1.0,13.268,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.2572)|time_of_day==morning,control,time_of_day==morning,0.25724,36999,20.4,0.9995,0.9985,1.0,14.784,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,time_of_day==afternoon,natural,time_of_day==afternoon,0.34762,49998,42.0,0.9955,0.9915,0.9985,6.165,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.3476)|time_of_day==afternoon,control,time_of_day==afternoon,0.34762,49998,15.1,0.9895,0.9845,0.994,5.953,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,time_of_day==evening,natural,time_of_day==evening,0.29478,42398,621.8,0.951,0.927,0.9725,5.952,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.2948)|time_of_day==evening,control,time_of_day==evening,0.29478,42398,17.6,0.9865,0.981,0.991,5.915,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,sig_has_yellow==True,natural,sig_has_yellow==True,0.62846,90392,8.1,0.9995,0.9985,1.0,3.03,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.6285)|sig_has_yellow==True,control,sig_has_yellow==True,0.62846,90392,8.5,0.9995,0.9985,1.0,3.078,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,sig_has_pedestrian==True,natural,sig_has_pedestrian==True,0.39096,56232,15.3,0.984,0.9755,0.991,3.319,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.3910)|sig_has_pedestrian==True,control,sig_has_pedestrian==True,0.39096,56232,13.0,0.9855,0.979,0.991,3.299,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,sig_has_yellow==False,natural,sig_has_yellow==False,0.27117,39003,23.6,1.0,1.0,1.0,13.686,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.2712)|sig_has_yellow==False,control,sig_has_yellow==False,0.27117,39003,19.9,1.0,1.0,1.0,14.796,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,sig_has_pedestrian==False,natural,sig_has_pedestrian==False,0.50868,73163,9.3,1.0,1.0,1.0,3.705,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.5087)|sig_has_pedestrian==False,control,sig_has_pedestrian==False,0.50868,73163,10.2,0.9995,0.9985,1.0,3.585,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,veh_density_bin==low,natural,veh_density_bin==low,0.29764,42810,34.2,0.952,0.932,0.969,3.746,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.2976)|veh_density_bin==low,control,veh_density_bin==low,0.29764,42810,18.5,0.9885,0.983,0.9935,3.497,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,veh_density_bin==mid,natural,veh_density_bin==mid,0.27268,39220,30.9,1.0,1.0,1.0,13.532,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.2727)|veh_density_bin==mid,control,veh_density_bin==mid,0.27268,39220,19.6,1.0,1.0,1.0,14.292,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,veh_density_bin==high,natural,veh_density_bin==high,0.32931,47365,58.1,0.941,0.9145,0.9645,3.53,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.3293)|veh_density_bin==high,control,veh_density_bin==high,0.32931,47365,16.4,0.986,0.977,0.993,3.397,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,hour==6,natural,hour==6,0.06983,10043,188.9,1.0,1.0,1.0,5.873,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0698)|hour==6,control,hour==6,0.06983,10043,77.1,1.0,1.0,1.0,6.795,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==7,natural,hour==7,0.07033,10115,107.6,1.0,1.0,1.0,5.61,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0703)|hour==7,control,hour==7,0.07033,10115,74.7,1.0,1.0,1.0,6.579,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==8,natural,hour==8,0.07039,10124,104.8,1.0,1.0,1.0,5.804,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0704)|hour==8,control,hour==8,0.07039,10124,75.2,1.0,1.0,1.0,6.804,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==9,natural,hour==9,0.0467,6717,162.6,1.0,1.0,1.0,5.079,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0467)|hour==9,control,hour==9,0.0467,6717,120.6,1.0,1.0,1.0,5.878,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==13,natural,hour==13,0.02319,3336,278.2,1.0,1.0,1.0,4.116,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0232)|hour==13,control,hour==13,0.02319,3336,230.3,1.0,1.0,1.0,4.607,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==14,natural,hour==14,0.11434,16446,104.7,1.0,1.0,1.0,7.289,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.1143)|hour==14,control,hour==14,0.11434,16446,46.0,1.0,1.0,1.0,8.197,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==15,natural,hour==15,0.11256,16190,117.7,1.0,1.0,1.0,7.379,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.1126)|hour==15,control,hour==15,0.11256,16190,47.2,1.0,1.0,1.0,8.482,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==16,natural,hour==16,0.01943,2794,311.7,1.0,1.0,1.0,3.974,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0194)|hour==16,control,hour==16,0.01943,2794,263.7,1.0,1.0,1.0,4.142,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==17,natural,hour==17,0.07809,11232,121.6,1.0,1.0,1.0,6.066,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0781)|hour==17,control,hour==17,0.07809,11232,67.9,1.0,1.0,1.0,6.945,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==18,natural,hour==18,0.10885,15656,715.0,1.0,1.0,1.0,7.416,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.1089)|hour==18,control,hour==18,0.10885,15656,47.6,1.0,1.0,1.0,8.218,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==19,natural,hour==19,0.11023,15854,689.5,1.0,1.0,1.0,7.278,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.1102)|hour==19,control,hour==19,0.11023,15854,48.7,1.0,1.0,1.0,8.256,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,hour==20,natural,hour==20,0.0757,10888,748.3,1.0,1.0,1.0,6.285,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,CTRL(s=0.0757)|hour==20,control,hour==20,0.0757,10888,69.1,1.0,1.0,1.0,7.126,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",0.13754,19782,95.5,1.0,1.0,1.0,8.216,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,"CTRL(s=0.1375)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",0.13754,19782,39.4,1.0,1.0,1.0,9.189,40000,True,VectorFilterStrategy.ACORN
+weaviate,w1,"hour in [8,18] (working)",composite,"hour in [8,18] (working)",0.57356,82495,8.6,1.0,1.0,1.0,3.206,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,"CTRL(s=0.5736)|hour in [8,18] (working)",control,"hour in [8,18] (working)",0.57356,82495,9.1,0.9995,0.9985,1.0,3.531,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,"time_of_day in {morning,evening}",composite,"time_of_day in {morning,evening}",0.55202,79397,8.2,0.9995,0.9985,1.0,3.753,40000,False,VectorFilterStrategy.ACORN
+weaviate,w1,"CTRL(s=0.5520)|time_of_day in {morning,evening}",control,"time_of_day in {morning,evening}",0.55202,79397,9.6,1.0,1.0,1.0,3.656,40000,False,VectorFilterStrategy.ACORN
+weaviate,w2,time_of_day==morning,natural,time_of_day==morning,0.25724,36999,42.5,1.0,1.0,1.0,3.582,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2572)|time_of_day==morning,control,time_of_day==morning,0.25724,36999,20.4,0.999,0.9975,1.0,3.632,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,time_of_day==afternoon,natural,time_of_day==afternoon,0.34762,49998,42.0,0.9995,0.9985,1.0,3.66,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.3476)|time_of_day==afternoon,control,time_of_day==afternoon,0.34762,49998,15.1,1.0,1.0,1.0,3.554,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,time_of_day==evening,natural,time_of_day==evening,0.29478,42398,621.8,0.992,0.9845,0.997,6.619,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2948)|time_of_day==evening,control,time_of_day==evening,0.29478,42398,17.6,1.0,1.0,1.0,3.828,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,sig_has_yellow==True,natural,sig_has_yellow==True,0.62846,90392,8.1,0.9995,0.9985,1.0,3.656,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.6285)|sig_has_yellow==True,control,sig_has_yellow==True,0.62846,90392,8.5,0.9995,0.9985,1.0,3.626,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,sig_has_pedestrian==True,natural,sig_has_pedestrian==True,0.39096,56232,15.3,0.9995,0.9985,1.0,3.479,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.3910)|sig_has_pedestrian==True,control,sig_has_pedestrian==True,0.39096,56232,13.0,0.9995,0.9985,1.0,3.517,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,sig_has_yellow==False,natural,sig_has_yellow==False,0.27117,39003,23.6,0.9995,0.9985,1.0,3.719,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2712)|sig_has_yellow==False,control,sig_has_yellow==False,0.27117,39003,19.9,1.0,1.0,1.0,3.695,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,sig_has_pedestrian==False,natural,sig_has_pedestrian==False,0.50868,73163,9.3,1.0,1.0,1.0,3.451,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.5087)|sig_has_pedestrian==False,control,sig_has_pedestrian==False,0.50868,73163,10.2,0.9995,0.9985,1.0,3.472,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,veh_density_bin==low,natural,veh_density_bin==low,0.29764,42810,34.2,0.999,0.9975,1.0,4.202,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2976)|veh_density_bin==low,control,veh_density_bin==low,0.29764,42810,18.5,0.9995,0.9985,1.0,3.926,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,veh_density_bin==mid,natural,veh_density_bin==mid,0.27268,39220,30.9,0.9975,0.9945,0.9995,3.917,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.2727)|veh_density_bin==mid,control,veh_density_bin==mid,0.27268,39220,19.6,0.9995,0.9985,1.0,3.139,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,veh_density_bin==high,natural,veh_density_bin==high,0.32931,47365,58.1,0.9995,0.9985,1.0,4.124,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.3293)|veh_density_bin==high,control,veh_density_bin==high,0.32931,47365,16.4,1.0,1.0,1.0,3.202,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==6,natural,hour==6,0.06983,10043,188.9,1.0,1.0,1.0,5.072,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0698)|hour==6,control,hour==6,0.06983,10043,77.1,0.9995,0.9985,1.0,4.746,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==7,natural,hour==7,0.07033,10115,107.6,1.0,1.0,1.0,4.44,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0703)|hour==7,control,hour==7,0.07033,10115,74.7,1.0,1.0,1.0,4.39,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==8,natural,hour==8,0.07039,10124,104.8,1.0,1.0,1.0,4.266,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0704)|hour==8,control,hour==8,0.07039,10124,75.2,1.0,1.0,1.0,4.55,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==9,natural,hour==9,0.0467,6717,162.6,1.0,1.0,1.0,5.239,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0467)|hour==9,control,hour==9,0.0467,6717,120.6,0.999,0.9975,1.0,5.642,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==13,natural,hour==13,0.02319,3336,278.2,1.0,1.0,1.0,7.742,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0232)|hour==13,control,hour==13,0.02319,3336,230.3,1.0,1.0,1.0,8.163,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==14,natural,hour==14,0.11434,16446,104.7,0.9995,0.9985,1.0,3.737,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1143)|hour==14,control,hour==14,0.11434,16446,46.0,0.9995,0.9985,1.0,4.012,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==15,natural,hour==15,0.11256,16190,117.7,0.9995,0.9985,1.0,3.922,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1126)|hour==15,control,hour==15,0.11256,16190,47.2,1.0,1.0,1.0,3.985,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==16,natural,hour==16,0.01943,2794,311.7,1.0,1.0,1.0,9.522,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0194)|hour==16,control,hour==16,0.01943,2794,263.7,1.0,1.0,1.0,9.435,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==17,natural,hour==17,0.07809,11232,121.6,1.0,1.0,1.0,4.453,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0781)|hour==17,control,hour==17,0.07809,11232,67.9,0.9995,0.9985,1.0,4.439,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==18,natural,hour==18,0.10885,15656,715.0,0.999,0.9975,1.0,8.617,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1089)|hour==18,control,hour==18,0.10885,15656,47.6,0.9995,0.9985,1.0,4.007,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==19,natural,hour==19,0.11023,15854,689.5,0.9975,0.995,0.9995,8.523,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.1102)|hour==19,control,hour==19,0.11023,15854,48.7,1.0,1.0,1.0,3.982,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,hour==20,natural,hour==20,0.0757,10888,748.3,0.998,0.996,0.9995,10.595,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,CTRL(s=0.0757)|hour==20,control,hour==20,0.0757,10888,69.1,1.0,1.0,1.0,8.713,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",0.13754,19782,95.5,0.999,0.9975,1.0,6.963,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.1375)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",0.13754,19782,39.4,1.0,1.0,1.0,7.048,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"hour in [8,18] (working)",composite,"hour in [8,18] (working)",0.57356,82495,8.6,1.0,1.0,1.0,5.115,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.5736)|hour in [8,18] (working)",control,"hour in [8,18] (working)",0.57356,82495,9.1,0.9995,0.9985,1.0,5.219,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"time_of_day in {morning,evening}",composite,"time_of_day in {morning,evening}",0.55202,79397,8.2,0.9995,0.9985,1.0,5.017,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w2,"CTRL(s=0.5520)|time_of_day in {morning,evening}",control,"time_of_day in {morning,evening}",0.55202,79397,9.6,1.0,1.0,1.0,5.227,0,False,VectorFilterStrategy.SWEEPING
+weaviate,w3,time_of_day==morning,natural,time_of_day==morning,0.25724,36999,42.5,0.9835,0.967,0.9955,6.084,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.2572)|time_of_day==morning,control,time_of_day==morning,0.25724,36999,20.4,0.9825,0.9755,0.989,6.579,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,time_of_day==afternoon,natural,time_of_day==afternoon,0.34762,49998,42.0,0.9955,0.9915,0.9985,5.117,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.3476)|time_of_day==afternoon,control,time_of_day==afternoon,0.34762,49998,15.1,0.9895,0.9845,0.994,7.702,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,time_of_day==evening,natural,time_of_day==evening,0.29478,42398,621.8,0.951,0.927,0.9725,5.2,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.2948)|time_of_day==evening,control,time_of_day==evening,0.29478,42398,17.6,0.9865,0.981,0.991,5.817,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,sig_has_yellow==True,natural,sig_has_yellow==True,0.62846,90392,8.1,0.9995,0.9985,1.0,3.749,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.6285)|sig_has_yellow==True,control,sig_has_yellow==True,0.62846,90392,8.5,0.9995,0.9985,1.0,5.441,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,sig_has_pedestrian==True,natural,sig_has_pedestrian==True,0.39096,56232,15.3,0.984,0.9755,0.991,5.304,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.3910)|sig_has_pedestrian==True,control,sig_has_pedestrian==True,0.39096,56232,13.0,0.9855,0.979,0.991,5.858,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,sig_has_yellow==False,natural,sig_has_yellow==False,0.27117,39003,23.6,0.958,0.9405,0.9725,5.167,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.2712)|sig_has_yellow==False,control,sig_has_yellow==False,0.27117,39003,19.9,0.9815,0.9735,0.9885,5.543,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,sig_has_pedestrian==False,natural,sig_has_pedestrian==False,0.50868,73163,9.3,1.0,1.0,1.0,4.748,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.5087)|sig_has_pedestrian==False,control,sig_has_pedestrian==False,0.50868,73163,10.2,0.9995,0.9985,1.0,5.52,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,veh_density_bin==low,natural,veh_density_bin==low,0.29764,42810,34.2,0.952,0.932,0.969,6.031,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.2976)|veh_density_bin==low,control,veh_density_bin==low,0.29764,42810,18.5,0.9885,0.983,0.9935,5.113,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,veh_density_bin==mid,natural,veh_density_bin==mid,0.27268,39220,30.9,0.961,0.9445,0.975,4.483,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.2727)|veh_density_bin==mid,control,veh_density_bin==mid,0.27268,39220,19.6,0.987,0.981,0.992,7.318,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,veh_density_bin==high,natural,veh_density_bin==high,0.32931,47365,58.1,0.941,0.9145,0.9645,6.149,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.3293)|veh_density_bin==high,control,veh_density_bin==high,0.32931,47365,16.4,0.986,0.977,0.993,5.103,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==6,natural,hour==6,0.06983,10043,188.9,0.982,0.968,0.992,4.362,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0698)|hour==6,control,hour==6,0.06983,10043,77.1,0.9315,0.9165,0.9445,4.529,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==7,natural,hour==7,0.07033,10115,107.6,0.957,0.9355,0.9755,6.396,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0703)|hour==7,control,hour==7,0.07033,10115,74.7,0.9355,0.924,0.9465,5.754,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==8,natural,hour==8,0.07039,10124,104.8,0.966,0.9455,0.983,4.964,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0704)|hour==8,control,hour==8,0.07039,10124,75.2,0.9385,0.927,0.949,7.477,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==9,natural,hour==9,0.0467,6717,162.6,0.9345,0.9035,0.9605,5.366,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0467)|hour==9,control,hour==9,0.0467,6717,120.6,0.872,0.849,0.892,4.07,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==13,natural,hour==13,0.02319,3336,278.2,0.9255,0.898,0.95,7.498,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0232)|hour==13,control,hour==13,0.02319,3336,230.3,0.7135,0.6845,0.741,7.587,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==14,natural,hour==14,0.11434,16446,104.7,0.9725,0.954,0.9875,5.335,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.1143)|hour==14,control,hour==14,0.11434,16446,46.0,0.973,0.9655,0.98,5.574,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==15,natural,hour==15,0.11256,16190,117.7,0.9745,0.959,0.987,4.913,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.1126)|hour==15,control,hour==15,0.11256,16190,47.2,0.9715,0.9615,0.98,4.542,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==16,natural,hour==16,0.01943,2794,311.7,0.834,0.7955,0.8695,6.835,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0194)|hour==16,control,hour==16,0.01943,2794,263.7,0.6765,0.6455,0.708,5.327,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==17,natural,hour==17,0.07809,11232,121.6,0.986,0.9735,0.995,4.669,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0781)|hour==17,control,hour==17,0.07809,11232,67.9,0.9585,0.9485,0.968,5.456,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==18,natural,hour==18,0.10885,15656,715.0,0.9675,0.954,0.9795,5.989,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.1089)|hour==18,control,hour==18,0.10885,15656,47.6,0.97,0.962,0.9775,3.948,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==19,natural,hour==19,0.11023,15854,689.5,0.9695,0.954,0.982,7.247,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.1102)|hour==19,control,hour==19,0.11023,15854,48.7,0.9655,0.956,0.974,5.803,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,hour==20,natural,hour==20,0.0757,10888,748.3,0.9475,0.927,0.965,4.37,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,CTRL(s=0.0757)|hour==20,control,hour==20,0.0757,10888,69.1,0.9525,0.942,0.963,5.415,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",0.13754,19782,95.5,0.975,0.9555,0.9895,6.597,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"CTRL(s=0.1375)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",0.13754,19782,39.4,0.974,0.966,0.9815,5.497,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"hour in [8,18] (working)",composite,"hour in [8,18] (working)",0.57356,82495,8.6,1.0,1.0,1.0,4.914,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"CTRL(s=0.5736)|hour in [8,18] (working)",control,"hour in [8,18] (working)",0.57356,82495,9.1,0.9995,0.9985,1.0,5.349,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"time_of_day in {morning,evening}",composite,"time_of_day in {morning,evening}",0.55202,79397,8.2,0.9995,0.9985,1.0,4.707,0,False,VectorFilterStrategy.ACORN
+weaviate,w3,"CTRL(s=0.5520)|time_of_day in {morning,evening}",control,"time_of_day in {morning,evening}",0.55202,79397,9.6,1.0,1.0,1.0,4.985,0,False,VectorFilterStrategy.ACORN

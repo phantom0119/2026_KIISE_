@@ -1,0 +1,6 @@
+scoring,service_family,queries,winner,runner_up,winner_mean,runner_up_mean,mean_delta,ci_low,ci_high,q_bh_15,cost_ratio,quality_support,cost_support,supported,informative,adjusted_supported
+strict,body_social,56,frame,dual,0.1117579951575804,0.1049466480393211,0.0068113471182593,-0.0181097935027458,0.0335902159217121,0.9720476397618012,0.5,False,True,True,True,True
+strict,facility_access,6,caption,dual,0.0,0.0,0.0,0.0,0.0,1.0,0.5,False,True,True,False,False
+strict,object_interaction,41,frame,dual,0.0855375168693372,0.0806252181066008,0.0049122987627363,-0.0273823698228602,0.0399210330428872,1.0,0.5,False,False,False,True,False
+strict,vehicle_contact,64,dual,frame,0.1198781607218602,0.105656892316779,0.0142212684050812,-0.0100930552713262,0.0397878933534194,0.603693410104378,2.0,False,False,False,True,False
+strict,vehicle_maneuver,26,caption,dual,0.077313178831306,0.0755783495239216,0.0017348293073843,-0.0426484507047162,0.0447211757501291,1.0,0.5,False,False,False,True,False

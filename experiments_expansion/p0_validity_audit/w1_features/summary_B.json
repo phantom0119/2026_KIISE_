@@ -1,0 +1,23 @@
+{
+  "corpus": "B",
+  "N": 143830,
+  "dim": 512,
+  "queries": 200,
+  "layer": "image_confirmatory",
+  "predicates": 25,
+  "arms_per_predicate": 4,
+  "ctrl_seed": 20260805,
+  "gls_ks": [
+    10,
+    50,
+    100,
+    1000
+  ],
+  "knn_k": 16,
+  "validation": {
+    "n_anchored": 25,
+    "med_rank_abs_diff_max": 0.19999999999998863,
+    "med_rank_abs_diff_mean": 0.011999999999995908
+  },
+  "wall_s": 37.3
+}

@@ -1,0 +1,275 @@
+{
+  "created_at": "2026-07-20T12:14:00.948146+00:00",
+  "verifier": "independent metric formulas; does not import project evaluation helpers",
+  "overall_pass": true,
+  "passed": 32,
+  "total": 32,
+  "joint_info": {
+    "max_errors": {
+      "ndcg_at_10": 2.220446049250313e-16,
+      "mrr": 0.0,
+      "recall_at_10": 0.0
+    },
+    "configs": 91,
+    "queries": 85
+  },
+  "meva_info": {
+    "max_errors": {
+      "ndcg_at_10": 2.220446049250313e-16,
+      "mrr": 0.0,
+      "recall_at_10": 0.0
+    },
+    "configs": 9,
+    "queries": 193
+  },
+  "gates": [
+    {
+      "scope": "joint_522",
+      "gate": "config_count",
+      "pass": true,
+      "observed": 91,
+      "expected": 91
+    },
+    {
+      "scope": "joint_522",
+      "gate": "query_count",
+      "pass": true,
+      "observed": 85,
+      "expected": 85
+    },
+    {
+      "scope": "joint_522",
+      "gate": "metric_row_count",
+      "pass": true,
+      "observed": 15470
+    },
+    {
+      "scope": "joint_522",
+      "gate": "ndcg_recompute",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "scope": "joint_522",
+      "gate": "mrr_recompute",
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "scope": "joint_522",
+      "gate": "recall_recompute",
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "scope": "joint_522",
+      "gate": "ranking_unique_within_query",
+      "pass": true,
+      "duplicates": 0
+    },
+    {
+      "scope": "joint_522",
+      "gate": "rank_bounds",
+      "pass": true,
+      "max_rank": 100
+    },
+    {
+      "scope": "meva",
+      "gate": "config_count",
+      "pass": true,
+      "observed": 9,
+      "expected": 9
+    },
+    {
+      "scope": "meva",
+      "gate": "query_count",
+      "pass": true,
+      "observed": 193,
+      "expected": 193
+    },
+    {
+      "scope": "meva",
+      "gate": "metric_row_count",
+      "pass": true,
+      "observed": 3474
+    },
+    {
+      "scope": "meva",
+      "gate": "ndcg_recompute",
+      "pass": true,
+      "max_abs_error": 2.220446049250313e-16
+    },
+    {
+      "scope": "meva",
+      "gate": "mrr_recompute",
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "scope": "meva",
+      "gate": "recall_recompute",
+      "pass": true,
+      "max_abs_error": 0.0
+    },
+    {
+      "scope": "meva",
+      "gate": "ranking_unique_within_query",
+      "pass": true,
+      "duplicates": 0
+    },
+    {
+      "scope": "meva",
+      "gate": "rank_bounds",
+      "pass": true,
+      "max_rank": 100
+    },
+    {
+      "scope": "assets_522",
+      "gate": "query_vectors",
+      "pass": true,
+      "shape": [
+        85,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9976988434791565,
+      "norm_max": 1.0023123025894165
+    },
+    {
+      "scope": "assets_522",
+      "gate": "caption_vectors",
+      "pass": true,
+      "shape": [
+        3000,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9975273013114929,
+      "norm_max": 1.0025303363800049
+    },
+    {
+      "scope": "assets_522",
+      "gate": "representative_vectors",
+      "pass": true,
+      "shape": [
+        3000,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9974972605705261,
+      "norm_max": 1.0024757385253906
+    },
+    {
+      "scope": "assets_522",
+      "gate": "full_frame_vectors",
+      "pass": true,
+      "shape": [
+        143830,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.997372567653656,
+      "norm_max": 1.0026600360870361
+    },
+    {
+      "scope": "assets_meva",
+      "gate": "query_vectors",
+      "pass": true,
+      "shape": [
+        193,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9976530075073242,
+      "norm_max": 1.0023598670959473
+    },
+    {
+      "scope": "assets_meva",
+      "gate": "caption_vectors",
+      "pass": true,
+      "shape": [
+        985,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9974696636199951,
+      "norm_max": 1.0027704238891602
+    },
+    {
+      "scope": "assets_meva",
+      "gate": "frame_vectors",
+      "pass": true,
+      "shape": [
+        985,
+        2048
+      ],
+      "dtype": "float32",
+      "finite": true,
+      "norm_min": 0.9975693821907043,
+      "norm_max": 1.0025545358657837
+    },
+    {
+      "scope": "scaled_index",
+      "gate": "row_count",
+      "pass": true,
+      "observed": 34,
+      "expected": 34
+    },
+    {
+      "scope": "scaled_index",
+      "gate": "ivf_training_minimum",
+      "pass": true,
+      "minimum_ratio": 39.0625
+    },
+    {
+      "scope": "scaled_index",
+      "gate": "fixed_seed_manifest",
+      "pass": true,
+      "observed": 20260717
+    },
+    {
+      "scope": "scaled_index",
+      "gate": "metric_bounds",
+      "pass": true
+    },
+    {
+      "scope": "seed_robustness",
+      "gate": "three_seeds_per_config",
+      "pass": true,
+      "seed_counts": [
+        3
+      ]
+    },
+    {
+      "scope": "seed_robustness",
+      "gate": "seed_set",
+      "pass": true,
+      "observed": [
+        20260717,
+        20260718,
+        20260719
+      ]
+    },
+    {
+      "scope": "seed_robustness",
+      "gate": "metric_bounds",
+      "pass": true
+    },
+    {
+      "scope": "hashes",
+      "gate": "joint_qrels_hash",
+      "pass": true
+    },
+    {
+      "scope": "hashes",
+      "gate": "meva_qrels_hash",
+      "pass": true
+    }
+  ]
+}

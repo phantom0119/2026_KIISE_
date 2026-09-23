@@ -1,0 +1,28 @@
+{
+  "locked": "2026-07-10 [AMD-B1]",
+  "not_predicates": "excluded (AMD-R5)",
+  "corpusA": {
+    "n_frames": 132521,
+    "natural_range": [
+      0.02637,
+      0.18291
+    ],
+    "composite_range": [
+      0.2515,
+      0.7737
+    ]
+  },
+  "corpusB": {
+    "n_frames": 143830,
+    "joined_fraction": 0.89964,
+    "natural_range": [
+      0.01943,
+      0.62846
+    ],
+    "composite_range": [
+      0.13754,
+      0.57356
+    ]
+  },
+  "cross_corpus_claim_zone": "intersection of the two achieved s-ranges only [AMD-B1]"
+}

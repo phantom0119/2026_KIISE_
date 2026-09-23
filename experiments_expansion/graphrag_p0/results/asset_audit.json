@@ -1,0 +1,206 @@
+{
+  "generated": "2026-08-06",
+  "gate": "F0",
+  "files": [
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/kg.csv",
+      "expected_bytes": 981751236,
+      "actual_bytes": 981751236,
+      "size_match": true,
+      "status": "OK",
+      "sha256": "0a5a010fcd88dcec572a573d98c26c1c244a11567092b6161d3ded611cfb5c69",
+      "schema": {
+        "header": [
+          "relation",
+          "display_relation",
+          "x_index",
+          "x_id",
+          "x_type",
+          "x_name",
+          "x_source",
+          "y_index",
+          "y_id",
+          "y_type",
+          "y_name",
+          "y_source"
+        ],
+        "sample_rows": [
+          [
+            "protein_protein",
+            "ppi",
+            "0",
+            "9796",
+            "gene/protein",
+            "PHYHIP",
+            "NCBI",
+            "8889",
+            "56992",
+            "gene/protein",
+            "KIF15",
+            "NCBI"
+          ],
+          [
+            "protein_protein",
+            "ppi",
+            "1",
+            "7918",
+            "gene/protein",
+            "GPANK1",
+            "NCBI",
+            "2798",
+            "9240",
+            "gene/protein",
+            "PNMA1",
+            "NCBI"
+          ],
+          [
+            "protein_protein",
+            "ppi",
+            "2",
+            "8233",
+            "gene/protein",
+            "ZRSR2",
+            "NCBI",
+            "5646",
+            "23548",
+            "gene/protein",
+            "TTC33",
+            "NCBI"
+          ],
+          [
+            "protein_protein",
+            "ppi",
+            "3",
+            "4899",
+            "gene/protein",
+            "NRF1",
+            "NCBI",
+            "11592",
+            "11253",
+            "gene/protein",
+            "MAN1B1",
+            "NCBI"
+          ],
+          [
+            "protein_protein",
+            "ppi",
+            "4",
+            "5297",
+            "gene/protein",
+            "PI4KA",
+            "NCBI",
+            "2122",
+            "8601",
+            "gene/protein",
+            "RGS20",
+            "NCBI"
+          ]
+        ]
+      },
+      "n_lines": 8100499
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/nodes.tab",
+      "expected_bytes": 8893757,
+      "actual_bytes": 8893757,
+      "size_match": true,
+      "status": "OK",
+      "sha256": "18ebcf24887e8529b95c7a7c96c81089cc7c5ba22d53a5c05d56480331961af8"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/drug_features.tab",
+      "expected_bytes": 10030011,
+      "actual_bytes": 10030011,
+      "size_match": true,
+      "status": "OK",
+      "sha256": "d9db67a3ae9e4e1bea6f50ac55c9e3152c30f9a128b45cec0d5b003fabdc30c6"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/primekg/disease_features.tab",
+      "expected_bytes": 113534270,
+      "actual_bytes": 113534270,
+      "size_match": true,
+      "status": "OK",
+      "sha256": "bdd18b39aae9c80e37c3716c2bfabaf854f6a5a7e44c8d2e5b082f0dd27124cb"
+    },
+    {
+      "path": "/hdd2/KIISE_datasociety/Datasets/graphrag_p0_data/stark_amazon/processed.zip",
+      "expected_bytes": 3524776983,
+      "actual_bytes": 3524776983,
+      "size_match": true,
+      "status": "OK",
+      "sha256": "c0e07c7d91f1ac2d52819e604ffc0d33e66383082b1a944b123d31e61ddea976",
+      "zip": {
+        "n_entries": 13,
+        "entries_head": [
+          {
+            "name": "processed/",
+            "size": 0
+          },
+          {
+            "name": "processed/edge_types.pt",
+            "size": 24210676
+          },
+          {
+            "name": "processed/edge_type_dict.pkl",
+            "size": 43
+          },
+          {
+            "name": "processed/edge_index.pt",
+            "size": 48420596
+          },
+          {
+            "name": "processed/node_info.pkl",
+            "size": 5420241029
+          },
+          {
+            "name": "processed/cache/",
+            "size": 0
+          },
+          {
+            "name": "processed/cache/brand-category-color/",
+            "size": 0
+          },
+          {
+            "name": "processed/cache/brand-category-color/edge_types.pt",
+            "size": 43057524
+          },
+          {
+            "name": "processed/cache/brand-category-color/node_types.pt",
+            "size": 8285044
+          },
+          {
+            "name": "processed/cache/brand-category-color/edge_index.pt",
+            "size": 86114356
+          },
+          {
+            "name": "processed/cache/brand-category-color/node_type_dict.pkl",
+            "size": 61
+          },
+          {
+            "name": "processed/cache/brand-category-color/node_info.pkl",
+            "size": 5428605763
+          },
+          {
+            "name": "processed/cache/brand-category-color/edge_type_dict.pkl",
+            "size": 88
+          }
+        ]
+      }
+    }
+  ],
+  "licenses": {
+    "primekg": {
+      "data": "CC0 1.0",
+      "source": "Harvard Dataverse doi:10.7910/DVN/IXA7BM v2.1",
+      "code": "MIT (github.com/mims-harvard/PrimeKG)"
+    },
+    "stark_amazon": {
+      "data": "CC-BY-4.0",
+      "source": "HF snap-stanford/stark skb/amazon",
+      "code": "MIT (github.com/snap-stanford/stark)"
+    }
+  },
+  "all_complete": true,
+  "wall_s": 14.1
+}

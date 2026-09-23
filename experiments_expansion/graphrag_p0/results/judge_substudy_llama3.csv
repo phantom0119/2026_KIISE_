@@ -1,0 +1,445 @@
+fact_id,domain,arm,world,paraphrase,sample,model,split,output,hit_active,hit_original,hit_cf,abstain,judge_raw,judge_supported,judge_model
+4f3ef0a7876a2b75,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+58585eeb6a2c16c5,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+0cbaf69e4f6f2f9c,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+0f203ff2cecf5b6e,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+95f7b197a53027b3,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,acute myeloid leukemia,False,False,False,False,SUPPORTED,True,llama3
+62c337775ebeaf42,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,ALB,False,False,False,False,UNSUPPORTED,False,llama3
+b3fc732d7ce0cefd,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+7694dc3630c4d687,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,SCN1B,False,False,False,False,UNSUPPORTED,False,llama3
+eb8917bbb0278247,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4f3ef0a7876a2b75,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+6e7331f281cf930f,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Spinocerebellar ataxia 42,False,False,False,False,UNSUPPORTED,False,llama3
+f6b653e013650ddd,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+42e806dd4b7c8658,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+432eccf6f50e4c3d,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+a9277797b2bb718e,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5584f47a0c909943,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+dd968ab5a4a8e16f,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+b19dc2ae0bbd63e1,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+ac45896e35aed179,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Polycythemia,False,False,False,False,SUPPORTED,True,llama3
+e7babae67b544688,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+2042a4bdbdbfe866,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,autoinflammation-PLCG2-associated antibody deficiency-immune dysregulation,True,False,True,False,SUPPORTED,True,llama3
+7e23c37e613cc2b5,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,Wolfram syndrome,True,False,True,False,SUPPORTED,True,llama3
+c880cb0d003b65f9,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,neutral lipid storage myopathy,True,False,True,False,SUPPORTED,True,llama3
+a52fe5f91a9e414e,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,"Mammary neoplasms, animal",True,False,True,False,SUPPORTED,True,llama3
+155dbf3f0005e6f5,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Imperforate anus,True,False,True,False,SUPPORTED,True,llama3
+2684d78acbc1e715,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,multiple intestinal atresia,True,False,True,False,SUPPORTED,True,llama3
+198bcd9709793618,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,immunoskeletal dysplasia with neurodevelopmental abnormalities,True,False,True,False,SUPPORTED,True,llama3
+3d9fa8639eb09328,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,biliary tract cancer,True,False,True,False,SUPPORTED,True,llama3
+f1175d5b4dc296fc,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Mitochondrial neurogastrointestinal encephalomyopathy,True,False,True,False,SUPPORTED,True,llama3
+4a0784410616c309,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,Hennekam syndrome,True,False,True,False,SUPPORTED,True,llama3
+9c2707041c0ff396,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Meningothelial meningioma,True,False,True,False,SUPPORTED,True,llama3
+86c5d13761ff1b9d,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,"Hypouricemia, renal",True,False,True,False,SUPPORTED,True,llama3
+8ad1dbb5650059ef,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,Birt-Hogg-Dube syndrome,True,False,True,False,SUPPORTED,True,llama3
+23707cdaae46b3bd,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Acute myeloid leukemia with multilineage dysplasia,True,False,True,False,SUPPORTED,True,llama3
+f2c6a88f96ca181c,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Sjogren-Larsson syndrome,True,False,True,False,SUPPORTED,True,llama3
+526c167bca90b0ff,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Ectodermal dysplasia syndrome,True,False,True,False,SUPPORTED,True,llama3
+95f7b197a53027b3,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Acute myeloid leukemia with NPM1 somatic mutations,True,False,True,False,SUPPORTED,True,llama3
+2788f49da410c255,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,"Neurofibromatosis, type III, mixed central and peripheral",True,False,True,False,SUPPORTED,True,llama3
+046a89a3fd2d097f,primekg_clinical,A1F_flat,counterfactual,0,0,qwen25,holdout,spondylocostal dysostosis,True,False,True,False,SUPPORTED,True,llama3
+19500ca79228d7c6,primekg_clinical,A1F_flat,counterfactual,0,0,llama3,holdout,Autosomal dominant pure spastic paraplegia,True,False,True,False,SUPPORTED,True,llama3
+d85328118e6b36cf,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+526c167bca90b0ff,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+4f3ef0a7876a2b75,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+60e5535657c9a236,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+f6b653e013650ddd,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+dd968ab5a4a8e16f,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5b010406e14aa21c,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4922f3979d67f6d5,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+5584f47a0c909943,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+cfce0b017a4febe9,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+19500ca79228d7c6,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+379d01f7c2f94731,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+60331b79e39f0d7d,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+a59b5224f43b124b,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Renal agenesis,False,False,False,False,SUPPORTED,True,llama3
+a59b5224f43b124b,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,renal agenesis,False,False,False,False,SUPPORTED,True,llama3
+c511b11b7681edaf,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+75be784940311ed7,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+42e806dd4b7c8658,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+f2b506460a197434,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+06eebe2224712666,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+30d5d7d53f4a18be,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Crush syndrome,True,False,True,False,SUPPORTED,True,llama3
+69c70e669d823ff4,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Ivic syndrome,True,False,True,False,SUPPORTED,True,llama3
+3e870702c8e4656c,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Graves disease,True,False,True,False,SUPPORTED,True,llama3
+4a0784410616c309,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Hennekam syndrome,True,False,True,False,SUPPORTED,True,llama3
+bddc4fc2fd214eb6,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Intermediate coronary syndrome,True,False,True,False,SUPPORTED,True,llama3
+e1940221a03c7804,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Congenital short bowel syndrome 1,True,False,True,False,SUPPORTED,True,llama3
+74759f94db6238e7,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Dry eye syndrome,True,False,True,False,SUPPORTED,True,llama3
+19500ca79228d7c6,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Autosomal dominant pure spastic paraplegia,True,False,True,False,SUPPORTED,True,llama3
+432eccf6f50e4c3d,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,ddx41-related hematologic malignancy predisposition syndrome,True,False,True,False,SUPPORTED,True,llama3
+43c67f1b377c90f9,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Stormorken syndrome,True,False,True,False,SUPPORTED,True,llama3
+2ab5d734872a456b,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,cerebellar-facial-dental syndrome,True,False,True,False,SUPPORTED,True,llama3
+1c2ccb4094245f35,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,46 XX Gonadal Dysgenesis,True,False,True,False,SUPPORTED,True,llama3
+a496fdeb69ff28f2,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Pyomyositis,True,False,True,False,SUPPORTED,True,llama3
+4aa7943efe3ad66b,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Congenital non-communicating hydrocephalus,True,False,True,False,SUPPORTED,True,llama3
+ddae8a4228aa7201,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Primary ciliary dyskinesia-retinitis pigmentosa syndrome,True,False,True,False,SUPPORTED,True,llama3
+1075f94df3dfda88,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Bilateral renal agenesis,True,False,True,False,SUPPORTED,True,llama3
+5b010406e14aa21c,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Dicer1 syndrome,True,False,True,False,SUPPORTED,True,llama3
+783e5abadb095cbb,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Sagittal sinus thrombosis,True,False,True,False,SUPPORTED,True,llama3
+f1175d5b4dc296fc,primekg_clinical,A1_text,counterfactual,0,0,llama3,holdout,Mitochondrial neurogastrointestinal encephalomyopathy,True,False,True,False,SUPPORTED,True,llama3
+ec3ae852879798bc,primekg_clinical,A1_text,counterfactual,0,0,qwen25,holdout,Childhood onset glut1 deficiency syndrome 2,True,False,True,False,SUPPORTED,True,llama3
+1244afaadefda7e6,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+58585eeb6a2c16c5,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4f3ef0a7876a2b75,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5584f47a0c909943,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5b010406e14aa21c,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+a366d5e520adec9c,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,ADRB1,False,False,False,False,SUPPORTED,True,llama3
+00ffe394d482a906,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+de518e435e14a96b,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,Klippel-Feil syndrome 1,False,False,False,False,SUPPORTED,True,llama3
+9f6a5b7d68403642,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+bf5530731f3999ed,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,Glycogen storage disease,False,False,False,False,SUPPORTED,True,llama3
+86c5d13761ff1b9d,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,hypouricemia,False,False,False,False,SUPPORTED,True,llama3
+2788f49da410c255,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,"neurofibromatosis, type III",False,False,False,False,SUPPORTED,True,llama3
+b942ad043f463f47,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+f1d98e0504f8f9db,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,SLC6A2,False,False,False,False,SUPPORTED,True,llama3
+ee68884f8ad262a9,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,ALB,False,False,False,False,UNSUPPORTED,False,llama3
+e2fa36cb26e85127,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,TH,False,False,False,False,SUPPORTED,True,llama3
+9959df3ef56b14ff,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+b4c4c9ee3eec871f,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+9959df3ef56b14ff,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,NR1I2,False,False,False,False,SUPPORTED,True,llama3
+66048f361d8ccb8c,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+2ab5d734872a456b,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,cerebellar-facial-dental syndrome,True,False,True,False,SUPPORTED,True,llama3
+c19186afc3946a8f,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,Megalencephaly-capillary malformation-polymicrogyria syndrome.,True,False,True,False,SUPPORTED,True,llama3
+49d3a19ae2df6270,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,keratitis fugax hereditaria,True,False,True,False,SUPPORTED,True,llama3
+69c70e669d823ff4,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,IVIC syndrome,True,False,True,False,SUPPORTED,True,llama3
+6f72b785f4863709,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,polyendocrine-polyneuropathy syndrome,True,False,True,False,SUPPORTED,True,llama3
+0f203ff2cecf5b6e,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,Cenani-Lenz syndactyly syndrome,True,False,True,False,SUPPORTED,True,llama3
+a9066b6f09c6d438,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,microcephaly-capillary malformation syndrome,True,False,True,False,SUPPORTED,True,llama3
+9f6f86f6a5d3542e,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,DERMATOSIS PAPULOSA NIGRA,True,False,True,False,SUPPORTED,True,llama3
+73f9411c85416084,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,premature aging syndrome,True,False,True,False,SUPPORTED,True,llama3
+3e870702c8e4656c,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,Graves disease,True,False,True,False,SUPPORTED,True,llama3
+d4365a89daaf885c,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,androgen insensitivity syndrome,True,False,True,False,SUPPORTED,True,llama3
+a496fdeb69ff28f2,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,pyomyositis,True,False,True,False,SUPPORTED,True,llama3
+06eebe2224712666,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,Camurati-Engelmann disease,True,False,True,False,SUPPORTED,True,llama3
+a5755808ec2dd44e,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,potassium deficiency disease,True,False,True,False,SUPPORTED,True,llama3
+4a2d111224579287,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,Autosomal recessive omodysplasia,True,False,True,False,SUPPORTED,True,llama3
+74759f94db6238e7,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,dry eye syndrome,True,False,True,False,SUPPORTED,True,llama3
+379d01f7c2f94731,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,hereditary sensory and autonomic neuropathy,True,False,True,False,SUPPORTED,True,llama3
+783e5abadb095cbb,primekg_clinical,A2_path,counterfactual,0,0,qwen25,holdout,sagittal sinus thrombosis,True,False,True,False,SUPPORTED,True,llama3
+c6bc8d56bf70a5b9,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,"short rib-polydactyly syndrome, Verma-Naumoff type",True,False,True,False,SUPPORTED,True,llama3
+e7babae67b544688,primekg_clinical,A2_path,counterfactual,0,0,llama3,holdout,Ollier disease,True,False,True,False,SUPPORTED,True,llama3
+eb8917bbb0278247,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+b4e310bc4fddc7d8,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+ec3ae852879798bc,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+f6b653e013650ddd,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+1075f94df3dfda88,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,incestant infant ventricular tachycardia,False,False,False,False,SUPPORTED,True,llama3
+a9066b6f09c6d438,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,endometriosis,False,False,False,False,SUPPORTED,True,llama3
+1ba91c3f6191d57f,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4f2a8af902c08f9f,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4aa7943efe3ad66b,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+c19186afc3946a8f,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,IgA nephropathy,False,False,False,False,SUPPORTED,True,llama3
+7e23c37e613cc2b5,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+f6b653e013650ddd,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+d4365a89daaf885c,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+6e7331f281cf930f,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+432eccf6f50e4c3d,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Glioma,False,False,False,False,SUPPORTED,True,llama3
+a5755808ec2dd44e,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+596219a8148229f4,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+86c5d13761ff1b9d,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+0b7c5a429604fd23,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Autism,False,False,False,False,SUPPORTED,True,llama3
+382310abe2af1eb2,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+6f72b785f4863709,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,precocious puberty,True,True,False,False,SUPPORTED,True,llama3
+1c2ccb4094245f35,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Rheumatoid arthritis,True,True,False,False,SUPPORTED,True,llama3
+b5b03e76a8d2839b,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,viral myositis,True,True,False,False,SUPPORTED,True,llama3
+f7bc99c707e68a9c,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,salivary gland basal cell adenocarcinoma,True,True,False,False,SUPPORTED,True,llama3
+4f2a8af902c08f9f,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Folinic acid-responsive seizures,True,True,False,False,SUPPORTED,True,llama3
+b4e310bc4fddc7d8,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Hereditary breast carcinoma,True,True,False,False,SUPPORTED,True,llama3
+155dbf3f0005e6f5,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Hyperostosis corticalis generalisata,True,True,False,False,SUPPORTED,True,llama3
+75be784940311ed7,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Breast Carcinoma,True,True,False,False,SUPPORTED,True,llama3
+74759f94db6238e7,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,celiac disease,True,True,False,False,SUPPORTED,True,llama3
+e7babae67b544688,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,colorectal neoplasm,True,True,False,False,SUPPORTED,True,llama3
+dff575a151207979,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,Mowat-Wilson syndrome,True,True,False,False,SUPPORTED,True,llama3
+4f3ef0a7876a2b75,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Fetal and neonatal alloimmune thrombocytopenia,True,True,False,False,SUPPORTED,True,llama3
+f2c6a88f96ca181c,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Postmenopausal osteoporosis,True,True,False,False,SUPPORTED,True,llama3
+3fbff3809aff4cc6,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Squamous cell carcinoma,True,True,False,False,SUPPORTED,True,llama3
+e1940221a03c7804,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Schizophrenia,True,True,False,False,SUPPORTED,True,llama3
+75be784940311ed7,primekg_clinical,A1F_flat,original,0,0,qwen25,holdout,breast carcinoma,True,True,False,False,UNSUPPORTED,False,llama3
+30d5d7d53f4a18be,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Gastric linitis plastica,True,True,False,False,SUPPORTED,True,llama3
+2788f49da410c255,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Colonic neoplasm,True,True,False,False,SUPPORTED,True,llama3
+f7bc99c707e68a9c,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Salivary gland basal cell adenocarcinoma,True,True,False,False,SUPPORTED,True,llama3
+c6ee7eb77812bce5,primekg_clinical,A1F_flat,original,0,0,llama3,holdout,Postpartum depression,True,True,False,False,SUPPORTED,True,llama3
+b942ad043f463f47,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+0b7c5a429604fd23,primekg_clinical,A1_text,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+48f76c63c13dd1ef,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+7e23c37e613cc2b5,primekg_clinical,A1_text,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+75be784940311ed7,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+a9066b6f09c6d438,primekg_clinical,A1_text,original,0,0,llama3,holdout,Endometriosis,False,False,False,False,SUPPORTED,True,llama3
+b3fc732d7ce0cefd,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+c1e5f3bc4c93c873,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+e7babae67b544688,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+62c337775ebeaf42,primekg_clinical,A1_text,original,0,0,llama3,holdout,Alport,False,False,False,False,UNSUPPORTED,False,llama3
+382310abe2af1eb2,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+d85328118e6b36cf,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+0f203ff2cecf5b6e,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+de518e435e14a96b,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+ec3ae852879798bc,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+58585eeb6a2c16c5,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+23707cdaae46b3bd,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+9f6a5b7d68403642,primekg_clinical,A1_text,original,0,0,llama3,holdout,Arthritis,False,False,False,False,UNSUPPORTED,False,llama3
+1294dae8dae94982,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+6f72b785f4863709,primekg_clinical,A1_text,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+b4c4c9ee3eec871f,primekg_clinical,A1_text,original,0,0,llama3,holdout,Echinococcosis,True,True,False,False,SUPPORTED,True,llama3
+4a0784410616c309,primekg_clinical,A1_text,original,0,0,llama3,holdout,Unipolar depression,True,True,False,False,SUPPORTED,True,llama3
+bd6ab44b763d93e1,primekg_clinical,A1_text,original,0,0,llama3,holdout,Intrinsic asthma,True,True,False,False,SUPPORTED,True,llama3
+2684d78acbc1e715,primekg_clinical,A1_text,original,0,0,qwen25,holdout,substance abuse/dependence,True,True,False,False,SUPPORTED,True,llama3
+f1d98e0504f8f9db,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Partial epilepsy,True,True,False,False,SUPPORTED,True,llama3
+bf5530731f3999ed,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Hemoglobinopathy,True,True,False,False,SUPPORTED,True,llama3
+cfce0b017a4febe9,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Lung cancer,True,True,False,False,SUPPORTED,True,llama3
+c1e5f3bc4c93c873,primekg_clinical,A1_text,original,0,0,llama3,holdout,Acute myeloid leukemia with CEBPA somatic mutations.,True,True,False,False,SUPPORTED,True,llama3
+7694dc3630c4d687,primekg_clinical,A1_text,original,0,0,llama3,holdout,Sick sinus syndrome,True,True,False,False,SUPPORTED,True,llama3
+2ab5d734872a456b,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Autism spectrum disorder,True,True,False,False,SUPPORTED,True,llama3
+a52fe5f91a9e414e,primekg_clinical,A1_text,original,0,0,llama3,holdout,Progressive myoclonic epilepsy,True,True,False,False,SUPPORTED,True,llama3
+692f583897962341,primekg_clinical,A1_text,original,0,0,llama3,holdout,Squamous cell carcinoma of liver and intrahepatic biliary tract.,True,True,False,False,SUPPORTED,True,llama3
+ec3ae852879798bc,primekg_clinical,A1_text,original,0,0,llama3,holdout,Prostate cancer,True,True,False,False,SUPPORTED,True,llama3
+e1940221a03c7804,primekg_clinical,A1_text,original,0,0,qwen25,holdout,schizophrenia,True,True,False,False,SUPPORTED,True,llama3
+e1940221a03c7804,primekg_clinical,A1_text,original,0,0,llama3,holdout,Schizophrenia,True,True,False,False,SUPPORTED,True,llama3
+4f3ef0a7876a2b75,primekg_clinical,A1_text,original,0,0,llama3,holdout,Fetal and neonatal alloimmune thrombocytopenia,True,True,False,False,SUPPORTED,True,llama3
+ed75c004a21e0ac4,primekg_clinical,A1_text,original,0,0,qwen25,holdout,malignant colon neoplasm,True,True,False,False,SUPPORTED,True,llama3
+a52fe5f91a9e414e,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Progressive myoclonic epilepsy,True,True,False,False,SUPPORTED,True,llama3
+3e870702c8e4656c,primekg_clinical,A1_text,original,0,0,qwen25,holdout,Anxiety disorder,True,True,False,False,SUPPORTED,True,llama3
+2ab5d734872a456b,primekg_clinical,A1_text,original,0,0,llama3,holdout,Autism spectrum disorder,True,True,False,False,SUPPORTED,True,llama3
+bddc4fc2fd214eb6,primekg_clinical,A2_path,original,0,0,llama3,holdout,CYP3A4,False,False,False,False,SUPPORTED,True,llama3
+c880cb0d003b65f9,primekg_clinical,A2_path,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+c19186afc3946a8f,primekg_clinical,A2_path,original,0,0,qwen25,holdout,IgA nephropathy,False,False,False,False,SUPPORTED,True,llama3
+5b010406e14aa21c,primekg_clinical,A2_path,original,0,0,llama3,holdout,Cushing disease,False,False,False,False,SUPPORTED,True,llama3
+4aa7943efe3ad66b,primekg_clinical,A2_path,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4922f3979d67f6d5,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+9f6f86f6a5d3542e,primekg_clinical,A2_path,original,0,0,llama3,holdout,TLR4,False,False,False,False,SUPPORTED,True,llama3
+fb507190e9f08173,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+0f203ff2cecf5b6e,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+bd6ab44b763d93e1,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5153ae2282e911aa,primekg_clinical,A2_path,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+4aa7943efe3ad66b,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+8261294be739be69,primekg_clinical,A2_path,original,0,0,llama3,holdout,Glioma,False,False,False,False,SUPPORTED,True,llama3
+42e806dd4b7c8658,primekg_clinical,A2_path,original,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+73f9411c85416084,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+b4e310bc4fddc7d8,primekg_clinical,A2_path,original,0,0,llama3,holdout,Leukemia,False,False,False,False,UNSUPPORTED,False,llama3
+42e806dd4b7c8658,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+5b010406e14aa21c,primekg_clinical,A2_path,original,0,0,qwen25,holdout,Cushing disease,False,False,False,False,SUPPORTED,True,llama3
+4e9e867d5ee145ca,primekg_clinical,A2_path,original,0,0,qwen25,holdout,UNKNOWN,False,False,False,True,SUPPORTED,True,llama3
+a9066b6f09c6d438,primekg_clinical,A2_path,original,0,0,llama3,holdout,endometriosis,False,False,False,False,SUPPORTED,True,llama3
+1075f94df3dfda88,primekg_clinical,A2_path,original,0,0,llama3,holdout,incessant infant ventricular tachycardia,True,True,False,False,SUPPORTED,True,llama3
+c9472c9340b9ab47,primekg_clinical,A2_path,original,0,0,qwen25,holdout,thyroid gland carcinoma,True,True,False,False,SUPPORTED,True,llama3
+a52fe5f91a9e414e,primekg_clinical,A2_path,original,0,0,llama3,holdout,Progressive myoclonic epilepsy.,True,True,False,False,SUPPORTED,True,llama3
+66048f361d8ccb8c,primekg_clinical,A2_path,original,0,0,llama3,holdout,Anxiety disorder,True,True,False,False,SUPPORTED,True,llama3
+8ad1dbb5650059ef,primekg_clinical,A2_path,original,0,0,llama3,holdout,Newborn respiratory distress syndrome.,True,True,False,False,SUPPORTED,True,llama3
+e2fa36cb26e85127,primekg_clinical,A2_path,original,0,0,llama3,holdout,Dystonia,True,True,False,False,SUPPORTED,True,llama3
+783e5abadb095cbb,primekg_clinical,A2_path,original,0,0,llama3,holdout,Lung cancer,True,True,False,False,SUPPORTED,True,llama3
+379d01f7c2f94731,primekg_clinical,A2_path,original,0,0,llama3,holdout,Coronary artery disease,True,True,False,False,SUPPORTED,True,llama3
+ec3ae852879798bc,primekg_clinical,A2_path,original,0,0,llama3,holdout,Prostate cancer,True,True,False,False,SUPPORTED,True,llama3
+49d3a19ae2df6270,primekg_clinical,A2_path,original,0,0,llama3,holdout,Hodgkins lymphoma,True,True,False,False,SUPPORTED,True,llama3
+23707cdaae46b3bd,primekg_clinical,A2_path,original,0,0,qwen25,holdout,drug-induced liver injury,True,True,False,False,SUPPORTED,True,llama3
+2ab5d734872a456b,primekg_clinical,A2_path,original,0,0,llama3,holdout,Autism spectrum disorder,True,True,False,False,SUPPORTED,True,llama3
+a52fe5f91a9e414e,primekg_clinical,A2_path,original,0,0,qwen25,holdout,progressive myoclonic epilepsy,True,True,False,False,SUPPORTED,True,llama3
+60331b79e39f0d7d,primekg_clinical,A2_path,original,0,0,llama3,holdout,Mantle cell lymphoma,True,True,False,False,SUPPORTED,True,llama3
+69c70e669d823ff4,primekg_clinical,A2_path,original,0,0,qwen25,holdout,melancholia,True,True,False,False,SUPPORTED,True,llama3
+b4c4c9ee3eec871f,primekg_clinical,A2_path,original,0,0,qwen25,holdout,echinococcosis,True,True,False,False,SUPPORTED,True,llama3
+a96eb1d7f0437d6f,primekg_clinical,A2_path,original,0,0,llama3,holdout,Prostate cancer,True,True,False,False,SUPPORTED,True,llama3
+cfce0b017a4febe9,primekg_clinical,A2_path,original,0,0,llama3,holdout,Lung cancer,True,True,False,False,SUPPORTED,True,llama3
+f1175d5b4dc296fc,primekg_clinical,A2_path,original,0,0,llama3,holdout,Rheumatoid arthritis,True,True,False,False,SUPPORTED,True,llama3
+86c5d13761ff1b9d,primekg_clinical,A2_path,original,0,0,llama3,holdout,Osteoarthritis,True,True,False,False,SUPPORTED,True,llama3
+4c81054647e407d0,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,959844,False,False,False,False,SUPPORTED,True,llama3
+6facd5b341e6b30d,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,996142,False,False,False,False,SUPPORTED,True,llama3
+804f47765833b625,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,959170,False,False,False,False,SUPPORTED,True,llama3
+cea5440c2b711c2e,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,1016211,False,False,False,False,UNSUPPORTED,False,llama3
+04fd52481b139560,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,By Scotty Cameron For Titleist Studio Select Kombi Mid 2011,False,False,False,False,UNSUPPORTED,False,llama3
+70a215279a4ef0ef,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,UNKNOWN,False,False,False,True,UNSUPPORTED,False,llama3
+bad7e9184d5f6a13,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,sunglasses restorer Sure Polarized Replacement Lenses for Oakley Fast Jacket XL,False,False,False,False,SUPPORTED,True,llama3
+936b2a855999dd6d,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,1029311,False,False,False,False,SUPPORTED,True,llama3
+7a8d2a319df71305,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Minnesota Gophers Pin,True,False,True,False,UNSUPPORTED,False,llama3
+bf783a93ff7a6081,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,iCustomized (TM) Orange and Black Rugged Heavy Duty Hard Dual Layer Weather,True,False,True,False,SUPPORTED,True,llama3
+00f97390b70711fa,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,"RazzyRoo Headbands Adjustable Non Slip Headband ""Skinny Sparkly Glitter"" Black Silver Mix",True,False,True,False,UNSUPPORTED,False,llama3
+2253174607f0ade0,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Shimano Nexus BR-IM50-F BR-IM70-F BR-IM70-R & BR-IM73-R Brake Cable Fixing Bolt &,True,False,True,False,SUPPORTED,True,llama3
+0615d004ad3d0c19,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Drake Waterfowl Embroidered Hoodie Men Fit Shadow Branch Color,True,False,True,False,SUPPORTED,True,llama3
+cc6934c1652c9e21,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Lime Green Colored Golf Ferrules .355 ID for Taper Tip Irons PACK,True,False,True,False,SUPPORTED,True,llama3
+3e8b36e472db50e8,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Prom M-Pro 7 Tactical Boresnake 12-Gauge Shotgun Bore Cleaner,True,False,True,False,SUPPORTED,True,llama3
+a976d7d893913197,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Colt Tactical Knife/Light Combo,True,False,True,False,SUPPORTED,True,llama3
+8f9e748fa3c2e87a,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Mini Exercise Rehabilitation Cycle Bike,True,False,True,False,SUPPORTED,True,llama3
+8be6a7be0e4eb49f,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,729 Bomb Table Tennis Blade,True,False,True,False,SUPPORTED,True,llama3
+9f56a4dafd1e0d50,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Neet Fred Bear Pocket Quiver,True,False,True,False,SUPPORTED,True,llama3
+dcf5029e912e968c,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,Olicamp Electron Stove,True,False,True,False,UNSUPPORTED,False,llama3
+f5cc37c96f2b48f5,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,NEW! Penn State University Nittany Lions Snap Back Cap Factory Distressed Embroidered,True,False,True,False,SUPPORTED,True,llama3
+91b7169699c3a464,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,STYLN Subaru STI T-Shirt,True,False,True,False,UNSUPPORTED,False,llama3
+2efb83ff53858e2f,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,Rollerblade Zephyr Womens Black/Purple Size 9,True,False,True,False,UNSUPPORTED,False,llama3
+804f47765833b625,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,"Indiana Metal Craft Personalized Ball Marker 3/4"" Nickel Silver with Post",True,False,True,False,SUPPORTED,True,llama3
+50435b148ddc2172,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,Spitfire Wheels Sure Shot Skateboard Sticker - 8cm high approx sk8,True,False,True,False,SUPPORTED,True,llama3
+be1a54308d407975,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,llama3,holdout,Ryan Tannehill #17 Miami Dolphins NFL Women's Name & Number T-shirt,True,False,True,False,UNSUPPORTED,False,llama3
+6fd67b743899ddc0,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,Snugpak Rocket Pak System Olive Green Three-In-One With Adjustable Chest Strap Waist,True,False,True,False,SUPPORTED,True,llama3
+ab68975adf92c68e,stark_amazon_ecommerce,A1F_flat,counterfactual,0,0,qwen25,holdout,Fathead MLB Baltimore Orioles Baltimore Orioles Alternate Logo,True,False,True,False,SUPPORTED,True,llama3
+b54bc44b876c3ce0,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Jackall Binsky,False,False,False,False,SUPPORTED,True,llama3
+bad7e9184d5f6a13,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,sunglasses restorer sure polarized replacement lenses for oakley fast jacket xl,False,False,False,False,SUPPORTED,True,llama3
+935bd6b648efa952,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,item 983589,False,False,False,False,SUPPORTED,True,llama3
+50de3c0fb4b71f72,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,inova disc golf champion material banshee golf disc (colors may vary),False,False,False,False,SUPPORTED,True,llama3
+04fd52481b139560,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,item 1008941,False,False,False,False,SUPPORTED,True,llama3
+4c81054647e407d0,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Double Tsuba Replica Katana Sengoku (Warrior) Carbon Steel Sword Basara (Belligerent) Sword,False,False,False,False,SUPPORTED,True,llama3
+00f97390b70711fa,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,"Razzyroo Headbands Adjustable Non Slip Headband ""Skinny Sparkly Glitter"" Black Silver Mix",True,False,True,False,UNSUPPORTED,False,llama3
+ab68975adf92c68e,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Fathead MLB Baltimore Orioles Baltimore Orioles Alternate Logo,True,False,True,False,SUPPORTED,True,llama3
+d5a620bcb3a0488d,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Mattingly Sports BBcor Demon Baseball Bat,True,False,True,False,SUPPORTED,True,llama3
+170dc6a5cf81d60e,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,NCAA West Virginia Mountaineers Men's Full Court Press Full Zip Track Jacket,True,False,True,False,SUPPORTED,True,llama3
+9364d0436f33662e,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Fat Tire Snow Tube (Deluxe Edition),True,False,True,False,SUPPORTED,True,llama3
+e2b9ce9d0fd665bf,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Gaiam Fitness Mat with Carrying Strap,True,False,True,False,SUPPORTED,True,llama3
+91b7169699c3a464,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Styln Subaru STI T-Shirt,True,False,True,False,SUPPORTED,True,llama3
+a976d7d893913197,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Colt Tactical Knife/Light Combo,True,False,True,False,SUPPORTED,True,llama3
+f44e74ef73f83c04,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,"sports sun protection arm sleeve (single) - men, women, youth - lightning",True,False,True,False,SUPPORTED,True,llama3
+3aad4e41a1510677,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,power balance neoprene wristband (color: black size: large),True,False,True,False,SUPPORTED,True,llama3
+7a8d2a319df71305,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Minnesota Gophers Pin,True,False,True,False,SUPPORTED,True,llama3
+0681c37ad4595461,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,houston astros adult sized comfy throw,True,False,True,False,UNSUPPORTED,False,llama3
+b3528d8b475c0336,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,MLB Texas Rangers Sunglass Strap,True,False,True,False,SUPPORTED,True,llama3
+6e68f6e7ba65bd49,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,Guard Dog Arizona State Sun Devils - Case for Samsung Galaxy S3,True,False,True,False,SUPPORTED,True,llama3
+b00250ea7ea94af7,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,roller derby boys blazer lighted wheel roller skate,True,False,True,False,SUPPORTED,True,llama3
+c0df43d44f6a3851,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,sector 9 carbon flight deck skateboard,True,False,True,False,SUPPORTED,True,llama3
+86343998b942d97b,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,"thompson center arms co dt/c rear f/o sgt-blkmtn,n eng",True,False,True,False,UNSUPPORTED,False,llama3
+936b2a855999dd6d,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,2015 Combat Combatant 275 All Association Bat 27.5 oz,True,False,True,False,SUPPORTED,True,llama3
+56fb705d8c34bc4e,stark_amazon_ecommerce,A1_text,counterfactual,0,0,qwen25,holdout,dragon alliance dx goggles,True,False,True,False,SUPPORTED,True,llama3
+8184816f931fd5dd,stark_amazon_ecommerce,A1_text,counterfactual,0,0,llama3,holdout,"Double flanged,earplugs, sm, 1 pair, bk surefire ep3-bk-spr",True,False,True,False,SUPPORTED,True,llama3
+92b6ec55a8731b70,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1029311,False,False,False,False,SUPPORTED,True,llama3
+f3115f6ef873a6dd,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,976954,False,False,False,False,SUPPORTED,True,llama3
+52145009989ecc48,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1013470,False,False,False,False,SUPPORTED,True,llama3
+cc6934c1652c9e21,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1022303,False,False,False,False,SUPPORTED,True,llama3
+ab68975adf92c68e,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1013260,False,False,False,False,SUPPORTED,True,llama3
+57c677d35b4f5646,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1009353,False,False,False,False,SUPPORTED,True,llama3
+70a215279a4ef0ef,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1026487,False,False,False,False,UNSUPPORTED,False,llama3
+3aad4e41a1510677,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,990710,False,False,False,False,SUPPORTED,True,llama3
+bad7e9184d5f6a13,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,sunglasses restorer Sure Polarized Replacement Lenses for Oakley Fast Jacket XL,False,False,False,False,SUPPORTED,True,llama3
+9fc26a07c9d1a81c,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,1026515,False,False,False,False,SUPPORTED,True,llama3
+259353b7683d7dc2,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,"Thompson Center Arms Co Dt/C Rear F/O Sgt-Blkmtn,N Eng",True,False,True,False,UNSUPPORTED,False,llama3
+c92683e460de82c1,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Meprolight ML17777R.S CZ 75 83 & 85 Tru-Dot Night Sight Rear Sight,True,False,True,False,SUPPORTED,True,llama3
+9f56a4dafd1e0d50,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Neet Fred Bear Pocket Quiver,True,False,True,False,SUPPORTED,True,llama3
+766ef1509a965bc7,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,'47 NHL Tampa Bay Lightning Brand Men's Scrum Basic Tee',True,False,True,False,SUPPORTED,True,llama3
+5763e274dfa065f8,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,"Rockboard RBX Scooter, Black",True,False,True,False,SUPPORTED,True,llama3
+804f47765833b625,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,"Indiana Metal Craft Personalized Ball Marker 3/4"" Nickel Silver with Post",True,False,True,False,SUPPORTED,True,llama3
+3e8b36e472db50e8,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Prom M-Pro 7 Tactical Boresnake 12-Gauge Shotgun Bore Cleaner,True,False,True,False,SUPPORTED,True,llama3
+a976d7d893913197,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Colt Tactical Knife/Light Combo,True,False,True,False,SUPPORTED,True,llama3
+fcfff2a30175907c,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Lazer Sharp New13-Lazer Circle 1X Short Shank Non-Offset Fishing Hook,True,False,True,False,SUPPORTED,True,llama3
+b00250ea7ea94af7,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,Roller Derby Boys Blazer Lighted Wheel Roller Skate,True,False,True,False,SUPPORTED,True,llama3
+a90cdb5fa9ee648f,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Pulse Women's Wings Black Snowboard Jacket (Medium),True,False,True,False,UNSUPPORTED,False,llama3
+94e2af97156d1fe8,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,NCAA Arkansas Razorbacks 14-Inch Nutcracker 6th Edition,True,False,True,False,SUPPORTED,True,llama3
+63ed61d87b9625dd,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,Mountain Hardwear Kelvinator Hooded Jacket - Women's Black / Mayan Green Small,True,False,True,False,SUPPORTED,True,llama3
+91b7169699c3a464,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,STYLN Subaru STI T-Shirt,True,False,True,False,SUPPORTED,True,llama3
+2efb83ff53858e2f,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,Rollerblade Zephyr Womens Black/Purple Size 9,True,False,True,False,SUPPORTED,True,llama3
+21ea69b6c0a0e129,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,Wolf Tooth Components Drop-Stop Chainring: 28T x 94 BCD 5-Bolt,True,False,True,False,SUPPORTED,True,llama3
+eea74e3e40c3af38,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,FUDI Men's NCAA University Of California UCSC Banana Slugs Logo Long Sleeve,True,False,True,False,SUPPORTED,True,llama3
+936b2a855999dd6d,stark_amazon_ecommerce,A2_path,counterfactual,0,0,llama3,holdout,2015 Combat Combatant 275 All Association Bat 27.5 Oz,True,False,True,False,SUPPORTED,True,llama3
+975aa0b1479a2b8b,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,Solid Black Seamless Neck Warmer Gaiter Skull Flame Face Mask Motorcycle Biker,True,False,True,False,SUPPORTED,True,llama3
+94e2af97156d1fe8,stark_amazon_ecommerce,A2_path,counterfactual,0,0,qwen25,holdout,NCAA Arkansas Razorbacks 14-Inch Nutcracker 6th Edition,True,False,True,False,SUPPORTED,True,llama3
+8184816f931fd5dd,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,1019094,False,False,False,False,SUPPORTED,True,llama3
+cea5440c2b711c2e,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,1016211,False,False,False,False,SUPPORTED,True,llama3
+6facd5b341e6b30d,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,996142,False,False,False,False,SUPPORTED,True,llama3
+4b318990572d20af,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,1021535,False,False,False,False,SUPPORTED,True,llama3
+f6ecd1a7e9dd9429,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,981097,False,False,False,False,SUPPORTED,True,llama3
+8f9e748fa3c2e87a,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,1022288,False,False,False,False,SUPPORTED,True,llama3
+5b82c43e26fa0128,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Men's UA Graphic Skull Cap Headwear,False,False,False,False,SUPPORTED,True,llama3
+8531b10ab2fa5292,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Turbine Seatpost,False,False,False,False,SUPPORTED,True,llama3
+a473f872a94e9e46,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,FS81247,False,False,False,False,SUPPORTED,True,llama3
+c787902a238827c6,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,957572,False,False,False,False,SUPPORTED,True,llama3
+0615d004ad3d0c19,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Tactical Limited Edition Urban / Snow Camo Camouflage M9,False,False,False,False,SUPPORTED,True,llama3
+d64f073be03ed4aa,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Splintex Gold 60 mL with Applicator Brush,False,False,False,False,SUPPORTED,True,llama3
+b2c72436529979f1,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,RAP-341NB,False,False,False,False,SUPPORTED,True,llama3
+1c20d04467278ed2,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,972988,False,False,False,False,SUPPORTED,True,llama3
+2253174607f0ade0,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,970142,False,False,False,False,SUPPORTED,True,llama3
+4c81054647e407d0,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,959844,False,False,False,False,SUPPORTED,True,llama3
+3e8b36e472db50e8,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,ProIsoCharge Battery Isolator 250Amp 1-Alt 2-Bat - 12V,False,False,False,False,SUPPORTED,True,llama3
+d64f073be03ed4aa,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Splintex Gold 60 mL with Applicator Brush.,False,False,False,False,SUPPORTED,True,llama3
+57c677d35b4f5646,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,1009353,False,False,False,False,SUPPORTED,True,llama3
+804f47765833b625,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,959170,False,False,False,False,SUPPORTED,True,llama3
+6fd67b743899ddc0,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Mitchell 308 Spinning Rod and Reel Combo,True,True,False,False,SUPPORTED,True,llama3
+0ec86a1948648161,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,BHL Girls Ballet Tutu 3-7Y Lace (6-7Y),True,True,False,False,SUPPORTED,True,llama3
+d5a620bcb3a0488d,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Majestic Men's Baltimore Ravens Heart and Soul Tee,True,True,False,False,SUPPORTED,True,llama3
+259353b7683d7dc2,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Texas Rangers Navy Toddler Mascot T-Shirt,True,True,False,False,SUPPORTED,True,llama3
+9c60f4cfc4988302,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,NHL Edmonton Oilers High Definition Clock,True,True,False,False,SUPPORTED,True,llama3
+e7569f6b18e2c4b4,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Arbor Axis Walnut 2016 Complete Longboard New,True,True,False,False,SUPPORTED,True,llama3
+78422193f446e473,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Chinoook Tactical Rifle Red and Green Reflex Dot Sight with 4 Reticles,True,True,False,False,SUPPORTED,True,llama3
+86343998b942d97b,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Houston Rockets Flat Bill Snapback Adidas Hat - Osfa,True,True,False,False,SUPPORTED,True,llama3
+eea74e3e40c3af38,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Arctic Shield Fleece Balaclava w/X System Tech Realtree Xtra,True,True,False,False,SUPPORTED,True,llama3
+94e2af97156d1fe8,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Coleman CMNWD006-BRK Fixed Blade Wood FireSteel,True,True,False,False,SUPPORTED,True,llama3
+e7fed86f3045491b,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Kids Watches Flash Lights 50m Waterproof Chronograph Digital Sports Watch - Green,True,True,False,False,SUPPORTED,True,llama3
+be1a54308d407975,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Padaras 100% Silicone Reversible Three Dimensional Ball Men and Women Swimming Cap,True,True,False,False,SUPPORTED,True,llama3
+70a215279a4ef0ef,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Wilson A500 Game Soft BBG 11-Inch Baseball Glove-Right Hand Throw,True,True,False,False,SUPPORTED,True,llama3
+e2b9ce9d0fd665bf,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Thirty Two Lashed Danny Larsen Snowboard Boot - Men's,True,True,False,False,SUPPORTED,True,llama3
+4f73c77692753143,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,MLB Seattle Mariners Men's Traverse Jacket,True,True,False,False,SUPPORTED,True,llama3
+b3528d8b475c0336,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,Super Jump Ropes,True,True,False,False,SUPPORTED,True,llama3
+8f9e748fa3c2e87a,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,"Turner Perfect Timing 2015 Seattle Seahawks Desk Calendar, 22 x 17 Inches",True,True,False,False,SUPPORTED,True,llama3
+4f73c77692753143,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,MLB Seattle Mariners Men's Traverse Jacket,True,True,False,False,SUPPORTED,True,llama3
+52145009989ecc48,stark_amazon_ecommerce,A1F_flat,original,0,0,llama3,holdout,Slingshot Ammo- Perfect or Hunting or Target- FREE USA Shipping,True,True,False,False,SUPPORTED,True,llama3
+f6ecd1a7e9dd9429,stark_amazon_ecommerce,A1F_flat,original,0,0,qwen25,holdout,G-Sight BS-2506 .30-06 Spr.270 Win.25-06 Rem. Laser Bore SIGHT - Twist Cap,True,True,False,False,SUPPORTED,True,llama3
+978ccfc91677a312,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Mouth Guard System,False,False,False,False,SUPPORTED,True,llama3
+f3115f6ef873a6dd,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Hummvee Short Sleeve Cycling Jersey,False,False,False,False,SUPPORTED,True,llama3
+59bc9235d231e30c,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Data Station 13,False,False,False,False,SUPPORTED,True,llama3
+dcf5029e912e968c,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Gerry Lopez Quad (4 fin set) GL1 SUP Stand Up,False,False,False,False,SUPPORTED,True,llama3
+d7f123f110c73918,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,1012066,False,False,False,False,SUPPORTED,True,llama3
+ab68975adf92c68e,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,1013260,False,False,False,False,SUPPORTED,True,llama3
+d64f073be03ed4aa,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Splintex Gold 60 ml with Applicator Brush.,False,False,False,False,SUPPORTED,True,llama3
+1a12a4389603e2e6,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,2-inch Aluma-Lite Training Bar,False,False,False,False,SUPPORTED,True,llama3
+1c20d04467278ed2,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Ruger LC9s Handgun Case - Light Purple 7 inch Water &,False,False,False,False,SUPPORTED,True,llama3
+5b82c43e26fa0128,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Men's UA Graphic Skull Cap Headwear,False,False,False,False,SUPPORTED,True,llama3
+8531b10ab2fa5292,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Turbine Seatpost,False,False,False,False,SUPPORTED,True,llama3
+d64f073be03ed4aa,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,splintex gold 60 ml with applicator brush.,False,False,False,False,SUPPORTED,True,llama3
+9364d0436f33662e,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,TF-896-MC,False,False,False,False,SUPPORTED,True,llama3
+70c29927a3cbda7e,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,NFL Men's New Orleans Saints Classic Heavyweight III Black Long Sleeve Full,False,False,False,False,SUPPORTED,True,llama3
+b54bc44b876c3ce0,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,'Heritage Scuba',False,False,False,False,SUPPORTED,True,llama3
+f26e4c576126c69e,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,MLB Cleveland Indians Vinyl Grill Mat,False,False,False,False,SUPPORTED,True,llama3
+91b7169699c3a464,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Under Armour Men's UA Reversible Fleece Beanie Small/Medium,False,False,False,False,SUPPORTED,True,llama3
+aaa0d051ead39339,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Cartridge Rem Laser Rifle Bore Sighted for .223 Remington with Batteries,False,False,False,False,SUPPORTED,True,llama3
+57c677d35b4f5646,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,"Rock Shox Reba RL Push-Loc Remote Right Solo 100mm Air Fork, Black, 29-inch",False,False,False,False,SUPPORTED,True,llama3
+b2c72436529979f1,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,RAM-341NB Ram-Rod 2007 Fly Rod Jr. Fishing Rod Holder (No),False,False,False,False,SUPPORTED,True,llama3
+34e67c59db9f0adb,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,"BSA Optics Dr832x44md Downrange Rifle Scope, 8-32 x 44 mm",True,True,False,False,SUPPORTED,True,llama3
+ac58d60a2438c3eb,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,NFL Pittsburgh Steelers Black Large Canvas Tote Bag,True,True,False,False,SUPPORTED,True,llama3
+9f56a4dafd1e0d50,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Mini Pavé Football Rhinestone Stud Earrings - Red Crystals with White Enamel,True,True,False,False,SUPPORTED,True,llama3
+f5cc37c96f2b48f5,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,"NCAA Georgia Bulldogs ""Hairy Dawg"" Team Mascot OYO Figure",True,True,False,False,SUPPORTED,True,llama3
+70c29927a3cbda7e,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,NFL Mens New Orleans Saints Classic Heavyweight III Black Long Sleeve Full,True,True,False,False,SUPPORTED,True,llama3
+9c60f4cfc4988302,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,NHl Edmonton Oilers High Definition Clock,True,True,False,False,SUPPORTED,True,llama3
+049c12eda3bf512b,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Modern Fantasy Womens Quick-dry Elasticity Outdoor Sport Pants,True,True,False,False,SUPPORTED,True,llama3
+eea74e3e40c3af38,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Arctic Shield Fleece Balaclava W/X System Tech Realtree Xtra,True,True,False,False,SUPPORTED,True,llama3
+e7fed86f3045491b,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,kids watches flash lights 50m waterproof chronograph digital sports watch - green,True,True,False,False,SUPPORTED,True,llama3
+766ef1509a965bc7,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,NCAA William & Mary Griffin Tahoe Extra Large Insulated Cooler Tote,True,True,False,False,SUPPORTED,True,llama3
+f3115f6ef873a6dd,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,Endura Hummvee Short Sleeve Cycling Jersey,True,True,False,False,SUPPORTED,True,llama3
+be1a54308d407975,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,padaras 100% silicone reversible three dimensional ball men and women swimming cap,True,True,False,False,SUPPORTED,True,llama3
+f07cb294051082ce,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,"1911 compact 3"" pro carry hd iwb leather conceal carry holster black",True,True,False,False,SUPPORTED,True,llama3
+e2b9ce9d0fd665bf,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,thirty two lashed danny larsen snowboard boot - men's,True,True,False,False,SUPPORTED,True,llama3
+eec5b0bc83a04b86,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,NFL Dallas Cowboys Insulated Travel Tumbler,True,True,False,False,SUPPORTED,True,llama3
+f5cc37c96f2b48f5,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,"ncaa georgia bulldogs ""hairy dawg"" team mascot oyo figure",True,True,False,False,SUPPORTED,True,llama3
+5601ac45d58bfe0d,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,smack apparel duke basketball fans. they hate us cause they ain't us,True,True,False,False,SUPPORTED,True,llama3
+50de3c0fb4b71f72,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,prana men's crux crew shirt,True,True,False,False,SUPPORTED,True,llama3
+33686205745c4982,stark_amazon_ecommerce,A1_text,original,0,0,llama3,holdout,Wilson Women's Pro Staff 11 Piece Set,True,True,False,False,SUPPORTED,True,llama3
+1c20d04467278ed2,stark_amazon_ecommerce,A1_text,original,0,0,qwen25,holdout,DURAGADGET Ruger LC9S Handgun Case - Light Purple 7 Inch Water &,True,True,False,False,SUPPORTED,True,llama3
+ad546de920bd9cf6,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1028604,False,False,False,False,SUPPORTED,True,llama3
+1c20d04467278ed2,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Ruger LC9s Handgun Case - Light Purple 7 Inch Water &,False,False,False,False,SUPPORTED,True,llama3
+52145009989ecc48,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1013470,False,False,False,False,SUPPORTED,True,llama3
+f3115f6ef873a6dd,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,976954,False,False,False,False,SUPPORTED,True,llama3
+cea5440c2b711c2e,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1016211,False,False,False,False,SUPPORTED,True,llama3
+ab68975adf92c68e,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1013260,False,False,False,False,SUPPORTED,True,llama3
+8531b10ab2fa5292,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Turbine Seatpost,False,False,False,False,SUPPORTED,True,llama3
+d7f123f110c73918,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1012066,False,False,False,False,SUPPORTED,True,llama3
+e97ed7279610b138,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,HAM-410.00,False,False,False,False,SUPPORTED,True,llama3
+420fed5b7097d36a,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1024253,False,False,False,False,SUPPORTED,True,llama3
+3aad4e41a1510677,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,990710,False,False,False,False,SUPPORTED,True,llama3
+722e78d16a485c64,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,970794,False,False,False,False,SUPPORTED,True,llama3
+92b6ec55a8731b70,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1029311,False,False,False,False,SUPPORTED,True,llama3
+f6ecd1a7e9dd9429,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,BS-2506,False,False,False,False,SUPPORTED,True,llama3
+b9ab4968ca65fda4,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1029311,False,False,False,False,SUPPORTED,True,llama3
+5601ac45d58bfe0d,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1014020,False,False,False,False,SUPPORTED,True,llama3
+5b82c43e26fa0128,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Men's UA Graphic Skull Cap Headwear,False,False,False,False,SUPPORTED,True,llama3
+b2c72436529979f1,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,RAP-341NB,False,False,False,False,SUPPORTED,True,llama3
+57c677d35b4f5646,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1009353,False,False,False,False,SUPPORTED,True,llama3
+f529ffd429600b3c,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,1018372,False,False,False,False,SUPPORTED,True,llama3
+2cfddff8c0a8eefe,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Besporter Beporter Lightweight Outdoor Travel Hiking Backpack Waterproof Durable College Student Laptop,True,True,False,False,SUPPORTED,True,llama3
+c9ac61fa82031d7f,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Capoeira Traditional Cords Ranking Belts Men Women Unisex Brazil 3m Long Braided,True,True,False,False,SUPPORTED,True,llama3
+fcfff2a30175907c,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,JACK'S PLASTIC El Grande Paco Sleeping Pad,True,True,False,False,SUPPORTED,True,llama3
+804f47765833b625,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Agate (gray tie-dye) Yogitoes® mat size SKIDLESS® yoga towel + 2-pack gray/light,True,True,False,False,SUPPORTED,True,llama3
+eea74e3e40c3af38,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Arctic Shield Fleece Balaclava w/X System Tech Realtree Xtra,True,True,False,False,SUPPORTED,True,llama3
+ac58d60a2438c3eb,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,NFL Pittsburgh Steelers Black Large Canvas Tote Bag,True,True,False,False,SUPPORTED,True,llama3
+6fd67b743899ddc0,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Mitchell 308 Spinning Rod and Reel Combo,True,True,False,False,SUPPORTED,True,llama3
+8f4ce05398194b40,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,"WinCraft NCAA Ohio State University WCR24846014 Chrome Decal, 3"" x 7""",True,True,False,False,SUPPORTED,True,llama3
+259353b7683d7dc2,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Texas Rangers Navy Toddler Mascot T-Shirt,True,True,False,False,SUPPORTED,True,llama3
+21578c4c513a3996,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,DAVIS Artisan Medium Teal Splint Boots,True,True,False,False,SUPPORTED,True,llama3
+34e67c59db9f0adb,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,"BSA Optics DR832X44MD Downrange Rifle Scope, 8-32 x 44 mm",True,True,False,False,SUPPORTED,True,llama3
+50435b148ddc2172,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,MLS Portland Timbers 11-by-17 Inch Sign,True,True,False,False,SUPPORTED,True,llama3
+f26e4c576126c69e,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Fanmats 12151 MLB Cleveland Indians Vinyl Grill Mat,True,True,False,False,SUPPORTED,True,llama3
+aaa0d051ead39339,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Cartridge Rem Laser Rifle Bore Sighter for .223 Remington with Batteries,True,True,False,False,SUPPORTED,True,llama3
+dcf5029e912e968c,stark_amazon_ecommerce,A2_path,original,0,0,llama3,holdout,Future Fins Gerry Lopez Quad (4 fin set) GL1 SUP Stand Up,True,True,False,False,SUPPORTED,True,llama3
+590bb7fb4f1c0470,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,NFL New York Jets 3 by 5 Foot Flag,True,True,False,False,SUPPORTED,True,llama3
+dcf5029e912e968c,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Future Fins Gerry Lopez Quad (4 fin set) GL1 SUP Stand Up,True,True,False,False,SUPPORTED,True,llama3
+70a215279a4ef0ef,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Wilson A500 Game Soft BBG 11-Inch Baseball Glove-Right Hand Throw,True,True,False,False,SUPPORTED,True,llama3
+420fed5b7097d36a,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,Versace Men's 'Mystique Sport 46Mm' Swiss Quartz Stainless Steel and Leather Dress,True,True,False,False,SUPPORTED,True,llama3
+b2c72436529979f1,stark_amazon_ecommerce,A2_path,original,0,0,qwen25,holdout,RAM MOUNTS (RAP-341NB Ram-Rod 2007 Fly Rod Jr. Fishing Rod Holder (No,True,True,False,False,SUPPORTED,True,llama3

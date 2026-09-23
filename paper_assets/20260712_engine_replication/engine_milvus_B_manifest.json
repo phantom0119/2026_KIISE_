@@ -1,0 +1,23 @@
+{
+  "engine": "milvus",
+  "corpus": "B",
+  "N": 143830,
+  "k": 10,
+  "version": "server 2.6.0 / pymilvus 3.0.0",
+  "queries": 200,
+  "index": {
+    "type": "HNSW",
+    "M": 32,
+    "efConstruction": 200,
+    "ef": 64,
+    "metric": "IP (L2-normalized vectors)"
+  },
+  "conditions": [
+    "m1"
+  ],
+  "gate_unfiltered_recall": 1.0,
+  "controls": "same-size random masks, default_rng(20260712+idx) [Amd.5]",
+  "latency": "single-thread client RT p50, within-engine descriptive ONLY",
+  "timing_queries": 100,
+  "repeats": 5
+}

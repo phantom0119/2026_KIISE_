@@ -1,0 +1,52 @@
+{
+  "script": "run_filtered_ann_cluster_mechanism.py",
+  "created_at": "2026-07-23T09:11:57.268026+00:00",
+  "parameters": {
+    "corpus": "B",
+    "output_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260723_controlled_supplement/s3_cluster_mechanism",
+    "methods": [
+      "hnsw"
+    ],
+    "shuffles": 100,
+    "anchors": 10,
+    "bootstrap": 10000,
+    "seed": 20260723,
+    "exact_top_l": 5000,
+    "exact_top_l_max": 40000,
+    "coverage_failure_fraction": 0.005,
+    "limit_predicates": null,
+    "limit_anchors": null,
+    "overwrite": false
+  },
+  "embedding_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/visual_embeddings_clip/frame_embeddings.npy",
+  "embedding_sha256": "6add5013ba9c4033a014da0bab51a434f4fa6e2ee33b364f1a6689331ccc5716",
+  "build_seconds": {
+    "hnsw": 51.4946755557321
+  },
+  "index_parameters": {
+    "hnsw": {
+      "M": 32,
+      "efConstruction": 200,
+      "efSearch": 64,
+      "postfilter_multiplier": 4
+    },
+    "ivfflat": {
+      "nlist": 1024,
+      "nprobe": 8,
+      "selector": "IDSelectorBatch"
+    }
+  },
+  "query_rule": "A: frozen 1000 text query vectors; B: 200 image vectors selected by numpy RNG seed 20260710, self-excluded",
+  "anchor_document_ids": [
+    40557,
+    14412,
+    22869,
+    30555,
+    1898,
+    143645,
+    124379,
+    118956,
+    107369,
+    66509
+  ]
+}

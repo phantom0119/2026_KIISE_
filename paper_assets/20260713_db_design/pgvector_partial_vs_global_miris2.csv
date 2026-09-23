@@ -1,0 +1,19 @@
+predicate,selectivity,strategy,recall_at_10,p50_ms,p95_ms,build_s,index_mb,build_amortized,frac_short
+tseg BETWEEN 7 AND 7,0.0414,global_where_off,1.0,8.172,10.154,28.9,153.7,True,0.0
+tseg BETWEEN 7 AND 7,0.0414,global_where_relaxed_order,1.0,8.136,8.619,28.9,153.7,True,0.0
+video = 'warsaw_0',0.0862,global_where_off,0.1686,0.446,0.557,28.9,153.7,True,0.41
+video = 'warsaw_0',0.0862,global_where_relaxed_order,0.4939,0.574,1.147,28.9,153.7,True,0.0
+nobj >= 20,0.1789,global_where_off,0.3834,0.407,0.558,28.9,153.7,True,0.825
+nobj >= 20,0.1789,global_where_relaxed_order,0.9961,1.193,3.172,28.9,153.7,True,0.0
+"video IN ('warsaw_0','warsaw_1','warsaw_2')",0.2583,global_where_off,0.3225,0.425,0.54,28.9,153.7,True,0.0
+"video IN ('warsaw_0','warsaw_1','warsaw_2')",0.2583,global_where_relaxed_order,0.5296,0.451,0.567,28.9,153.7,True,0.0
+nobj >= 15,0.4188,global_where_off,0.678,0.462,0.601,28.9,153.7,True,0.515
+nobj >= 15,0.4188,global_where_relaxed_order,0.9964,0.544,1.116,28.9,153.7,True,0.0
+scene = 'warsaw',0.5,global_where_off,0.4957,0.446,0.566,28.9,153.7,True,0.0
+scene = 'warsaw',0.5,global_where_relaxed_order,0.5582,0.461,0.556,28.9,153.7,True,0.0
+tseg BETWEEN 7 AND 7,0.0414,partial_local,1.0,0.32,0.427,0.59,6.38,False,0.0
+video = 'warsaw_0',0.0862,partial_local,0.9898,0.425,0.504,1.37,13.25,False,0.0
+nobj >= 20,0.1789,partial_local,0.9997,0.455,0.535,3.25,27.51,False,0.0
+"video IN ('warsaw_0','warsaw_1','warsaw_2')",0.2583,partial_local,0.9506,0.454,0.578,4.84,39.72,False,0.0
+nobj >= 15,0.4188,partial_local,0.9998,0.464,0.554,9.0,64.38,False,0.0
+scene = 'warsaw',0.5,partial_local,0.9521,0.439,0.555,10.47,76.86,False,0.0

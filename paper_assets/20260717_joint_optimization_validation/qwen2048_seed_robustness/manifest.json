@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-07-16T21:10:05.686970+00:00",
+  "corpus": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_qwen3vl2b_unified_qwen35captions/frame_embeddings.npy",
+  "queries": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_qwen3vl2b_unified_qwen35captions/query_embeddings.npy",
+  "n_vectors": 143830,
+  "dimension": 2048,
+  "query_count": 85,
+  "seeds": [
+    20260717,
+    20260718,
+    20260719
+  ],
+  "structures": [
+    "hnsw",
+    "ivfflat"
+  ],
+  "metric": "ANN recall@10 versus exact Flat top-10",
+  "note": "Base-seed values are imported from the fixed-seed full benchmark; additional seeds are rebuilt here. PQ is excluded by default because its fixed-seed recall is too low for the high-fidelity deployment candidate set."
+}

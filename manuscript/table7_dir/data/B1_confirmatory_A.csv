@@ -1,0 +1,10 @@
+band,pair,n,delta,ci,p,p_holm,sig
+high(>=0.25),prefilter_hnsw_ef64 - postfilter_hnsw_K4x,5,0.4615,"[0.288,0.615]",0.04311444678307552,0.12934334034922657,
+high(>=0.25),prefilter_hnsw_ef64 - single_stage_ivf_batch_np32,5,0.2278,"[0.050,0.413]",0.07961580146011338,0.12934334034922657,
+high(>=0.25),postfilter_hnsw_K4x - single_stage_ivf_batch_np32,5,-0.2336,"[-0.342,-0.137]",0.04311444678307552,0.12934334034922657,
+low(<0.05),prefilter_hnsw_ef64 - postfilter_hnsw_K4x,13,0.7673,"[0.716,0.820]",0.001473780843875172,0.013264027594876548,✓
+low(<0.05),prefilter_hnsw_ef64 - single_stage_ivf_batch_np32,13,0.607,"[0.521,0.695]",0.001473780843875172,0.013264027594876548,✓
+low(<0.05),postfilter_hnsw_K4x - single_stage_ivf_batch_np32,13,-0.1602,"[-0.206,-0.115]",0.001473780843875172,0.013264027594876548,✓
+mid(0.05-0.25),prefilter_hnsw_ef64 - postfilter_hnsw_K4x,11,0.6671,"[0.586,0.738]",0.003345618115850879,0.020073708695105275,✓
+mid(0.05-0.25),prefilter_hnsw_ef64 - single_stage_ivf_batch_np32,11,0.4498,"[0.312,0.579]",0.003345618115850879,0.020073708695105275,✓
+mid(0.05-0.25),postfilter_hnsw_K4x - single_stage_ivf_batch_np32,11,-0.2173,"[-0.293,-0.145]",0.003345618115850879,0.020073708695105275,✓

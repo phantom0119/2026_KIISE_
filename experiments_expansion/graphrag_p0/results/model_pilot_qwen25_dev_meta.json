@@ -1,0 +1,8 @@
+{
+  "model": "qwen25",
+  "split": "dev",
+  "n_facts": 120,
+  "n_jobs": 1800,
+  "gen_wall_s": 148.8,
+  "total_wall_s": 148.8
+}

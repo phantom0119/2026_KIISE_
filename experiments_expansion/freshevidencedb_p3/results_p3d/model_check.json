@@ -1,0 +1,689 @@
+{
+  "T_state": "STATE_MACHINE_SAFETY_PASS",
+  "artifact_types": [
+    "dense",
+    "sparse",
+    "graph",
+    "cache"
+  ],
+  "eager_sanity": {
+    "protocol": "eager",
+    "reachable_states": 99,
+    "violations": [
+      {
+        "path": [
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 0
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 1
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 2
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 4
+        }
+      },
+      {
+        "path": [
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 8
+        }
+      },
+      {
+        "path": [
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 0
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 3
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 5
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 9
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 1
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 6
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 10
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 2
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 12
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 4
+        }
+      },
+      {
+        "path": [
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 8
+        }
+      },
+      {
+        "path": [
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 0
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_graph",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 7
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 11
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 3
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 13
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 5
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 9
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 1
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "stage_cache",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 0,
+          "live_old": true,
+          "ready": 14
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 6
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 10
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 2
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 12
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 4
+        }
+      },
+      {
+        "path": [
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 8
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 7
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 11
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 3
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 13
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 5
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 9
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 1,
+          "live_old": true,
+          "ready": 14
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 6
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 10
+        }
+      },
+      {
+        "path": [
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 12
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_graph",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 7
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_sparse",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 11
+        }
+      },
+      {
+        "path": [
+          "stage_dense",
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 13
+        }
+      },
+      {
+        "path": [
+          "stage_sparse",
+          "stage_graph",
+          "stage_cache",
+          "coordinator_crash_restart",
+          "coordinator_crash_restart",
+          "publish_v2"
+        ],
+        "reason": "active v2 references incomplete artifact set",
+        "state": {
+          "active": 2,
+          "coordinator_generation": 2,
+          "live_old": true,
+          "ready": 14
+        }
+      }
+    ]
+  },
+  "staged": {
+    "protocol": "staged",
+    "reachable_states": 54,
+    "violations": []
+  }
+}

@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OMC & AI Agent Session / Cache directories
+.omc/
+**/.omc/
+.claude/
+**/.claude/
+
+# Large binary / Vector / Embedding / Model weight files (>50MB ~ 100MB limit)
+*.fvecs
+*.bin
+*.npy
+*.npz
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.ckpt
+*.pkl
+*.pickle
+
+# External data clones & heavy raw data directories
+experiments_expansion/**/data/
+**/kubernetes-website/
+
+# OS & Editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Logs
+*.log

@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-07-09T21:20:36.401567+00:00",
+  "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource/bge-m3",
+  "model_id": "bge-m3",
+  "model_path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+  "device": "cuda:0",
+  "batch_size": 32,
+  "normalize_embeddings": true,
+  "document_count": 3000,
+  "query_count": 32,
+  "embedding_dim": 1024,
+  "files": {
+    "document_embeddings": "document_embeddings.npy",
+    "query_embeddings": "query_embeddings.npy",
+    "document_index": "document_index.parquet",
+    "query_index": "query_index.parquet"
+  }
+}

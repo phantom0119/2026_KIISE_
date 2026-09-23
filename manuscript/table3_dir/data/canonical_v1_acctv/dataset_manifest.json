@@ -1,0 +1,49 @@
+{
+  "dataset_id": "aihub_intelligent_cctv",
+  "dataset_version": "20260706",
+  "created_at": "2026-07-06T08:51:18.795034+00:00",
+  "source_raw_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/aihub_intelligent_cctv/20260706",
+  "pair_manifest": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/aihub_intelligent_cctv/20260706/clip_pairs.csv",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_intelligent_cctv/20260706/canonical",
+  "counts": {
+    "clips": 269,
+    "documents": 807,
+    "metadata_rows": 2563,
+    "queries": 133,
+    "qrels": 1358,
+    "missing_media": 0,
+    "missing_labels": 0
+  },
+  "raw_validation": {
+    "dataset_id": "aihub_intelligent_cctv",
+    "raw_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/aihub_intelligent_cctv/20260706",
+    "pair_manifest": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/raw/aihub_intelligent_cctv/20260706/clip_pairs.csv",
+    "media_files": 269,
+    "label_files": 269,
+    "paired_clips": 269,
+    "missing_media": 0,
+    "missing_labels": 0,
+    "valid": true
+  },
+  "schema_files": [
+    "clips.parquet",
+    "documents.parquet",
+    "metadata.parquet",
+    "queries.jsonl",
+    "qrels.tsv"
+  ],
+  "query_generation": {
+    "semantic_facets": [
+      "event_class",
+      "event_slug"
+    ],
+    "metadata_facets": [
+      "night",
+      "date",
+      "place_type",
+      "flood_level",
+      "crowd_context"
+    ],
+    "min_support": 2
+  }
+}

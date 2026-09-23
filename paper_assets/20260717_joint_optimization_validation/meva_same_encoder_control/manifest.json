@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-07-17T02:02:58.545899+00:00",
+  "canonical_root": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/meva/canonical",
+  "embedding_root": "/hdd2/KIISE_datasociety/Datasets/processed/meva_kf1/20260713/embeddings/qwen3vl2b-unified-qwen35captions",
+  "seed": 20260717,
+  "bootstrap_reps": 10000,
+  "latency_repeats": 10,
+  "counts": {
+    "clips": 985,
+    "queries": 193,
+    "clusters": 57
+  },
+  "input_hashes": {
+    "embedding_manifest": "13255ca40f21a961534f0374090f209f7a4eb120d01f89a81c1a04ad49a44a51",
+    "queries": "c3379dd92e160190642ead06027be9a757198921f76d5b729ea8439f4eb88719",
+    "qrels": "1dfc5de2f283822faef21b5d9360855fd95f35c8295a3a7911388369c4f85e5d",
+    "qrels_semantic": "c9fe74f5c6983c50280369d54146eabd3f9d41056b0e1cad2872129ad5f31369"
+  },
+  "caveat": "MEVA has one frozen representative frame per clip; this does not test multi-frame storage."
+}

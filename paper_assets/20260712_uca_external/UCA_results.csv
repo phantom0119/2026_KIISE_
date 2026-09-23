@@ -1,0 +1,13 @@
+strategy,scoring,mean_ndcg10_primary
+B0_metadata_only,strict,0.0675
+B0_metadata_only,semantic,0.0669
+B1_bm25_only,strict,0.0379
+B1_bm25_only,semantic,0.1389
+B2_vector_only,strict,0.0525
+B2_vector_only,semantic,0.247
+B3_vector_postfilter,strict,0.1942
+B3_vector_postfilter,semantic,0.1918
+B4_prefilter_vector,strict,0.2025
+B4_prefilter_vector,semantic,0.1998
+B5_hybrid,strict,0.1936
+B5_hybrid,semantic,0.1922

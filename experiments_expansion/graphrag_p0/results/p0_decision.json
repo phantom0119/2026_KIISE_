@@ -1,0 +1,141 @@
+{
+  "decision": "MODEL_GATES_PARTIAL_PASS__F5_FAIL_JUDGE_EXCLUDED__HUMAN_ANCHOR_PENDING",
+  "decided": "2026-08-06",
+  "preregistration": {
+    "v1_sha256": "76ce04dc84fad54734bc4f761bfbc1e19ba49969d0695289548445912ba0d664",
+    "amendment": "GRAPHRAG_P0_CPU_PREREGISTRATION_v1.1_AMENDMENT.md"
+  },
+  "gates": {
+    "F0_assets": {
+      "status": "PASS",
+      "domains": 2,
+      "facts_per_domain": 200,
+      "min_required": 150
+    },
+    "F1_edit_integrity": {
+      "status": "PASS",
+      "leakage_total": {
+        "primekg": 0,
+        "amazon": 0
+      },
+      "sync_failures": 0,
+      "deviations_applied": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "F2_evidence_delivery": {
+      "status": "PASS",
+      "oracle_gold_support_rate": 1.0,
+      "retrieval_recall_at_1": {
+        "text": 1.0,
+        "graph": 1.0
+      },
+      "note": "retrieval too easy at pilot corpus size; enlarge for H2"
+    },
+    "F6_power_envelope": {
+      "status": "PASS_ENVELOPE_ONLY",
+      "n_scenarios": 600,
+      "clusters_needed_delta0.05_icc0.10_m4": [
+        69,
+        545
+      ]
+    },
+    "F7_fairness": {
+      "status": "PARTIAL",
+      "fact_count_parity": 1.0,
+      "token_rel_spread_median": {
+        "amazon": 0.084,
+        "primekg": 0.1525
+      },
+      "recommendation": "treat token budget as pre-registered covariate, not gate"
+    },
+    "F3_nonmemorized": {
+      "status": "PENDING_MODEL_PILOT"
+    },
+    "F4_treatment_strength": {
+      "status": "PENDING_MODEL_PILOT"
+    },
+    "F5_judge_reliability": {
+      "status": "PENDING_MODEL_PILOT"
+    }
+  },
+  "forbidden_claims_still_in_force": [
+    "\uc5f0\uad6c \uc8fc\uc81c \ud655\uc815",
+    "GraphRAG\uac00 \ud658\uac01\uc744 \uc904\uc784",
+    "\uc778\uacfc\ud6a8\uacfc \uc785\uc99d",
+    "\ucd5c\ucd08\uc758 \uc624\uc5fc \ud1b5\uc81c \uc5f0\uad6c",
+    "PVLDB\uae09 \uc900\ube44 \uc644\ub8cc"
+  ],
+  "gpu_touched": false,
+  "model_pilot": {
+    "run": "2026-08-07",
+    "gpu_state_at_run": "2x RTX3090 idle, no compute processes displaced",
+    "F3_nonmemorized": {
+      "status": "PASS",
+      "stably_nonmemorized_per_cell": [
+        198,
+        200
+      ],
+      "critical_finding": "no memorized stratum exists -> H3 (memory-evidence conflict) untestable with current fact construction; memory_override_rate = 0.0 everywhere"
+    },
+    "F4_treatment_strength": {
+      "status": "PASS",
+      "delta_pp_range": [
+        0.495,
+        0.986
+      ],
+      "measured_on": "holdout, single measurement",
+      "note": "Qwen2.5 clinical abstain rate 0.45"
+    },
+    "F5_judge_reliability": {
+      "status": "FAIL",
+      "llama3": {
+        "sens": 0.95,
+        "spec": 0.397
+      },
+      "qwen25": {
+        "sens": 0.425,
+        "spec": 0.843
+      },
+      "arm_spread_spec": [
+        0.142,
+        0.172
+      ],
+      "rule_triggered": "pre-registered exclusion: LLM judge removed from primary analysis",
+      "human_anchor": "PENDING"
+    },
+    "F6_power_real": {
+      "status": "COMPUTED",
+      "ICC": 0.2753,
+      "discordance": [
+        0.1402,
+        0.1598
+      ],
+      "clusters_needed_power80_delta0.03": [
+        548,
+        625
+      ],
+      "delta0.05": [
+        198,
+        225
+      ]
+    },
+    "novelty_rescan_20260807": {
+      "verdict": "narrowed conjunction survives",
+      "new_nearest": [
+        "arXiv 2606.11198 Structural Attention Tax (framing pre-empted)",
+        "arXiv 2608.00705 Triple-Robustness (multi-domain factorial)",
+        "TACL 2026 Dissecting GraphRAG",
+        "LREC 2026 CRiT-QA (counterfactual chains)"
+      ],
+      "uncleared": [
+        "NAACL 2026 unpublished",
+        "EMNLP 2026 unpublished",
+        "CIKM 2026 not in DBLP"
+      ]
+    }
+  },
+  "full_pass_requirement_not_met": "P0_FULL_PASS_TO_MAIN_PREREGISTRATION requires model pilot AND human anchor; F5 failed and human annotation not performed"
+}

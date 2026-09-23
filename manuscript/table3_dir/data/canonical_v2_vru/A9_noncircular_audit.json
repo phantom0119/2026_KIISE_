@@ -1,0 +1,30 @@
+{
+  "assertions": {
+    "no_facet_statement_docs": {
+      "pass": true,
+      "doc_types": {
+        "dense_caption": 1000
+      }
+    },
+    "filter_never_semantic": {
+      "pass": true
+    },
+    "dual_qrels_present": {
+      "pass": true
+    }
+  },
+  "coupling_v_accident_type_vs_filter": {
+    "weather_light": 0.177,
+    "road_type": 0.039,
+    "location": 0.249
+  },
+  "counts": {
+    "clips": 1000,
+    "documents": 1000,
+    "queries": 85,
+    "qrels_strict": 3744,
+    "qrels_semantic": 9703
+  },
+  "caveat": "both channels VQA-derived (same annotators) — weaker separation than 522 tri-source; coupling V reported per filter facet",
+  "overall_pass": true
+}

@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-08-06T06:53:04.693367+00:00",
+  "command": "python scripts/analyze_g1_service_representation.py",
+  "python": "3.10.19 (main, Oct 21 2025, 16:43:05) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "pandas": "2.3.3",
+  "numpy": "2.2.6",
+  "inputs": {
+    "metrics": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_image_caption_validation/per_query_metrics.parquet",
+      "sha256": "d107585657c656efceb6bc4a99befb4b0b083c3170c24d6544b60c972bcd1321"
+    },
+    "clusters": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_image_caption_validation/query_clusters.csv",
+      "sha256": "3c527793be216eca9c586138af6b12c917e7f21dc61a2cb71504b95d12ca034b"
+    },
+    "costs": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_image_caption_validation/configuration_summary.csv",
+      "sha256": "fcd4c61f781e3c548ed744d82deec900416b49811746dee703d224656aaeb4c8"
+    }
+  },
+  "controlled_rows": 850,
+  "queries": 85,
+  "intents": [
+    "buses",
+    "crowded_scene",
+    "parked_vehicle",
+    "stopped_vehicle",
+    "two_wheeler"
+  ],
+  "representations": [
+    "caption",
+    "representative_frame",
+    "joint_image_caption",
+    "multi_frame",
+    "dual"
+  ],
+  "search_plan": "B2_vector",
+  "index": "flat",
+  "scoring": [
+    "strict",
+    "semantic"
+  ]
+}

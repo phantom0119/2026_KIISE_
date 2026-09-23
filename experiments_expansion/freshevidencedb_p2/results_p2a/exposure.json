@@ -1,0 +1,136 @@
+{
+  "domains": {
+    "flask": {
+      "interarrival_hours_p50": 116.7238888888889,
+      "interarrival_hours_p95": 1605.0730555555556,
+      "protocols": {
+        "cross_naive": {
+          "break_even_qps_for_one_error_day": 304.9943742687102,
+          "conditional_stress_error_rate": 0.7634271099744245,
+          "error_seconds_per_update_p50": 0.04848345708003139,
+          "error_seconds_per_update_p95": 0.07608606687183027,
+          "expected_errors_per_day": {
+            "0.1": 0.0003278749001183106,
+            "1.0": 0.0032787490011831058,
+            "10.0": 0.03278749001183106,
+            "100.0": 0.32787490011831055,
+            "20.0": 0.06557498002366212
+          },
+          "per_doc_duration_p50_seconds": 0.0635076439473778,
+          "per_doc_duration_p95_seconds": 0.09966382628772406,
+          "time_exposure_fraction_p50": 3.794848380998965e-08,
+          "time_exposure_fraction_p95": 5.9553320879847864e-08
+        },
+        "cross_read_filter": {
+          "break_even_qps_for_one_error_day": 316.0148659439046,
+          "conditional_stress_error_rate": 0.7068497525147692,
+          "error_seconds_per_update_p50": 0.046792677332885016,
+          "error_seconds_per_update_p95": 0.07084454818162471,
+          "expected_errors_per_day": {
+            "0.1": 0.00031644080952112827,
+            "1.0": 0.0031644080952112825,
+            "10.0": 0.031644080952112824,
+            "100.0": 0.31644080952112824,
+            "20.0": 0.06328816190422565
+          },
+          "per_doc_duration_p50_seconds": 0.06619890177001556,
+          "per_doc_duration_p95_seconds": 0.10022575226146727,
+          "time_exposure_fraction_p50": 3.662509369457503e-08,
+          "time_exposure_fraction_p95": 5.545073209731348e-08
+        },
+        "cross_staged": {
+          "break_even_qps_for_one_error_day": null,
+          "conditional_stress_error_rate": 0.0,
+          "error_seconds_per_update_p50": 0.0,
+          "error_seconds_per_update_p95": 0.0,
+          "expected_errors_per_day": {
+            "0.1": 0.0,
+            "1.0": 0.0,
+            "10.0": 0.0,
+            "100.0": 0.0,
+            "20.0": 0.0
+          },
+          "per_doc_duration_p50_seconds": 0.06310203961717585,
+          "per_doc_duration_p95_seconds": 0.1058836274873465,
+          "time_exposure_fraction_p50": 0.0,
+          "time_exposure_fraction_p95": 0.0
+        }
+      },
+      "trace_days": 1463.9309837962962,
+      "trace_end_utc": "2026-05-13T14:37:21+00:00",
+      "trace_start_utc": "2022-05-10T16:16:44+00:00",
+      "unique_commits": 99,
+      "updates_per_day": 0.06762613886569376
+    },
+    "kubernetes": {
+      "interarrival_hours_p50": 14.619166666666667,
+      "interarrival_hours_p95": 69.47111111111111,
+      "protocols": {
+        "cross_naive": {
+          "break_even_qps_for_one_error_day": 18.80151102414385,
+          "conditional_stress_error_rate": 0.7373203146189313,
+          "error_seconds_per_update_p50": 0.060364994692834906,
+          "error_seconds_per_update_p95": 0.08149983390736572,
+          "expected_errors_per_day": {
+            "0.1": 0.005318721451248551,
+            "1.0": 0.05318721451248551,
+            "10.0": 0.5318721451248551,
+            "100.0": 5.318721451248551,
+            "20.0": 1.0637442902497103
+          },
+          "per_doc_duration_p50_seconds": 0.08187078735791146,
+          "per_doc_duration_p95_seconds": 0.11053518028929829,
+          "time_exposure_fraction_p50": 6.155927605611749e-07,
+          "time_exposure_fraction_p95": 8.311225403995202e-07
+        },
+        "cross_read_filter": {
+          "break_even_qps_for_one_error_day": 18.168207385396926,
+          "conditional_stress_error_rate": 0.7070893068525582,
+          "error_seconds_per_update_p50": 0.062469185270417074,
+          "error_seconds_per_update_p95": 0.08052410140282759,
+          "expected_errors_per_day": {
+            "0.1": 0.005504120350386196,
+            "1.0": 0.055041203503861956,
+            "10.0": 0.5504120350386196,
+            "100.0": 5.504120350386196,
+            "20.0": 1.1008240700772391
+          },
+          "per_doc_duration_p50_seconds": 0.08834695230859022,
+          "per_doc_duration_p95_seconds": 0.11388109058141707,
+          "time_exposure_fraction_p50": 6.370509664798838e-07,
+          "time_exposure_fraction_p95": 8.211721731528353e-07
+        },
+        "cross_staged": {
+          "break_even_qps_for_one_error_day": null,
+          "conditional_stress_error_rate": 0.0,
+          "error_seconds_per_update_p50": 0.0,
+          "error_seconds_per_update_p95": 0.0,
+          "expected_errors_per_day": {
+            "0.1": 0.0,
+            "1.0": 0.0,
+            "10.0": 0.0,
+            "100.0": 0.0,
+            "20.0": 0.0
+          },
+          "per_doc_duration_p50_seconds": 0.07621170403435826,
+          "per_doc_duration_p95_seconds": 0.10605055277235806,
+          "time_exposure_fraction_p50": 0.0,
+          "time_exposure_fraction_p95": 0.0
+        }
+      },
+      "trace_days": 111.2254050925926,
+      "trace_end_utc": "2026-07-29T17:41:35+00:00",
+      "trace_start_utc": "2026-04-09T12:17:00+00:00",
+      "unique_commits": 98,
+      "updates_per_day": 0.8810936666710024
+    }
+  },
+  "gate_T1": "APPLICABLE_HIGH_TRAFFIC",
+  "rates_qps": [
+    0.1,
+    1.0,
+    10.0,
+    20.0,
+    100.0
+  ]
+}

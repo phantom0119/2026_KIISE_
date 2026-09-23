@@ -1,0 +1,7 @@
+dataset,comparison,n,B4_prefilter_vector_mean,B2_vector_only_mean,delta_nDCG,CI95_lo,CI95_hi,ci_excludes_0,wilcoxon_p,boot_p,win_rate,M4_metadata_prefilter_visual_mean,M2_visual_vector_only_mean,RW_t4_v1_mean,RW_t1_v1_mean
+VRU,텍스트 B4 vs B2,244,0.9736,0.4476,0.526,0.475,0.5749,True,0.0,0.0002,0.77,,,,
+AI Hub CCTV,텍스트 B4 vs B2,133,1.0,0.7014,0.2986,0.2418,0.3547,True,2.46e-14,0.0002,0.579,,,,
+VRU,시각 M4 vs M2,244,,,0.1569,0.1256,0.1905,True,0.0,0.0002,0.426,0.2452,0.0883,,
+AI Hub CCTV,시각 M4 vs M2,133,,,0.6106,0.5423,0.6757,True,0.0,0.0002,0.789,0.7437,0.1331,,
+VRU,rerank RW_t4_v1 vs Equal,244,,,0.2615,0.2353,0.2891,True,0.0,0.0002,0.828,,,0.8847,0.6232
+AI Hub CCTV,rerank RW_t4_v1 vs Equal,133,,,0.0817,0.057,0.1101,True,2.39e-10,0.0002,0.398,,,0.9768,0.8951

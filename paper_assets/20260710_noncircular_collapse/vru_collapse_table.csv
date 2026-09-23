@@ -1,0 +1,7 @@
+strategy,v1_circular_ndcg10,v2_strict_ndcg10,v2_semantic_ndcg10,v1_circular_mrr,v2_strict_mrr
+B0_metadata_only,0.2102,0.1449,0.1356,0.2424,0.201
+B1_bm25_only,0.4495,0.0918,0.1607,0.4791,0.2313
+B2_vector_only,0.4476,0.1845,0.2649,0.4888,0.3741
+B3_vector_postfilter,0.9488,0.302,0.2857,0.959,0.4832
+B4_prefilter_vector,0.9736,0.3174,0.2974,0.9672,0.4832
+B5_hybrid,0.9651,0.2771,0.261,0.9726,0.4076

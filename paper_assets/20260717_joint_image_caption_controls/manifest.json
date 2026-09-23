@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-07-17T14:23:02.301171+00:00",
+  "experiment": "equal-budget one-vector image-caption early-fusion controls",
+  "queries": 85,
+  "clips": 3000,
+  "dimension": 2048,
+  "representations": [
+    "caption",
+    "representative_frame",
+    "joint_matched",
+    "joint_shuffled"
+  ],
+  "search": "FAISS IndexFlatIP exact, text-only query vectors, top-100",
+  "scoring": [
+    "strict",
+    "semantic"
+  ],
+  "bootstrap_reps": 10000,
+  "cluster_definition": "relevance_def x metadata difficulty/facet",
+  "multiple_comparison": "BH within scoring across four declared comparisons",
+  "latency": {
+    "threads": 1,
+    "warmup": 2,
+    "repeats": 10,
+    "scope": "vector search only; excludes query embedding and evidence fetch"
+  },
+  "hashes": {
+    "queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "qrels": "74da4f10b8566705b9176809f1b435e0811374b630475a9067ac08a7515d7a93",
+    "qrels_semantic": "f59cf0f8939685b16908e330c338437b54488a921cbec907bc5501206961f3e0",
+    "matched_manifest": "3ec9ad797c9c2896b4404b9ba7bd62412ec1752c8220ea82d0eb3650adc82776",
+    "shuffled_manifest": "7bb7b6777e38261051d2d1ed7e0d63506cf2ae1836acb056e65d472da1036470"
+  },
+  "audits": {
+    "matched_pairs": 3000,
+    "shuffled_fixed_points": 0,
+    "all_vector_shapes_equal": true,
+    "all_vectors_finite": true
+  }
+}

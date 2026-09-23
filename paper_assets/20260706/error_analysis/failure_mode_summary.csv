@@ -1,0 +1,6 @@
+mode,queries,share,weak,medium,strong
+B2 top-10 miss recovered by B4,61,0.25,0,22,39
+B4 beats B3 in Recall@10,15,0.06147540983606557,0,3,12
+B5 beats B4 in Recall@20,3,0.012295081967213115,2,1,0
+BM25 beats vector by nDCG@10 > 0.10,23,0.0942622950819672,4,11,8
+B4 still misses top-10,5,0.020491803278688523,3,2,0

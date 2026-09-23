@@ -1,0 +1,23 @@
+{
+  "exclusion_ids": {
+    "flask": [
+      1,
+      2,
+      8,
+      21,
+      22
+    ],
+    "kubernetes": [
+      0,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19
+    ]
+  },
+  "human_reviewed": 0,
+  "qa_count": 38,
+  "status": "AGENT_CURATED_HUMAN_REVIEW_PENDING"
+}

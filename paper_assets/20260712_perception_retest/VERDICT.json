@@ -1,0 +1,32 @@
+{
+  "finding": "perception wall is (VLM x question)-specific; 'stopped' ill-posed for single-frame (all models balanced~0.50); on well-posed object-presence questions InternVL3 discriminates ~0.72",
+  "oracle_balanced": {
+    "qwen25vl": {
+      "bus": 0.717,
+      "bikes": 0.583,
+      "stopped": 0.45
+    },
+    "qwen2vl": {
+      "bus": 0.717,
+      "bikes": 0.5,
+      "stopped": 0.483
+    },
+    "internvl3": {
+      "bus": 0.717,
+      "bikes": 0.717,
+      "stopped": 0.5
+    }
+  },
+  "well_posed_balanced": {
+    "qwen25vl": 0.65,
+    "qwen2vl": 0.608,
+    "internvl3": 0.717
+  },
+  "baseline_retrieved_qwen25vl": {
+    "bus": 0.633,
+    "bikes": 0.525,
+    "stopped": 0.583
+  },
+  "frozen_rule_literal_lifts": false,
+  "honest_reading": "liftable with capable VLM (InternVL3) + well-posed questions; 'stopped' must be dropped/reformulated (temporal)"
+}

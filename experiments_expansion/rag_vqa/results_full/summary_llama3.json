@@ -1,0 +1,13 @@
+{
+  "model": "llama3",
+  "n_per_config": 600,
+  "topk": 3,
+  "accuracy": {
+    "closed": 0.3067,
+    "distractor": 0.5283,
+    "vector_only": 0.665,
+    "prefilter": 0.6667,
+    "oracle": 0.69
+  },
+  "median_prefilter_candidates": 29
+}

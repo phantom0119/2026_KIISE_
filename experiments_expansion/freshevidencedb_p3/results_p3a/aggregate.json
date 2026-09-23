@@ -1,0 +1,149 @@
+{
+  "T1": "TRACE_APPLICABILITY_PASS",
+  "exposure_seconds_per_update": 0.062469,
+  "limitation": "Daily aggregate actual views; within-day query arrivals are assumed uniform/Poisson.",
+  "page_days": 4306,
+  "pages": [
+    {
+      "days_with_revisions": 29,
+      "expected_unsafe_observations_year": 0.032708016458333336,
+      "mean_views_day": 905.2684931506849,
+      "page": "Kubernetes",
+      "page_days": 365,
+      "peak_views_day": 4855,
+      "raw_sha256": "bba921d9cb47238370f9c50de72f89c8ecd6f1603189f2513f497d1d366fb735",
+      "revisions": 49,
+      "total_user_views": 330423
+    },
+    {
+      "days_with_revisions": 9,
+      "expected_unsafe_observations_year": 0.0015002682291666665,
+      "mean_views_day": 175.92876712328768,
+      "page": "Flask_(web_framework)",
+      "page_days": 365,
+      "peak_views_day": 322,
+      "raw_sha256": "c2589a308a9972a3493fec73c5d31281181beb56127430f5df8c9107fb824fb6",
+      "revisions": 10,
+      "total_user_views": 64214
+    },
+    {
+      "days_with_revisions": 35,
+      "expected_unsafe_observations_year": 0.03669836843749999,
+      "mean_views_day": 887.6602739726028,
+      "page": "PostgreSQL",
+      "page_days": 365,
+      "peak_views_day": 4747,
+      "raw_sha256": "a62edad30d859d252ff9b6445356ef82e381d3cda925b44134f79961bfd282f0",
+      "revisions": 52,
+      "total_user_views": 323996
+    },
+    {
+      "days_with_revisions": 13,
+      "expected_unsafe_observations_year": 0.01052429125,
+      "mean_views_day": 816.9589041095891,
+      "page": "Elasticsearch",
+      "page_days": 365,
+      "peak_views_day": 1107,
+      "raw_sha256": "8852eb8a59c54cfadb3574e5ad21fc7c2a8667b6cb6265d81e3c57e8986d9570",
+      "revisions": 17,
+      "total_user_views": 298190
+    },
+    {
+      "days_with_revisions": 19,
+      "expected_unsafe_observations_year": 0.0070884962499999996,
+      "mean_views_day": 429.84383561643835,
+      "page": "Redis",
+      "page_days": 365,
+      "peak_views_day": 4102,
+      "raw_sha256": "7c1e04da48e06f2aa14350e65c26e7ad9294fa9a4c73a88b98300f19404b0ec8",
+      "revisions": 25,
+      "total_user_views": 156893
+    },
+    {
+      "days_with_revisions": 51,
+      "expected_unsafe_observations_year": 0.009917676770833333,
+      "mean_views_day": 180.5808219178082,
+      "page": "Neo4j",
+      "page_days": 365,
+      "peak_views_day": 306,
+      "raw_sha256": "6c47f2ccb6e9d59d545cbb7a7f0762a16c0cef7ad3b1bc442402055fab5b4dc9",
+      "revisions": 66,
+      "total_user_views": 65912
+    },
+    {
+      "days_with_revisions": 26,
+      "expected_unsafe_observations_year": 0.027446593854166663,
+      "mean_views_day": 944.9287671232877,
+      "page": "Docker_(software)",
+      "page_days": 365,
+      "peak_views_day": 5105,
+      "raw_sha256": "e5b39015ea97f1e0b8cc2f0e922555d1acec6faad4f45dd59de6c8a1b1dde746",
+      "revisions": 39,
+      "total_user_views": 344899
+    },
+    {
+      "days_with_revisions": 50,
+      "expected_unsafe_observations_year": 0.08755420781249999,
+      "mean_views_day": 1375.3835616438357,
+      "page": "Retrieval-augmented_generation",
+      "page_days": 365,
+      "peak_views_day": 2392,
+      "raw_sha256": "41b63e656d65f857f1659639d8b08509c9a04382f09f55be03787d8cc6a27d0c",
+      "revisions": 82,
+      "total_user_views": 502015
+    },
+    {
+      "days_with_revisions": 189,
+      "expected_unsafe_observations_year": 1.297063946979167,
+      "mean_views_day": 3359.104109589041,
+      "page": "Large_language_model",
+      "page_days": 365,
+      "peak_views_day": 7810,
+      "raw_sha256": "487a3bbee06a303de7419fc50f9147338ecf7ec9bf65f8df248a697b7eeb34a5",
+      "revisions": 525,
+      "total_user_views": 1226073
+    },
+    {
+      "days_with_revisions": 26,
+      "expected_unsafe_observations_year": 0.011195254583333335,
+      "mean_views_day": 294.55068493150685,
+      "page": "Vector_database",
+      "page_days": 365,
+      "peak_views_day": 497,
+      "raw_sha256": "de5aadb50b7bc42edb0ee58d18359fc90966f9746071b3cec8be4f82af713f36",
+      "revisions": 54,
+      "total_user_views": 107511
+    },
+    {
+      "days_with_revisions": 234,
+      "expected_unsafe_observations_year": 60.791830986562516,
+      "mean_views_day": 102976.56712328768,
+      "page": "ChatGPT",
+      "page_days": 365,
+      "peak_views_day": 306406,
+      "raw_sha256": "875702bd9ca81967fabe471896444f8356442556720c6e5e97c12d426060d8e0",
+      "revisions": 821,
+      "total_user_views": 37586447
+    },
+    {
+      "days_with_revisions": 0,
+      "expected_unsafe_observations_year": 0.0,
+      "mean_views_day": 1.5738831615120275,
+      "page": "Qdrant",
+      "page_days": 291,
+      "peak_views_day": 19,
+      "raw_sha256": "b57dd8e27cdae3b875ca521313a5f42d8ef8a259432094bc880487934070ea3f",
+      "revisions": 0,
+      "total_user_views": 458
+    }
+  ],
+  "pages_at_or_above_0_05": 3,
+  "period": [
+    "2025-08-01T00:00:00Z",
+    "2026-07-31T23:59:59Z"
+  ],
+  "total_expected_unsafe_observations": 62.313528107187516,
+  "total_revisions": 1740,
+  "total_user_views": 41007031,
+  "valid_pages": 11
+}

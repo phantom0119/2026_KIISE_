@@ -1,0 +1,4 @@
+change_rate,changed_documents,total_documents,selected_local_rows,all_views_full_rebuild_rows,ratio,affected_row_recall,unaffected_false_invalidation_rate
+0.01,7,714,2558,849370,0.0030116439243203785,1.0,0.0
+0.05,36,714,14410,849370,0.016965515617457644,1.0,0.0
+0.1,71,714,29508,849370,0.034741043361550324,1.0,0.0

@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-07-17T14:25:43.674540+00:00",
+  "bootstrap_reps": 10000,
+  "seed": 20260717,
+  "query_count": 85,
+  "cluster_count": 25,
+  "cluster_definition": "visual intent x metadata facet (difficulty field)",
+  "multiple_comparison": "Benjamini-Hochberg within family x scoring",
+  "pareto_objectives": {
+    "maximize": [
+      "ndcg_at_10"
+    ],
+    "minimize": [
+      "latency_p95_ms",
+      "index_mb"
+    ]
+  },
+  "input_hashes": {
+    "per_query_metrics": "d107585657c656efceb6bc4a99befb4b0b083c3170c24d6544b60c972bcd1321",
+    "rankings": "7804e69bb4de7a9237c163d3e520931d23c9085636e09e62d08b23abdf40e083",
+    "configuration_summary": "fcd4c61f781e3c548ed744d82deec900416b49811746dee703d224656aaeb4c8",
+    "queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f"
+  }
+}

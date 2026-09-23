@@ -1,0 +1,146 @@
+predicate,pair,selectivity,method,recall_at_10_newseed
+CTRL(s=0.0864)|location==BC2000801,location==BC2000801,0.08644,postfilter_hnsw_K1x,0.8766
+CTRL(s=0.0864)|location==BC2000801,location==BC2000801,0.08644,postfilter_hnsw_K2x,0.9677
+CTRL(s=0.0864)|location==BC2000801,location==BC2000801,0.08644,postfilter_hnsw_K4x,0.9678
+CTRL(s=0.0864)|location==BC2000801,location==BC2000801,0.08644,single_stage_ivf_batch_np8,0.9817
+CTRL(s=0.0864)|location==BC2000801,location==BC2000801,0.08644,single_stage_ivf_batch_np32,0.9998
+CTRL(s=0.0485)|location==중동사거리,location==중동사거리,0.04851,postfilter_hnsw_K1x,0.8495
+CTRL(s=0.0485)|location==중동사거리,location==중동사거리,0.04851,postfilter_hnsw_K2x,0.8962
+CTRL(s=0.0485)|location==중동사거리,location==중동사거리,0.04851,postfilter_hnsw_K4x,0.8962
+CTRL(s=0.0485)|location==중동사거리,location==중동사거리,0.04851,single_stage_ivf_batch_np8,0.9632
+CTRL(s=0.0485)|location==중동사거리,location==중동사거리,0.04851,single_stage_ivf_batch_np32,0.9984
+CTRL(s=0.0468)|location==원골네거리,location==원골네거리,0.04678,postfilter_hnsw_K1x,0.8407
+CTRL(s=0.0468)|location==원골네거리,location==원골네거리,0.04678,postfilter_hnsw_K2x,0.8835
+CTRL(s=0.0468)|location==원골네거리,location==원골네거리,0.04678,postfilter_hnsw_K4x,0.8835
+CTRL(s=0.0468)|location==원골네거리,location==원골네거리,0.04678,single_stage_ivf_batch_np8,0.9612
+CTRL(s=0.0468)|location==원골네거리,location==원골네거리,0.04678,single_stage_ivf_batch_np32,0.9985
+CTRL(s=0.0442)|location==연구단지네거리,location==연구단지네거리,0.04417,postfilter_hnsw_K1x,0.8354
+CTRL(s=0.0442)|location==연구단지네거리,location==연구단지네거리,0.04417,postfilter_hnsw_K2x,0.8719
+CTRL(s=0.0442)|location==연구단지네거리,location==연구단지네거리,0.04417,postfilter_hnsw_K4x,0.8719
+CTRL(s=0.0442)|location==연구단지네거리,location==연구단지네거리,0.04417,single_stage_ivf_batch_np8,0.9576
+CTRL(s=0.0442)|location==연구단지네거리,location==연구단지네거리,0.04417,single_stage_ivf_batch_np32,0.9972
+CTRL(s=0.0419)|location==삼정고가교,location==삼정고가교,0.04187,postfilter_hnsw_K1x,0.8321
+CTRL(s=0.0419)|location==삼정고가교,location==삼정고가교,0.04187,postfilter_hnsw_K2x,0.868
+CTRL(s=0.0419)|location==삼정고가교,location==삼정고가교,0.04187,postfilter_hnsw_K4x,0.868
+CTRL(s=0.0419)|location==삼정고가교,location==삼정고가교,0.04187,single_stage_ivf_batch_np8,0.9521
+CTRL(s=0.0419)|location==삼정고가교,location==삼정고가교,0.04187,single_stage_ivf_batch_np32,0.9975
+CTRL(s=0.0390)|location==계룡대교네거리,location==계룡대교네거리,0.03898,postfilter_hnsw_K1x,0.8233
+CTRL(s=0.0390)|location==계룡대교네거리,location==계룡대교네거리,0.03898,postfilter_hnsw_K2x,0.8471
+CTRL(s=0.0390)|location==계룡대교네거리,location==계룡대교네거리,0.03898,postfilter_hnsw_K4x,0.8471
+CTRL(s=0.0390)|location==계룡대교네거리,location==계룡대교네거리,0.03898,single_stage_ivf_batch_np8,0.9543
+CTRL(s=0.0390)|location==계룡대교네거리,location==계룡대교네거리,0.03898,single_stage_ivf_batch_np32,0.9982
+CTRL(s=0.0769)|date==20200907,date==20200907,0.0769,postfilter_hnsw_K1x,0.8735
+CTRL(s=0.0769)|date==20200907,date==20200907,0.0769,postfilter_hnsw_K2x,0.9623
+CTRL(s=0.0769)|date==20200907,date==20200907,0.0769,postfilter_hnsw_K4x,0.9629
+CTRL(s=0.0769)|date==20200907,date==20200907,0.0769,single_stage_ivf_batch_np8,0.9785
+CTRL(s=0.0769)|date==20200907,date==20200907,0.0769,single_stage_ivf_batch_np32,0.9988
+CTRL(s=0.0648)|date==20200908,date==20200908,0.06477,postfilter_hnsw_K1x,0.8709
+CTRL(s=0.0648)|date==20200908,date==20200908,0.06477,postfilter_hnsw_K2x,0.9421
+CTRL(s=0.0648)|date==20200908,date==20200908,0.06477,postfilter_hnsw_K4x,0.9421
+CTRL(s=0.0648)|date==20200908,date==20200908,0.06477,single_stage_ivf_batch_np8,0.9741
+CTRL(s=0.0648)|date==20200908,date==20200908,0.06477,single_stage_ivf_batch_np32,0.9987
+CTRL(s=0.0610)|date==20200909,date==20200909,0.06105,postfilter_hnsw_K1x,0.8738
+CTRL(s=0.0610)|date==20200909,date==20200909,0.06105,postfilter_hnsw_K2x,0.936
+CTRL(s=0.0610)|date==20200909,date==20200909,0.06105,postfilter_hnsw_K4x,0.936
+CTRL(s=0.0610)|date==20200909,date==20200909,0.06105,single_stage_ivf_batch_np8,0.9753
+CTRL(s=0.0610)|date==20200909,date==20200909,0.06105,single_stage_ivf_batch_np32,0.9986
+CTRL(s=0.0493)|date==20200915,date==20200915,0.04934,postfilter_hnsw_K1x,0.8468
+CTRL(s=0.0493)|date==20200915,date==20200915,0.04934,postfilter_hnsw_K2x,0.894
+CTRL(s=0.0493)|date==20200915,date==20200915,0.04934,postfilter_hnsw_K4x,0.894
+CTRL(s=0.0493)|date==20200915,date==20200915,0.04934,single_stage_ivf_batch_np8,0.9644
+CTRL(s=0.0493)|date==20200915,date==20200915,0.04934,single_stage_ivf_batch_np32,0.9983
+CTRL(s=0.0264)|hour==01,hour==01,0.02637,postfilter_hnsw_K1x,0.7198
+CTRL(s=0.0264)|hour==01,hour==01,0.02637,postfilter_hnsw_K2x,0.7239
+CTRL(s=0.0264)|hour==01,hour==01,0.02637,postfilter_hnsw_K4x,0.7239
+CTRL(s=0.0264)|hour==01,hour==01,0.02637,single_stage_ivf_batch_np8,0.9203
+CTRL(s=0.0264)|hour==01,hour==01,0.02637,single_stage_ivf_batch_np32,0.9956
+CTRL(s=0.0657)|hour==02,hour==02,0.06573,postfilter_hnsw_K1x,0.8836
+CTRL(s=0.0657)|hour==02,hour==02,0.06573,postfilter_hnsw_K2x,0.9494
+CTRL(s=0.0657)|hour==02,hour==02,0.06573,postfilter_hnsw_K4x,0.9494
+CTRL(s=0.0657)|hour==02,hour==02,0.06573,single_stage_ivf_batch_np8,0.9751
+CTRL(s=0.0657)|hour==02,hour==02,0.06573,single_stage_ivf_batch_np32,0.9986
+CTRL(s=0.0531)|hour==05,hour==05,0.05311,postfilter_hnsw_K1x,0.8612
+CTRL(s=0.0531)|hour==05,hour==05,0.05311,postfilter_hnsw_K2x,0.9144
+CTRL(s=0.0531)|hour==05,hour==05,0.05311,postfilter_hnsw_K4x,0.9144
+CTRL(s=0.0531)|hour==05,hour==05,0.05311,single_stage_ivf_batch_np8,0.9636
+CTRL(s=0.0531)|hour==05,hour==05,0.05311,single_stage_ivf_batch_np32,0.9972
+CTRL(s=0.1829)|hour==06,hour==06,0.18291,postfilter_hnsw_K1x,0.8946
+CTRL(s=0.1829)|hour==06,hour==06,0.18291,postfilter_hnsw_K2x,0.9971
+CTRL(s=0.1829)|hour==06,hour==06,0.18291,postfilter_hnsw_K4x,0.9972
+CTRL(s=0.1829)|hour==06,hour==06,0.18291,single_stage_ivf_batch_np8,0.9902
+CTRL(s=0.1829)|hour==06,hour==06,0.18291,single_stage_ivf_batch_np32,0.9998
+CTRL(s=0.0474)|hour==07,hour==07,0.0474,postfilter_hnsw_K1x,0.8512
+CTRL(s=0.0474)|hour==07,hour==07,0.0474,postfilter_hnsw_K2x,0.8873
+CTRL(s=0.0474)|hour==07,hour==07,0.0474,postfilter_hnsw_K4x,0.8873
+CTRL(s=0.0474)|hour==07,hour==07,0.0474,single_stage_ivf_batch_np8,0.9653
+CTRL(s=0.0474)|hour==07,hour==07,0.0474,single_stage_ivf_batch_np32,0.9979
+CTRL(s=0.0298)|hour==08,hour==08,0.02978,postfilter_hnsw_K1x,0.7672
+CTRL(s=0.0298)|hour==08,hour==08,0.02978,postfilter_hnsw_K2x,0.7738
+CTRL(s=0.0298)|hour==08,hour==08,0.02978,postfilter_hnsw_K4x,0.7738
+CTRL(s=0.0298)|hour==08,hour==08,0.02978,single_stage_ivf_batch_np8,0.9329
+CTRL(s=0.0298)|hour==08,hour==08,0.02978,single_stage_ivf_batch_np32,0.9948
+CTRL(s=0.0546)|hour==11,hour==11,0.05464,postfilter_hnsw_K1x,0.8614
+CTRL(s=0.0546)|hour==11,hour==11,0.05464,postfilter_hnsw_K2x,0.9212
+CTRL(s=0.0546)|hour==11,hour==11,0.05464,postfilter_hnsw_K4x,0.9212
+CTRL(s=0.0546)|hour==11,hour==11,0.05464,single_stage_ivf_batch_np8,0.9705
+CTRL(s=0.0546)|hour==11,hour==11,0.05464,single_stage_ivf_batch_np32,0.9985
+CTRL(s=0.1581)|hour==12,hour==12,0.15815,postfilter_hnsw_K1x,0.8982
+CTRL(s=0.1581)|hour==12,hour==12,0.15815,postfilter_hnsw_K2x,0.9952
+CTRL(s=0.1581)|hour==12,hour==12,0.15815,postfilter_hnsw_K4x,0.9954
+CTRL(s=0.1581)|hour==12,hour==12,0.15815,single_stage_ivf_batch_np8,0.9904
+CTRL(s=0.1581)|hour==12,hour==12,0.15815,single_stage_ivf_batch_np32,0.9994
+CTRL(s=0.0492)|hour==13,hour==13,0.04921,postfilter_hnsw_K1x,0.8416
+CTRL(s=0.0492)|hour==13,hour==13,0.04921,postfilter_hnsw_K2x,0.8901
+CTRL(s=0.0492)|hour==13,hour==13,0.04921,postfilter_hnsw_K4x,0.8901
+CTRL(s=0.0492)|hour==13,hour==13,0.04921,single_stage_ivf_batch_np8,0.9645
+CTRL(s=0.0492)|hour==13,hour==13,0.04921,single_stage_ivf_batch_np32,0.9985
+CTRL(s=0.0449)|hour==14,hour==14,0.0449,postfilter_hnsw_K1x,0.8359
+CTRL(s=0.0449)|hour==14,hour==14,0.0449,postfilter_hnsw_K2x,0.8757
+CTRL(s=0.0449)|hour==14,hour==14,0.0449,postfilter_hnsw_K4x,0.8757
+CTRL(s=0.0449)|hour==14,hour==14,0.0449,single_stage_ivf_batch_np8,0.9605
+CTRL(s=0.0449)|hour==14,hour==14,0.0449,single_stage_ivf_batch_np32,0.9976
+CTRL(s=0.0344)|hour==16,hour==16,0.03445,postfilter_hnsw_K1x,0.8003
+CTRL(s=0.0344)|hour==16,hour==16,0.03445,postfilter_hnsw_K2x,0.8156
+CTRL(s=0.0344)|hour==16,hour==16,0.03445,postfilter_hnsw_K4x,0.8156
+CTRL(s=0.0344)|hour==16,hour==16,0.03445,single_stage_ivf_batch_np8,0.9469
+CTRL(s=0.0344)|hour==16,hour==16,0.03445,single_stage_ivf_batch_np32,0.9974
+CTRL(s=0.1260)|hour==17,hour==17,0.12603,postfilter_hnsw_K1x,0.8944
+CTRL(s=0.1260)|hour==17,hour==17,0.12603,postfilter_hnsw_K2x,0.9908
+CTRL(s=0.1260)|hour==17,hour==17,0.12603,postfilter_hnsw_K4x,0.9912
+CTRL(s=0.1260)|hour==17,hour==17,0.12603,single_stage_ivf_batch_np8,0.9884
+CTRL(s=0.1260)|hour==17,hour==17,0.12603,single_stage_ivf_batch_np32,0.9995
+CTRL(s=0.0452)|hour==18,hour==18,0.04525,postfilter_hnsw_K1x,0.8388
+CTRL(s=0.0452)|hour==18,hour==18,0.04525,postfilter_hnsw_K2x,0.8785
+CTRL(s=0.0452)|hour==18,hour==18,0.04525,postfilter_hnsw_K4x,0.8785
+CTRL(s=0.0452)|hour==18,hour==18,0.04525,single_stage_ivf_batch_np8,0.9603
+CTRL(s=0.0452)|hour==18,hour==18,0.04525,single_stage_ivf_batch_np32,0.9979
+CTRL(s=0.0802)|hour==19,hour==19,0.08022,postfilter_hnsw_K1x,0.8783
+CTRL(s=0.0802)|hour==19,hour==19,0.08022,postfilter_hnsw_K2x,0.9659
+CTRL(s=0.0802)|hour==19,hour==19,0.08022,postfilter_hnsw_K4x,0.9659
+CTRL(s=0.0802)|hour==19,hour==19,0.08022,single_stage_ivf_batch_np8,0.9774
+CTRL(s=0.0802)|hour==19,hour==19,0.08022,single_stage_ivf_batch_np32,0.9988
+"CTRL(s=0.7737)|hour in [06,18] (daytime)","hour in [06,18] (daytime)",0.7737,postfilter_hnsw_K1x,0.9705
+"CTRL(s=0.7737)|hour in [06,18] (daytime)","hour in [06,18] (daytime)",0.7737,postfilter_hnsw_K2x,0.9993
+"CTRL(s=0.7737)|hour in [06,18] (daytime)","hour in [06,18] (daytime)",0.7737,postfilter_hnsw_K4x,0.9993
+"CTRL(s=0.7737)|hour in [06,18] (daytime)","hour in [06,18] (daytime)",0.7737,single_stage_ivf_batch_np8,0.9965
+"CTRL(s=0.7737)|hour in [06,18] (daytime)","hour in [06,18] (daytime)",0.7737,single_stage_ivf_batch_np32,0.9996
+"CTRL(s=0.3069)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.3069,postfilter_hnsw_K1x,0.9127
+"CTRL(s=0.3069)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.3069,postfilter_hnsw_K2x,0.9992
+"CTRL(s=0.3069)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.3069,postfilter_hnsw_K4x,0.9992
+"CTRL(s=0.3069)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.3069,single_stage_ivf_batch_np8,0.9942
+"CTRL(s=0.3069)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.3069,single_stage_ivf_batch_np32,0.9996
+"CTRL(s=0.2515)|hour in [17,19] (evening peak)","hour in [17,19] (evening peak)",0.2515,postfilter_hnsw_K1x,0.9051
+"CTRL(s=0.2515)|hour in [17,19] (evening peak)","hour in [17,19] (evening peak)",0.2515,postfilter_hnsw_K2x,0.9989
+"CTRL(s=0.2515)|hour in [17,19] (evening peak)","hour in [17,19] (evening peak)",0.2515,postfilter_hnsw_K4x,0.9992
+"CTRL(s=0.2515)|hour in [17,19] (evening peak)","hour in [17,19] (evening peak)",0.2515,single_stage_ivf_batch_np8,0.993
+"CTRL(s=0.2515)|hour in [17,19] (evening peak)","hour in [17,19] (evening peak)",0.2515,single_stage_ivf_batch_np32,0.9998
+CTRL(s=0.2678)|location in top-5,location in top-5,0.26776,postfilter_hnsw_K1x,0.9084
+CTRL(s=0.2678)|location in top-5,location in top-5,0.26776,postfilter_hnsw_K2x,0.9991
+CTRL(s=0.2678)|location in top-5,location in top-5,0.26776,postfilter_hnsw_K4x,0.9992
+CTRL(s=0.2678)|location in top-5,location in top-5,0.26776,single_stage_ivf_batch_np8,0.9929
+CTRL(s=0.2678)|location in top-5,location in top-5,0.26776,single_stage_ivf_batch_np32,0.9996
+CTRL(s=0.3211)|date in 2020-09,date in 2020-09,0.32112,postfilter_hnsw_K1x,0.9223
+CTRL(s=0.3211)|date in 2020-09,date in 2020-09,0.32112,postfilter_hnsw_K2x,0.9997
+CTRL(s=0.3211)|date in 2020-09,date in 2020-09,0.32112,postfilter_hnsw_K4x,0.9997
+CTRL(s=0.3211)|date in 2020-09,date in 2020-09,0.32112,single_stage_ivf_batch_np8,0.9948
+CTRL(s=0.3211)|date in 2020-09,date in 2020-09,0.32112,single_stage_ivf_batch_np32,1.0

@@ -1,0 +1,16 @@
+{
+  "deficit_postfilter_K2x": {
+    "n": 54,
+    "rho_kappa_offline": -0.389,
+    "rho_gt_cluster_query_driven": 0.823,
+    "gate_pass_offline_ge_0.5": false
+  },
+  "deficit_singlestage_np32": {
+    "n": 54,
+    "rho_kappa_offline": -0.107,
+    "rho_gt_cluster_query_driven": 0.936,
+    "gate_pass_offline_ge_0.5": false
+  },
+  "kappa_offline_vs_gt_query_driven_rho": -0.07,
+  "overall_gate_pass": false
+}

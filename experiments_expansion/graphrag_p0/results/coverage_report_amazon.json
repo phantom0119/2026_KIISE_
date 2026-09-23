@@ -1,0 +1,47 @@
+{
+  "domain": "amazon",
+  "n_facts": 200,
+  "gates": {
+    "F2a_oracle_gold_support_rate": 1.0,
+    "F2a_pass": true,
+    "F7_fact_count_parity": true,
+    "F7_token_rel_spread": {
+      "median": 0.0841,
+      "max": 0.1125,
+      "frac_within_10pct": 0.885,
+      "means": {
+        "A1": 34.29,
+        "A1F": 36.29,
+        "A2": 37.29
+      }
+    },
+    "F7_pass_strict_10pct": false
+  },
+  "F2b_retrieval": {
+    "original|text_A1": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0
+    },
+    "original|graph_A2": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0
+    },
+    "counterfactual|text_A1": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0
+    },
+    "counterfactual|graph_A2": {
+      "recall@1": 1.0,
+      "recall@3": 1.0,
+      "recall@5": 1.0,
+      "recall@10": 1.0
+    }
+  },
+  "wall_s": 0.3
+}

@@ -1,0 +1,79 @@
+{
+  "overall_pass": true,
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "gate": "complete_5seed_x_6setting_grid",
+      "pass": true,
+      "rows": 30,
+      "seeds": [
+        20260717,
+        20260718,
+        20260719,
+        20260720,
+        20260721
+      ],
+      "settings": [
+        [
+          "hnsw",
+          256
+        ],
+        [
+          "hnsw",
+          512
+        ],
+        [
+          "hnsw",
+          1024
+        ],
+        [
+          "ivfflat",
+          128
+        ],
+        [
+          "ivfflat",
+          256
+        ],
+        [
+          "ivfflat",
+          512
+        ]
+      ]
+    },
+    {
+      "gate": "manifest_matches_grid",
+      "pass": true
+    },
+    {
+      "gate": "metric_bounds_and_finite",
+      "pass": true
+    },
+    {
+      "gate": "recall_monotonic_with_search_strength_per_seed",
+      "pass": true
+    },
+    {
+      "gate": "summary_matches_raw_rows",
+      "pass": true,
+      "max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "gate": "robust_threshold_flags_correct",
+      "pass": true
+    },
+    {
+      "gate": "three_seed_anchor_rebuild_reproduces_prior_recorded_recall",
+      "pass": true,
+      "max_abs_error": 2.9411764706055443e-05
+    },
+    {
+      "gate": "strengthened_candidates_pass_all_seed_099_gate",
+      "pass": true,
+      "hnsw_ef512_min": 0.996470588235294,
+      "hnsw_ef1024_min": 1.0,
+      "ivfflat_np256_min": 0.9988235294117648,
+      "ivfflat_np512_min": 1.0
+    }
+  ]
+}

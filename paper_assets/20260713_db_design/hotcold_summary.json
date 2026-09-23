@@ -1,0 +1,11 @@
+{
+  "R_bar": 0.95,
+  "n_predicates": 6,
+  "quality_forced_count": 2,
+  "quality_forced_selectivities": [
+    0.0109,
+    0.0474
+  ],
+  "median_breakeven_when_amortizable": 16051.3,
+  "rule": "build LOCAL/partial index for p iff recall_global(p) < R_bar (quality) OR expected_queries(p) > N*(p) (amortize); else GLOBAL + postfilter."
+}

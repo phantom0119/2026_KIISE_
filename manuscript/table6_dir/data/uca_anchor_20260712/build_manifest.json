@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-12",
+  "prereg": "420 Amendment 6+6a (frozen)",
+  "documents": 6432,
+  "collapsed_duplicates": 58,
+  "clamped_midpoints": 7,
+  "dropped_frames": 0,
+  "dropped_ids": [],
+  "id_mapping": "id_to_member.json (49 collisions -> lexicographic first)",
+  "duration_terciles": [
+    57.5,
+    124.5
+  ],
+  "lexicons_sha1_source": "Amendment 6a table",
+  "pilot_forced_strata": {
+    "longest": "uca:Normal_Videos308_x264:11.6",
+    "near_end": 25,
+    "folders": 15
+  },
+  "ffmpeg_version": "7.0.2-static (johnvansickle)",
+  "license_note": "UCA/UCF-Crime academic research only (state in availability)"
+}

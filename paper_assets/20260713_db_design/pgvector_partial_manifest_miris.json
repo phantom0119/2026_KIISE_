@@ -1,0 +1,7 @@
+{
+  "server": "PostgreSQL 16 / pgvector 0.8.4 (:5433)",
+  "table": "miris_frames (59019 x 512, MIRIS warsaw+shibuya traffic CCTV, CLIP-512)",
+  "global_build_s": 26.0,
+  "global_mb": 153.7,
+  "note": "global build cost amortized across all predicates; partial = per-predicate build+size. recall vs exact seq-scan filtered GT; client round-trip timing; no faiss cross-ratio."
+}

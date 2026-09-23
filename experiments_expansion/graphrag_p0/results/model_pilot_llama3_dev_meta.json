@@ -1,0 +1,8 @@
+{
+  "model": "llama3",
+  "split": "dev",
+  "n_facts": 120,
+  "n_jobs": 1800,
+  "gen_wall_s": 53.0,
+  "total_wall_s": 53.0
+}

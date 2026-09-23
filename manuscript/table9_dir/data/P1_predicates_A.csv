@@ -1,0 +1,30 @@
+corpus,predicate,kind,rule,count,selectivity
+A_sinnaedoro,location==BC2000801,natural,,11455,0.08644
+A_sinnaedoro,location==중동사거리,natural,,6429,0.04851
+A_sinnaedoro,location==원골네거리,natural,,6199,0.04678
+A_sinnaedoro,location==연구단지네거리,natural,,5853,0.04417
+A_sinnaedoro,location==삼정고가교,natural,,5548,0.04187
+A_sinnaedoro,location==계룡대교네거리,natural,,5166,0.03898
+A_sinnaedoro,date==20200907,natural,,10191,0.0769
+A_sinnaedoro,date==20200908,natural,,8583,0.06477
+A_sinnaedoro,date==20200909,natural,,8090,0.06105
+A_sinnaedoro,date==20200915,natural,,6538,0.04934
+A_sinnaedoro,hour==01,natural,,3494,0.02637
+A_sinnaedoro,hour==02,natural,,8711,0.06573
+A_sinnaedoro,hour==05,natural,,7038,0.05311
+A_sinnaedoro,hour==06,natural,,24239,0.18291
+A_sinnaedoro,hour==07,natural,,6281,0.0474
+A_sinnaedoro,hour==08,natural,,3947,0.02978
+A_sinnaedoro,hour==11,natural,,7241,0.05464
+A_sinnaedoro,hour==12,natural,,20958,0.15815
+A_sinnaedoro,hour==13,natural,,6522,0.04921
+A_sinnaedoro,hour==14,natural,,5950,0.0449
+A_sinnaedoro,hour==16,natural,,4565,0.03445
+A_sinnaedoro,hour==17,natural,,16702,0.12603
+A_sinnaedoro,hour==18,natural,,5996,0.04525
+A_sinnaedoro,hour==19,natural,,10631,0.08022
+A_sinnaedoro,"hour in [06,18] (daytime)",composite,range on filename hour,102532,0.7737
+A_sinnaedoro,"hour in [11,14] (midday)",composite,range on filename hour,40671,0.3069
+A_sinnaedoro,"hour in [17,19] (evening peak)",composite,range on filename hour,33329,0.2515
+A_sinnaedoro,location in top-5,composite,IN-set of 5 most frequent locations,35484,0.26776
+A_sinnaedoro,date in 2020-09,composite,month prefix,42555,0.32112

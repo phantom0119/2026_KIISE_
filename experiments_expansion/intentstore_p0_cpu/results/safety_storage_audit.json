@@ -1,0 +1,5 @@
+{
+  "status": "STORAGE_AUDIT_PASS",
+  "missing_file_count": 0,
+  "scope": "existing artifact bytes; excludes DB overhead and generation/compute cost"
+}

@@ -1,0 +1,81 @@
+scope,model,arm,n,accuracy
+all,BGE-M3 zero-shot,cot_worse,399,0.6115288220551378
+all,BGE-M3 zero-shot,cot_better,399,0.6165413533834586
+all,BGE-M3 zero-shot,cot_both_mean,399,0.6190476190476191
+all,BGE-M3 zero-shot,cot_both_max,399,0.6240601503759399
+all,Qwen2.5-VL-7B,closed_book,399,0.10025062656641603
+all,Qwen2.5-VL-7B,worse_view_only,399,0.14035087719298245
+all,Qwen2.5-VL-7B,better_view_only,399,0.19047619047619047
+all,Qwen2.5-VL-7B,both_view,399,0.19799498746867167
+all,Qwen2-VL-7B,closed_book,399,0.11278195488721804
+all,Qwen2-VL-7B,worse_view_only,399,0.19298245614035087
+all,Qwen2-VL-7B,better_view_only,399,0.2832080200501253
+all,Qwen2-VL-7B,both_view,399,0.3032581453634085
+all,Idefics2-8B,closed_book,399,0.10776942355889724
+all,Idefics2-8B,worse_view_only,399,0.10275689223057644
+all,Idefics2-8B,better_view_only,399,0.14035087719298245
+all,Idefics2-8B,both_view,399,0.14536340852130325
+all,InternVL3-8B,closed_book,399,0.10776942355889724
+all,InternVL3-8B,worse_view_only,399,0.18546365914786966
+all,InternVL3-8B,better_view_only,399,0.23308270676691728
+all,InternVL3-8B,both_view,399,0.24310776942355888
+temporal_relation,BGE-M3 zero-shot,cot_worse,171,0.30994152046783624
+temporal_relation,BGE-M3 zero-shot,cot_better,171,0.32748538011695905
+temporal_relation,BGE-M3 zero-shot,cot_both_mean,171,0.3157894736842105
+temporal_relation,BGE-M3 zero-shot,cot_both_max,171,0.3157894736842105
+temporal_relation,Qwen2.5-VL-7B,closed_book,171,0.0
+temporal_relation,Qwen2.5-VL-7B,worse_view_only,171,0.0
+temporal_relation,Qwen2.5-VL-7B,better_view_only,171,0.05847953216374269
+temporal_relation,Qwen2.5-VL-7B,both_view,171,0.05847953216374269
+temporal_relation,Qwen2-VL-7B,closed_book,171,0.2631578947368421
+temporal_relation,Qwen2-VL-7B,worse_view_only,171,0.3157894736842105
+temporal_relation,Qwen2-VL-7B,better_view_only,171,0.34502923976608185
+temporal_relation,Qwen2-VL-7B,both_view,171,0.43859649122807015
+temporal_relation,Idefics2-8B,closed_book,171,0.0
+temporal_relation,Idefics2-8B,worse_view_only,171,0.07017543859649122
+temporal_relation,Idefics2-8B,better_view_only,171,0.0935672514619883
+temporal_relation,Idefics2-8B,both_view,171,0.1871345029239766
+temporal_relation,InternVL3-8B,closed_book,171,0.0
+temporal_relation,InternVL3-8B,worse_view_only,171,0.09941520467836257
+temporal_relation,InternVL3-8B,better_view_only,171,0.12280701754385964
+temporal_relation,InternVL3-8B,both_view,171,0.14035087719298245
+attribute_count,BGE-M3 zero-shot,cot_worse,103,0.7087378640776699
+attribute_count,BGE-M3 zero-shot,cot_better,103,0.7184466019417476
+attribute_count,BGE-M3 zero-shot,cot_both_mean,103,0.7475728155339806
+attribute_count,BGE-M3 zero-shot,cot_both_max,103,0.7087378640776699
+attribute_count,Qwen2.5-VL-7B,closed_book,103,0.0
+attribute_count,Qwen2.5-VL-7B,worse_view_only,103,0.009708737864077669
+attribute_count,Qwen2.5-VL-7B,better_view_only,103,0.019417475728155338
+attribute_count,Qwen2.5-VL-7B,both_view,103,0.009708737864077669
+attribute_count,Qwen2-VL-7B,closed_book,103,0.0
+attribute_count,Qwen2-VL-7B,worse_view_only,103,0.019417475728155338
+attribute_count,Qwen2-VL-7B,better_view_only,103,0.02912621359223301
+attribute_count,Qwen2-VL-7B,both_view,103,0.019417475728155338
+attribute_count,Idefics2-8B,closed_book,103,0.0
+attribute_count,Idefics2-8B,worse_view_only,103,0.009708737864077669
+attribute_count,Idefics2-8B,better_view_only,103,0.0
+attribute_count,Idefics2-8B,both_view,103,0.0
+attribute_count,InternVL3-8B,closed_book,103,0.0
+attribute_count,InternVL3-8B,worse_view_only,103,0.019417475728155338
+attribute_count,InternVL3-8B,better_view_only,103,0.08737864077669903
+attribute_count,InternVL3-8B,both_view,103,0.06796116504854369
+path_mode,BGE-M3 zero-shot,cot_worse,125,0.944
+path_mode,BGE-M3 zero-shot,cot_better,125,0.928
+path_mode,BGE-M3 zero-shot,cot_both_mean,125,0.928
+path_mode,BGE-M3 zero-shot,cot_both_max,125,0.976
+path_mode,Qwen2.5-VL-7B,closed_book,125,0.32
+path_mode,Qwen2.5-VL-7B,worse_view_only,125,0.44
+path_mode,Qwen2.5-VL-7B,better_view_only,125,0.512
+path_mode,Qwen2.5-VL-7B,both_view,125,0.544
+path_mode,Qwen2-VL-7B,closed_book,125,0.0
+path_mode,Qwen2-VL-7B,worse_view_only,125,0.168
+path_mode,Qwen2-VL-7B,better_view_only,125,0.408
+path_mode,Qwen2-VL-7B,both_view,125,0.352
+path_mode,Idefics2-8B,closed_book,125,0.344
+path_mode,Idefics2-8B,worse_view_only,125,0.224
+path_mode,Idefics2-8B,better_view_only,125,0.32
+path_mode,Idefics2-8B,both_view,125,0.208
+path_mode,InternVL3-8B,closed_book,125,0.344
+path_mode,InternVL3-8B,worse_view_only,125,0.44
+path_mode,InternVL3-8B,better_view_only,125,0.504
+path_mode,InternVL3-8B,both_view,125,0.528

@@ -1,0 +1,7 @@
+predicate,selectivity,recall_global_relaxed,recall_global_off,recall_partial,L_global_ms,L_partial_ms,build_partial_s,partial_index_mb,latency_gain_ms,breakeven_queries_Nstar,quality_forced_local,policy
+location = '역곡남부역사거리',0.0109,0.167,0.01,0.9863,31.807,0.407,0.38,3.77,31.4,12.1,True,LOCAL (quality-forced)
+hour BETWEEN 7 AND 7,0.0474,0.8951,0.175,0.9881,6.891,0.454,1.87,15.67,6.437,290.5,True,LOCAL (quality-forced)
+hour = 6,0.1829,0.986,0.3132,0.9897,1.086,0.412,7.14,61.25,0.674,10593.5,False,LOCAL if hot: >10593 q
+hour BETWEEN 6 AND 9,0.2601,0.9859,0.3946,0.9812,0.913,0.416,10.69,86.79,0.497,21509.1,False,LOCAL if hot: >21509 q
+hour BETWEEN 6 AND 12,0.4734,0.993,0.6668,0.9831,0.43,0.42,21.12,158.16,0.01,2112000.0,False,LOCAL if hot: >2112000 q
+hour BETWEEN 6 AND 18,0.7737,0.9965,0.8787,0.9952,0.449,0.416,39.15,257.61,0.033,1186363.6,False,LOCAL if hot: >1186364 q

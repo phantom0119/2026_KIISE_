@@ -1,0 +1,7 @@
+{
+  "encoder": "openai/clip-vit-base-patch32",
+  "dim": 512,
+  "n_frames": 143830,
+  "l2_normalized": true,
+  "consistent_with": "sinnaedoro corpus_real (same encoder/dim)"
+}

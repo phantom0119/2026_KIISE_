@@ -1,0 +1,10 @@
+dataset,model,canonical_non_document_equal,b0_ranking_equal,query_embeddings_equal
+522,qwen25vl_7b,True,True,True
+522,qwen3vl_8b,True,True,True
+522,qwen35_9b,True,True,True
+meva,qwen25vl_7b,True,True,True
+meva,qwen3vl_8b,True,True,True
+meva,qwen35_9b,True,True,True
+uca,qwen25vl_7b,True,True,True
+uca,qwen3vl_8b,True,True,True
+uca,qwen35_9b,True,True,True

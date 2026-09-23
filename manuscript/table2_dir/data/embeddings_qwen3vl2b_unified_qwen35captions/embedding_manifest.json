@@ -1,0 +1,59 @@
+{
+  "created_at": "2026-07-16T19:33:34.106554+00:00",
+  "purpose": "same-encoder storage/retrieval/index control",
+  "model": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/models/Qwen3-VL-Embedding-2B",
+  "model_family": "Qwen3-VL-Embedding-2B",
+  "dimension": 2048,
+  "normalization": "L2 by model.process",
+  "instruction": "Represent the user's input.",
+  "image_settings": {
+    "dtype": "bfloat16 inference",
+    "max_pixels": 534600,
+    "attention": "flash_attention_2"
+  },
+  "persisted_vector_dtype": "float32",
+  "canonical_root": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/522/canonical",
+  "data_root": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710",
+  "frame_source_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/aihub_522_embeddings",
+  "coverage_before": {
+    "pt_files": 3133,
+    "pt_rows": 143821,
+    "unique_keys": 143794,
+    "duplicate_equal_rows": 27,
+    "duplicate_conflicts": 0,
+    "wanted": 143830,
+    "missing": 36,
+    "extra_keys_not_in_frozen_index": 0
+  },
+  "coverage_after": {
+    "pt_files": 3134,
+    "pt_rows": 143857,
+    "unique_keys": 143830,
+    "duplicate_equal_rows": 27,
+    "duplicate_conflicts": 0
+  },
+  "counts": {
+    "frames": 143830,
+    "frame_clips": 52462,
+    "representative_frames": 3000,
+    "documents": 3000,
+    "queries": 85
+  },
+  "input_hashes": {
+    "canonical_documents": "7bb7259310a2637c36a9297d98e54d5d0d3d8175ffbfab2819c0d100ca03b93d",
+    "canonical_queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "canonical_qrels": "74da4f10b8566705b9176809f1b435e0811374b630475a9067ac08a7515d7a93",
+    "canonical_qrels_semantic": "f59cf0f8939685b16908e330c338437b54488a921cbec907bc5501206961f3e0",
+    "frame_index": "f8aba458c5b0712ea3439dc4905372354afe3da9b832023c5b0baad8920210a4"
+  },
+  "output_hashes": {
+    "document_embeddings.npy": "c921d189df1beff61870382482b3cc4e3643c195459bb35ae9d7a3637c57f215",
+    "query_embeddings.npy": "1bddd08effffe49dda8434104ab9ac00b5f29be7044eb743c70ee87aac630e61",
+    "document_index.parquet": "0000d34d33abed2b454c8e66c7f9b63cd9cab0f08071f640869fa86d53baa289",
+    "query_index.parquet": "eeff42ee6095930865e65f4bc0470a0965a2b00f173ed4373a1645028505b628",
+    "frame_embeddings.npy": "6b7aac023db0af958c27ae0535070314942cf4451845f49dd4eb0a6397a3bc44",
+    "frame_index.parquet": "fa509056572245c753f47a8a7318edb69dda2065457be9912169e13e3be3e235",
+    "representative_frame_embeddings.npy": "939f9f9e47e56a4c70726e3b2fe0f08317865e67dff62d16c516a6d1f0b8fdd6",
+    "representative_frame_index.parquet": "78573e42aa3ea9ecc66fde2ba40ac07fe0ed9f84832a46b8a7384af48d28f6ae"
+  }
+}

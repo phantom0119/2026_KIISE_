@@ -1,0 +1,7 @@
+strategy,recall_at_10_strict,mrr_strict,ndcg_at_10_strict,recall_at_10_semantic,mrr_semantic,ndcg_at_10_semantic
+B0_metadata_only,0.0405,0.401,0.1646,0.0073,0.401,0.1646
+B1_bm25_only,0.0002,0.0222,0.003,0.0005,0.0917,0.0304
+B2_vector_only,0.013,0.1927,0.0643,0.0108,0.4624,0.2833
+B3_vector_postfilter,0.043,0.3621,0.2041,0.0067,0.3621,0.2041
+B4_prefilter_vector,0.0476,0.3726,0.2088,0.0069,0.3726,0.2088
+B5_hybrid,0.0474,0.3432,0.1864,0.0064,0.3432,0.1864

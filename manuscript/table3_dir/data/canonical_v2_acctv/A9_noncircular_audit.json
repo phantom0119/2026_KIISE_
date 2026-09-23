@@ -1,0 +1,28 @@
+{
+  "assertions": {
+    "caption_only_corpus": {
+      "pass": true,
+      "doc_types": {
+        "event_caption": 269
+      }
+    },
+    "filter_never_semantic": {
+      "pass": true
+    },
+    "dual_qrels_present": {
+      "pass": true
+    }
+  },
+  "coupling_v_event_class_vs_filter": {
+    "night": 0.583,
+    "place_type": 0.485
+  },
+  "counts": {
+    "clips": 269,
+    "documents": 269,
+    "queries": 18,
+    "qrels_strict": 584,
+    "qrels_semantic": 827
+  },
+  "overall_pass": true
+}

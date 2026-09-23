@@ -1,0 +1,17 @@
+engine,lane,corpus,confirmatory,n_pairs,n_families,mean_delta,ci_lo,ci_hi,fam_ci_lo,fam_ci_hi,wilcoxon_p,mean_recall_real,mean_recall_ctrl,note,holm_p,holm_sig_05,headline_pass
+milvus,m1-graph,A,True,6,3.0,0.014,0.0079,0.022,0.0099,0.0322,0.03125,0.9839,0.998,,0.0625,False,False
+milvus,m1-BF,A,False,18,3.0,0.0006,0.0004,0.0008,0.0003,0.0008,0.00041410314725266446,0.9994,1.0,,,False,False
+milvus,m1-graph-composite,A,False,5,3.0,0.0116,0.0046,0.0201,0.0051,0.0275,0.0625,0.9857,0.9973,,,False,False
+weaviate,w1-flat-fallback,A,False,26,,,,,,,,0.9976,,engine mitigation: brute-force below cutoff,,False,False
+weaviate,w1-acorn-cutoff40k-aboveCutoff,A,False,0,,,,,,,,,,"n<5 — reported, not tested",,False,False
+weaviate,w3-acorn-cutoff0,A,False,24,3.0,0.0025,-0.0278,0.0342,-0.0427,0.0334,0.8115357160568237,0.9062,0.9087,,,False,False
+weaviate,w2-sweeping,A,True,24,3.0,0.0098,0.0049,0.0159,0.0037,0.0265,1.8197386214786344e-05,0.99,0.9998,,7.278954485914537e-05,True,True
+weaviate,w2-sweeping-composite,A,False,5,3.0,0.009,0.002,0.0175,0.0022,0.0231,0.0625,0.9904,0.9995,,,False,False
+milvus,m1-graph,B,True,18,4.0,0.0028,0.0009,0.0049,0.0005,0.0047,0.007476963925367232,0.9959,0.9986,,0.022430891776101698,True,True
+milvus,m1-BF,B,False,4,,,,,,,,,,"n<5 — reported, not tested",,False,False
+milvus,m1-graph-composite,B,False,3,,,,,,,,,,"n<5 — reported, not tested",,False,False
+weaviate,w1-flat-fallback,B,False,16,,,,,,,,1.0,,engine mitigation: brute-force below cutoff,,False,False
+weaviate,w1-acorn-cutoff40k-aboveCutoff,B,False,7,3.0,0.016,0.0019,0.0314,0.0003,0.0408,0.21875,0.9747,0.9907,,,False,False
+weaviate,w3-acorn-cutoff0,B,False,22,4.0,-0.0181,-0.0459,0.0034,-0.0412,0.0267,0.366082688051262,0.961,0.9429,,,False,False
+weaviate,w2-sweeping,B,True,22,4.0,0.0006,0.0,0.0015,0.0002,0.0017,0.12064542533634502,0.9991,0.9997,,0.12064542533634502,False,False
+weaviate,w2-sweeping-composite,B,False,3,,,,,,,,,,"n<5 — reported, not tested",,False,False

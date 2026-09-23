@@ -1,0 +1,126 @@
+predicate,pair,selectivity,method,recall_at_10_newseed
+CTRL(s=0.2572)|time_of_day==morning,time_of_day==morning,0.25724,postfilter_hnsw_K1x,0.8945
+CTRL(s=0.2572)|time_of_day==morning,time_of_day==morning,0.25724,postfilter_hnsw_K2x,0.9995
+CTRL(s=0.2572)|time_of_day==morning,time_of_day==morning,0.25724,postfilter_hnsw_K4x,0.9995
+CTRL(s=0.2572)|time_of_day==morning,time_of_day==morning,0.25724,single_stage_ivf_batch_np8,0.9975
+CTRL(s=0.2572)|time_of_day==morning,time_of_day==morning,0.25724,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.3476)|time_of_day==afternoon,time_of_day==afternoon,0.34762,postfilter_hnsw_K1x,0.9115
+CTRL(s=0.3476)|time_of_day==afternoon,time_of_day==afternoon,0.34762,postfilter_hnsw_K2x,0.9995
+CTRL(s=0.3476)|time_of_day==afternoon,time_of_day==afternoon,0.34762,postfilter_hnsw_K4x,0.9995
+CTRL(s=0.3476)|time_of_day==afternoon,time_of_day==afternoon,0.34762,single_stage_ivf_batch_np8,0.997
+CTRL(s=0.3476)|time_of_day==afternoon,time_of_day==afternoon,0.34762,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.2948)|time_of_day==evening,time_of_day==evening,0.29478,postfilter_hnsw_K1x,0.914
+CTRL(s=0.2948)|time_of_day==evening,time_of_day==evening,0.29478,postfilter_hnsw_K2x,0.999
+CTRL(s=0.2948)|time_of_day==evening,time_of_day==evening,0.29478,postfilter_hnsw_K4x,0.999
+CTRL(s=0.2948)|time_of_day==evening,time_of_day==evening,0.29478,single_stage_ivf_batch_np8,0.9965
+CTRL(s=0.2948)|time_of_day==evening,time_of_day==evening,0.29478,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.6285)|sig_has_yellow==True,sig_has_yellow==True,0.62846,postfilter_hnsw_K1x,0.9265
+CTRL(s=0.6285)|sig_has_yellow==True,sig_has_yellow==True,0.62846,postfilter_hnsw_K2x,1.0
+CTRL(s=0.6285)|sig_has_yellow==True,sig_has_yellow==True,0.62846,postfilter_hnsw_K4x,1.0
+CTRL(s=0.6285)|sig_has_yellow==True,sig_has_yellow==True,0.62846,single_stage_ivf_batch_np8,0.9975
+CTRL(s=0.6285)|sig_has_yellow==True,sig_has_yellow==True,0.62846,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.3910)|sig_has_pedestrian==True,sig_has_pedestrian==True,0.39096,postfilter_hnsw_K1x,0.919
+CTRL(s=0.3910)|sig_has_pedestrian==True,sig_has_pedestrian==True,0.39096,postfilter_hnsw_K2x,1.0
+CTRL(s=0.3910)|sig_has_pedestrian==True,sig_has_pedestrian==True,0.39096,postfilter_hnsw_K4x,1.0
+CTRL(s=0.3910)|sig_has_pedestrian==True,sig_has_pedestrian==True,0.39096,single_stage_ivf_batch_np8,0.998
+CTRL(s=0.3910)|sig_has_pedestrian==True,sig_has_pedestrian==True,0.39096,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.2712)|sig_has_yellow==False,sig_has_yellow==False,0.27117,postfilter_hnsw_K1x,0.893
+CTRL(s=0.2712)|sig_has_yellow==False,sig_has_yellow==False,0.27117,postfilter_hnsw_K2x,0.9995
+CTRL(s=0.2712)|sig_has_yellow==False,sig_has_yellow==False,0.27117,postfilter_hnsw_K4x,0.9995
+CTRL(s=0.2712)|sig_has_yellow==False,sig_has_yellow==False,0.27117,single_stage_ivf_batch_np8,0.9955
+CTRL(s=0.2712)|sig_has_yellow==False,sig_has_yellow==False,0.27117,single_stage_ivf_batch_np32,0.9995
+CTRL(s=0.5087)|sig_has_pedestrian==False,sig_has_pedestrian==False,0.50868,postfilter_hnsw_K1x,0.942
+CTRL(s=0.5087)|sig_has_pedestrian==False,sig_has_pedestrian==False,0.50868,postfilter_hnsw_K2x,1.0
+CTRL(s=0.5087)|sig_has_pedestrian==False,sig_has_pedestrian==False,0.50868,postfilter_hnsw_K4x,1.0
+CTRL(s=0.5087)|sig_has_pedestrian==False,sig_has_pedestrian==False,0.50868,single_stage_ivf_batch_np8,0.9975
+CTRL(s=0.5087)|sig_has_pedestrian==False,sig_has_pedestrian==False,0.50868,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.2976)|veh_density_bin==low,veh_density_bin==low,0.29764,postfilter_hnsw_K1x,0.885
+CTRL(s=0.2976)|veh_density_bin==low,veh_density_bin==low,0.29764,postfilter_hnsw_K2x,0.998
+CTRL(s=0.2976)|veh_density_bin==low,veh_density_bin==low,0.29764,postfilter_hnsw_K4x,0.998
+CTRL(s=0.2976)|veh_density_bin==low,veh_density_bin==low,0.29764,single_stage_ivf_batch_np8,0.997
+CTRL(s=0.2976)|veh_density_bin==low,veh_density_bin==low,0.29764,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.2727)|veh_density_bin==mid,veh_density_bin==mid,0.27268,postfilter_hnsw_K1x,0.897
+CTRL(s=0.2727)|veh_density_bin==mid,veh_density_bin==mid,0.27268,postfilter_hnsw_K2x,1.0
+CTRL(s=0.2727)|veh_density_bin==mid,veh_density_bin==mid,0.27268,postfilter_hnsw_K4x,1.0
+CTRL(s=0.2727)|veh_density_bin==mid,veh_density_bin==mid,0.27268,single_stage_ivf_batch_np8,0.996
+CTRL(s=0.2727)|veh_density_bin==mid,veh_density_bin==mid,0.27268,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.3293)|veh_density_bin==high,veh_density_bin==high,0.32931,postfilter_hnsw_K1x,0.911
+CTRL(s=0.3293)|veh_density_bin==high,veh_density_bin==high,0.32931,postfilter_hnsw_K2x,0.999
+CTRL(s=0.3293)|veh_density_bin==high,veh_density_bin==high,0.32931,postfilter_hnsw_K4x,0.999
+CTRL(s=0.3293)|veh_density_bin==high,veh_density_bin==high,0.32931,single_stage_ivf_batch_np8,0.997
+CTRL(s=0.3293)|veh_density_bin==high,veh_density_bin==high,0.32931,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.0698)|hour==6,hour==6,0.06983,postfilter_hnsw_K1x,0.8705
+CTRL(s=0.0698)|hour==6,hour==6,0.06983,postfilter_hnsw_K2x,0.953
+CTRL(s=0.0698)|hour==6,hour==6,0.06983,postfilter_hnsw_K4x,0.953
+CTRL(s=0.0698)|hour==6,hour==6,0.06983,single_stage_ivf_batch_np8,0.9855
+CTRL(s=0.0698)|hour==6,hour==6,0.06983,single_stage_ivf_batch_np32,0.998
+CTRL(s=0.0703)|hour==7,hour==7,0.07033,postfilter_hnsw_K1x,0.873
+CTRL(s=0.0703)|hour==7,hour==7,0.07033,postfilter_hnsw_K2x,0.956
+CTRL(s=0.0703)|hour==7,hour==7,0.07033,postfilter_hnsw_K4x,0.956
+CTRL(s=0.0703)|hour==7,hour==7,0.07033,single_stage_ivf_batch_np8,0.982
+CTRL(s=0.0703)|hour==7,hour==7,0.07033,single_stage_ivf_batch_np32,0.998
+CTRL(s=0.0704)|hour==8,hour==8,0.07039,postfilter_hnsw_K1x,0.8925
+CTRL(s=0.0704)|hour==8,hour==8,0.07039,postfilter_hnsw_K2x,0.9595
+CTRL(s=0.0704)|hour==8,hour==8,0.07039,postfilter_hnsw_K4x,0.9595
+CTRL(s=0.0704)|hour==8,hour==8,0.07039,single_stage_ivf_batch_np8,0.988
+CTRL(s=0.0704)|hour==8,hour==8,0.07039,single_stage_ivf_batch_np32,0.998
+CTRL(s=0.0467)|hour==9,hour==9,0.0467,postfilter_hnsw_K1x,0.8275
+CTRL(s=0.0467)|hour==9,hour==9,0.0467,postfilter_hnsw_K2x,0.864
+CTRL(s=0.0467)|hour==9,hour==9,0.0467,postfilter_hnsw_K4x,0.864
+CTRL(s=0.0467)|hour==9,hour==9,0.0467,single_stage_ivf_batch_np8,0.9745
+CTRL(s=0.0467)|hour==9,hour==9,0.0467,single_stage_ivf_batch_np32,0.997
+CTRL(s=0.0232)|hour==13,hour==13,0.02319,postfilter_hnsw_K1x,0.637
+CTRL(s=0.0232)|hour==13,hour==13,0.02319,postfilter_hnsw_K2x,0.6375
+CTRL(s=0.0232)|hour==13,hour==13,0.02319,postfilter_hnsw_K4x,0.6375
+CTRL(s=0.0232)|hour==13,hour==13,0.02319,single_stage_ivf_batch_np8,0.911
+CTRL(s=0.0232)|hour==13,hour==13,0.02319,single_stage_ivf_batch_np32,0.99
+CTRL(s=0.1143)|hour==14,hour==14,0.11434,postfilter_hnsw_K1x,0.88
+CTRL(s=0.1143)|hour==14,hour==14,0.11434,postfilter_hnsw_K2x,0.9915
+CTRL(s=0.1143)|hour==14,hour==14,0.11434,postfilter_hnsw_K4x,0.9915
+CTRL(s=0.1143)|hour==14,hour==14,0.11434,single_stage_ivf_batch_np8,0.99
+CTRL(s=0.1143)|hour==14,hour==14,0.11434,single_stage_ivf_batch_np32,0.9995
+CTRL(s=0.1126)|hour==15,hour==15,0.11256,postfilter_hnsw_K1x,0.8965
+CTRL(s=0.1126)|hour==15,hour==15,0.11256,postfilter_hnsw_K2x,0.991
+CTRL(s=0.1126)|hour==15,hour==15,0.11256,postfilter_hnsw_K4x,0.991
+CTRL(s=0.1126)|hour==15,hour==15,0.11256,single_stage_ivf_batch_np8,0.9905
+CTRL(s=0.1126)|hour==15,hour==15,0.11256,single_stage_ivf_batch_np32,1.0
+CTRL(s=0.0194)|hour==16,hour==16,0.01943,postfilter_hnsw_K1x,0.594
+CTRL(s=0.0194)|hour==16,hour==16,0.01943,postfilter_hnsw_K2x,0.594
+CTRL(s=0.0194)|hour==16,hour==16,0.01943,postfilter_hnsw_K4x,0.594
+CTRL(s=0.0194)|hour==16,hour==16,0.01943,single_stage_ivf_batch_np8,0.889
+CTRL(s=0.0194)|hour==16,hour==16,0.01943,single_stage_ivf_batch_np32,0.985
+CTRL(s=0.0781)|hour==17,hour==17,0.07809,postfilter_hnsw_K1x,0.887
+CTRL(s=0.0781)|hour==17,hour==17,0.07809,postfilter_hnsw_K2x,0.9705
+CTRL(s=0.0781)|hour==17,hour==17,0.07809,postfilter_hnsw_K4x,0.9705
+CTRL(s=0.0781)|hour==17,hour==17,0.07809,single_stage_ivf_batch_np8,0.986
+CTRL(s=0.0781)|hour==17,hour==17,0.07809,single_stage_ivf_batch_np32,0.998
+CTRL(s=0.1089)|hour==18,hour==18,0.10885,postfilter_hnsw_K1x,0.9045
+CTRL(s=0.1089)|hour==18,hour==18,0.10885,postfilter_hnsw_K2x,0.992
+CTRL(s=0.1089)|hour==18,hour==18,0.10885,postfilter_hnsw_K4x,0.992
+CTRL(s=0.1089)|hour==18,hour==18,0.10885,single_stage_ivf_batch_np8,0.989
+CTRL(s=0.1089)|hour==18,hour==18,0.10885,single_stage_ivf_batch_np32,0.9995
+CTRL(s=0.1102)|hour==19,hour==19,0.11023,postfilter_hnsw_K1x,0.8795
+CTRL(s=0.1102)|hour==19,hour==19,0.11023,postfilter_hnsw_K2x,0.9895
+CTRL(s=0.1102)|hour==19,hour==19,0.11023,postfilter_hnsw_K4x,0.9895
+CTRL(s=0.1102)|hour==19,hour==19,0.11023,single_stage_ivf_batch_np8,0.988
+CTRL(s=0.1102)|hour==19,hour==19,0.11023,single_stage_ivf_batch_np32,0.999
+CTRL(s=0.0757)|hour==20,hour==20,0.0757,postfilter_hnsw_K1x,0.8655
+CTRL(s=0.0757)|hour==20,hour==20,0.0757,postfilter_hnsw_K2x,0.9625
+CTRL(s=0.0757)|hour==20,hour==20,0.0757,postfilter_hnsw_K4x,0.9625
+CTRL(s=0.0757)|hour==20,hour==20,0.0757,single_stage_ivf_batch_np8,0.9835
+CTRL(s=0.0757)|hour==20,hour==20,0.0757,single_stage_ivf_batch_np32,0.997
+"CTRL(s=0.1375)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.13754,postfilter_hnsw_K1x,0.894
+"CTRL(s=0.1375)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.13754,postfilter_hnsw_K2x,0.9975
+"CTRL(s=0.1375)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.13754,postfilter_hnsw_K4x,0.9975
+"CTRL(s=0.1375)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.13754,single_stage_ivf_batch_np8,0.9925
+"CTRL(s=0.1375)|hour in [11,14] (midday)","hour in [11,14] (midday)",0.13754,single_stage_ivf_batch_np32,0.9985
+"CTRL(s=0.5736)|hour in [8,18] (working)","hour in [8,18] (working)",0.57356,postfilter_hnsw_K1x,0.9305
+"CTRL(s=0.5736)|hour in [8,18] (working)","hour in [8,18] (working)",0.57356,postfilter_hnsw_K2x,1.0
+"CTRL(s=0.5736)|hour in [8,18] (working)","hour in [8,18] (working)",0.57356,postfilter_hnsw_K4x,1.0
+"CTRL(s=0.5736)|hour in [8,18] (working)","hour in [8,18] (working)",0.57356,single_stage_ivf_batch_np8,0.9975
+"CTRL(s=0.5736)|hour in [8,18] (working)","hour in [8,18] (working)",0.57356,single_stage_ivf_batch_np32,1.0
+"CTRL(s=0.5520)|time_of_day in {morning,evening}","time_of_day in {morning,evening}",0.55202,postfilter_hnsw_K1x,0.9385
+"CTRL(s=0.5520)|time_of_day in {morning,evening}","time_of_day in {morning,evening}",0.55202,postfilter_hnsw_K2x,1.0
+"CTRL(s=0.5520)|time_of_day in {morning,evening}","time_of_day in {morning,evening}",0.55202,postfilter_hnsw_K4x,1.0
+"CTRL(s=0.5520)|time_of_day in {morning,evening}","time_of_day in {morning,evening}",0.55202,single_stage_ivf_batch_np8,0.999
+"CTRL(s=0.5520)|time_of_day in {morning,evening}","time_of_day in {morning,evening}",0.55202,single_stage_ivf_batch_np32,1.0

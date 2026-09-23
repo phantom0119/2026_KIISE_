@@ -1,0 +1,16 @@
+{
+  "model": "internvl3",
+  "well_posed": [
+    "bus",
+    "bikes"
+  ],
+  "closed_wellposed_bal": 0.5,
+  "closed_bikes_bal": 0.5,
+  "distractor_wellposed_bal": 0.504,
+  "distractor_bikes_bal": 0.529,
+  "oracle_wellposed_bal": 0.726,
+  "oracle_bikes_bal": 0.724,
+  "oracle_minus_closed": 0.226,
+  "oracle_gt_distractor": true,
+  "condition_b_holds (gap>=0.15 AND oracle>distractor)": true
+}

@@ -1,0 +1,21 @@
+{
+  "time_of_day": {
+    "morning": 0,
+    "afternoon": 1,
+    "evening": 2
+  },
+  "veh_density_bin": {
+    "low": 0,
+    "mid": 1,
+    "high": 2
+  },
+  "sig_has_yellow": {
+    "False": 0,
+    "True": 1
+  },
+  "sig_has_pedestrian": {
+    "False": 0,
+    "True": 1
+  },
+  "hour": "identity:int"
+}

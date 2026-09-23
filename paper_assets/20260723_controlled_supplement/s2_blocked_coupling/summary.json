@@ -1,0 +1,41 @@
+{
+  "analysis": "S2 intersection-blocked post-main-result robustness",
+  "created_at": "2026-07-23T09:22:36.659493+00:00",
+  "families": 25,
+  "queries": 85,
+  "intersections": 63,
+  "fold_document_counts": {
+    "0": 622,
+    "1": 618,
+    "2": 617,
+    "3": 571,
+    "4": 572
+  },
+  "eligible_query_fold_rows": 407,
+  "excluded_query_fold_rows": {
+    "insufficient_semantic_positives": 12,
+    "insufficient_b4_candidates": 6
+  },
+  "primary_spearman": {
+    "rho": 0.3826021149099033,
+    "p_two_sided": 0.05907760357094936,
+    "cluster_bootstrap_ci": [
+      -0.08847831371907168,
+      0.7269909571672102
+    ]
+  },
+  "high_fold_mean_delta": {
+    "0": 0.13877327409209408,
+    "1": 0.11080119595347318,
+    "2": 0.28285079951291026,
+    "3": 0.21834693696610158,
+    "4": 0.14728471092973924
+  },
+  "promotion_gate": {
+    "high_families_at_least_5": false,
+    "high_family_ci_excludes_zero": true,
+    "same_positive_direction_at_least_4_of_5_folds": true,
+    "all_pass": false
+  },
+  "interpretation_rule": "This is blocked robustness, not independent prospective confirmation. Keep the manuscript's exploratory wording unless every gate passes."
+}

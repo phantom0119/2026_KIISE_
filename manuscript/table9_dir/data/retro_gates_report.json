@@ -1,0 +1,29 @@
+{
+  "qidx_B": {
+    "sha256": "8635a7616aee751baafbae08f0148cff1c222542d2e41646df53ebe5cc7a356c",
+    "first5": [
+      12391,
+      119315,
+      35629,
+      26273,
+      126974
+    ],
+    "rederivation_match": true
+  },
+  "P1_bidirectional_A": {
+    "n": 29,
+    "pass": true
+  },
+  "P1_bidirectional_B": {
+    "n": 25,
+    "pass": true
+  },
+  "milvus_gfilter_A": {
+    "masks": 58,
+    "pass": true
+  },
+  "milvus_gfilter_B": {
+    "masks": 50,
+    "pass": true
+  }
+}

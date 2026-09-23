@@ -1,0 +1,83 @@
+{
+  "verified_at_utc": "2026-07-20T12:14:22.626891+00:00",
+  "verifier": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/scripts/verify_circularity_controlled_injection.py",
+  "verifier_sha256": "2f031b66321a52a0c9681eb1a25007442c86b88182cac62e01f20476f0c0906e",
+  "status": "PASS",
+  "checks_passed": 12,
+  "checks_total": 12,
+  "failed_checks": [],
+  "independent_semantic_ndcg10": {
+    "C1_clean_b2": 0.17003348904727908,
+    "C1_oracle": 1.0,
+    "bm25_dose_0.00": 0.050068014870119415,
+    "bm25_dose_1.00": 0.7457943953099497,
+    "bge_clean_reembedded": 0.17003348904727908,
+    "bge_full_contamination": 0.8011411659610368
+  },
+  "checks": {
+    "document_alignment": {
+      "pass": true,
+      "detail": null
+    },
+    "embedding_index_alignment": {
+      "pass": true,
+      "detail": null
+    },
+    "query_count_85": {
+      "pass": true,
+      "detail": 85
+    },
+    "document_count_3000": {
+      "pass": true,
+      "detail": 3000
+    },
+    "independent_bm25_dose_0.00": {
+      "pass": true,
+      "detail": {
+        "independent": 0.050068014870119415,
+        "stored": 0.0500680148701194,
+        "abs_diff": 1.3877787807814457e-17
+      }
+    },
+    "independent_bm25_dose_1.00": {
+      "pass": true,
+      "detail": {
+        "independent": 0.7457943953099497,
+        "stored": 0.7457943953099498,
+        "abs_diff": 1.1102230246251565e-16
+      }
+    },
+    "independent_c1_clean_b2": {
+      "pass": true,
+      "detail": 0.17003348904727908
+    },
+    "independent_c1_oracle_exact_one": {
+      "pass": true,
+      "detail": 1.0
+    },
+    "independent_bge_clean_reembedded": {
+      "pass": true,
+      "detail": {
+        "independent": 0.17003348904727908,
+        "stored": 0.170033489047279,
+        "abs_diff": 8.326672684688674e-17
+      }
+    },
+    "independent_bge_full_contamination": {
+      "pass": true,
+      "detail": {
+        "independent": 0.8011411659610368,
+        "stored": 0.8011411659610367,
+        "abs_diff": 1.1102230246251565e-16
+      }
+    },
+    "manifest_input_hashes": {
+      "pass": true,
+      "detail": []
+    },
+    "manifest_output_hashes": {
+      "pass": true,
+      "detail": []
+    }
+  }
+}

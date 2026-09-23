@@ -1,0 +1,164 @@
+{
+  "aggregate": {
+    "answer": {
+      "flask": {
+        "cross_naive": {
+          "ambiguous_rate": 0.3333333333333333,
+          "missing_rate": 0.3333333333333333,
+          "observations": 450,
+          "snapshot_error_rate": 0.6666666666666666,
+          "snapshot_error_wilson_95ci": [
+            0.6218629764841108,
+            0.7086489172282322
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 375,
+          "v2_current_accuracy": 0.2,
+          "v2_current_error_rate": 0.8
+        },
+        "cross_read_filter": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.3333333333333333,
+          "observations": 450,
+          "snapshot_error_rate": 0.3333333333333333,
+          "snapshot_error_wilson_95ci": [
+            0.29135108277176774,
+            0.3781370235158891
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 375,
+          "v2_current_accuracy": 0.6,
+          "v2_current_error_rate": 0.4
+        },
+        "cross_staged": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.0,
+          "observations": 450,
+          "snapshot_error_rate": 0.0,
+          "snapshot_error_wilson_95ci": [
+            8.673617379884035e-19,
+            0.008464318862970662
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 150,
+          "v2_current_accuracy": 1.0,
+          "v2_current_error_rate": 0.0
+        },
+        "pg_atomic": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.0,
+          "observations": 150,
+          "snapshot_error_rate": 0.0,
+          "snapshot_error_wilson_95ci": [
+            1.734723475976807e-18,
+            0.0249702443680766
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 75,
+          "v2_current_accuracy": 1.0,
+          "v2_current_error_rate": 0.0
+        }
+      },
+      "kubernetes": {
+        "cross_naive": {
+          "ambiguous_rate": 0.3333333333333333,
+          "missing_rate": 0.3333333333333333,
+          "observations": 450,
+          "snapshot_error_rate": 0.6666666666666666,
+          "snapshot_error_wilson_95ci": [
+            0.6218629764841108,
+            0.7086489172282322
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 375,
+          "v2_current_accuracy": 0.2,
+          "v2_current_error_rate": 0.8
+        },
+        "cross_read_filter": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.3333333333333333,
+          "observations": 450,
+          "snapshot_error_rate": 0.3333333333333333,
+          "snapshot_error_wilson_95ci": [
+            0.29135108277176774,
+            0.3781370235158891
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 375,
+          "v2_current_accuracy": 0.6,
+          "v2_current_error_rate": 0.4
+        },
+        "cross_staged": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.0,
+          "observations": 450,
+          "snapshot_error_rate": 0.0,
+          "snapshot_error_wilson_95ci": [
+            8.673617379884035e-19,
+            0.008464318862970662
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 150,
+          "v2_current_accuracy": 1.0,
+          "v2_current_error_rate": 0.0
+        },
+        "pg_atomic": {
+          "ambiguous_rate": 0.0,
+          "missing_rate": 0.0,
+          "observations": 150,
+          "snapshot_error_rate": 0.0,
+          "snapshot_error_wilson_95ci": [
+            1.734723475976807e-18,
+            0.0249702443680766
+          ],
+          "stale_old_only_when_v2": 0.0,
+          "v2_active_observations": 75,
+          "v2_current_accuracy": 1.0,
+          "v2_current_error_rate": 0.0
+        }
+      }
+    },
+    "fault": {
+      "after_gc_errors": 0,
+      "after_gc_observations": 750,
+      "crash_recovery_error_rate": 0.0,
+      "crash_recovery_errors": 0,
+      "crash_recovery_observations": 1500,
+      "crash_recovery_wilson_95ci": [
+        0.0,
+        0.002554430720181488
+      ],
+      "duplicate_rows": 0,
+      "orphan_rows_after_gc": 0,
+      "readiness_all_ok": true,
+      "recovery_p50_ms": 41.54159966856241,
+      "recovery_p95_ms": 77.00418974272907,
+      "scenario_runs": 30
+    }
+  },
+  "decision": "GO_FRESHEVIDENCEDB_CORE_TOPIC",
+  "gates": {
+    "B0_data_harness": true,
+    "B1_answer_value": true,
+    "B2_client_crash_safety": true,
+    "B3_recovery": true
+  },
+  "protocol": {
+    "answer_protocols": [
+      "cross_naive",
+      "cross_read_filter",
+      "cross_staged",
+      "pg_atomic"
+    ],
+    "facts_per_domain": 25,
+    "fault_scenarios": [
+      "partial_dense_crash",
+      "dense_complete_crash",
+      "sparse_complete_crash",
+      "published_before_gc_crash",
+      "duplicate_retry"
+    ],
+    "repeats": 3,
+    "runtime_seconds": 106.26442447863519
+  }
+}

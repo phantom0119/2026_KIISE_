@@ -1,0 +1,17 @@
+{
+  "corpus": "B",
+  "N": 143830,
+  "dim": 512,
+  "k": 10,
+  "queries": 200,
+  "timing_queries": 200,
+  "repeats": 15,
+  "warmup": "kept, excluded from stats [M2]",
+  "efSearch_unified": 64,
+  "layer": "image_confirmatory",
+  "timing_boundary": "query->K results incl. postfilter mask+truncate [M1]",
+  "controls": "paired random-mask at identical subset size [M9]",
+  "full_hnsw_build_s": 43.0,
+  "full_ivf_build_s": 15.5,
+  "faiss_threads_timing": 1
+}

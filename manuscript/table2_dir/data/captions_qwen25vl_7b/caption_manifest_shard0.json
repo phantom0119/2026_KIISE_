@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-09T20:49:27.506774+00:00",
+  "snapshot": "/hdd2/huggingface_cache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+  "prompt_sha1": "3b9d8d45127aba00c2d2c7d5bbd7da8aad1140c8",
+  "prompt": "Describe this urban intersection CCTV frame in 2-4 factual sentences: overall traffic volume, visible vehicle types (cars, buses, trucks, two-wheelers), any stopped or parked vehicles, pedestrians or cyclists, and road/weather appearance. State only what is visible; no speculation.",
+  "max_new_tokens": 110,
+  "max_pixels": 200704,
+  "decoding": "greedy",
+  "seed": 20260710,
+  "n_videos_target": 3000,
+  "shard": "0/2",
+  "source_separation_note": "captioner sees frame pixels only; no sensor/annotation input"
+}

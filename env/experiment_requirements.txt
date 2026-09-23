@@ -1,0 +1,32 @@
+# Core data processing
+pandas>=2.2
+pyarrow>=16.0
+numpy>=1.26
+scikit-learn>=1.4
+tqdm>=4.66
+PyYAML>=6.0
+
+# Retrieval baselines
+rank-bm25>=0.2.2
+faiss-cpu>=1.8.0
+
+# Embedding/model runtime
+torch
+torchvision
+torchaudio
+transformers>=4.51
+sentence-transformers>=3.0
+FlagEmbedding>=1.2.11
+accelerate>=0.30
+huggingface-hub>=0.24
+
+# Vector DB clients
+psycopg[binary]>=3.2
+pgvector>=0.3
+pymilvus>=2.4
+qdrant-client>=1.10
+
+# Optional media/figure utilities
+opencv-python-headless>=4.10
+matplotlib>=3.8
+seaborn>=0.13

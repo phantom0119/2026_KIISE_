@@ -1,0 +1,23 @@
+{
+  "script": "run_coupling_blocked_validation.py",
+  "created_at": "2026-07-23T09:22:36.660315+00:00",
+  "parameters": {
+    "canonical_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded",
+    "embedding_root": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3",
+    "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260723_controlled_supplement/s2_blocked_coupling",
+    "folds": 5,
+    "seed": 20260723,
+    "bootstrap": 10000,
+    "k": 10,
+    "min_semantic_positives": 5,
+    "min_b4_candidates": 10,
+    "overwrite": true
+  },
+  "input_sha256": {
+    "queries.jsonl": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "document_embeddings.npy": "bf0614273dccff59333c96ebb91b87eb821d9fe85668f153e2d6d6abd9d77708"
+  },
+  "fold_rule": "sort unique intersection_id by sha256(seed:id), then round-robin",
+  "outcome_used_for_fold_assignment": false,
+  "ranking": "exact normalized inner product, deterministic score-desc/index-asc"
+}

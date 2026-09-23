@@ -1,0 +1,144 @@
+{
+  "aggregate": {
+    "flask": {
+      "weaviate_naive": {
+        "error_rate": 0.9197278911564626,
+        "error_wilson_95ci": [
+          0.8978321792663141,
+          0.9372590201160648
+        ],
+        "missing_rate": 0.9197278911564626,
+        "mixed_rate": 0.010884353741496598,
+        "p95_latency_ms": 21.692825388163314,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0.9088235294117647,
+          0.9337016574585635,
+          0.9252336448598131
+        ],
+        "repeats_at_or_above_1pct": 3,
+        "stale_rate": 0.7945578231292517,
+        "steady_all_ok": true,
+        "update_queries": 735,
+        "waves_completed": 15,
+        "worker_errors": []
+      },
+      "weaviate_read_filter": {
+        "error_rate": 0.9149922720247295,
+        "error_wilson_95ci": [
+          0.8909769540199226,
+          0.9341087757260411
+        ],
+        "missing_rate": 0.9149922720247295,
+        "mixed_rate": 0.0,
+        "p95_latency_ms": 24.77033361792564,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0.9310344827586207,
+          0.9230769230769231,
+          0.8858695652173914
+        ],
+        "repeats_at_or_above_1pct": 3,
+        "stale_rate": 0.0,
+        "steady_all_ok": true,
+        "update_queries": 647,
+        "waves_completed": 15,
+        "worker_errors": []
+      },
+      "weaviate_staged": {
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          0.0,
+          0.0006309014361228171
+        ],
+        "missing_rate": 0.0,
+        "mixed_rate": 0.0,
+        "p95_latency_ms": 14.229637384414673,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0,
+          0,
+          0
+        ],
+        "repeats_at_or_above_1pct": 0,
+        "stale_rate": 0.0,
+        "steady_all_ok": true,
+        "update_queries": 6085,
+        "waves_completed": 15,
+        "worker_errors": []
+      }
+    },
+    "kubernetes": {
+      "weaviate_naive": {
+        "error_rate": 0.919093851132686,
+        "error_wilson_95ci": [
+          0.9025611733345876,
+          0.9330295327427983
+        ],
+        "missing_rate": 0.919093851132686,
+        "mixed_rate": 0.03640776699029126,
+        "p95_latency_ms": 24.65343801304698,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0.9273927392739274,
+          0.8994565217391305,
+          0.9274336283185841
+        ],
+        "repeats_at_or_above_1pct": 3,
+        "stale_rate": 0.8050161812297735,
+        "steady_all_ok": true,
+        "update_queries": 1236,
+        "waves_completed": 15,
+        "worker_errors": []
+      },
+      "weaviate_read_filter": {
+        "error_rate": 0.9162844036697247,
+        "error_wilson_95ci": [
+          0.8960256268855644,
+          0.9328915163809199
+        ],
+        "missing_rate": 0.9162844036697247,
+        "mixed_rate": 0.0,
+        "p95_latency_ms": 26.099083712324468,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0.9285714285714286,
+          0.9152542372881356,
+          0.9045936395759717
+        ],
+        "repeats_at_or_above_1pct": 3,
+        "stale_rate": 0.0,
+        "steady_all_ok": true,
+        "update_queries": 872,
+        "waves_completed": 15,
+        "worker_errors": []
+      },
+      "weaviate_staged": {
+        "error_rate": 0.0,
+        "error_wilson_95ci": [
+          0.0,
+          0.0006842834534734268
+        ],
+        "missing_rate": 0.0,
+        "mixed_rate": 0.0,
+        "p95_latency_ms": 17.744067125022415,
+        "readiness_all_ok": true,
+        "repeat_error_rates": [
+          0,
+          0,
+          0
+        ],
+        "repeats_at_or_above_1pct": 0,
+        "stale_rate": 0.0,
+        "steady_all_ok": true,
+        "update_queries": 5610,
+        "waves_completed": 15,
+        "worker_errors": []
+      }
+    }
+  },
+  "gates": {
+    "G0": true,
+    "T2": "CROSS_ENGINE_GENERALIZED"
+  }
+}

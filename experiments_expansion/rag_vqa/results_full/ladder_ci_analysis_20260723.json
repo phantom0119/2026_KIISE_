@@ -1,0 +1,212 @@
+{
+  "qwen2.5-7b": {
+    "model": "qwen2.5-7b",
+    "n_items": 600,
+    "seed": 20260723,
+    "B": 10000,
+    "conditions": {
+      "closed": {
+        "acc": 0.3083,
+        "ci95": [
+          0.2717,
+          0.345
+        ]
+      },
+      "distractor": {
+        "acc": 0.5383,
+        "ci95": [
+          0.4983,
+          0.5783
+        ]
+      },
+      "oracle": {
+        "acc": 0.7467,
+        "ci95": [
+          0.7117,
+          0.78
+        ]
+      },
+      "prefilter": {
+        "acc": 0.68,
+        "ci95": [
+          0.6433,
+          0.7183
+        ]
+      },
+      "vector_only": {
+        "acc": 0.665,
+        "ci95": [
+          0.6267,
+          0.7017
+        ]
+      }
+    },
+    "paired_deltas": {
+      "distractor-closed": {
+        "delta": 0.23,
+        "ci95": [
+          0.1783,
+          0.2817
+        ],
+        "discordant": [
+          210,
+          72
+        ],
+        "mcnemar_exact_p": 0.0
+      },
+      "vector_only-distractor": {
+        "delta": 0.1267,
+        "ci95": [
+          0.0833,
+          0.17
+        ],
+        "discordant": [
+          133,
+          57
+        ],
+        "mcnemar_exact_p": 0.0
+      },
+      "prefilter-vector_only": {
+        "delta": 0.015,
+        "ci95": [
+          -0.02,
+          0.05
+        ],
+        "discordant": [
+          60,
+          51
+        ],
+        "mcnemar_exact_p": 0.4478061
+      },
+      "oracle-vector_only": {
+        "delta": 0.0817,
+        "ci95": [
+          0.035,
+          0.1267
+        ],
+        "discordant": [
+          123,
+          74
+        ],
+        "mcnemar_exact_p": 0.0005911
+      },
+      "oracle-prefilter": {
+        "delta": 0.0667,
+        "ci95": [
+          0.0217,
+          0.11
+        ],
+        "discordant": [
+          112,
+          72
+        ],
+        "mcnemar_exact_p": 0.0039175
+      }
+    }
+  },
+  "llama3-8b": {
+    "model": "llama3-8b",
+    "n_items": 600,
+    "seed": 20260723,
+    "B": 10000,
+    "conditions": {
+      "closed": {
+        "acc": 0.3067,
+        "ci95": [
+          0.2683,
+          0.345
+        ]
+      },
+      "distractor": {
+        "acc": 0.5283,
+        "ci95": [
+          0.4883,
+          0.5683
+        ]
+      },
+      "oracle": {
+        "acc": 0.69,
+        "ci95": [
+          0.6533,
+          0.7267
+        ]
+      },
+      "prefilter": {
+        "acc": 0.6667,
+        "ci95": [
+          0.6283,
+          0.7033
+        ]
+      },
+      "vector_only": {
+        "acc": 0.665,
+        "ci95": [
+          0.6267,
+          0.7017
+        ]
+      }
+    },
+    "paired_deltas": {
+      "distractor-closed": {
+        "delta": 0.2217,
+        "ci95": [
+          0.1683,
+          0.275
+        ],
+        "discordant": [
+          209,
+          76
+        ],
+        "mcnemar_exact_p": 0.0
+      },
+      "vector_only-distractor": {
+        "delta": 0.1367,
+        "ci95": [
+          0.0883,
+          0.1833
+        ],
+        "discordant": [
+          147,
+          65
+        ],
+        "mcnemar_exact_p": 0.0
+      },
+      "prefilter-vector_only": {
+        "delta": 0.0017,
+        "ci95": [
+          -0.0317,
+          0.035
+        ],
+        "discordant": [
+          56,
+          55
+        ],
+        "mcnemar_exact_p": 1.0
+      },
+      "oracle-vector_only": {
+        "delta": 0.025,
+        "ci95": [
+          -0.0167,
+          0.0683
+        ],
+        "discordant": [
+          91,
+          76
+        ],
+        "mcnemar_exact_p": 0.2786121
+      },
+      "oracle-prefilter": {
+        "delta": 0.0233,
+        "ci95": [
+          -0.0183,
+          0.065
+        ],
+        "discordant": [
+          89,
+          75
+        ],
+        "mcnemar_exact_p": 0.3100386
+      }
+    }
+  }
+}

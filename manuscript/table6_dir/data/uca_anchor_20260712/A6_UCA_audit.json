@@ -1,0 +1,35 @@
+{
+  "a_filter_keys_in_declared_fields": true,
+  "b_relevance_defs_frozen": true,
+  "c_key_disjoint": true,
+  "d_metadata_has_no_relevance": true,
+  "e1_label_key_leak_count": 0,
+  "e1_pass": true,
+  "e2_lexicon_8gram_overlap_count": 0,
+  "e2_pass": true,
+  "e2_examples": [],
+  "e3_generic_8gram_overlap_rate": 0.00016,
+  "e3_within_abort_threshold_2pct": true,
+  "e3_affected_docs": 1,
+  "f_admitted_densities_in_window": {
+    "falls": 0.014,
+    "fight": 0.0462,
+    "fire": 0.0213,
+    "weapon": 0.0222,
+    "running": 0.0477,
+    "crash": 0.0112,
+    "money": 0.0182,
+    "door": 0.1093,
+    "take": 0.0636,
+    "enterexit": 0.0507
+  },
+  "f_pass": true,
+  "predicate_provenance": {
+    "video_class": "UCF-Crime curation (video id prefix; producer=CRCV authors)",
+    "video_duration_bin": "container ffprobe duration (producer=this pipeline, exogenous)",
+    "event_position_bin": "UCA annotation timestamps (producer=UCA annotators; TIMING only, content-free; DEMOTED per 6a(4))"
+  },
+  "membership_disclosure": "corpus membership (which frames become documents) is annotation-driven (UCA event spans)",
+  "lexical_overlap_note": "pixel-mediated unigram overlap is legal by design (2.5-channel residual, disclosed)",
+  "overall_pass": true
+}

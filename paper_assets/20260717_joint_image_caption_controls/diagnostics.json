@@ -1,0 +1,7 @@
+{
+  "joint_matched_cosine_to_caption_mean": 0.8647623062133789,
+  "joint_matched_cosine_to_frame_mean": 0.6404002904891968,
+  "matched_to_shuffled_joint_cosine_mean": 0.8145513534545898,
+  "matched_joint_unique_vectors": 3000,
+  "shuffled_joint_unique_vectors": 3000
+}

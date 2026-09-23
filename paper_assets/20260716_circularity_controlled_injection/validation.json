@@ -1,0 +1,154 @@
+{
+  "expected_clip_count": {
+    "pass": true,
+    "detail": 3000
+  },
+  "expected_document_count": {
+    "pass": true,
+    "detail": 3000
+  },
+  "expected_query_count": {
+    "pass": true,
+    "detail": 85
+  },
+  "one_document_per_clip": {
+    "pass": true,
+    "detail": 3000
+  },
+  "document_ids_unique": {
+    "pass": true,
+    "detail": 3000
+  },
+  "query_ids_unique": {
+    "pass": true,
+    "detail": 85
+  },
+  "document_index_alignment": {
+    "pass": true,
+    "detail": null
+  },
+  "query_index_alignment": {
+    "pass": true,
+    "detail": null
+  },
+  "document_embedding_rows": {
+    "pass": true,
+    "detail": [
+      3000,
+      1024
+    ]
+  },
+  "query_embedding_rows": {
+    "pass": true,
+    "detail": [
+      85,
+      1024
+    ]
+  },
+  "corpus_document_clip_identity": {
+    "pass": true,
+    "detail": null
+  },
+  "expected_relevance_definitions": {
+    "pass": true,
+    "detail": null
+  },
+  "expected_pair_clusters": {
+    "pass": true,
+    "detail": 25
+  },
+  "strict_qrel_query_coverage": {
+    "pass": true,
+    "detail": 85
+  },
+  "strict_qrel_targets_in_corpus": {
+    "pass": true,
+    "detail": null
+  },
+  "strict_qrel_pairs_unique": {
+    "pass": true,
+    "detail": null
+  },
+  "semantic_qrel_query_coverage": {
+    "pass": true,
+    "detail": 85
+  },
+  "semantic_qrel_targets_in_corpus": {
+    "pass": true,
+    "detail": null
+  },
+  "semantic_qrel_pairs_unique": {
+    "pass": true,
+    "detail": null
+  },
+  "strict_qrels_equal_semantic_intersect_predicate": {
+    "pass": true,
+    "detail": null
+  },
+  "semantic_qrels_constant_within_relevance_definition": {
+    "pass": true,
+    "detail": null
+  },
+  "frozen_document_vectors_finite": {
+    "pass": true,
+    "detail": null
+  },
+  "frozen_query_vectors_finite": {
+    "pass": true,
+    "detail": null
+  },
+  "frozen_vector_norms": {
+    "pass": true,
+    "document_min_max": [
+      0.9999998807907104,
+      1.0000001192092896
+    ],
+    "query_min_max": [
+      0.9999999403953552,
+      1.0
+    ]
+  },
+  "c1_all_query_condition_scoring_cells": {
+    "pass": true,
+    "detail": 510
+  },
+  "c1_oracle_ndcg_exactly_one": {
+    "pass": true,
+    "detail": [
+      1.0
+    ]
+  },
+  "c2_primary_complete": {
+    "pass": true,
+    "detail": 680
+  },
+  "all_primary_metrics_finite": {
+    "pass": true,
+    "detail": null
+  },
+  "dense_clean_replicates_frozen_metric": {
+    "pass": true,
+    "detail": {
+      "reembedded": 0.17003348904727908,
+      "frozen": 0.170033489047279
+    }
+  },
+  "no_dense_token_truncation": {
+    "pass": true,
+    "detail": {
+      "model_max_seq_length": 8192,
+      "clean": {
+        "min": 53,
+        "median": 92.0,
+        "max": 139,
+        "over_model_max": 0
+      },
+      "full_contamination": {
+        "min": 53,
+        "median": 97.0,
+        "max": 158,
+        "over_model_max": 0
+      }
+    }
+  }
+}

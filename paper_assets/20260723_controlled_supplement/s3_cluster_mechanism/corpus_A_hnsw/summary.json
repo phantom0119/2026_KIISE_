@@ -1,0 +1,39 @@
+{
+  "analysis": "S3 selectivity-preserving filtered-ANN mechanism controls",
+  "created_at": "2026-07-23T09:06:33.113347+00:00",
+  "corpus": "A",
+  "documents": 132521,
+  "dimension": 512,
+  "queries": 1000,
+  "natural_predicates": 24,
+  "shuffle_repetitions": 100,
+  "synthetic_anchors": 10,
+  "methods": [
+    "hnsw"
+  ],
+  "gates": {
+    "hnsw": {
+      "negative_control": {
+        "predicates": 24,
+        "mean_natural_minus_shuffle_loss": 0.6388690694669882,
+        "predicate_bootstrap_ci": [
+          0.5923796368750434,
+          0.6860488360207527
+        ],
+        "positive_predicate_fraction": 1.0,
+        "pass": true
+      },
+      "positive_control": {
+        "anchors": 10,
+        "mean_within_selectivity_slope": 0.5207439857721329,
+        "anchor_bootstrap_ci": [
+          0.5012766436189413,
+          0.5408610573410988
+        ],
+        "pass": true
+      },
+      "within_corpus_pass": true
+    }
+  },
+  "claim_rule": "Causal wording requires both negative and positive HNSW gates in both corpora; a single-corpus pass is insufficient."
+}

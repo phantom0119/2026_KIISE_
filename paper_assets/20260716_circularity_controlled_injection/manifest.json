@@ -1,0 +1,209 @@
+{
+  "experiment": "AIHub-522 controlled circularity injection C1/C2",
+  "status": "post-pilot formalization; not preregistered",
+  "started_at_utc": "2026-07-16T12:47:49.541666+00:00",
+  "completed_at_utc": "2026-07-16T12:48:48.124143+00:00",
+  "canonical_root": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded",
+  "embedding_root": "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3",
+  "model_path": "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3",
+  "output_dir": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260716_circularity_controlled_injection",
+  "design": {
+    "fixed": [
+      "3000-clip corpus membership",
+      "85 query IDs and texts",
+      "strict and semantic qrels",
+      "binary nDCG@10 implementation",
+      "top-k and deterministic tie break"
+    ],
+    "C1_intervention": "candidate set only: qrel positives versus uniform same-cardinality masks",
+    "C2_intervention": "document text only: append exact relevance clause on positive label edges",
+    "C2_dense_control": "clean, full-contamination, and query embeddings generated in one loaded model session",
+    "primary_estimand": "query-weighted mean paired delta in semantic nDCG@10",
+    "dependence_sensitivity": "25 predicate x relevance pair-cluster bootstrap",
+    "partial_dose_role": "robustness only; no monotonicity claim"
+  },
+  "parameters": {
+    "seed": 20260716,
+    "top_ks": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "max_rank": 100,
+    "random_filter_reps": 1000,
+    "dose_reps": 200,
+    "bootstrap_draws": 10000,
+    "doses": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "batch_size": 32,
+    "device": "cuda:1",
+    "label_phrases": {
+      "parked_vehicle": "This clip shows a vehicle parked at the roadside.",
+      "dense_frame": "This clip shows a very crowded scene with many vehicles at once.",
+      "multiple_buses": "This clip shows two or more buses in view.",
+      "stopped_vehicles": "This clip shows vehicles stopped in the roadway.",
+      "two_plus_bikes": "This clip shows two or more bicycles or motorbikes in view."
+    }
+  },
+  "audits": {
+    "C1": {
+      "random_mask_stream_sha256": "92a296b910c326c5c7c0ea891ffcd5c0808bb79c3fba3c945ce2f5109f8f7ad6",
+      "random_filter_replicate_distribution": {
+        "strict": {
+          "replicates": 1000,
+          "mean": 0.03254318175460462,
+          "sd": 0.006434126060419192,
+          "replicate_percentile_2_5": 0.020439017944378562,
+          "replicate_percentile_97_5": 0.04598293089243294,
+          "max": 0.0562862410021436,
+          "plus_one_randomization_p_ge_oracle": 0.000999000999000999
+        },
+        "semantic": {
+          "replicates": 1000,
+          "mean": 0.10675183841390895,
+          "sd": 0.011254380868645674,
+          "replicate_percentile_2_5": 0.08562849162391158,
+          "replicate_percentile_97_5": 0.1292897392370527,
+          "max": 0.1431994403464306,
+          "plus_one_randomization_p_ge_oracle": 0.000999000999000999
+        }
+      },
+      "score_matrix_shape": [
+        85,
+        3000
+      ],
+      "restored_after_interrupted_dense_step": true
+    },
+    "C2_BM25": {
+      "semantic_positive_edges_by_definition": {
+        "parked_vehicle": 69,
+        "dense_frame": 70,
+        "multiple_buses": 247,
+        "stopped_vehicles": 636,
+        "two_plus_bikes": 345
+      },
+      "total_unique_label_edges": 1367,
+      "full_contaminated_text_sha256": "5b24b041392ceebbb4ceb85ebc905ee8f3fada9cc328bd1c363e30def5b5040b",
+      "dose_selection_rule": "floor(dose * label-positive documents), nested within each replicate and relevance definition",
+      "partial_dose_assignment_unit": "document x relevance-definition positive edge",
+      "restored_after_interrupted_dense_step": true
+    },
+    "C2_dense": {
+      "token_lengths": {
+        "model_max_seq_length": 8192,
+        "clean": {
+          "min": 53,
+          "median": 92.0,
+          "max": 139,
+          "over_model_max": 0
+        },
+        "full_contamination": {
+          "min": 53,
+          "median": 97.0,
+          "max": 158,
+          "over_model_max": 0
+        }
+      },
+      "same_session_and_model_for_clean_full_query": true,
+      "clean_vs_frozen_document_embedding": {
+        "mean_cosine": 1.0,
+        "min_cosine": 0.9999997019767761,
+        "max_abs_element_difference": 0.0
+      },
+      "query_vs_frozen_embedding": {
+        "mean_cosine": 1.0,
+        "min_cosine": 0.9999998211860657,
+        "max_abs_element_difference": 0.0
+      },
+      "embedding_shapes": {
+        "clean_documents": [
+          3000,
+          1024
+        ],
+        "full_documents": [
+          3000,
+          1024
+        ],
+        "queries": [
+          85,
+          1024
+        ]
+      }
+    }
+  },
+  "environment": {
+    "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "executable": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/envs/kiise-vlmdb/bin/python",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "faiss-cpu": "1.14.3",
+      "rank-bm25": "0.2.2",
+      "scipy": "1.15.3",
+      "sentence-transformers": "5.6.0",
+      "torch": "2.12.1",
+      "transformers": "5.13.0"
+    },
+    "device_argument": "cuda:1",
+    "nvidia_smi_gpus": [
+      "0, NVIDIA GeForce RTX 3090, GPU-6aba2cea-c8e7-ef07-353a-a161c454767a, 580.126.09",
+      "1, NVIDIA GeForce RTX 3090, GPU-e8c2ea75-923e-33d9-c2de-e3c5702244cf, 580.126.09"
+    ]
+  },
+  "script": {
+    "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/scripts/run_circularity_controlled_injection.py",
+    "sha256": "82e2789ba0e1e884a15113dcfc9f312d65774a4540e0d423b35dbf349600d6d0"
+  },
+  "input_sha256": {
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/clips.parquet": "0d07704c5321eb3b60716ca956c75179e04c18a5cd65d18bbf4bfb1ce9d5fdb4",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/documents.parquet": "d9c6d987c69d8084ba3faa4589b825c4030977c95a5d44d6301ff2736d9f57dc",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/metadata.parquet": "f69854d224d983968816b11b1b519cb6e19bca7ad27a2f3c374820f62bd7a323",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/queries.jsonl": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/qrels.tsv": "7455f3b6c96e2e00c95c9b2220616ee9125aa6e9d96fdd1811b81f0114b75b41",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/canonical_trisource_expanded/qrels_semantic.tsv": "a4d152be65617f9acbc963ceddb479c5c95c8b06cfc7b25b79fd940062fe29d3",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3/document_embeddings.npy": "bf0614273dccff59333c96ebb91b87eb821d9fe85668f153e2d6d6abd9d77708",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3/query_embeddings.npy": "466d72e0b01830e1000b80000149dd45c689afa0af9f5a19f2b9e75e428be043",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3/document_index.parquet": "168141562679438a5b9176c0e6edd03548df330e2593d9d2b98015f00088c629",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3/query_index.parquet": "2b44cb5b28dca6c1b4cf5391fce3ef8d93d0d8ac5e900432a90a259aa9fe5ecf",
+    "/hdd2/KIISE_datasociety/Datasets/processed/aihub_522_intersection/20260710/embeddings_trisource_expanded/bge-m3/embedding_manifest.json": "419e71896cab293496458bfce31a2e3c43202f6dd4d62255ef5d1367444774c8",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/pytorch_model.bin": "b5e0ce3470abf5ef3831aa1bd5553b486803e83251590ab7ff35a117cf6aad38",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/config.json": "26159e7ad065073448460117eb24b7a4572f6f4e78eadff65dc0a11c052449fa",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/sentence_bert_config.json": "eb9b44b13c0f52a3b3685c3b1cbdea1ba8b04bea123b98f61610048940776eb1",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/tokenizer.json": "21106b6d7dab2952c1d496fb21d5dc9db75c28ed361a05f5020bbba27810dd08",
+    "/hdd2/KIISE_datasociety/Datasets/models/huggingface/BAAI--bge-m3/tokenizer_config.json": "a62b2b6784f990259fddef5f16388693a8043be4f69179e6a5257eeb3f9abac4"
+  },
+  "output_sha256": {
+    "c1_contrasts.csv": "e4ebbcae8bdc4d74705db0464a4fc4e8325a3a7cb460a9a649a50589db3272a6",
+    "c1_metrics_by_query.parquet": "81601ce51e1ad78a6644b4842fd777ddd5739481755fba546864bf73a3038a36",
+    "c1_random_mask_replicates.csv": "ff27e50c38c760fdb12b218ba2bfd996045ba408f9540cdd7167e10442618330",
+    "c1_random_masks_metrics_by_query.parquet": "6c44dabf2842de6ef2355a4ac1245da1f8f5a133657775f3ecb485af81aa41dc",
+    "c1_rankings.parquet": "be9cca60b843fa11b0d5c59cc7f16834c5d803e8f01dcccbf162f52cbae346a5",
+    "c1_summary.csv": "ebb72db2a8d18e5bb564c7bd0e5d03c698dcf7e93af424a59b7b70522f34161b",
+    "c2_bge_clean_document_embeddings.npy": "bf0614273dccff59333c96ebb91b87eb821d9fe85668f153e2d6d6abd9d77708",
+    "c2_bge_full_document_embeddings.npy": "6eabdb193ecfe52e5b2e9db17a38e4dce9617c9017c7e2eb563bc5ec53407a8b",
+    "c2_bge_metrics_by_query.parquet": "7c77bda15c17b001e63ab5be55f1b106a87ab8e1a25d9367f712020bd72e407f",
+    "c2_bge_query_embeddings.npy": "466d72e0b01830e1000b80000149dd45c689afa0af9f5a19f2b9e75e428be043",
+    "c2_bge_rankings_clean_full.parquet": "0fde44ff08286a444d19d069a41216ba681587912372e47dd0d34cf91cd83970",
+    "c2_bge_summary.csv": "8df9e22261847645c977ae80f8aa81af88257b06185f4eb10b28badc886b0ddb",
+    "c2_bm25_dose_metrics_by_query.parquet": "3d39b48cb70404eadcc963e948a451bd0c3d7ab6516d63764d0360608dc5e708",
+    "c2_bm25_dose_replicates.csv": "010d4da2c448efd6afc3d87f3281c9b4b467ebbff37848ef2a0260872e8050e6",
+    "c2_bm25_dose_summary.csv": "d99f052560b02e048fa69b618e4180e612730c07f9382170f2f20d333d9c0ba1",
+    "c2_bm25_rankings_clean_full.parquet": "d66f30fb9bf37b2ac82a475365fa268c911dfd81243fab22d81ded41a81eb4c9",
+    "c2_contrasts.csv": "b33c244284314695c4e5d021b210822345b3f3731957b2f7efbad4703ab168b8",
+    "c2_documents_full_contamination.parquet": "3700c690af6dff19a90f799b6de90e38daec139b9ab31736a98778180a03def8",
+    "c2_dose_assignment_audit.csv": "ea0e853e69e84ccaebf7a081aad29cdd876aca84421e57a914b1039480d10c80",
+    "c2_metrics_by_query_primary.parquet": "21c7b2ef7ff6e9e35ab94edb509160ec488845e6ff384f5ec3105cd280f59536",
+    "c2_summary.csv": "8dc183c5e99c38a5ecc72a3d47b77ad3620ea583f340f1c27bf096bba6bd11ed",
+    "validation.json": "04d5fbb1c280b260c0dba4c3141d9d5df40008d5cb6b6cc18cc4797b2c6a999e"
+  }
+}

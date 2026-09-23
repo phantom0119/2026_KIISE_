@@ -1,0 +1,25 @@
+{
+  "engine": "weaviate",
+  "corpus": "B",
+  "N": 143830,
+  "k": 10,
+  "version": "server 1.35.3 / weaviate-client 4.22.0",
+  "queries": 200,
+  "index": {
+    "type": "HNSW",
+    "M": 32,
+    "efConstruction": 200,
+    "ef": 64,
+    "metric": "IP (L2-normalized vectors)"
+  },
+  "conditions": [
+    "w1",
+    "w2",
+    "w3"
+  ],
+  "gate_unfiltered_recall": 0.9995,
+  "controls": "same-size random masks, default_rng(20260712+idx) [Amd.5]",
+  "latency": "single-thread client RT p50, within-engine descriptive ONLY",
+  "timing_queries": 100,
+  "repeats": 5
+}

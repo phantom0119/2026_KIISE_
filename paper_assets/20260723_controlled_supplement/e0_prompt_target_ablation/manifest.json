@@ -1,0 +1,49 @@
+{
+  "script": "analyze_prompt_target_ablation.py",
+  "created_at": "2026-07-23T11:06:18.990880+00:00",
+  "parameters": {
+    "bootstrap": 10000,
+    "seed": 20260723,
+    "ranking": "exact normalized inner product, deterministic tie break",
+    "query_vectors": "frozen task-aware-lane query vectors used for both conditions"
+  },
+  "input_sha256": {
+    "base_queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "neutral_queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "qrels": {
+      "qrels.tsv": {
+        "base": "7455f3b6c96e2e00c95c9b2220616ee9125aa6e9d96fdd1811b81f0114b75b41",
+        "neutral": "c97245318f30044ff9fe7d302afee06d0aeb781ca5d643cd76bb66c66062644a"
+      },
+      "qrels_semantic.tsv": {
+        "base": "a4d152be65617f9acbc963ceddb479c5c95c8b06cfc7b25b79fd940062fe29d3",
+        "neutral": "bcd6d1e7060a4b86f12a46518020cd931314463ba42c05023bcf0f50bec2b508"
+      }
+    },
+    "base_metadata": "f69854d224d983968816b11b1b519cb6e19bca7ad27a2f3c374820f62bd7a323",
+    "neutral_metadata": "47b2396f1c4982dd0a9fd53b6a8a023a5e85c0c9a8b62a9eecd5d801733582c1",
+    "base_document_embeddings": "bf0614273dccff59333c96ebb91b87eb821d9fe85668f153e2d6d6abd9d77708",
+    "neutral_document_embeddings": "46f7fa2a3cbf6f846cfa1a863da727a5248120888cfc6e4cac55aaa43e471be3"
+  },
+  "controlled_equalities": {
+    "caption_generation_except_prompt": {
+      "snapshot": "/hdd2/huggingface_cache/hub/models--Qwen--Qwen2.5-VL-7B-Instruct/snapshots/cc594898137f460bfe9f0759e9844b3ce807cfb5",
+      "max_new_tokens": 110,
+      "max_pixels": 200704,
+      "decoding": "greedy",
+      "seed": 20260710,
+      "n_videos_target": 3000
+    },
+    "base_caption_shards": 2,
+    "neutral_caption_shards": 2,
+    "caption_frame_identities": 3000,
+    "queries_equal": true,
+    "strict_qrels_equal_after_sort": true,
+    "semantic_qrels_equal_after_sort": true,
+    "metadata_equal_after_sort": true
+  },
+  "prompt_sha256": {
+    "base": "6b8e5963694a0375896a30d8099f0e6d3d9e210805c042c74ecd73e99c8161a5",
+    "neutral": "7475bee0cc4c705cfc351cd1502371c130e3fbde15090f631eaf1964fd02c860"
+  }
+}

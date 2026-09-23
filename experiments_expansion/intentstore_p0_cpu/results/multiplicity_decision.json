@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-08-06T06:53:06.110012+00:00",
+  "status": "FDR_INCONCLUSIVE",
+  "reason": "No material cross-service reversal survived BH-FDR over 50 tests.",
+  "tests": 50,
+  "permutations_per_test": 200000,
+  "seed": 202608061,
+  "reversal_count": 0,
+  "reversals": [],
+  "scope": "post-result multiplicity audit; not preregistered primary analysis"
+}

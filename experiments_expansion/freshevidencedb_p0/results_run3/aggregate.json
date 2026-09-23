@@ -1,0 +1,133 @@
+{
+  "aggregate": {
+    "blue_green_epoch": {
+      "answer_error_rate": 0.0,
+      "answer_error_wilson_95ci": [
+        1.0842021724855044e-19,
+        0.0018850626500243992
+      ],
+      "error_count": 0,
+      "mean_write_amplification": 8.392976649600502,
+      "missing_rate": 0.0,
+      "mixed_rate": 0.0,
+      "p50_latency_ms": 11.695412918925285,
+      "p95_latency_ms": 90.08711865171789,
+      "repeat_error_rates": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeats": 5,
+      "repeats_at_or_above_5pct": 0,
+      "stale_rate": 0.0,
+      "steady_all_ok": true,
+      "update_queries": 2034,
+      "waves_completed": 40,
+      "worker_errors": []
+    },
+    "naive_eager": {
+      "answer_error_rate": 0.7019311502938707,
+      "answer_error_wilson_95ci": [
+        0.6832490502397556,
+        0.7199629890361107
+      ],
+      "error_count": 1672,
+      "mean_write_amplification": 1.0,
+      "missing_rate": 0.2565071368597817,
+      "mixed_rate": 0.30730478589420657,
+      "p50_latency_ms": 11.385636404156685,
+      "p95_latency_ms": 31.124980375170704,
+      "repeat_error_rates": [
+        0.6844444444444444,
+        0.6788617886178862,
+        0.7131147540983607,
+        0.7263374485596708,
+        0.7060085836909872
+      ],
+      "repeats": 5,
+      "repeats_at_or_above_5pct": 5,
+      "stale_rate": 0.7019311502938707,
+      "steady_all_ok": true,
+      "update_queries": 2382,
+      "waves_completed": 40,
+      "worker_errors": []
+    },
+    "read_version_filter": {
+      "answer_error_rate": 0.15185504745470232,
+      "answer_error_wilson_95ci": [
+        0.13782208912623312,
+        0.16704000907241812
+      ],
+      "error_count": 352,
+      "mean_write_amplification": 1.0,
+      "missing_rate": 0.15185504745470232,
+      "mixed_rate": 0.0,
+      "p50_latency_ms": 11.952548753470182,
+      "p95_latency_ms": 31.648833537474285,
+      "repeat_error_rates": [
+        0.14957264957264957,
+        0.15151515151515152,
+        0.15698924731182795,
+        0.15698924731182795,
+        0.14410480349344978
+      ],
+      "repeats": 5,
+      "repeats_at_or_above_5pct": 5,
+      "stale_rate": 0.0,
+      "steady_all_ok": true,
+      "update_queries": 2318,
+      "waves_completed": 40,
+      "worker_errors": []
+    },
+    "staged_manifest": {
+      "answer_error_rate": 0.0,
+      "answer_error_wilson_95ci": [
+        0.0,
+        0.001902803612393671
+      ],
+      "error_count": 0,
+      "mean_write_amplification": 1.0,
+      "missing_rate": 0.0,
+      "mixed_rate": 0.0,
+      "p50_latency_ms": 12.074110098183155,
+      "p95_latency_ms": 31.693848501890894,
+      "repeat_error_rates": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repeats": 5,
+      "repeats_at_or_above_5pct": 0,
+      "stale_rate": 0.0,
+      "steady_all_ok": true,
+      "update_queries": 2015,
+      "waves_completed": 40,
+      "worker_errors": []
+    }
+  },
+  "decision": "CONDITIONAL_GO_REAL_REVISION_CROSS_ENGINE",
+  "gates": {
+    "G0_harness": true,
+    "G1_reproducible_failure": true,
+    "G2_simple_filter_sufficient": false,
+    "G3_staged_manifest_effective": true,
+    "G4_blue_green_system_value": true,
+    "blue_to_staged_write_amp_ratio": 8.392976649600502,
+    "read_filter_p95_overhead": 0.016830634300462943,
+    "staged_p95_overhead": 0.01827689912935626
+  },
+  "protocol": {
+    "docs_per_wave": 16,
+    "documents": 128,
+    "query_workers": 4,
+    "repeats": 5,
+    "runtime_seconds": 77.94771525077522,
+    "seed": 20260807,
+    "vector_size": 256,
+    "waves": 8
+  }
+}

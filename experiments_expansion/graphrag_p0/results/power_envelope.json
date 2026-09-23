@@ -1,0 +1,42 @@
+{
+  "alpha_per_comparison": 0.01667,
+  "n_scenarios": 540,
+  "envelope": {
+    "pilot_now": {
+      "frac_scenarios_feasible": 0.485,
+      "feasible_at_delta_0.05": [
+        0.05,
+        0.1,
+        0.2
+      ],
+      "min_clusters_delta_0.05_icc_0.10_m4": 69,
+      "max_clusters_delta_0.05_icc_0.10_m4": 545
+    },
+    "primekg_reachable": {
+      "frac_scenarios_feasible": 1.0,
+      "feasible_at_delta_0.05": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "min_clusters_delta_0.05_icc_0.10_m4": 69,
+      "max_clusters_delta_0.05_icc_0.10_m4": 545
+    },
+    "two_domains_target": {
+      "frac_scenarios_feasible": 0.881,
+      "feasible_at_delta_0.05": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "min_clusters_delta_0.05_icc_0.10_m4": 69,
+      "max_clusters_delta_0.05_icc_0.10_m4": 545
+    }
+  },
+  "wall_s": 0.5,
+  "note": "CPU stage = envelope only; real discordance/ICC pending model pilot."
+}

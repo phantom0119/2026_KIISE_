@@ -1,0 +1,7 @@
+{
+  "server": "PostgreSQL 16 / pgvector 0.8.4 (:5433)",
+  "table": "b3_frames (132521 x 512, sinnaedoro corpus_real)",
+  "global_build_s": 50.4,
+  "global_mb": 333.5,
+  "note": "global build cost amortized across all predicates; partial = per-predicate build+size. recall vs exact seq-scan filtered GT; client round-trip timing; no faiss cross-ratio."
+}

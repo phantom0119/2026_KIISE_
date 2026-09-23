@@ -1,0 +1,51 @@
+mask_id,predicate,kind,pair,subset,selectivity,gt_cluster_med_rank
+0,time_of_day==morning,natural,time_of_day==morning,36999,0.25724,42.5
+1,CTRL(s=0.2572)|time_of_day==morning,control,time_of_day==morning,36999,0.25724,20.4
+2,time_of_day==afternoon,natural,time_of_day==afternoon,49998,0.34762,42.0
+3,CTRL(s=0.3476)|time_of_day==afternoon,control,time_of_day==afternoon,49998,0.34762,15.1
+4,time_of_day==evening,natural,time_of_day==evening,42398,0.29478,621.8
+5,CTRL(s=0.2948)|time_of_day==evening,control,time_of_day==evening,42398,0.29478,17.6
+6,sig_has_yellow==True,natural,sig_has_yellow==True,90392,0.62846,8.1
+7,CTRL(s=0.6285)|sig_has_yellow==True,control,sig_has_yellow==True,90392,0.62846,8.5
+8,sig_has_pedestrian==True,natural,sig_has_pedestrian==True,56232,0.39096,15.3
+9,CTRL(s=0.3910)|sig_has_pedestrian==True,control,sig_has_pedestrian==True,56232,0.39096,13.0
+10,sig_has_yellow==False,natural,sig_has_yellow==False,39003,0.27117,23.6
+11,CTRL(s=0.2712)|sig_has_yellow==False,control,sig_has_yellow==False,39003,0.27117,19.9
+12,sig_has_pedestrian==False,natural,sig_has_pedestrian==False,73163,0.50868,9.3
+13,CTRL(s=0.5087)|sig_has_pedestrian==False,control,sig_has_pedestrian==False,73163,0.50868,10.2
+14,veh_density_bin==low,natural,veh_density_bin==low,42810,0.29764,34.2
+15,CTRL(s=0.2976)|veh_density_bin==low,control,veh_density_bin==low,42810,0.29764,18.5
+16,veh_density_bin==mid,natural,veh_density_bin==mid,39220,0.27268,30.9
+17,CTRL(s=0.2727)|veh_density_bin==mid,control,veh_density_bin==mid,39220,0.27268,19.6
+18,veh_density_bin==high,natural,veh_density_bin==high,47365,0.32931,58.1
+19,CTRL(s=0.3293)|veh_density_bin==high,control,veh_density_bin==high,47365,0.32931,16.4
+20,hour==6,natural,hour==6,10043,0.06983,188.9
+21,CTRL(s=0.0698)|hour==6,control,hour==6,10043,0.06983,77.1
+22,hour==7,natural,hour==7,10115,0.07033,107.6
+23,CTRL(s=0.0703)|hour==7,control,hour==7,10115,0.07033,74.7
+24,hour==8,natural,hour==8,10124,0.07039,104.8
+25,CTRL(s=0.0704)|hour==8,control,hour==8,10124,0.07039,75.2
+26,hour==9,natural,hour==9,6717,0.0467,162.6
+27,CTRL(s=0.0467)|hour==9,control,hour==9,6717,0.0467,120.6
+28,hour==13,natural,hour==13,3336,0.02319,278.2
+29,CTRL(s=0.0232)|hour==13,control,hour==13,3336,0.02319,230.3
+30,hour==14,natural,hour==14,16446,0.11434,104.7
+31,CTRL(s=0.1143)|hour==14,control,hour==14,16446,0.11434,46.0
+32,hour==15,natural,hour==15,16190,0.11256,117.7
+33,CTRL(s=0.1126)|hour==15,control,hour==15,16190,0.11256,47.2
+34,hour==16,natural,hour==16,2794,0.01943,311.7
+35,CTRL(s=0.0194)|hour==16,control,hour==16,2794,0.01943,263.7
+36,hour==17,natural,hour==17,11232,0.07809,121.6
+37,CTRL(s=0.0781)|hour==17,control,hour==17,11232,0.07809,67.9
+38,hour==18,natural,hour==18,15656,0.10885,715.0
+39,CTRL(s=0.1089)|hour==18,control,hour==18,15656,0.10885,47.6
+40,hour==19,natural,hour==19,15854,0.11023,689.5
+41,CTRL(s=0.1102)|hour==19,control,hour==19,15854,0.11023,48.7
+42,hour==20,natural,hour==20,10888,0.0757,748.3
+43,CTRL(s=0.0757)|hour==20,control,hour==20,10888,0.0757,69.1
+44,"hour in [11,14] (midday)",composite,"hour in [11,14] (midday)",19782,0.13754,95.5
+45,"CTRL(s=0.1375)|hour in [11,14] (midday)",control,"hour in [11,14] (midday)",19782,0.13754,39.4
+46,"hour in [8,18] (working)",composite,"hour in [8,18] (working)",82495,0.57356,8.6
+47,"CTRL(s=0.5736)|hour in [8,18] (working)",control,"hour in [8,18] (working)",82495,0.57356,9.1
+48,"time_of_day in {morning,evening}",composite,"time_of_day in {morning,evening}",79397,0.55202,8.2
+49,"CTRL(s=0.5520)|time_of_day in {morning,evening}",control,"time_of_day in {morning,evening}",79397,0.55202,9.6

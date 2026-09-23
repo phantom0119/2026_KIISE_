@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-07-17T02:01:23.623367+00:00",
+  "seed": 20260717,
+  "model": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/models/Qwen3-VL-Embedding-2B",
+  "model_family": "Qwen3-VL-Embedding-2B",
+  "instruction": "Represent the user's input.",
+  "dimension": 2048,
+  "documents": 3000,
+  "queries": 85,
+  "clusters": 25,
+  "random_filter_reps": 1000,
+  "bootstrap_reps": 10000,
+  "injected_label_edges": 1367,
+  "token_lengths": {
+    "model_max_length": 8192,
+    "clean_documents": {
+      "min": 66,
+      "median": 99.0,
+      "max": 129,
+      "over_model_max": 0
+    },
+    "full_documents": {
+      "min": 66,
+      "median": 104.0,
+      "max": 155,
+      "over_model_max": 0
+    },
+    "queries": {
+      "min": 32,
+      "median": 37.0,
+      "max": 41,
+      "over_model_max": 0
+    }
+  },
+  "same_model_session_clean_full_query": true,
+  "clean_vs_frozen": {
+    "document_mean_cosine": 1.0,
+    "document_min_cosine": 0.9999997615814209,
+    "query_mean_cosine": 1.0,
+    "query_min_cosine": 0.9999998211860657
+  },
+  "hashes": {
+    "queries": "e7f7ac5c312de626ca964792fc7822bd2e7f39c1096ade3260b481f10c054a1f",
+    "qrels": "74da4f10b8566705b9176809f1b435e0811374b630475a9067ac08a7515d7a93",
+    "qrels_semantic": "f59cf0f8939685b16908e330c338437b54488a921cbec907bc5501206961f3e0",
+    "clean_texts": "5e019b598a073c90e7acdc4e74384bf5fdb888507e925b3ccfde335ff24c6f7b",
+    "full_texts": "35bfd3c8caf86d2334213d68cc935bfa0239dbe2dd39648ef2b7690f131263fd"
+  },
+  "interpretation": "Post-pilot controlled injection; not preregistered."
+}

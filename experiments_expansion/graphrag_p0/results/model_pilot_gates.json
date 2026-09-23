@@ -1,0 +1,269 @@
+{
+  "F3": {
+    "per_model_domain": {
+      "llama3|primekg_clinical": {
+        "n_facts": 200,
+        "n_pkp0": 199,
+        "pkp_mean": 0.0033,
+        "frac_stably_nonmemorized": 0.995,
+        "meets_F3_min100": true
+      },
+      "llama3|stark_amazon_ecommerce": {
+        "n_facts": 200,
+        "n_pkp0": 200,
+        "pkp_mean": 0.0,
+        "frac_stably_nonmemorized": 1.0,
+        "meets_F3_min100": true
+      },
+      "qwen25|primekg_clinical": {
+        "n_facts": 200,
+        "n_pkp0": 198,
+        "pkp_mean": 0.0056,
+        "frac_stably_nonmemorized": 0.99,
+        "meets_F3_min100": true
+      },
+      "qwen25|stark_amazon_ecommerce": {
+        "n_facts": 200,
+        "n_pkp0": 200,
+        "pkp_mean": 0.0,
+        "frac_stably_nonmemorized": 1.0,
+        "meets_F3_min100": true
+      }
+    },
+    "pass": true
+  },
+  "F4": {
+    "per_model_domain": {
+      "llama3|primekg_clinical": {
+        "cf_follow_rate": 0.7,
+        "closed_book_cf_baseline": 0.0,
+        "delta_pp": 0.7,
+        "meets_F4_20pp": true,
+        "per_arm": {
+          "A1F_flat": 0.6286,
+          "A1_text": 0.8071,
+          "A2_path": 0.6643
+        },
+        "memory_override_rate": 0.0,
+        "abstain_rate": 0.1286,
+        "one_sided_arm_effect": false
+      },
+      "llama3|stark_amazon_ecommerce": {
+        "cf_follow_rate": 0.9571,
+        "closed_book_cf_baseline": 0.0,
+        "delta_pp": 0.9571,
+        "meets_F4_20pp": true,
+        "per_arm": {
+          "A1F_flat": 0.95,
+          "A1_text": 0.9857,
+          "A2_path": 0.9357
+        },
+        "memory_override_rate": 0.0,
+        "abstain_rate": 0.0024,
+        "one_sided_arm_effect": false
+      },
+      "qwen25|primekg_clinical": {
+        "cf_follow_rate": 0.4952,
+        "closed_book_cf_baseline": 0.0,
+        "delta_pp": 0.4952,
+        "meets_F4_20pp": true,
+        "per_arm": {
+          "A1F_flat": 0.4214,
+          "A1_text": 0.4214,
+          "A2_path": 0.6429
+        },
+        "memory_override_rate": 0.0,
+        "abstain_rate": 0.45,
+        "one_sided_arm_effect": false
+      },
+      "qwen25|stark_amazon_ecommerce": {
+        "cf_follow_rate": 0.9857,
+        "closed_book_cf_baseline": 0.0,
+        "delta_pp": 0.9857,
+        "meets_F4_20pp": true,
+        "per_arm": {
+          "A1F_flat": 0.9929,
+          "A1_text": 0.9714,
+          "A2_path": 0.9929
+        },
+        "memory_override_rate": 0.0,
+        "abstain_rate": 0.0,
+        "one_sided_arm_effect": false
+      }
+    },
+    "pass": true
+  },
+  "F6_inputs": {
+    "H1a_format": {
+      "n_pairs": 1120,
+      "discordance": 0.1464,
+      "mean_a": 0.7929,
+      "mean_b": 0.7589,
+      "raw_diff": -0.0339
+    },
+    "H1b_structure": {
+      "n_pairs": 1120,
+      "discordance": 0.1402,
+      "mean_a": 0.7589,
+      "mean_b": 0.7991,
+      "raw_diff": 0.0402
+    },
+    "H1_total_repr": {
+      "n_pairs": 1120,
+      "discordance": 0.1598,
+      "mean_a": 0.7929,
+      "mean_b": 0.7991,
+      "raw_diff": 0.0063
+    },
+    "ICC_by_fact_cluster": 0.2753,
+    "obs_per_cluster_mean": 12.0
+  },
+  "descriptive_hit_active": [
+    {
+      "domain": "primekg_clinical",
+      "world": "counterfactual",
+      "arm": "A1F_flat",
+      "hit_active": 0.525
+    },
+    {
+      "domain": "primekg_clinical",
+      "world": "counterfactual",
+      "arm": "A1_text",
+      "hit_active": 0.6143
+    },
+    {
+      "domain": "primekg_clinical",
+      "world": "counterfactual",
+      "arm": "A2_path",
+      "hit_active": 0.6536
+    },
+    {
+      "domain": "primekg_clinical",
+      "world": "original",
+      "arm": "A1F_flat",
+      "hit_active": 0.6571
+    },
+    {
+      "domain": "primekg_clinical",
+      "world": "original",
+      "arm": "A1_text",
+      "hit_active": 0.6964
+    },
+    {
+      "domain": "primekg_clinical",
+      "world": "original",
+      "arm": "A2_path",
+      "hit_active": 0.7321
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "counterfactual",
+      "arm": "A1F_flat",
+      "hit_active": 0.9714
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "counterfactual",
+      "arm": "A1_text",
+      "hit_active": 0.9786
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "counterfactual",
+      "arm": "A2_path",
+      "hit_active": 0.9643
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "original",
+      "arm": "A1F_flat",
+      "hit_active": 0.8821
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "original",
+      "arm": "A1_text",
+      "hit_active": 0.8821
+    },
+    {
+      "domain": "stark_amazon_ecommerce",
+      "world": "original",
+      "arm": "A2_path",
+      "hit_active": 0.8464
+    }
+  ],
+  "descriptive_by_model": [
+    {
+      "model": "llama3",
+      "world": "counterfactual",
+      "arm": "A1F_flat",
+      "hit_active": 0.7893
+    },
+    {
+      "model": "llama3",
+      "world": "counterfactual",
+      "arm": "A1_text",
+      "hit_active": 0.8964
+    },
+    {
+      "model": "llama3",
+      "world": "counterfactual",
+      "arm": "A2_path",
+      "hit_active": 0.8
+    },
+    {
+      "model": "llama3",
+      "world": "original",
+      "arm": "A1F_flat",
+      "hit_active": 0.7607
+    },
+    {
+      "model": "llama3",
+      "world": "original",
+      "arm": "A1_text",
+      "hit_active": 0.8286
+    },
+    {
+      "model": "llama3",
+      "world": "original",
+      "arm": "A2_path",
+      "hit_active": 0.7179
+    },
+    {
+      "model": "qwen25",
+      "world": "counterfactual",
+      "arm": "A1F_flat",
+      "hit_active": 0.7071
+    },
+    {
+      "model": "qwen25",
+      "world": "counterfactual",
+      "arm": "A1_text",
+      "hit_active": 0.6964
+    },
+    {
+      "model": "qwen25",
+      "world": "counterfactual",
+      "arm": "A2_path",
+      "hit_active": 0.8179
+    },
+    {
+      "model": "qwen25",
+      "world": "original",
+      "arm": "A1F_flat",
+      "hit_active": 0.7786
+    },
+    {
+      "model": "qwen25",
+      "world": "original",
+      "arm": "A1_text",
+      "hit_active": 0.75
+    },
+    {
+      "model": "qwen25",
+      "world": "original",
+      "arm": "A2_path",
+      "hit_active": 0.8607
+    }
+  ]
+}

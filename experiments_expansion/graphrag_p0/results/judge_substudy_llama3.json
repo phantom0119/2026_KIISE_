@@ -1,0 +1,40 @@
+{
+  "judge_model": "llama3",
+  "n_judged": 444,
+  "confusion": {
+    "TP": 228,
+    "FN": 12,
+    "TN": 81,
+    "FP": 123
+  },
+  "sensitivity": 0.95,
+  "specificity": 0.3971,
+  "accuracy": 0.6959,
+  "per_arm": {
+    "A1F_flat": {
+      "sensitivity": 0.9125,
+      "specificity": 0.4853,
+      "n": 148
+    },
+    "A1_text": {
+      "sensitivity": 0.9625,
+      "specificity": 0.3636,
+      "n": 146
+    },
+    "A2_path": {
+      "sensitivity": 0.975,
+      "specificity": 0.3429,
+      "n": 150
+    }
+  },
+  "differential_misclassification": {
+    "sens_spread_across_arms": 0.0625,
+    "spec_spread_across_arms": 0.1424
+  },
+  "prereg_thresholds": {
+    "sens_spec_min": 0.85,
+    "arm_spread_max": 0.05
+  },
+  "meets_prereg": false,
+  "note": "Deterministic reference only; human double annotation still PENDING."
+}

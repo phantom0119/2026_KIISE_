@@ -1,0 +1,178 @@
+{
+  "created_at": "2026-08-06T16:30:22.052678+09:00",
+  "analysis_script": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/experiments_expansion/intentstore_p0_cpu/scripts/analyze_p0d_multiview_rescue.py",
+  "analysis_script_sha256": "c2f322314b28367acd86aa148fb8f4a503ecc7d1ca5dba456ca399e04880ec50",
+  "inputs": {
+    "stratum": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/samples/bbox_asymmetry_stratum/stratum_manifest.parquet",
+      "bytes": 24849,
+      "sha256": "6b0a29a216c53c01c3f0a1785a2be37c90ec43cae68461363afab40bf8d3141f"
+    },
+    "documents": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/canonical/documents.parquet",
+      "bytes": 1557230,
+      "sha256": "b37cabd37fc67d40527c50536c83e7c68d27752b89aba5c2ced1bbb6bcf4e214"
+    },
+    "queries": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/canonical/queries.jsonl",
+      "bytes": 2819033,
+      "sha256": "85e35ae41dde6cee6bad5fbc8cc0393a8b467aba42b4c743a4d883011a4b653d"
+    },
+    "frames": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/keyframes/stratum_bbox_asymmetry_400/frames.parquet",
+      "bytes": 179472,
+      "sha256": "7322d630008068b43a3c97857d09d4072f80885102fca612e6a3b3daf2605ceb"
+    },
+    "document_index": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/embeddings/bge-m3/document_index.parquet",
+      "bytes": 272146,
+      "sha256": "eb38aca4b607bf894444141350df1e6aa11dc375fce2b2a8e0ffc942f1ea91b9"
+    },
+    "document_embeddings": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/embeddings/bge-m3/document_embeddings.npy",
+      "bytes": 147456128,
+      "sha256": "b8cc2ef8ecc6c0a9371570316fa3aad360b4ec339a6bf28e4574bba9aa726cbb"
+    },
+    "query_index": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/embeddings/bge-m3/query_index.parquet",
+      "bytes": 33442,
+      "sha256": "344d5082deb4956894e598d4150605dcc8766a822206e920d9249264e3c46fde"
+    },
+    "query_embeddings": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/embeddings/bge-m3/query_embeddings.npy",
+      "bytes": 18727040,
+      "sha256": "69d90aa3cddd8f9f4afa38a4270d6c180c2f01d1d0fe13f761221730f4f588cd"
+    },
+    "vlm_Qwen2.5-VL-7B": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/results/multiview_answer_vlm_qwen25vl_400/vlm_answers.parquet",
+      "bytes": 89668,
+      "sha256": "e63fa52516fc69bce54f70930c31b11d2fa39aa6643cb640d42c65724634e9b3"
+    },
+    "vlm_Qwen2-VL-7B": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/results/multiview_answer_vlm_qwen2vl_400/vlm_answers.parquet",
+      "bytes": 125192,
+      "sha256": "8b1353ae2d066e0b51161827c0118ee1553d59858a19450a06984189fda14acc"
+    },
+    "vlm_Idefics2-8B": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/results/multiview_answer_vlm_idefics2_400/vlm_answers.parquet",
+      "bytes": 52415,
+      "sha256": "af37d072c46e55e9dbd0cfe8821a38ca6cb70f3323abf5f38fb43504557af1a2"
+    },
+    "vlm_InternVL3-8B": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Datasets/processed/aihub_multi_angle_cctv/20260708/results/multiview_answer_vlm_internvl3_400/vlm_answers.parquet",
+      "bytes": 74927,
+      "sha256": "2d06e586b2bae42e9f9c86757294643fef622717c94bad0d793ef5c0a093fbb5"
+    }
+  },
+  "excluded_literal_leak_clips": [
+    "aihub_multi_angle_cctv:Training:ph_e2067"
+  ],
+  "event_classes": [
+    "경계선을 통한 침입",
+    "비정상적인 경로로의 침범",
+    "신체적 충돌을 동반한 싸움",
+    "오토바이 인도 주행",
+    "이륜 이동수단 운전자 1인 헬멧 미착용",
+    "이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용",
+    "자전거 인도 주행",
+    "전동킥보드 앞뒤 2인 탑승",
+    "전동킥보드 인도 주행",
+    "특정 구역 내 지속 배회",
+    "특정 인물을 뒤따라가며 배회"
+  ],
+  "cohort_rows": 399,
+  "embedding_audit": {
+    "document_rows": 36000,
+    "document_embedding_shape": [
+      36000,
+      1024
+    ],
+    "query_rows": 4572,
+    "query_embedding_shape": [
+      4572,
+      1024
+    ],
+    "weak_event_prototypes": [
+      "경계선을 통한 침입",
+      "비정상적인 경로로의 침범",
+      "신체적 충돌을 동반한 싸움",
+      "오토바이 인도 주행",
+      "이륜 이동수단 운전자 1인 헬멧 미착용",
+      "이륜 이동수단 탑승자 일부 또는 전체 헬멧 미착용",
+      "자전거 인도 주행",
+      "전동킥보드 앞뒤 2인 탑승",
+      "전동킥보드 인도 주행",
+      "특정 구역 내 지속 배회",
+      "특정 인물을 뒤따라가며 배회"
+    ],
+    "prototype_norm_min": 0.9999999403953552,
+    "prototype_norm_max": 1.0,
+    "cot_norm_min": 0.9999998807907104,
+    "cot_norm_max": 1.0000001192092896
+  },
+  "vlm_audit": {
+    "Qwen2.5-VL-7B": {
+      "source_rows": 1600,
+      "analysis_rows": 1596,
+      "clips": 399,
+      "conditions": [
+        "better_view_only",
+        "both_view",
+        "closed_book",
+        "worse_view_only"
+      ],
+      "valid_json_rate": 1.0,
+      "parse_ok_rate": 1.0
+    },
+    "Qwen2-VL-7B": {
+      "source_rows": 1600,
+      "analysis_rows": 1596,
+      "clips": 399,
+      "conditions": [
+        "better_view_only",
+        "both_view",
+        "closed_book",
+        "worse_view_only"
+      ],
+      "valid_json_rate": 0.9843358395989975,
+      "parse_ok_rate": 0.9843358395989975
+    },
+    "Idefics2-8B": {
+      "source_rows": 1600,
+      "analysis_rows": 1596,
+      "clips": 399,
+      "conditions": [
+        "better_view_only",
+        "both_view",
+        "closed_book",
+        "worse_view_only"
+      ],
+      "valid_json_rate": 0.9843358395989975,
+      "parse_ok_rate": 0.9843358395989975
+    },
+    "InternVL3-8B": {
+      "source_rows": 1600,
+      "analysis_rows": 1596,
+      "clips": 399,
+      "conditions": [
+        "better_view_only",
+        "both_view",
+        "closed_book",
+        "worse_view_only"
+      ],
+      "valid_json_rate": 1.0,
+      "parse_ok_rate": 1.0
+    }
+  },
+  "storage_audit": {
+    "frame_rows": 2394,
+    "frames_per_clip": [
+      6
+    ],
+    "views_per_clip": [
+      2
+    ],
+    "visual_1view_to_2view_total_byte_ratio": 0.5024562296692563
+  },
+  "cpu_only": true
+}

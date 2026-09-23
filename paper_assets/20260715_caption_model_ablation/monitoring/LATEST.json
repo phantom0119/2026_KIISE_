@@ -1,0 +1,168 @@
+{
+  "observed_at_kst": "2026-07-16T07:11:14+09:00",
+  "services": {
+    "kiise-caption-ablation-generate.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "command_status": "0"
+    },
+    "kiise-caption-ablation-qwen3vl.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "command_status": "0"
+    },
+    "kiise-caption-ablation-qwen35.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "command_status": "0"
+    },
+    "kiise-caption-ablation-finalize.service": {
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "command_status": "0"
+    }
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 3090",
+      "memory_used_mib": 263,
+      "memory_total_mib": 24576,
+      "utilization_pct": 0,
+      "temperature_c": 47,
+      "uuid": "GPU-6aba2cea-c8e7-ef07-353a-a161c454767a"
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA GeForce RTX 3090",
+      "memory_used_mib": 45,
+      "memory_total_mib": 24576,
+      "utilization_pct": 0,
+      "temperature_c": 36,
+      "uuid": "GPU-e8c2ea75-923e-33d9-c2de-e3c5702244cf"
+    }
+  ],
+  "gpu_apps": [],
+  "lanes": [
+    {
+      "model": "qwen25vl_7b",
+      "dataset": "522",
+      "expected": 3000,
+      "generated_jsonl_rows": 3000,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen25vl_7b/522/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen25vl_7b",
+      "dataset": "meva",
+      "expected": 985,
+      "generated_jsonl_rows": 985,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen25vl_7b/meva/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen25vl_7b",
+      "dataset": "uca",
+      "expected": 6432,
+      "generated_jsonl_rows": 6432,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen25vl_7b/uca/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen3vl_8b",
+      "dataset": "522",
+      "expected": 3000,
+      "generated_jsonl_rows": 3000,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen3vl_8b/522/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen3vl_8b",
+      "dataset": "meva",
+      "expected": 985,
+      "generated_jsonl_rows": 985,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen3vl_8b/meva/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen3vl_8b",
+      "dataset": "uca",
+      "expected": 6432,
+      "generated_jsonl_rows": 6432,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen3vl_8b/uca/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen35_9b",
+      "dataset": "522",
+      "expected": 3000,
+      "generated_jsonl_rows": 3000,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/522/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen35_9b",
+      "dataset": "meva",
+      "expected": 985,
+      "generated_jsonl_rows": 985,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/meva/captions/caption_output_audit.json"
+    },
+    {
+      "model": "qwen35_9b",
+      "dataset": "uca",
+      "expected": 6432,
+      "generated_jsonl_rows": 6432,
+      "errors": 0,
+      "audit_pass": true,
+      "audit_path": "/hdd/KIISE_datasociety/experiments/caption_model_ablation/20260715/qwen35_9b/uca/captions/caption_output_audit.json"
+    }
+  ],
+  "ready_lanes": 9,
+  "downstream_ready_lanes": 9,
+  "embedding_blockers": [
+    {
+      "split": "train",
+      "completed_tasks": 1108,
+      "total_tasks": 2787,
+      "remaining_tasks": 1679,
+      "percent": 39.76,
+      "latest_output": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/aihub_522_embeddings/train/152011_task152011_403.pt",
+      "latest_output_at": "2026-07-15T10:56:29.074263+09:00"
+    },
+    {
+      "split": "val",
+      "completed_tasks": 346,
+      "total_tasks": 346,
+      "remaining_tasks": 0,
+      "percent": 100.0,
+      "latest_output": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/Qwen3-VL-Embedding/aihub_522_embeddings/val/42022_task42022_101.pt",
+      "latest_output_at": "2026-07-15T11:48:52.091022+09:00"
+    }
+  ],
+  "recent_service_errors": [],
+  "final_artifacts": {
+    "results_md": true,
+    "verdict_json": true
+  },
+  "delta": {
+    "embedding_tasks": {
+      "train": 0,
+      "val": 0
+    },
+    "caption_rows": {}
+  },
+  "state": "finalized"
+}

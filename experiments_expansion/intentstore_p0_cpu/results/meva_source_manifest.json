@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-08-06T06:53:07.263225+00:00",
+  "inputs": {
+    "metrics": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_optimization_validation/meva_same_encoder_control/per_query_metrics.parquet",
+      "sha256": "590c190c5908b47d31f2cb0683d066b92a6583e6a7ab6c489004a06e5ed1287f"
+    },
+    "clusters": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_optimization_validation/meva_same_encoder_control/query_clusters.csv",
+      "sha256": "0af081f0909b4b254557a6c367280a44868fe1dde30c48f7da43ce46b0c3786e"
+    },
+    "costs": {
+      "path": "/home/explorer/vectorDB/experiments/db/KIISE_datasociety/2026_KIISE/paper_assets/20260717_joint_optimization_validation/meva_same_encoder_control/summary.csv",
+      "sha256": "94b6a8888a46509a919099a4c266d57e664d0250ba3d07b9ed124ef00203dd6f"
+    }
+  },
+  "controlled_rows": 1158,
+  "queries": 193,
+  "families": [
+    "body_social",
+    "facility_access",
+    "object_interaction",
+    "vehicle_contact",
+    "vehicle_maneuver"
+  ],
+  "family_map": {
+    "person_loads_vehicle": "vehicle_contact",
+    "person_unloads_vehicle": "vehicle_contact",
+    "vehicle_picks_up_person": "vehicle_contact",
+    "vehicle_drops_off_person": "vehicle_contact",
+    "person_opens_trunk": "vehicle_contact",
+    "person_closes_trunk": "vehicle_contact",
+    "person_enters_vehicle": "vehicle_contact",
+    "person_purchases": "object_interaction",
+    "person_reads_document": "object_interaction",
+    "person_transfers_object": "object_interaction",
+    "person_carries_heavy_object": "object_interaction",
+    "person_stands_up": "body_social",
+    "person_sits_down": "body_social",
+    "person_embraces_person": "body_social",
+    "hand_interacts_with_person": "body_social",
+    "person_rides_bicycle": "body_social",
+    "vehicle_makes_u_turn": "vehicle_maneuver",
+    "vehicle_reverses": "vehicle_maneuver",
+    "person_closes_facility_door": "facility_access"
+  },
+  "seed": 202608062,
+  "bootstraps": 10000,
+  "permutations": 200000
+}

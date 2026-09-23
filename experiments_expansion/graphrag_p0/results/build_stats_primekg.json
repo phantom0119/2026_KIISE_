@@ -1,0 +1,18 @@
+{
+  "domain": "primekg",
+  "seed": 20260806,
+  "n_facts": 200,
+  "source_stats": {
+    "n_candidate_paths": 556897,
+    "n_drugs": 6282,
+    "n_proteins": 9823,
+    "n_diseases": 5593
+  },
+  "token_means": {
+    "A1": 18.3,
+    "A1F": 20.3,
+    "A2": 21.3
+  },
+  "fact_count_parity": true,
+  "wall_s": 16.4
+}

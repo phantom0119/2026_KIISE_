@@ -1,0 +1,7 @@
+engine,lane,corpus,rho,p,n
+milvus,m1-graph,A,0.455,0.3641,6
+weaviate,w3-acorn-cutoff0,A,-0.396,0.0552,24
+weaviate,w2-sweeping,A,0.311,0.1395,24
+milvus,m1-graph,B,0.676,0.0021,18
+weaviate,w3-acorn-cutoff0,B,-0.304,0.1692,22
+weaviate,w2-sweeping,B,0.25,0.2624,22
