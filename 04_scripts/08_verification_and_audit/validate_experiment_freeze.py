@@ -327,12 +327,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output-json",
         type=Path,
-        default=PROJECT_ROOT / "2026_KIISE" / "manuscript" / "_archive_20260819" / "freeze_validation_20260707.json",
+        default=PROJECT_ROOT / "2026_KIISE" / "04_scripts" / "08_verification_and_audit" / "freeze_validation.json",
     )
     parser.add_argument(
         "--output-md",
         type=Path,
-        default=PROJECT_ROOT / "2026_KIISE" / "manuscript" / "_archive_20260819" / "freeze_validation_20260707.md",
+        default=PROJECT_ROOT / "2026_KIISE" / "04_scripts" / "08_verification_and_audit" / "freeze_validation.md",
     )
     return parser.parse_args()
 

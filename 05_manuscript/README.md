@@ -76,14 +76,3 @@ python3 05_manuscript/table10_dir/verify_table10.py
 # 4. 표 11 VLM 답변 정확도 범주별 갭 결정론적 재계산
 python3 05_manuscript/table11_dir/data/compute_percategory_gap.py
 ```
-
----
-
-## 📦 과거 초고 및 중간 이력 아카이브 (`_archive_20260819/`)
-
-과거 마일스톤의 작성 이력 및 이전 PDF들은 현행 정본 문서와 혼동되지 않도록 `_archive_20260819/` 내에 안전하게 보존되어 있습니다:
-- `0_paper_script.md`: 2026-07-23 최초 투고 원본 초고
-- `1_paper_revision_backup_pre_audit39_20260817.md`: 개정 작업 중 중간 백업본
-- `paper_0817.pdf`, `paper_0818.pdf`: 2026-08-19 최종 HWP 조판 이전의 중간 컴파일 PDF
-- `심사의견대응서_최종_20260818.{md,pdf}`: 공저자 축약 이전의 초기 심사의견 대응서 버전
-- `freeze_validation_20260707.{json,md}`: 2026-07-07 시점의 초기 아티팩트 동결 검증서
