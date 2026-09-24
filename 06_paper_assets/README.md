@@ -7,12 +7,11 @@
 
 ---
 
-## 🧭 9대 주제별 디렉터리 구성 및 상세 매핑
+## 🧭 8대 주제별 디렉터리 구성 및 상세 매핑
 
 ```mermaid
 flowchart TD
-    ASSETS["06_paper_assets/"] --> P0["00_presentation_figures/<br/>발표용 차트 및 도표"]
-    ASSETS --> P1["01_manuscript_typesetting/<br/>최종 도표 v6 & Word 조판"]
+    ASSETS["06_paper_assets/"] --> P1["01_manuscript_typesetting/<br/>최종 도표 v6 & Word 조판"]
     ASSETS --> P2["02_rq1_circularity/<br/>RQ1 순환성 통제 영수증"]
     ASSETS --> P3["03_rq2_storage_representation/<br/>RQ2 저장 단위 & 112개 파레토"]
     ASSETS --> P4["04_rq3_rq4_retrieval_fusion/<br/>RQ3·4 검색 계획 & KG 붕괴"]
@@ -26,12 +25,7 @@ flowchart TD
 
 ## 📂 주제별 세부 아티팩트 카탈로그
 
-### 1. [`00_presentation_figures/`](00_presentation_figures/) (구두 발표용 시각 자료)
-| 디렉터리 | 주요 내용 |
-|---|---|
-| [`20260707_presentation_figures/`](00_presentation_figures/20260707_presentation_figures/) | 학술대회 구두 발표 슬라이드(`08_presentations/`)에 임베딩되는 16:9 와이드 개념도 및 결과 차트 |
-
-### 2. [`01_manuscript_typesetting/`](01_manuscript_typesetting/) (최종 도표 및 조판 산출물)
+### 1. [`01_manuscript_typesetting/`](01_manuscript_typesetting/) (최종 도표 및 조판 산출물)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260717_manuscript_visuals_v6/`](01_manuscript_typesetting/20260717_manuscript_visuals_v6/) | **[도표 정본]** Figure 1~3, Figure S3 등 본문 게재용 300dpi PNG 및 벡터 PDF 플롯 |
@@ -40,13 +34,13 @@ flowchart TD
 | [`20260718_manuscript_content/`](01_manuscript_typesetting/20260718_manuscript_content/) | 원고 임베디드 이미지 리소스 및 참조 단락 |
 | [`20260723_controlled_supplement/`](01_manuscript_typesetting/20260723_controlled_supplement/) | 심사 대응 통제 보강 실험(선택도 보존 S3 통제 등) 결과 도표 및 프로토콜 매니페스트 |
 
-### 3. [`02_rq1_circularity/`](02_rq1_circularity/) (RQ1 순환성 통제 영수증)
+### 2. [`02_rq1_circularity/`](02_rq1_circularity/) (RQ1 순환성 통제 영수증)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260710_noncircular_collapse/`](02_rq1_circularity/20260710_noncircular_collapse/) | 정답 누수 제거(비순환 수리) 전후 성능 붕괴($1.000 \rightarrow 0.181$) 실측 CSV 및 유의성 |
 | [`20260716_circularity_controlled_injection/`](02_rq1_circularity/20260716_circularity_controlled_injection/) | C1(정규 라벨) 및 C2(의사 환문) 통제 주입 실험의 쿼리별 상세 결과 및 독립 검증 JSON |
 
-### 4. [`03_rq2_storage_representation/`](03_rq2_storage_representation/) (RQ2 저장 단위 & 112개 파레토)
+### 3. [`03_rq2_storage_representation/`](03_rq2_storage_representation/) (RQ2 저장 단위 & 112개 파레토)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260715_caption_model_ablation/`](03_rq2_storage_representation/20260715_caption_model_ablation/) | VLM 캡션 생성 모델별(LLaVA, Qwen-VL 등) 다운스트림 검색 품질 절제 결과 |
@@ -55,20 +49,20 @@ flowchart TD
 | [`20260717_joint_image_caption_validation/`](03_rq2_storage_representation/20260717_joint_image_caption_validation/) | **[표 4 핵심]** 5대 저장 단위 품질-비용 요약표(`configuration_summary.csv`) 및 부트스트랩 CI |
 | [`20260717_joint_optimization_validation/`](03_rq2_storage_representation/20260717_joint_optimization_validation/) | 112개 호환 설계 구성 전수 평가 및 28개 파레토 최적점(`pareto_front.csv`) |
 
-### 5. [`04_rq3_rq4_retrieval_fusion/`](04_rq3_rq4_retrieval_fusion/) (RQ3·4 검색 계획 & KG 붕괴)
+### 4. [`04_rq3_rq4_retrieval_fusion/`](04_rq3_rq4_retrieval_fusion/) (RQ3·4 검색 계획 & KG 붕괴)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260713_kg/`](04_rq3_rq4_retrieval_fusion/20260713_kg/) | 사전등록 판정 420: 지식그래프(KG) 색인 붕괴 공식 영수증(`collapse_receipt.json`) |
 | [`20260712_codex_crosscheck_fixes/`](04_rq3_rq4_retrieval_fusion/20260712_codex_crosscheck_fixes/) | 군집 추론 검정(`t3_cluster_inference.json`) 및 캡션 교차표 |
 
-### 6. [`05_rq5_filtered_ann_index/`](05_rq5_filtered_ann_index/) (RQ5 Filtered-ANN & 3대 엔진 크로스)
+### 5. [`05_rq5_filtered_ann_index/`](05_rq5_filtered_ann_index/) (RQ5 Filtered-ANN & 3대 엔진 크로스)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260710_pillarB/`](05_rq5_filtered_ann_index/20260710_pillarB/) | **[표 7 핵심]** Filtered-ANN 역설 및 선택도 축에 따른 4대 색인 실측 데이터 |
 | [`20260712_engine_replication/`](05_rq5_filtered_ann_index/20260712_engine_replication/) | **[표 9 핵심]** PostgreSQL pgvector, Milvus, Weaviate 3대 엔진 크로스 벤치마크 결과 CSV |
 | [`20260713_db_design/`](05_rq5_filtered_ann_index/20260713_db_design/) | **[표 8 핵심]** pgvector 부분 색인(`WHERE`) vs 전역 색인 비교 실측 데이터 |
 
-### 7. [`06_rq6_vlm_qa_and_external/`](06_rq6_vlm_qa_and_external/) (RQ6 답변 전파 & 외적 타당성)
+### 6. [`06_rq6_vlm_qa_and_external/`](06_rq6_vlm_qa_and_external/) (RQ6 답변 전파 & 외적 타당성)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260711_e1a/`](06_rq6_vlm_qa_and_external/20260711_e1a/) | 매개변수 벽(Mediator Wall) 파일럿 진단 데이터 |
@@ -76,14 +70,14 @@ flowchart TD
 | [`20260713_index_answer/`](06_rq6_vlm_qa_and_external/20260713_index_answer/) | 색인 근사의 답변 전파 게이트 판정 JSON |
 | [`20260712_uca_external/`](06_rq6_vlm_qa_and_external/20260712_uca_external/) | **[표 6 핵심]** UCA 영어권 이상행동 129개 질의 외적 타당성 3/4 재현 영수증 |
 
-### 8. [`07_dataset_provenance/`](07_dataset_provenance/) (데이터셋 계통도 & 정성적 분석)
+### 7. [`07_dataset_provenance/`](07_dataset_provenance/) (데이터셋 계통도 & 정성적 분석)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260715_dataset_provenance/`](07_dataset_provenance/20260715_dataset_provenance/) | 8개 데이터셋의 데이터 계통도(Lineage Overview) 다이어그램 |
 | [`20260707_true_multimodal_examples/`](07_dataset_provenance/20260707_true_multimodal_examples/) | 텍스트 질의와 시각 프레임 간 검색 정합/실패 사례를 담은 정성적 분석 예시 CSV |
 | [`20260707_advanced_ablation/`](07_dataset_provenance/20260707_advanced_ablation/) | 시각 인코더 및 질의 난이도별 세부 절제 결과 요약표 |
 
-### 9. [`08_pipeline_audits_and_verification/`](08_pipeline_audits_and_verification/) (통제 감사 & 교차 검증)
+### 8. [`08_pipeline_audits_and_verification/`](08_pipeline_audits_and_verification/) (통제 감사 & 교차 검증)
 | 디렉터리 | 주요 내용 |
 |---|---|
 | [`20260707_pipeline_audit/`](08_pipeline_audits_and_verification/20260707_pipeline_audit/) | 필수 파일 존재 여부 및 논문 메트릭 요약 감사 리포트 |

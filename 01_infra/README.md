@@ -49,12 +49,12 @@ docker compose -f 01_infra/docker-compose.pgvector.yml down
 본 pgvector 인프라는 논문의 다음 실험 및 테이블 결과 도출에 직접 사용됩니다:
 
 1. **논문 Table 1, Table 2, Table 8**:
-   - [`04_scripts/build_miris_pgvector.py`](../04_scripts/build_miris_pgvector.py) / [`build_miris_pgvector_rich.py`](../04_scripts/build_miris_pgvector_rich.py): 비디오 키프레임 벡터 적재
-   - [`04_scripts/run_pgvector_partial_index.py`](../04_scripts/run_pgvector_partial_index.py): Predicate별 부분 HNSW 인덱스 성능 측정
-   - [`04_scripts/run_pgvector_ann_benchmark.py`](../04_scripts/run_pgvector_ann_benchmark.py): 인덱스 파라미터(lists, probes, m, ef_search)별 재현율/지연시간 벤치마크
-   - [`04_scripts/run_pgvector_retrieval.py`](../04_scripts/run_pgvector_retrieval.py): 벡터 검색 질의 실행
+   - [`build_miris_pgvector.py`](../04_scripts/01_canonical_and_preprocessing/build_miris_pgvector.py) / [`build_miris_pgvector_rich.py`](../04_scripts/01_canonical_and_preprocessing/build_miris_pgvector_rich.py): 비디오 키프레임 벡터 적재
+   - [`run_pgvector_partial_index.py`](../04_scripts/05_rq5_filtered_ann_index/run_pgvector_partial_index.py): Predicate별 부분 HNSW 인덱스 성능 측정
+   - [`run_pgvector_ann_benchmark.py`](../04_scripts/05_rq5_filtered_ann_index/run_pgvector_ann_benchmark.py): 인덱스 파라미터(lists, probes, m, ef_search)별 재현율/지연시간 벤치마크
+   - [`run_pgvector_retrieval.py`](../04_scripts/05_rq5_filtered_ann_index/run_pgvector_retrieval.py): 벡터 검색 질의 실행
 2. **확장 실험 (FreshEvidenceDB)**:
-   - [`09_experiments_expansion/freshevidencedb_p1/run_p1a_real_revision.py`](../09_experiments_expansion/freshevidencedb_p1/run_p1a_real_revision.py): 동적 갱신 환경 벡터 검색 평가
+   - [`run_p1a_real_revision.py`](../09_experiments_expansion/03_freshevidencedb/freshevidencedb_p1/run_p1a_real_revision.py): 동적 갱신 환경 벡터 검색 평가
 
 ---
 

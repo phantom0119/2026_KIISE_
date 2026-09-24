@@ -116,7 +116,7 @@ flowchart TD
 - [`analyze_uca_external.py`](07_external_validity/analyze_uca_external.py): UCA 이상행동 129개 질의 대상 검색 계획 재현율 분석 (3/4 재현)
 
 ### 9. [`08_verification_and_audit/`](08_verification_and_audit/) (검증 스위트 및 통계 감사)
-- [`run_full_verification_suite.py`](08_verification_and_audit/run_full_verification_suite.py): **[핵심]** 40/40 사전등록 검증 스위트 일괄 실행
+- [`verify_dbr_submission_revision_v6.py`](08_verification_and_audit/verify_dbr_submission_revision_v6.py): **[핵심]** 최종 제출본(v6) 사전등록 검증 스위트 일괄 실행
 - [`run_significance_analysis.py`](08_verification_and_audit/run_significance_analysis.py): **[핵심]** 페어드 부트스트랩 95% 신뢰구간 및 통계적 유의성 검정
 - [`verify_manuscript_numbers.py`](08_verification_and_audit/verify_manuscript_numbers.py): 본문 수치와 실험 산출물 간 전수 대조
 - [`verify_revision_numbers.py`](08_verification_and_audit/verify_revision_numbers.py): 8월 심사 대응 최종 수정본 수치 정합성 감사
@@ -125,7 +125,6 @@ flowchart TD
 ### 10. [`09_paper_assets_and_build/`](09_paper_assets_and_build/) (논문 에셋 및 조판 빌더)
 - [`generate_manuscript_visuals_v6.py`](09_paper_assets_and_build/generate_manuscript_visuals_v6.py): **[핵심]** 최종 논문 제출본(v6) Figure 1~3 인쇄용 고해상도 생성
 - [`make_dbr_submission_revision_v6.py`](09_paper_assets_and_build/make_dbr_submission_revision_v6.py): **[핵심]** 최종 심사 통과본 2단 편집 Word(.docx)/PDF 조판 빌더
-- [`build_deck_pptx.py`](09_paper_assets_and_build/build_deck_pptx.py): 학술 발표용 16:9 슬라이드 덱 자동 생성
 - [`make_dbr_editable_font_docx.py`](09_paper_assets_and_build/make_dbr_editable_font_docx.py): 제출용 폰트 편집 지원 docx 생성기
 - [`package_manuscript_support_files.py`](09_paper_assets_and_build/package_manuscript_support_files.py): 논문 지원 결과물 패키징
 

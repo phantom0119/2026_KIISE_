@@ -32,9 +32,8 @@ flowchart LR
 |---|---|---|
 | [`generate_manuscript_visuals_v6.py`](generate_manuscript_visuals_v6.py) | **Figure 1, 2, 3** (`06_paper_assets/`) | 논문 본문에 수록되는 핵심 도표 3종(파이프라인 아키텍처, 5대 저장 단위 파레토 프론티어, 3관문 QA 답변 전파율)을 300dpi 고해상도로 일괄 렌더링합니다. |
 | [`generate_s3_control_figure.py`](generate_s3_control_figure.py) | **Figure S3** (보충 자료) | 선택도 보존 통제(S3) 메커니즘을 시각화한 심사용 보충 그림을 생성합니다. |
-| [`generate_presentation_figures.py`](generate_presentation_figures.py) | 발표용 도표 | 학술대회 구두 발표용 초심자 친화적 개념도 및 결과 차트를 생성합니다. |
 
-### 2. KIISE 2단 규격 Word(.docx) 및 슬라이드 빌더
+### 2. KIISE 2단 규격 Word(.docx) 빌더
 
 | 파일명 | 역할 | 구현 목적 및 핵심 역할 |
 |---|---|---|
@@ -42,7 +41,6 @@ flowchart LR
 | [`make_dbr_editable_font_docx.py`](make_dbr_editable_font_docx.py) | 글꼴 안정화 | 한글(KoPub 바탕/돋움) 및 영문(Times New Roman) 글꼴이 OS 환경에 구애받지 않고 깨지지 않도록 통합된 편집용 DOCX를 생성합니다. |
 | [`_dbr_complete_working_draft_base.py`](_dbr_complete_working_draft_base.py) | 조판 기본 엔진 | python-docx를 사용하여 2단 여백, 머리글, 꼬리글, 표 테두리 스타일을 정의하는 기본 클래스를 제공합니다. |
 | [`_dbr_docx_primitives.py`](_dbr_docx_primitives.py) | XML 프리미티브 | 워드 문서의 XML 노드(수식, 인라인 스타일, 셀 여백 등)를 직접 제어하는 저수준 조판 헬퍼입니다. |
-| [`build_deck_pptx.py`](build_deck_pptx.py) | 16:9 슬라이드 생성 | python-pptx를 활용하여 텍스트 넘침 없이 정렬된 공식 16:9 KIISE 발표용 프레젠테이션 파일을 생성합니다. |
 
 ### 3. 패키징 및 원고 마스터 파일
 
@@ -62,9 +60,6 @@ python 04_scripts/09_paper_assets_and_build/generate_manuscript_visuals_v6.py
 
 # 2. 최종 한국정보과학회 2단 Word(.docx) 제출본 빌드
 python 04_scripts/09_paper_assets_and_build/make_dbr_submission_revision_v6.py
-
-# 3. 16:9 학술대회 발표용 PPTX 덱 생성
-python 04_scripts/09_paper_assets_and_build/build_deck_pptx.py
 ```
 
 ---

@@ -1,6 +1,6 @@
 # 원고 그림·표 자산 관리 디렉터리 총괄 (2026-07-23, 최종 갱신 2026-08-19)
 
-**현행 정본 원고 = `0_main_paper.md`** (구 `1_paper_revision.md`, 2026-08-19 개명; 조판 정본 `paper_최종.pdf`와 전량 동기화 완료). 아래 이력 항목들에 등장하는 `0_paper_script.md`·`1_paper_revision.md`는 작성 당시 명칭이며, 해당 파일들은 `_archive_20260819/`에 보존되어 있다.
+**현행 정본 원고 = `0_main_paper.md`** (구 `1_paper_revision.md`, 2026-08-19 개명; 조판 정본 `paper_최종.pdf`와 전량 동기화 완료). 구버전 초안 및 중간 백업 자료는 저장소 경량화 및 최종본 단일 관리 정책에 따라 완전히 정리·배제되었습니다.
 
 본 문서는 정본 원고의 모든 그림(3종)·표(11종)에 대응하는 관리 디렉터리의 색인이다.
 각 디렉터리는 `data/`(원천 결과 파일 사본) + `README.md`(대상·수치↔원천 매핑·데이터셋·실험 체계·재현 방법·포함 파일·검증)로 구성된다.
@@ -42,7 +42,7 @@
 
 - **개명**: `1_paper_revision.md` → **`0_main_paper.md`** (정식 핵심 문서). 참조 갱신 완료: `../scripts/verify_revision_numbers.py`, `figure1_dir/verify_figure1.py`, figure1·2/table1·3·11 README. 두 가드 재실행 정상(verify_revision_numbers 266검사 — 46 FAIL은 전부 구 감사본 문장을 기대하는 낡은 가드, 목록·사유는 메모리/이력 참조).
 - **조판 정본**: `paper_최종.pdf`(2026-08-19 10:10, 공저자 HWP). `0_main_paper.md`는 이 PDF와 전량 동기화됨(사사 각주·저자 약력 포함). 심사 대응서 정본 = `심사의견대응서.pdf`(2026-08-19, 공저자 축약·재작성판; 구판 md/pdf는 아카이브 — **아카이브 md는 정본 대응서와 내용이 다름에 유의**).
-- **보관**: `_archive_20260819/` = `0_paper_script.md`(원본 초고), `1_paper_revision_backup_pre_audit39_20260817.md`, `paper_0817.pdf`, `paper_0818.pdf`, `심사의견대응서_최종_20260818.{md,pdf}`(구판), `freeze_validation_20260707.{json,md}`.
+- **구판 아카이브 정리**: 초기 마일스톤 초안(`0_paper_script.md`), 중간 백업본(`paper_0817.pdf`, `paper_0818.pdf` 등)은 최종본 경량화 지침에 따라 영구 삭제 정리 완료.
 - **그림·표 실험 분리**: 그림/표 제작 실험은 각 `figureN_dir/`·`tableN_dir/`에서만 관리. `figure2_resources.zip`→`figure2_dir/`, `figure3_resources.zip`→`figure3_dir/`로 이동. 루트에는 원고가 참조하는 최종 산출물 `Figure1-3.png`만 유지.
 - **루트 유지 파일**: `0_main_paper.md`, `paper_최종.pdf`, `심사의견대응서.pdf`, `Figure1-3.png`, `DB연구_최종본양식.pdf`(학회지 최종본 양식), 본 색인.
 

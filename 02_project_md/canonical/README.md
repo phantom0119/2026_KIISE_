@@ -3,7 +3,7 @@
 - 기준일: 2026-07-18
 - **[현행화 2026-07-28]** 제출 정본은 `../../manuscript/paper_final.pdf`(2026-07-23)이다. 본 README의 §9 상태와 v6 파일 표기는 07-18 시점 기록이며, 수치·구조 충돌 시 paper_final.pdf가 우선한다. EXP02–EXP06에는 "레거시 결과 문서 흡수 (2026-07-28)" 섹션이 추가되었다(상위 `../MIGRATION_MAP_20260728.md` 참조). 2026-07-28 확정 용어 결정(벡터 데이터베이스 계층, '증거'→검색 문맥/관련 클립 체계)은 개정 원고용이며 제출 PDF에는 미적용이다.
 - 적용 대상: DBR 장문 원고를 정본으로 하고 KDBC 단편 원고로 축약 가능한 연구 문서
-- 현재 원고: [`../../manuscript/kiise_dbr_manuscript_v6_submission_revision.md`](../../manuscript/kiise_dbr_manuscript_v6_submission_revision.md)
+- 현재 원고: [`../../05_manuscript/0_main_paper.md`](../../05_manuscript/0_main_paper.md)
 - 원칙: 이 디렉터리의 8개 문서만 현재 논문화 정본으로 편집한다. 상위 `project_md/`의 기존 문서는 실행 이력·근거·정정 계보이며 신규 본문을 중복 작성하지 않는다.
 
 ## 1. 무엇부터 읽는가

@@ -104,5 +104,5 @@ print(f"Completed benchmark: {result.strategies} for {result.queries} queries.")
 ---
 
 ## 🔗 연계 디렉터리
-- **실행 스크립트**: [`04_scripts/`](../04_scripts/) 내의 모든 전처리, 색인 생성, 벤치마크 스크립트가 본 패키지의 API를 호출합니다.
-- **연구 정본 문서**: 본 패키지의 아키텍처 및 B0~B5 설계 근거는 [`02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md`](../02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md)에 상세히 기술되어 있습니다.
+- **실행 스크립트**: [`04_scripts/`](../../04_scripts/) 내의 모든 전처리, 색인 생성, 벤치마크 스크립트가 본 패키지의 API를 호출합니다.
+- **연구 정본 문서**: 본 패키지의 아키텍처 및 B0~B5 설계 근거는 [`02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md`](../../02_project_md/00_KIISE_DBR_FINAL_MASTER_SPECIFICATION.md)에 상세히 기술되어 있습니다.
