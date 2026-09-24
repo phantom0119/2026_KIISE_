@@ -17,9 +17,8 @@
 | **04** | [**`04_scripts/`**](04_scripts/) | **실험 실행 스크립트 (5단계)**: 벤치마크 수행, 데이터 전처리, 색인 구축 및 결과 생성 |
 | **05** | [**`05_manuscript/`**](05_manuscript/) | **논문 원고 및 최종 결과 (6단계)**: 최종 원고(`0_main_paper.md`), 심사의견 대응서, 검증 기준치 |
 | **06** | [**`06_paper_assets/`**](06_paper_assets/) | **논문 에셋 및 시각화 (7단계)**: 본문 수록 도표, 생성 그래프, 파이프라인 감사 산출물 |
-| **07** | [**`07_survey/`**](07_survey/) | **선행 문헌 조사 (8단계)**: 멀티모달 비디오 RAG 및 벡터 DB 관련 심층 리서치 보고서 |
-| **08** | [**`08_presentations/`**](08_presentations/) | **학술 발표 자료 (9단계)**: 학술대회/워크숍 발표 슬라이드(`pptx`, `pdf`) 및 슬라이드 스펙 |
-| **09** | [**`09_experiments_expansion/`**](09_experiments_expansion/) | **확장 연구 과제 (10단계)**: FreshEvidenceDB, GraphRAG, 유효성 감사 등 파생 실험 |
+| **07** | [**`07_survey/`**](07_survey/) | **선행 문헌 조사 (8단계)**: 최종 논문 인용 선행 연구 45건 원본 PDF 및 마스터 카탈로그 |
+| **09** | [**`09_experiments_expansion/`**](09_experiments_expansion/) | **확장 연구 및 차기 과제 (9단계)**: 본 논문 보강 실험(표 11), FreshEvidenceDB, 차기 제안서 |
 
 ---
 
@@ -40,12 +39,17 @@
 - [**`심사의견대응서.pdf`**](05_manuscript/심사의견대응서.pdf): 심사 의견별 반영 및 대응 보고서
 - [**`ASSETS_INDEX.md`**](05_manuscript/ASSETS_INDEX.md): 논문에 포함된 그림(Figure 1~3) 및 표(Table 1~11) 에셋 매핑 인덱스
 
-### 3. 사전 문헌 조사 (`07_survey/`)
-- [**`deep-research-report_1.md` ~ `4.md`**](07_survey/): 멀티모달 비디오 RAG, 벡터 검색 최적화, 지식 그래프 융합 등에 관한 심층 서베이 보고서
+### 3. 선행 연구 문헌 아카이브 (`07_survey/`)
+- [**`07_survey/README.md`**](07_survey/README.md): 최종 논문 인용번호 `[1]` ~ `[45]`와 1:1 매칭된 45건의 원본 논문 PDF 및 기술 명세서 전수 카탈로그
+- [**`00_early_research_reports/`**](07_survey/00_early_research_reports/): 연구 초기 심층 리서치 보고서(`deep-research-report_1.md` ~ `4.md`)
 
-### 4. 발표 자료 (`08_presentations/`)
-- [**`kiise_vlmdb_deck_20260714.pptx`**](08_presentations/kiise_vlmdb_deck_20260714.pptx) / [**`pdf`**](08_presentations/kiise_vlmdb_deck_20260714.pdf): 슬라이드 덱
-- [**`SLIDE_SPEC_for_external_agent_20260714.md`**](08_presentations/SLIDE_SPEC_for_external_agent_20260714.md): 발표 슬라이드 레이아웃 및 구성 명세서
+### 4. 확장 연구 과제 및 차기 연구 포트폴리오 (`09_experiments_expansion/`)
+- [**`09_experiments_expansion/README.md`**](09_experiments_expansion/README.md): 5대 연구 테마 마스터 인덱스
+- [**`01_kiise_supplementary_experiments/`**](09_experiments_expansion/01_kiise_supplementary_experiments/): LLM 답변 계층 VQA 실험(표 11 정본), 신경망 Reranker 심화, 부트스트랩 95% CI 검정
+- [**`02_followup_topic_proposals/`**](09_experiments_expansion/02_followup_topic_proposals/): 차기 학술대회 제안서, 대안 연구 주제 포트폴리오 및 선행 기술 분석
+- [**`03_freshevidencedb/`**](09_experiments_expansion/03_freshevidencedb/): 실시간 문서 개정 신선도, 일관성 및 장애 복원력 벡터 DB 연구
+- [**`04_multimodal_intent_and_graphrag/`**](09_experiments_expansion/04_multimodal_intent_and_graphrag/): EvidenceViewDB, IntentStore, Provenance GraphRAG
+- [**`05_workload_validity_audit/`**](09_experiments_expansion/05_workload_validity_audit/): 워크로드 유효성 감사 및 난이도 편향 통제 파이프라인
 
 ---
 

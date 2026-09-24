@@ -28,7 +28,7 @@ import pandas as pd
 
 HERE = Path(__file__).resolve()
 P0DIR = HERE.parents[1]
-KIISE = HERE.parents[3]
+KIISE = next((p for p in HERE.parents if (p / "00_env").exists() or (p / "04_scripts").exists()), HERE.parents[3])
 sys.path.insert(0, str(KIISE / "scripts"))
 import run_filtered_ann_real_predicate as base  # noqa: E402
 

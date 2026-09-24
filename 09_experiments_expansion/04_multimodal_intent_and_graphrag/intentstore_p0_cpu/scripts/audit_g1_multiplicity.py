@@ -50,7 +50,7 @@ def bh_adjust(p_values: np.ndarray) -> np.ndarray:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    project = Path(__file__).resolve().parents[3]
+    project = next((p for p in Path(__file__).resolve().parents if (p / "00_env").exists() or (p / "04_scripts").exists()), Path(__file__).resolve().parents[3])
     source = project / "paper_assets" / "20260717_joint_image_caption_validation"
     metrics = pd.read_parquet(source / "per_query_metrics.parquet")
     clusters = pd.read_csv(source / "query_clusters.csv")

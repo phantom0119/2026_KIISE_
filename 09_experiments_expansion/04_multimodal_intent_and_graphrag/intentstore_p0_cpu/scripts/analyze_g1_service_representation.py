@@ -48,7 +48,7 @@ class BootstrapResult:
 
 
 def parse_args() -> argparse.Namespace:
-    default_root = Path(__file__).resolve().parents[3]
+    default_root = next((p for p in Path(__file__).resolve().parents if (p / "00_env").exists() or (p / "04_scripts").exists()), Path(__file__).resolve().parents[3])
     default_source = default_root / "paper_assets" / "20260717_joint_image_caption_validation"
     parser = argparse.ArgumentParser()
     parser.add_argument("--metrics", type=Path, default=default_source / "per_query_metrics.parquet")

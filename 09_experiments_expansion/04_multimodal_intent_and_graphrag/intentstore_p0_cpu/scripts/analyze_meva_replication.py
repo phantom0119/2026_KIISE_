@@ -87,7 +87,7 @@ def bh(p: np.ndarray) -> np.ndarray:
 
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
-    project = Path(__file__).resolve().parents[3]
+    project = next((p for p in Path(__file__).resolve().parents if (p / "00_env").exists() or (p / "04_scripts").exists()), Path(__file__).resolve().parents[3])
     source = project / "paper_assets" / "20260717_joint_optimization_validation" / "meva_same_encoder_control"
     metrics_path = source / "per_query_metrics.parquet"
     clusters_path = source / "query_clusters.csv"
